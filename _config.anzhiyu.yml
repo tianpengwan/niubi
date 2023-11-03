@@ -97,7 +97,7 @@ social:
    Github: https://github.com/AsteroidQiao || anzhiyu-icon-github
    B站: https://space.bilibili.com/503400640 || anzhiyu-icon-bilibili
    微博: https://weibo.com/asteroidqiao || anzhiyu-icon-weibo
-   RSS: /atom.xml || anzhiyu-icon-rss
+#   RSS: /atom.xml || anzhiyu-icon-rss
 #   Gitee: https://gitee.com/AsteroidQiao || anzhiyu-icon-github
 #   Email: mailto:2551845461@qq.com || icon-email
 # 作者卡片 状态
@@ -190,14 +190,13 @@ cover:
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
   # left/right/both
-  position: left
+  position: both
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-  # - /img/default_cover.jpg
-
+   - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699024680142QQ1.jpg
 # Replace Broken Images (替换无法显示的图片)
 error_img:
-  flink: /img/friend_404.gif
+  flink: /img/1.gif
   post_page: /img/404.jpg
 
 # A simple 404 page
