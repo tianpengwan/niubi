@@ -26,34 +26,42 @@ nav:
   travelling: false
   clock: true
   menu:
-    - title: 网页
+    - title: 博客
       item:
-        - name: hexo博客
+        - name: 博客站点
           link: https://hexo.asteroidrocket.top/
-          icon: /img/favicon.ico
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1697097432990%E6%88%90%E5%A4%A7%E4%BA%8B.jpg
+    - title: 收集的有趣网页
+      item:
         - name: tower
           link: https://tower.asteroidrocket.top/
-          icon: /img/favicon.ico
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990216818761699021681322.png
         - name: 烟花
           link: https://fireworks.asteroidrocket.top/
-          icon: /img/favicon.ico
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990211070371699021106243.png
         - name: 魔方
           link: https://cube.asteroidrocket.top/
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990217438761699021743508.png
+        - name: 收集中~
+          link: /
           icon: /img/favicon.ico
     - title: 项目
       item:
-        - name: 网易云音乐
+        - name: 果子音乐
           link: https://music.asteroidrocket.top/
-          icon: https://image.anheyu.com/favicon.ico
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/169750233053672e05ae2ly1hbtu43vzvaj2280280e82.jpg
         - name: 社团活动平台
           link: https://club.asteroidrocket.top/
-          icon: https://image.anheyu.com/favicon.ico
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1698653924814dragon1.jpg
         - name: 快乐买鞋城
           link: https://buy.asteroidrocket.top/
-          icon: https://image.anheyu.com/favicon.ico
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1698653667259%E9%85%B7-1.png
         - name: ChatGPT
           link: https://chat.asteroidrocket.top/
-          icon: https://image.anheyu.com/favicon.ico
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699022251879chatgpt.jpg
+        - name: 待补充
+          link: /
+          icon:
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
