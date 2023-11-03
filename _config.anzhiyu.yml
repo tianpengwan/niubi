@@ -41,10 +41,10 @@ nav:
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990211070371699021106243.png
         - name: 魔方
           link: https://cube.asteroidrocket.top/
-          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990217438761699021743508.png
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990226138881699022613057.png
         - name: 收集中~
           link: /
-          icon: /img/favicon.ico
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699023059974tianj.png
     - title: 项目
       item:
         - name: 果子音乐
@@ -61,7 +61,7 @@ nav:
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699022251879chatgpt.jpg
         - name: 待补充
           link: /
-          icon:
+          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699022918966Projector.png
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
