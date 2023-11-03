@@ -190,10 +190,10 @@ cover:
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
   # left/right/both
-  position: both
+  position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-   - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699024680142QQ1.jpg
+   - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699025726516wall5.png
 # Replace Broken Images (替换无法显示的图片)
 error_img:
   flink: /img/1.gif
