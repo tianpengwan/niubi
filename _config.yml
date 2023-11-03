@@ -1,0 +1,175 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 成大事的小站
+subtitle: AsteroidQiao
+description: 归途也还可爱
+keywords: 成果
+author: 成大事
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://hexo.asteroidrocket.top/
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # 设置为false将从永久链接中删除尾随的'index.html'
+  trailing_html: true # 设置为false将从永久链接中删除尾随的'.html'
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # 新帖子的文件名
+default_layout: post
+titlecase: false # 将title转换为titlecase
+external_link:
+  enable: true # 在新选项卡中打开外部链接
+  field: site # 适用于整个站点
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+
+#highlight:
+#  enable: false
+#  line_number: false
+#  auto_detect: false
+
+# 代码高亮配置文件
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: true
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: true
+  line_threshold: 0
+  tab_replace: ''
+
+lazyload:
+  enable: true
+  loadingImg: /img/19.gif
+  isSPA: true
+
+aplayer:
+  asset_inject: false
+  meting: true
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: anzhiyu
+#theme: fluid
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+#静态资源上传
+deploy:
+  type: 'git'
+#  不需要这样
+  repo: 'https://github.com/AsteroidQiao/He.git'
+  branch: 'main'
+#douban 豆瓣页面
+douban:
+  id: 275624377
+  builtin: false
+  movie:
+    path: /about/movies/index.html
+    title: '影视列表'
+    quote: '能不生气就不要生气，能不骂人就不要骂人，能动手就直接动手。'
+    top_img: false
+    aside: false
+    option:
+  book:
+    path: /about/books/index.html
+    title: '图书列表'
+    quote: '多读书、多看报、少吃零食、多睡觉。'
+    top_img: false
+    aside: false
+    option:
+  game:
+    path: /about/games/index.html
+    title: '游戏列表'
+    quote: '最好的剑，永远是下一把'
+    top_img: false
+    aside: false
+    option:
+  song:
+    path: /about/songs/index.html
+    title: '音乐列表'
+    quote: '我见过天使，遇过魔鬼，亲爱的，你到底是谁'
+    top_img: false
+    aside: false
+    option:
+  timeout: 10000
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
+# Sitemap Generator
+sitemap:
+  path: sitemap.xml
+  prettyURLs:
+    trailingSlash: false
