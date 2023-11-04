@@ -1,24 +1,25 @@
-
-- class_name: 友情链接
-  class_desc: 那些人，那些事
+- class_name: 推荐博客
+  flink_style: telescopic
+  hundredSuffix: ""
   link_list:
+    - name: 安知鱼
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+      color: vip
+      tag: 技术
+- class_name: 小伙伴
+  class_desc: 那些人，那些事
+  flink_style: anzhiyu
+  hundredSuffix: ""
+  link_list:
+    - name: 安知鱼
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 生活明朗，万物可爱
+      recommend: true
     - name: CSDN
       link: https://blog.csdn.net/qiaoyulinyi
       avatar: https://profile-avatar.csdnimg.cn/6e56b9cf358f4343921513fb7e7e6238_qiaoyulinyi.jpg!1
-      descr: 小行星Qiao，环游开始！！！
-
-- class_name: 网站
-  class_desc: 推荐的网站
-  link_list:
-    - name: Youtube
-      link: https://www.youtube.com/
-      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 视频网站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中国最大社交分享平台
-    - name: Twitter
-      link: https://twitter.com/
-      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
+      descr: 小行星，环游开始！！！
