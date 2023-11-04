@@ -827,8 +827,8 @@ aside:
     name_link: /
 
   card_announcement:
-    enable: true
-    content: https://api.likepoems.com/ana/yiyan/
+    enable: false
+    content:
   card_weixin:
     enable: true
     face: /img/wxgz.png
