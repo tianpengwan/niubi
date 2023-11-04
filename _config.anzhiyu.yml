@@ -12,7 +12,7 @@ menu:
  我的:
    音乐馆: /music/ || anzhiyu-icon-music
    追番页: /bangumis/ || anzhiyu-icon-bilibili
-   相册集: /album/ || anzhiyu-icon-images
+   相册集: /imgs/ || anzhiyu-icon-images
    小空调: /air-conditioner/ || anzhiyu-icon-fan
 
  关于:
@@ -255,7 +255,7 @@ anchor: false
 # toc (目录)
 toc:
   post: true
-  page: false
+  page: true
   number: true
   expand: false
   style_simple: false # for post
@@ -276,10 +276,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+    - img: /img/WX
       link:
       text: 微信
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+    - img: /img/ZFB
       link:
       text: 支付宝
 
