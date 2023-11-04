@@ -831,8 +831,8 @@ aside:
     content: https://api.likepoems.com/ana/yiyan/
   card_weixin:
     enable: true
-    face: https://bu.dusays.com/2023/01/13/63c02edf44033.png
-    backFace: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699082053627sys.png
+    face: /img/wxgz.png
+    backFace: /img/sys.png
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
