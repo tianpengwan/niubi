@@ -350,6 +350,27 @@ comments:
   count: false # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
 
+valine:
+  appId: sVfjEnMCEjipgBODMprxJDyJ-gzGzoHsz # leancloud application app id
+  appKey: cxX6XI7ITp1UUvWtVGzBFvv5 # leancloud application app key
+  pageSize: 10 # comment list page size
+  avatar: mp # gravatar style https://valine.js.org/#/avatar
+  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
+  placeholder: 填写QQ邮箱就会使用QQ头像喔~. # valine comment input placeholder (like: Please leave your footprints)
+  guest_info: nick,mail,link # valine comment header info (nick/mail/link)
+  recordIP: false # Record reviewer IP
+  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  bg: /img/lazyload9.webp # valine background
+  emojiCDN: //i0.hdslb.com/bfs/emote/ # emoji CDN
+  enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+  requiredFields: nick,mail # required fields (nick/mail)
+  visitor: false
+  master:
+    - xxxxx
+  friends:
+    - xxxxxx
+  tagMeta: "博主,小伙伴,访客"
+  option:
 # waline
 waline:
   serverURL: https://waline.asteroidrocket.top/
@@ -358,6 +379,8 @@ waline:
   meta: false
   imageUploader: true
   option:
+
+
 
 # Chat Services
 # --------------------------------------
@@ -1124,30 +1147,30 @@ greetingBox:
   enable: false #开启后必须配置下面的list对应的时间段，不然会出现小白条
   default: 晚上好👋
   list:
-  # - greeting: 晚安😴
-  #   startTime: 0
-  #   endTime: 5
-  # - greeting: 早上好鸭👋, 祝你一天好心情！
-  #   startTime: 6
-  #   endTime: 9
-  # - greeting: 上午好👋, 状态很好，鼓励一下～
-  #   startTime: 10
-  #   endTime: 10
-  # - greeting: 11点多啦, 在坚持一下就吃饭啦～
-  #   startTime: 11
-  #   endTime: 11
-  # - greeting: 午安👋, 宝贝
-  #   startTime: 12
-  #   endTime: 14
-  # - greeting: 🌈充实的一天辛苦啦！
-  #   startTime: 14
-  #   endTime: 18
-  # - greeting: 19点喽, 奖励一顿丰盛的大餐吧🍔。
-  #   startTime: 19
-  #   endTime: 19
-  # - greeting: 晚上好👋, 在属于自己的时间好好放松😌~
-  #   startTime: 20
-  #   endTime: 24
+   - greeting: 晚安😴
+     startTime: 0
+     endTime: 5
+   - greeting: 早上好鸭👋, 祝你一天好心情！
+     startTime: 6
+     endTime: 9
+   - greeting: 上午好👋, 状态很好，鼓励一下～
+     startTime: 10
+     endTime: 10
+   - greeting: 11点多啦, 在坚持一下就吃饭啦～
+     startTime: 11
+     endTime: 11
+   - greeting: 午安👋, 宝贝
+     startTime: 12
+     endTime: 14
+   - greeting: 🌈充实的一天辛苦啦！
+     startTime: 14
+     endTime: 18
+   - greeting: 19点喽, 奖励一顿丰盛的大餐吧🍔。
+     startTime: 19
+     endTime: 19
+   - greeting: 晚上好👋, 在属于自己的时间好好放松😌~
+     startTime: 20
+     endTime: 24
 
 # 文章顶部ai摘要
 post_head_ai_description:
@@ -1192,7 +1215,7 @@ rightClickMenu:
 
 # 首页随便逛逛people模式 而非技能点模式，关闭后为技能点模式需要配置creativity.yml
 peoplecanvas:
-  enable: true
+  enable: false
   img: https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png
 
 # 动效
