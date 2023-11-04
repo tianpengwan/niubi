@@ -7,4 +7,4 @@ aside: false
 
 
 给博客装上了`小空调`，快来试试吧~
-<iframe width="1200" height="740"  src="https://air.asteroidrocket.top/"></iframe>
+<iframe  height="720"  src="https://air.asteroidrocket.top/"></iframe>
