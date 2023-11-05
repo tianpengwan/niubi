@@ -58,17 +58,17 @@
     name_url: https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC
   maxim:
     maxim_tips: 座右铭
-    maxim_top: 在我手中
-    maxim_bottom: 开出未来
+    maxim_top: 做人如果没有了梦想
+    maxim_bottom: 那和咸鱼有什么分别
   buff:
     buff_tips: 特长
-    buff_top: 脑回路新奇的 酸菜鱼
-    buff_bottom: 二次元指数 MAX
+    buff_top:
+    buff_bottom: 软件开发 MAX
   game:
     game_tips: 爱好游戏
-    game_title: 原神
-    game_uid: "UID: 125766904"
-    game_bg: https://bu.dusays.com/2023/04/22/64433bf26e25d.webp
+    game_title: 王者荣耀
+    game_uid: "中单法王，顺风不浪"
+    game_bg: /img/sg.jpg
   comic:
     comic_tips: 爱好番剧
     comic_title: 追番
@@ -95,8 +95,8 @@
     like_bottom: 手机、电脑软硬件
   music:
     music_tips: 音乐偏好
-    music_title: 许嵩、民谣、华语流行
-    music_bg: https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg
+    music_title: G.E.M.邓紫棋、华语流行、
+    music_bg: /img/GEM.jpg
     music_link: /music
   reward_list:
     - name: 海阔蓝
