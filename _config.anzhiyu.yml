@@ -14,6 +14,11 @@ menu:
 #   追番页: /bangumis/ || anzhiyu-icon-bilibili
    相册集: /imgs/ || anzhiyu-icon-images
    小空调: /air-conditioner/ || anzhiyu-icon-fan
+ 分享:
+   影视: /about/movies/ || anzhiyu-icon-music
+#   追番页: /bangumis/ || anzhiyu-icon-bilibili
+   书籍: /about/books/ || anzhiyu-icon-images
+   游戏: /about/games/ || anzhiyu-icon-fan
 
  关于:
    关于本人: /about/ || anzhiyu-icon-paper-plane
@@ -1077,9 +1082,9 @@ home_top:
 
 # 朋友圈配置
 friends_vue:
-  enable: false
-  vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.1/friends/index.4f887d95.js
-  apiurl: # 朋友圈后端地址
+  enable: enable
+  vue_js: /js/friends.js
+  apiurl: /img/wall7.png
   top_tips: 使用 友链朋友圈 订阅友链最新文章
   top_background:
 
