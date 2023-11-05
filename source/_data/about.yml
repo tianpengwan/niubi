@@ -33,16 +33,17 @@
     list:
       - desc: EDU,软件工程专业
         color: "#357ef5"
-    img: https://bu.dusays.com/2023/04/21/644287166329b.png
+#      - desc: java 开发工程师
+#        color: "#357ef5"
+    img:
   statistic:
     link: /archives
     text: 文章隧道
     cover: https://bu.dusays.com/2023/05/01/644f4b037b930.jpg
   map:
     title: 我现在住在
-    StrengthenTitle: 中国，长沙市
-    background: https://bu.dusays.com/2023/07/05/64a4c61cb20ef.jpg
-    backgroundDark:
+    StrengthenTitle: 中国，信阳市
+    background: /img/xys.png
   selfInfo:
     selfInfoTips1: 生于
     selfInfoContentYear: 2000
@@ -53,8 +54,8 @@
   personalities:
     author_name: 主人公
     personality_type: ENFJ-A / ENFJ-T
-    photo_url: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
-    personality_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg
+    photo_url: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699025726516wall5.png
+    personality_img: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699179974238zrg.png
     name_url: https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC
   maxim:
     maxim_tips: 座右铭
@@ -73,26 +74,32 @@
     comic_tips: 爱好番剧
     comic_title: 追番
     comic_list:
-      - name: 约定的梦幻岛
-        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/27/647166c44b414.webp
-      - name: 咒术回战
-        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db4398832e.webp
-      - name: 紫罗兰永恒花园
-        href: https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db43983d99.webp
+      - name: 狐妖小红娘
+        href: https://www.bilibili.com/bangumi/media/md2543
+        cover: https://i0.hdslb.com/bfs/bangumi/cbb20ee03e97a9f3ad2e1506a10fd1271f1c584a.jpg@330w_442h.webp
+      - name: 剑网3·侠肝义胆沈剑心
+        href: https://www.bilibili.com/bangumi/media/md92272
+        cover: https://i0.hdslb.com/bfs/bangumi/90e7759af39e768e3116938dfca60f7d602ac7c5.jpg@310w_413h.webp
+      - name: 伍六七之最强发型师
+        href: https://www.bilibili.com/bangumi/media/md6360
+        cover: https://i0.hdslb.com/bfs/bangumi/image/d179871a635e9c908a53be6580714ce3c6fee5ba.jpg@310w_413h.webp
       - name: 鬼灭之刃
         href: https://www.bilibili.com/bangumi/media/md22718131/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
         cover: https://bu.dusays.com/2023/05/24/646db439856a0.webp
-      - name: JOJO的奇妙冒险 黄金之风
-        href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/30/64760e38d651a.webp
+      - name: 终结的炽天使
+        href: https://www.bilibili.com/bangumi/media/md1555
+        cover: https://i0.hdslb.com/bfs/bangumi/image/1540c4050bd0f9ba48f59d9c1056acf1d6e26492.jpg@310w_413h.webp
+      - name: 一人之下
+        href: https://www.bilibili.com/bangumi/media/md5050
+        cover: https://i0.hdslb.com/bfs/bangumi/af334241d73ff092c5d78d0c9ee9ad893592f9c4.jpg@310w_413h.webp
+      - name: 仙王的日常生活
+        href: https://www.bilibili.com/bangumi/media/md28230723
+        cover: https://i0.hdslb.com/bfs/bangumi/image/7f214783a3bb8d3e356ce8ee2bccbb1498e0a5df.jpg@310w_413h.webp
   like:
     like_tips: 关注偏好
-    like_title: 数码科技
-    like_bg: https://bu.dusays.com/2022/12/06/638f5f05ce1f7.jpg
-    like_bottom: 手机、电脑软硬件
+    like_title: 软件开发、流行潮玩
+    like_bg: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699187115421dog61.jpg
+    like_bottom: JavaEE Spring全家桶 NoSql Redis
   music:
     music_tips: 音乐偏好
     music_title: G.E.M.邓紫棋、华语流行、
