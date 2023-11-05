@@ -29,7 +29,7 @@ if site.data.about
         .author-content-item.myInfoAndSayHello
           .title1 你好，很高兴认识你👋
           .title2
-            | 我叫 
+            | 我叫
             span.inline-word=aboutName
           .title1=aboutDescription
         .aboutsiteTips.author-content-item
@@ -44,9 +44,9 @@ if site.data.about
                 if index < word.length - 2
                   span(class=(index === 0 ? 'first-tips' : ''))= wordItem
               span(data-up)= word[word.length - 2]
-              |  
+              |
               span(data-show)= word[word.length - 1]
-      
+
       .hello-about
         .cursor(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
         .shapes
@@ -55,7 +55,7 @@ if site.data.about
           .shape.shape-3(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
         .content
           h1=helloAbout
-      
+
       .author-content
         .author-content-item.skills
           .card-content
@@ -71,7 +71,7 @@ if site.data.about
                         .skill-icon(style=`background: ${item.color}`)
                           img.no-lightbox(title=item.name, src=item.icon, alt=item.name)
                         .skill-name
-                          span=item.name 
+                          span=item.name
                   .etc ...
         .author-content-item.careers
           .card-content
@@ -87,7 +87,7 @@ if site.data.about
                 .careers-none
             if careers.img
               img.author-content-img.no-lightbox(alt=careers.tips, src=url_for(careers.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'`)
-      
+
       .author-content
         if theme.LA.enable
           - let cover = item.statistic.cover
@@ -97,14 +97,14 @@ if site.data.about
               span.author-content-item-title 访问统计
               #statistic
               .post-tips
-                | 统计信息来自 
+                | 统计信息来自
                 a(href='https://invite.51.la/1NzKqTeb?target=V6', target='_blank', rel='noopener nofollow') 51la网站统计
               .banner-button-group
                 - let link = item.statistic.link
                 - let text = item.statistic.text
                 a.banner-button(onclick=`pjax.loadUrl("${link}")`)
                   i.anzhiyufont.anzhiyu-icon-arrow-circle-right
-                  |  
+                  |
                   span.banner-button-text=text
         .author-content-item-group.column.mapAndInfo
           - let mapBackground = item.map.background
@@ -125,17 +125,17 @@ if site.data.about
             - let { selfInfoTips1, selfInfoContentYear, selfInfoTips2, selfInfoContent2, selfInfoTips3, selfInfoContent3 } = item.selfInfo
             div
               span.selfInfo-title=selfInfoTips1
-              |  
+              |
               span.selfInfo-content#selfInfo-content-year(style='color:#43a6c6')=selfInfoContentYear
             div
               span.selfInfo-title=selfInfoTips2
-              |  
+              |
               span.selfInfo-content(style='color:#c69043')=selfInfoContent2
             div
               span.selfInfo-title=selfInfoTips3
-              |  
+              |
               span.selfInfo-content(style='color:#b04fe6')=selfInfoContent3
-      
+
       .author-content
         .author-content-item.personalities
           - let {author_name, personality_type, photo_url, personality_img, name_url, personality_type_color} = item.personalities
@@ -143,22 +143,22 @@ if site.data.about
           span.author-content-item-title= author_name
           .title2(style=`color:${personality_type_color ? personality_type_color : "#ac899c"}`)= personality_type
           .post-tips
-            | 在 
+            | 在
             a(href='https://www.16personalities.com/', target='_blank', rel='noopener nofollow') 16personalities
-            |  了解更多关于 
+            |  了解更多关于
             a(target='_blank', rel='noopener external nofollow', href= name_url)= author_name
           .image
             img.no-lightbox(src=url_for(personality_img), alt='人格')
         .author-content-item.myphoto
           img.author-content-img.no-lightbox(alt='自拍', src=url_for(photo_url))
-      
+
       .author-content
         .author-content-item.maxim
           - let {maxim_tips, maxim_top, maxim_bottom} = item.maxim
           .author-content-item-tips=maxim_tips
           span.maxim-title
             span(style='opacity:.6;margin-bottom:8px')=maxim_top
-            |  
+            |
             span=maxim_bottom
         .author-content-item.buff
           .card-content
@@ -166,7 +166,7 @@ if site.data.about
             .author-content-item-tips=buff_tips
             span.buff-title
               span(style='opacity:.6;margin-bottom:8px')=buff_top
-              |  
+              |
               span=buff_bottom
           .card-background-icon
             i.anzhiyufont.anzhiyu-icon-dice-d20
@@ -192,7 +192,7 @@ if site.data.about
                   a.comic-item(href=i.href, target="_blank", title=i.name)
                     .comic-item-cover
                       img(src=i.cover, alt=i.name)
-      
+
       .author-content
         - let {music_tips, music_title, music_link, music_bg} = item.music
         - let {like_tips, like_title, like_bottom, like_bg} = item.like
@@ -211,14 +211,14 @@ if site.data.about
             .banner-button-group
               a.banner-button(onclick=`pjax.loadUrl("${music_link}")`)
                 i.anzhiyufont.anzhiyu-icon-arrow-circle-right
-                |  
+                |
                 span.banner-button-text 更多推荐
 
       if page.content
         .author-content
           .create-site-post.author-content-item.single
             != page.content
-        
+
       - let rawData = item.reward_list
       if rawData
         - let sortedByDate = rawData.slice().sort((a, b) => new Date(b.datatime) - new Date(a.datatime));
@@ -235,11 +235,11 @@ if site.data.about
                     .reward-list-bottom-group
                       if item.amount >= 50
                         .reward-list-item-money(style='background:var(--anzhiyu-yellow)')=`¥${item.amount}`
-                      else 
+                      else
                         .reward-list-item-money=`¥${item.amount + (item.suffix ? item.suffix : "")}`
                       .datatime.reward-list-item-time(datatime=item.datatime)=new Date(item.datatime).toISOString().slice(0, -14)
               .reward-list-updateDate
-                | 最新更新时间： 
+                | 最新更新时间：
                 time.datatime.reward-list-updateDate-time(datatime=sortedByDate[0].datatime)=new Date(sortedByDate[0].datatime).toISOString().slice(0, -14)
             .about-reward
               #con
