@@ -33,9 +33,9 @@
     list:
       - desc: EDU,软件工程专业
         color: "#357ef5"
-#      - desc: java 开发工程师
-#        color: "#357ef5"
-    img:
+      - desc: 软件开发工程师
+        color: "#357ef5"
+    img: /img/progress2.jpg
   statistic:
     link: /archives
     text: 文章隧道
@@ -97,12 +97,12 @@
         cover: https://i0.hdslb.com/bfs/bangumi/image/7f214783a3bb8d3e356ce8ee2bccbb1498e0a5df.jpg@310w_413h.webp
   like:
     like_tips: 关注偏好
-    like_title: 软件开发、流行潮玩
-    like_bg: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699187115421dog61.jpg
+    like_title: 软件开发、科技创意
+    like_bg: /img/dog61.jpg
     like_bottom: JavaEE Spring全家桶 NoSql Redis
   music:
     music_tips: 音乐偏好
-    music_title: G.E.M.邓紫棋、华语流行、
+    music_title: G.E.M.邓紫棋、华语流行、轻音乐
     music_bg: /img/GEM.jpg
     music_link: /music
   reward_list:
