@@ -15,10 +15,10 @@ menu:
    相册集: /imgs/ || anzhiyu-icon-images
    小空调: /air-conditioner/ || anzhiyu-icon-fan
  分享:
-   影视: /about/movies/ || anzhiyu-icon-music
+   影视: /movies/ || fas fa-video
 #   追番页: /bangumis/ || anzhiyu-icon-bilibili
-   书籍: /about/books/ || anzhiyu-icon-images
-   游戏: /about/games/ || anzhiyu-icon-fan
+   书籍: /books/ || fas fa-book
+   游戏: /games/ || fa-solid fa-gamepad
 
  关于:
    关于本人: /about/ || anzhiyu-icon-paper-plane
@@ -975,7 +975,7 @@ note:
 
 icons:
   ali_iconfont_js: # 阿里图标symbol 引用链接，主题会进行加载 symbol 引用
-  fontawesome: false #是否启用fontawesome6图标
+  fontawesome: true #是否启用fontawesome6图标
   fontawesome_animation_css: #fontawesome_animation 如果有就会加载，示例值：https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css
 
 # other
