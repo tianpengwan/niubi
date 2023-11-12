@@ -1,6 +1,6 @@
 menu:
  文章:
-   隧道: /archives/ || anzhiyu-icon-box-archive
+   归档: /archives/ || anzhiyu-icon-box-archive
    分类: /categories/ || anzhiyu-icon-shapes
    标签: /tags/ || anzhiyu-icon-tags
 
@@ -101,8 +101,8 @@ social:
 # B站: https://space.bilibili.com/503400640 || anzhiyu-icon-bilibili
    Github: https://github.com/AsteroidQiao || anzhiyu-icon-github
    B站: https://space.bilibili.com/503400640 || anzhiyu-icon-bilibili
-   微博: https://weibo.com/asteroidqiao || anzhiyu-icon-weibo
-   RSS: /atom.xml || anzhiyu-icon-rss
+#   微博: https://weibo.com/asteroidqiao || anzhiyu-icon-weibo
+#   RSS: /atom.xml || anzhiyu-icon-rss
 #   Gitee: https://gitee.com/AsteroidQiao || anzhiyu-icon-github
 #   Email: mailto:2551845461@qq.com || icon-email
 # 作者卡片 状态
@@ -208,7 +208,7 @@ error_img:
 error_404:
   enable: true
   subtitle: "请尝试站内搜索寻找文章"
-  background: https://bu.dusays.com/2023/05/08/645907596997d.gif
+  background: /img/1.gif
 
 post_meta:
   page: # Home Page
@@ -1075,16 +1075,16 @@ home_top:
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
   banner:
-    tips: 新品主题
-    title: Theme-AnZhiYu
-    image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
-    link: https://docs.anheyu.com/
+    tips: 文章推荐
+    title: Alist+RaiDrive挂载阿里云盘
+    image:
+    link:
 
 # 朋友圈配置
 friends_vue:
   enable: enable
   vue_js: /js/friends.js
-  apiurl: /img/wall7.png
+  apiurl: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699196452934wall7.png
   top_tips: 使用 友链朋友圈 订阅友链最新文章
   top_background:
 
