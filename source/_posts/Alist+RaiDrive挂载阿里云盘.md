@@ -4,12 +4,7 @@ categories: 网盘
 tags: alist
 sticky: 1
 date: 2023-07-31 09:33:25
-cover:
-   index_enable: true
-   aside_enable: true
-   archives_enable: true
-   position: both
-   default_cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699196452934wall7.png
+cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699196452934wall7.png
 ---
 
 ## Alist+RaiDrive挂载阿里云盘
