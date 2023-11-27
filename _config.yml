@@ -5,7 +5,7 @@
 # Site
 title: 成大事的小站
 subtitle: AsteroidQiao 环游的小行星
-description: 归途也还可爱
+description:
 keywords: 成果
 author: 成大事
 language: zh-CN
@@ -128,28 +128,28 @@ douban:
   id: 275624377
   builtin: false
   movie:
-    path: /movies/index.html
+    path: /Gmovies/index.html
     title: '影视列表'
     quote: '能不生气就不要生气，能不骂人就不要骂人，能动手就直接动手。'
     top_img: false
     aside: false
     option:
   book:
-    path: /books/index.html
+    path: /Gbooks/index.html
     title: '图书列表'
     quote: '多读书、多看报、少吃零食、多睡觉。'
     top_img: false
     aside: false
     option:
   game:
-    path: /games/index.html
+    path: /Ggames/index.html
     title: '游戏列表'
     quote: '最好的剑，永远是下一把'
     top_img: false
     aside: false
     option:
   song:
-    path: /songs/index.html
+    path: /Gsongs/index.html
     title: '音乐列表'
     quote: '我见过天使，遇过魔鬼，亲爱的，你到底是谁'
     top_img: false

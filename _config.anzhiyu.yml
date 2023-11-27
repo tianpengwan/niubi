@@ -121,7 +121,8 @@ author_status:
    - 💢 壮汉人狠话不多
 
 # search (搜索)
-# see https://blog.anheyu.com/posts/c27d.html#搜索系统
+# see https://blog.anheyu.com/posts/c27d.html
+#搜索系统
 # --------------------------------------
 
 # Algolia search
@@ -130,8 +131,8 @@ algolia_search:
   hits:
     per_page: 6
   tags:
-  # - 前端
-  # - Hexo
+#   - 前端
+#   - Hexo
 
 # Docsearch
 # Apply and Docs: see https://docsearch.algolia.com/

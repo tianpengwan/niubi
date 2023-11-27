@@ -1,0 +1,298 @@
+- title: 书籍列表
+  subTitle: 即使再忙，也不要忘记用书籍充实自己。
+  tips: 和 成大事一起阅读书籍
+  buttonText: 关于我
+  buttonLink: /about/
+  limit: 30
+  home_essay: true
+  top_background: /img/top.png
+  wish_list:
+    - title: 孙子兵法,
+      alt: https://book.douban.com/subject/6879356/,
+      image: https://minio.mythsman.com/douban/ec8abfdd3ca7eb7ea4f6077f63d8f5fc.jpg,
+      meta: 孙武 / 陈曦 译注 / 中华书局,
+      rating: 2023-11-01,
+      comment:
+
+#wish: [
+#  {
+#    "title": "孙子兵法",
+#    "alt": "https://book.douban.com/subject/6879356/",
+#    "image": "https://minio.mythsman.com/douban/ec8abfdd3ca7eb7ea4f6077f63d8f5fc.jpg",
+#    "meta": "孙武 / 陈曦 译注 / 中华书局",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "六个说谎的大学生",
+#    "alt": "https://book.douban.com/subject/36283547/",
+#    "image": "https://minio.mythsman.com/douban/4af48a0c30e9660ff12690a362902699.jpg",
+#    "meta": "[日] 浅仓秋成 / 四川文艺出版社",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "刀与伞",
+#    "alt": "https://book.douban.com/subject/36187796/",
+#    "image": "https://minio.mythsman.com/douban/edad568993f4e1e9534d4fc94886f570.jpg",
+#    "meta": "[日]伊吹亚门 / 新星出版社",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "中国历代政治得失",
+#    "alt": "https://book.douban.com/subject/10434849/",
+#    "image": "https://minio.mythsman.com/douban/5557f3aeee54a3d31f3623d6700edd1c.jpg",
+#    "meta": "钱穆 / 九州出版社",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "万历十五年",
+#    "alt": "https://book.douban.com/subject/26418524/",
+#    "image": "https://minio.mythsman.com/douban/10d3d37d061bbdd7462f5cc6e99ccbf4.jpg",
+#    "meta": "(美) 黄仁宇 / 生活·读书·新知三联书店",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "人类简史",
+#    "alt": "https://book.douban.com/subject/25985021/",
+#    "image": "https://minio.mythsman.com/douban/73c0c171203951b1bc9b8189731a3a73.jpg",
+#    "meta": "[以色列] 尤瓦尔·赫拉利 / 林俊宏 / 中信出版社 / 见识城邦",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "小王子",
+#    "alt": "https://book.douban.com/subject/20443559/",
+#    "image": "https://minio.mythsman.com/douban/fc3038fc413dc6e146b616a2303d6635.jpg",
+#    "meta": "[法] 安托万•德•圣埃克苏佩里 / [法国] 安东尼·德·圣-埃克苏佩里 / 李继宏 / 天津人民出版社 / 果麦文化",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "未来简史",
+#    "alt": "https://book.douban.com/subject/26945094/",
+#    "image": "https://minio.mythsman.com/douban/0aa3b59baa9ee2ad2e0838a4e90346d1.jpg",
+#    "meta": "[以色列] 尤瓦尔·赫拉利 / 林俊宏 / 中信出版社",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "神秘岛",
+#    "alt": "https://book.douban.com/subject/1275608/",
+#    "image": "https://minio.mythsman.com/douban/b8f3d2d5e6f45a406eb61ab26213bfa5.jpg",
+#    "meta": "(法)儒勒.凡尔纳 / 联星 / 中国青年出版社",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "听音乐（插图第6版）",
+#    "alt": "https://book.douban.com/subject/3095037/",
+#    "image": "https://minio.mythsman.com/douban/147c3425af5728d52c8d9b462f1924eb.jpg",
+#    "meta": "罗杰·凯密恩（Roger Kamien） / 王美珠 / 洪崇焜 / 陈美鸾 / 杨湘玲 / 世界图书出版公司 / 后浪",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "太白金星有点烦",
+#    "alt": "https://book.douban.com/subject/36328704/",
+#    "image": "https://minio.mythsman.com/douban/5dcfec9eb33c4c72517d8777ade21553.jpg",
+#    "meta": "马伯庸 / 湖南文艺出版社",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "JavaScript全栈开发",
+#    "alt": "https://book.douban.com/subject/35493728/",
+#    "image": "https://minio.mythsman.com/douban/c55f78366d8de613790fd4210a4c541e.jpg",
+#    "meta": "凌杰 / 人民邮电出版社 / 卷积传媒 / 异步图书",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "React 学习手册（第二版）",
+#    "alt": "https://book.douban.com/subject/35607428/",
+#    "image": "https://minio.mythsman.com/douban/32f64da92261b770e6486c428211a541.jpg",
+#    "meta": "[美] Alex Banks / [美] Eve Procello / 安道 / 中国电力出版社",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }, {
+#    "title": "C# 7.0 核心技术指南",
+#    "alt": "https://book.douban.com/subject/34798585/",
+#    "image": "https://minio.mythsman.com/douban/6d136a1e7af2b667b4413afa5e9dde3c.jpg",
+#    "meta": "Joseph Albahari / Ben Albahari / 刘夏 / 机械工业出版社",
+#    "rating": "2023-11-01",
+#    "comment": ""
+#  }
+#]
+#do: [
+#  {
+#    "title": "厚黑学",
+#    "alt": "https://book.douban.com/subject/1911687/",
+#    "image": "https://minio.mythsman.com/douban/4a514669c4ec54b78abfd3e13ed69cef.jpg",
+#    "meta": "李宗吾 / 群言出版社",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "未来简史",
+#    "alt": "https://book.douban.com/subject/26943161/",
+#    "image": "https://minio.mythsman.com/douban/f50e3d30d9db32c67345e7d3b495a0eb.jpg",
+#    "meta": "[以色列] 尤瓦尔·赫拉利 / 林俊宏 / 中信出版社",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "流浪地球",
+#    "alt": "https://book.douban.com/subject/30443982/",
+#    "image": "https://minio.mythsman.com/douban/32b6084972f2d07f18fc5124fc5a608d.jpg",
+#    "meta": "刘慈欣 / 四川科学技术出版社 / 科幻世界",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "刘慈欣短篇科幻小说合集",
+#    "alt": "https://book.douban.com/subject/35219858/",
+#    "image": "https://minio.mythsman.com/douban/056f38497e20f205aadc197d5da6564f.jpg",
+#    "meta": "刘慈欣 / 中文在线",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "自控力",
+#    "alt": "https://book.douban.com/subject/10786473/",
+#    "image": "https://minio.mythsman.com/douban/8846ff082e219a7d8f5aec443fce815a.jpg",
+#    "meta": "[美] 凯利·麦格尼格尔 / 王岑卉 / 文化发展出版社(原印刷工业出版社) / 磨铁图书",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "十万个为什么",
+#    "alt": "https://book.douban.com/subject/2160556/",
+#    "image": "https://minio.mythsman.com/douban/0a30bb7d2a08e354739e95ed553e4e4d.jpg",
+#    "meta": "少年儿童出版社",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "Python编程快速上手（第2版）",
+#    "alt": "https://book.douban.com/subject/35387685/",
+#    "image": "https://minio.mythsman.com/douban/abf393a448a3920e94b16a2d1dbd50aa.jpg",
+#    "meta": "[美] Al Sweigart / 王海鹏 / 人民邮电出版社 / 异步图书",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "Java EE企业级应用开发实战（Spring Boot+Vue+Element）",
+#    "alt": "https://book.douban.com/subject/36390812/",
+#    "image": "https://minio.mythsman.com/douban/74e8c9808858ed1ba76c7b3e3bb7085d.jpg",
+#    "meta": "李磊 / 人民邮电出版社",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "程序员面试金典（第6版）",
+#    "alt": "https://book.douban.com/subject/34813624/",
+#    "image": "https://minio.mythsman.com/douban/9ce27d0e902b23f6e05ffae40ac76dd5.jpg",
+#    "meta": "Gayle Laakmann McDowell / 刘博楠 / 赵鹏飞 / 李琳骁 / 漆犇 / 人民邮电出版社 / 图灵教育",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "阿里巴巴Java开发手册",
+#    "alt": "https://book.douban.com/subject/27605355/",
+#    "image": "https://minio.mythsman.com/douban/45144e23b0bf23354ae42974a03e2536.jpg",
+#    "meta": "杨冠宝 / 电子工业出版社 / 博文视点",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }
+#]
+#collect: [
+#  {
+#    "title": "三体",
+#    "alt": "https://book.douban.com/subject/2567698/",
+#    "image": "https://minio.mythsman.com/douban/352b77c9426300b32ac08b8f0db978cc.jpg",
+#    "meta": "刘慈欣 / 重庆出版社 / 科幻世界",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "三体Ⅱ",
+#    "alt": "https://book.douban.com/subject/3066477/",
+#    "image": "https://minio.mythsman.com/douban/fbc7472d7efb4a2080a8cb2c868cd4e6.jpg",
+#    "meta": "刘慈欣 / 重庆出版社 / 科幻世界",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "三体Ⅲ",
+#    "alt": "https://book.douban.com/subject/5363767/",
+#    "image": "https://minio.mythsman.com/douban/91e14c4aa53cad4823602d4a07cf80e1.jpg",
+#    "meta": "刘慈欣 / 重庆出版社 / 科幻世界",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "盗墓笔记",
+#    "alt": "https://book.douban.com/subject/6953273/",
+#    "image": "https://minio.mythsman.com/douban/7330af1f36401e0bf1f65196d9f5c8f9.jpg",
+#    "meta": "南派三叔 / 上海文化出版社",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "山月记",
+#    "alt": "https://book.douban.com/subject/30394154/",
+#    "image": "https://minio.mythsman.com/douban/92036f275e953ede859559a439c78136.jpg",
+#    "meta": "[日] 中岛敦 / 徐建雄 / 三秦出版社 / 果麦文化",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "明朝那些事儿（1-9）",
+#    "alt": "https://book.douban.com/subject/3674537/",
+#    "image": "https://minio.mythsman.com/douban/3ca0662ad5bd7186dd13690d109bcae7.jpg",
+#    "meta": "当年明月 / 中国海关出版社 / 磨铁图书",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "球状闪电",
+#    "alt": "https://book.douban.com/subject/26856061/",
+#    "image": "https://minio.mythsman.com/douban/16046aa4f18fa0a259c667bc458e5b52.jpg",
+#    "meta": "刘慈欣 / 四川科学技术出版社 / 科幻世界",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "超新星纪元",
+#    "alt": "https://book.douban.com/subject/26692194/",
+#    "image": "https://minio.mythsman.com/douban/def41c6cb98dca052981a6e58e142b4e.jpg",
+#    "meta": "刘慈欣 / 重庆出版社 / 科幻世界",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "全频带阻塞干扰",
+#    "alt": "https://book.douban.com/subject/35596034/",
+#    "image": "https://minio.mythsman.com/douban/752e4f745b44a621033425057370b2c5.jpg",
+#    "meta": "刘慈欣 原著 / [法]科琳娜·蓓 尔特兰德 主编 / 中信出版集团",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "亲密关系（第5版）",
+#    "alt": "https://book.douban.com/subject/5952488/",
+#    "image": "https://minio.mythsman.com/douban/3f1d19e5bc318419ab749dd4fb83294b.jpg",
+#    "meta": "[美] 罗兰·米勒 / [美] 丹尼尔·珀尔曼 / 王伟平 / 人民邮电出版社 / 新曲线",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "鬼吹灯-全八册",
+#    "alt": "https://book.douban.com/subject/34452623/",
+#    "image": "https://minio.mythsman.com/douban/c399970fa99496563a15199970f73d2d.jpg",
+#    "meta": "天下霸唱 / 湖南文艺出版社",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "C语言程序设计：现代方法（第2版•修订版）",
+#    "alt": "https://book.douban.com/subject/35503091/",
+#    "image": "https://minio.mythsman.com/douban/77831d94f307b89530fb60f10d4c96a7.jpg",
+#    "meta": "[美] K.N.金 / 吕秀锋 / 黄倩 / 图灵丨人民邮电出版社 / 图灵教育",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }, {
+#    "title": "Java核心技术·卷I（原书第12版）",
+#    "alt": "https://book.douban.com/subject/35920145/",
+#    "image": "https://minio.mythsman.com/douban/3c03d6c9348c35e3173559bdf1fd631a.jpg",
+#    "meta": "[美] 凯·S.霍斯特曼（Cay S.Horstmann） / 林琪 / 苏钰涵 / 机械工业出版社",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "深入分析Java Web技术内幕",
+#    "alt": "https://book.douban.com/subject/19965586/",
+#    "image": "https://minio.mythsman.com/douban/f9531bd2c6821bf62f8bb05510455966.jpg",
+#    "meta": "许令波 / 电子工业出版社",
+#    "rating": "2023-11-01 / ★★★★☆ 推荐",
+#    "comment": ""
+#  }, {
+#    "title": "程序员的自我修养",
+#    "alt": "https://book.douban.com/subject/3652388/",
+#    "image": "https://minio.mythsman.com/douban/8972e2b552c6c7d7180757dbe0192796.jpg",
+#    "meta": "俞甲子 / 石凡 / 潘爱民 / 电子工业出版社 / 博文视点",
+#    "rating": "2023-11-01 / ★★★★★ 力荐",
+#    "comment": ""
+#  }
+#]
