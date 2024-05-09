@@ -1,0 +1,56 @@
+if site.data.movies
+  each i in site.data.movies
+    #movies_page
+      .author-content.author-content-item.moviesPage.single(style = i.top_background ? `background: url(${i.top_background}) left 28% / cover no-repeat;` : "")
+        .card-content
+          .author-content-item-tips=i.title
+          span.author-content-item-title=i.subTitle
+          .content-bottom
+            .tips=i.tips
+          .banner-button-group
+            a.banner-button(href=i.buttonLink)
+              i.anzhiyufont.anzhiyu-icon-arrow-circle-right(style='font-size: 1.3rem')
+              span.banner-button-text=i.buttonText
+      #bber
+        section.timeline.page-1
+          ul#waterfall.list
+            each item, index in i.movies_list
+              //page1
+              if index < i.pagesize
+                li.bber-item
+                  .article-container
+                    span(style="display:flex;font-size:0;")
+                      if item.image
+                        .article-container-img
+                          each iten, indey in item.image
+                            a.article-container-img(href=url_for(item.image[indey]), target="_blank", data-fancybox="gallery", data-caption="" )
+                              img(src=url_for(item.image[indey]), style="width:100px;height:160px")
+                          .article-container-noimg
+                          .article-container-noimg
+                          .article-container-noimg
+                      span(style="margin-left:30px;width:60%")
+                        if item.link
+                          a.article-container-link(title="", href=url_for(item.link), rel="external nofollow", style="font-size: 20px; v1ertical-align: top;")
+                            span(style="font-size: 20px;")=item.content
+                        br
+                        if item.meta
+                          span(style="font-size: 13px;margin-top:20px;color: gray;line-height: 1.05;")=item.meta
+                        br
+                        if item.rating
+                          span(style="font-size: 13px;margin-top:20px;color: gray;line-height: 1.05;")=item.rating
+      //#bber-tips(style='color: var(--anzhiyu-secondtext);')
+      //  ="- 只展示最近" + i.pagesize + "条短文 -"
+      //.author-content.author-content-item.moviesPage.single(style ="background:white;height:90px; ")
+      //  .card-content
+      //    .banner-button-group(style="display:flex;margin-right: 25%;")
+      //      a.banner-button(href="#", style="")
+      //       span.banner-button-text="首页"
+      //      a.banner-button(href="#", style="")
+      //       span.banner-button-text="上一页"
+      //      span(style="color:black;")="第1/1页"
+      //      a.banner-button(href="#", style="")
+      //       span.banner-button-text="下一页"
+      //      a.banner-button(href="#", style="")
+      //       span.banner-button-text="尾页"
+
+

@@ -1,4 +1,9 @@
 ---
-title: movies
-date: 2023-11-05 23:46:30
+title: 影视列表
+date: 2023-11-05 23:45:54
+type: movies
+comments: true
+aside: false
+top_img: false
 ---
+>最好的剑，永远是下一把

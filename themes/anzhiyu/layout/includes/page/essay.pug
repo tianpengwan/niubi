@@ -29,7 +29,7 @@ if site.data.essay
                           .bber-content-noimg
                       if item.video
                         .bber-container-img
-                          each iten, indey in item.video  
+                          each iten, indey in item.video
                             if (item.video[indey].includes('player.bilibili.com'))
                               div(style="position: relative; padding: 30% 45%;margin-top: 10px;margin-bottom: 10px;")
                                 iframe(style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;margin: 0;border-radius: 12px;border: var(--style-border);" src=url_for(item.video[indey]) scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true")
@@ -49,7 +49,7 @@ if site.data.essay
                         - var datedata = new Date(item.date).toISOString()
                         i.anzhiyufont.anzhiyu-icon-clock
                         time.datatime(datetime= item.date)= datedata
-                      if item.link 
+                      if item.link
                         a.bber-content-link(title="跳转到短文指引的链接", href=url_for(item.link), rel="external nofollow")
                           i.anzhiyufont.anzhiyu-icon-link
                           | 链接

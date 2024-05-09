@@ -1,0 +1,730 @@
+- title: 影视列表
+  subTitle: 看一场电影，体一场人情冷暖
+  tips: 成大事在看
+  buttonText: 关于我
+  buttonLink: /about/
+  pagesize: 99
+  top_background: /img/books.png
+  movies_list:
+
+    - content: 让子弹飞
+      link: https://movie.douban.com/subject/3742360/
+      image:
+        - https://minio.mythsman.com/douban/f38348f4aa4a63afc05bc466e57d1dca.jpg
+      meta: >-
+        剧情 / 喜剧 / 动作 / 姜文 / 葛优 / 周润发 /
+        2010-12-16(中国大陆)
+      rating: 2023-11-05 / ★★★★★ 力荐
+      comment: ''
+    - content: 私人订制
+      link: https://movie.douban.com/subject/10605978/
+      image:
+        - https://minio.mythsman.com/douban/83c0a871acd8364dc0b065c44652df94.jpg
+      meta: >-
+        喜剧 / 王朔 / 王朔 / 葛优 / 白百何 / 范伟 / 2013-12-19(中国大陆)
+      rating: 2023-11-05 / ★★★★☆ 推荐
+      comment: 你就拿这个考验干部？哪个干部经不起这样的考验
+    - content: 一步之遥
+      link: https://movie.douban.com/subject/6126442/
+      image:
+        - https://minio.mythsman.com/douban/19f5a6b0ed798c203ad5e5b51e8c556b.jpg
+      meta: >-
+        剧情 / 喜剧 / 动作 / 姜文 / 葛优 / 周韵 / 2014-12-18(中国大陆)
+      rating: 2023-11-05 / ★★★★☆ 推荐
+      comment: ''
+    - content: 漫长的季节
+      link: https://movie.douban.com/subject/35588177/
+      image:
+        - https://minio.mythsman.com/douban/422302efeff40dc31af04a7ccfb99093.jpg
+      meta: >-
+        悬疑 / 家庭 / 范伟 / 秦昊 / 陈明昊 / 李庚希
+      rating: 2023-11-05 / ★★★★★ 力荐
+      comment: ''
+    - content: 狐妖小红娘
+      link: https://movie.douban.com/subject/26435736/
+      image:
+        - https://minio.mythsman.com/douban/35705d37135ba73742dc5d11cb95c68d.jpg
+      meta: >-
+        喜剧 / 爱情 / 动画 /
+      rating: 2023-11-05 / ★★★★★ 力荐
+      comment: ''
+    - content: 名侦探柯南 名探偵コナン
+      link: https://movie.douban.com/subject/1463371/
+      image:
+        - https://minio.mythsman.com/douban/02f8b47a0953984bf72c93590391a2fe.jpg
+      meta: >-
+        动作 / 动画 / 悬疑 / 惊悚 / 犯罪 / 青山刚昌 /
+      rating: 2023-11-05 / ★★★★★ 力荐
+      comment: ''
+    - content: 封神三部曲
+      link: https://movie.douban.com/subject/10604086/
+      image:
+        - https://minio.mythsman.com/douban/7ce2c2bb71029bb4f3453c02f67ce5d1.jpg
+      meta: >-
+        战争 / 奇幻 / 古装 /
+      rating: 2023-11-03 / ★★★★☆ 推荐
+      comment: >-
+        开场就很震撼，大片既视感，年轻演员演技很到位，剧情走向也很顺畅，整体都很不错，尤其是逼子杀父和最后姬发挟持纣王，非常精彩，就是姜子牙的有点绷不住，黄渤演姜子牙，有点离谱，看的很出戏，而且还把姜子牙演的这么搞笑，有一丢丢败笔
+    - content: 我不是药神
+      link: https://movie.douban.com/subject/26752088/
+      image:
+        - https://minio.mythsman.com/douban/0dd22adc7d01837fb120f71df3b916fa.jpg
+      meta: >-
+        剧情 / 喜剧 / 徐峥 / 王传君 / 周一围 / 谭卓 / 章宇 / 2018-07-05(中国大陆) /
+      rating: 2023-11-02 / ★★★★☆ 推荐
+      comment: ''
+    - content: 无双 無雙
+      link: https://movie.douban.com/subject/26425063/
+      image:
+        - https://minio.mythsman.com/douban/c3ee6060b2f67ea4e4f93ced21e33240.jpg
+      meta: >-
+        剧情 / 动作 / 悬疑 / 犯罪 2018-09-30(中国大陆) /
+        2018-10-04(中国香港)
+      rating: 2023-11-02 / ★★★★☆ 推荐
+      comment: ''
+    - content: 功勋
+      link: https://movie.douban.com/subject/34951103/
+      image:
+        - https://minio.mythsman.com/douban/3133a074106a2413875283eb14b0dc0a.jpg
+      meta: >-
+        剧情 / 传记 /
+      rating: 2023-11-02 / ★★★★★ 力荐
+      comment: ''
+    - content: 你好，李焕英
+      link: https://movie.douban.com/subject/34841067/
+      image:
+        - https://minio.mythsman.com/douban/42f1ee92b239bd11ddb4643ea4c1647b.jpg
+      meta: >-
+        剧情 / 喜剧 / 奇幻/ 贾玲 / 张小斐 / 沈腾 /
+        2021-02-12(中国大陆)
+      rating: 2023-11-02 / ★★★★★ 力荐
+      comment: ''
+    - content: 扬名立万
+      link: https://movie.douban.com/subject/35422807/
+      image:
+        - https://minio.mythsman.com/douban/6d867d5bc6b5de009422ad35167f222b.jpg
+      meta: >-
+        剧情 / 喜剧 / 悬疑 /
+        2021-11-11(中国大陆)
+      rating: 2023-11-02 / ★★★★★ 力荐
+      comment: ''
+    - content: 肖申克的救赎 The Shawshank Redemption
+      link: https://movie.douban.com/subject/1292052/
+      image:
+        - https://minio.mythsman.com/douban/813b64e39275b6c22e134a69ed102b02.jpg
+      meta: >-
+        剧情 / 犯罪 / 1994-10-14(美国)
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: 以前觉得无语是在监狱外面看，后来才知道我一直在里面看。很好看的电影啊，赶快逃离舒适区吧，习惯了舒适区可应对不了这个瞬息万变的社会。
+    - content: 繁城之下
+      link: https://movie.douban.com/subject/35725842/
+      image:
+        - https://minio.mythsman.com/douban/c210aa670e67798296727c4ec9a403ad.jpg
+      meta: >-
+        悬疑 / 犯罪 / 古装 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: 老戏骨和小演员演技都不错，剧情和看大片电影一样，就是主角有点拉，还有太短了，不够看，结局有一点点块，有点烂尾
+    - content: 龙岭迷窟
+      link: https://movie.douban.com/subject/30488569/
+      image:
+        - https://minio.mythsman.com/douban/9f8001f9c5246a06f580e2e3b8cf5977.jpg
+      meta: >-
+        剧情 / 动作 / 冒险 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 老友记 第二季 Friends Season 2
+      link: https://movie.douban.com/subject/3286528/
+      image:
+        - https://minio.mythsman.com/douban/633c8833d1169ea2edde456890368b0c.jpg
+      meta: >-
+        喜剧 / 爱情 / 玛尔塔·考夫曼 / 大卫·克拉尼 / 玛尔塔·考夫曼 / 大卫·克拉尼 / 詹妮弗·安妮斯顿 / 柯特妮·考克斯 /
+        丽莎·库卓 / 马特·勒布朗 / 马修·派瑞 / 大卫·休默
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 老友记 第一季 Friends Season 1
+      link: https://movie.douban.com/subject/1393859/
+      image:
+        - https://minio.mythsman.com/douban/31be981fc1bf0cb164d5596eff163d21.jpg
+      meta: >-
+        喜剧 / 爱情 / 加里·哈勒沃尔森 / 凯文·布莱特 / 加里·哈勒沃尔森 / 凯文·布莱特 / 詹妮弗·安妮斯顿 / 柯特妮·考克斯 /
+        丽莎·库卓 / 马特·勒布朗 / 马修·派瑞 / 大卫·休默 / 詹姆斯·迈克尔·泰勒
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 去有风的地方
+      link: https://movie.douban.com/subject/35662223/
+      image:
+        - https://minio.mythsman.com/douban/924b08ed047763974aa033fd854d1d4e.jpg
+      meta: >-
+        剧情 / 刘亦菲 / 李现 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: 很治愈的剧，看的很共鸣，很放松
+    - content: 西部世界 第一季 Westworld Season 1
+      link: https://movie.douban.com/subject/2338055/
+      image:
+        - https://minio.mythsman.com/douban/ebfcaa09f0185f4c439e512347ad2966.jpg
+      meta: >-
+        科幻 / 西部 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 西部世界 第二季 Westworld Season 2
+      link: https://movie.douban.com/subject/26887174/
+      image:
+        - https://minio.mythsman.com/douban/4f16f3e780787d6b25290466c00756cc.jpg
+      meta: >-
+        科幻 / 西部 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 西部世界 第三季 Westworld Season 3
+      link: https://movie.douban.com/subject/30206389/
+      image:
+        - https://minio.mythsman.com/douban/29afb41e63edffb949e005219a4971de.jpg
+      meta: >-
+        科幻 / 西部 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 西部世界 第四季 Westworld Season 4
+      link: https://movie.douban.com/subject/35042913/
+      image:
+        - https://minio.mythsman.com/douban/b8849b02031b28dc0a89328ba84ebbbf.jpg
+      meta: >-
+        科幻 / 西部 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: '变形金刚：领袖之证 第三季 Transformers Prime: Beast Hunters Season 3'
+      link: https://movie.douban.com/subject/24860346/
+      image:
+        - https://minio.mythsman.com/douban/f46760370e5dab5f90c4ea9b3f087cc3.jpg
+      meta: >-
+        动作 /  冒险 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: 重温金典，n刷，剧情真不错
+    - content: 变形金刚：领袖之证 第一季 Transformers Prime Season 1
+      link: https://movie.douban.com/subject/5151730/
+      image:
+        - https://minio.mythsman.com/douban/00d88e23a0f41152d4bfe93b39fa32e4.jpg
+      meta: >-
+        动作 / 科幻 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: 重温金典，n刷，剧情真不错
+    - content: 变形金刚：领袖之证 第二季 Transformers Prime Season 2
+      link: https://movie.douban.com/subject/10727045/
+      image:
+        - https://minio.mythsman.com/douban/dfe14e8ca1661e26bd95e44e2c9768d5.jpg
+      meta: >-
+        动作 / 科幻 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: 重温金典，n刷，剧情真不错
+    - content: '变形金刚之狩魔之战：巨狰狞的崛起 '
+      link: https://movie.douban.com/subject/25727217/
+      image:
+        - https://minio.mythsman.com/douban/6392031ec918e5a83961d53df5b44958.jpg
+      meta: >-
+        动画 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: 重温金典，n刷，剧情真不错
+    - content: 生化危机 Resident Evil
+      link: https://movie.douban.com/subject/1306809/
+      image:
+        - https://minio.mythsman.com/douban/74d7027b15312c7e6e5e86ac5376c9af.jpg
+      meta: >-
+        动作 / 科幻 / 恐怖 /2002-03-15(美国)
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: '生化危机2：启示录 Resident Evil: Apocalypse'
+      link: https://movie.douban.com/subject/1308752/
+      image:
+        - https://minio.mythsman.com/douban/0c9ecdf4ff8eddd5453074b4dd9ed79c.jpg
+      meta: >-
+        动作 / 科幻 / 恐怖 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: '生化危机3：灭绝 Resident Evil: Extinction'
+      link: https://movie.douban.com/subject/1482911/
+      image:
+        - https://minio.mythsman.com/douban/267f4a8b963bba75bac5a5f016efc611.jpg
+      meta: >-
+        动作 / 科幻 / 恐怖 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: '生化危机4：战神再生 Resident Evil: Afterlife'
+      link: https://movie.douban.com/subject/3041294/
+      image:
+        - https://minio.mythsman.com/douban/ff072fababab27b5a9ed2be1dfcd9c2c.jpg
+      meta: >-
+        动作 / 科幻 / 恐怖
+        2010-09-10(美国)
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: '生化危机5：惩罚 Resident Evil: Retribution'
+      link: https://movie.douban.com/subject/6532822/
+      image:
+        - https://minio.mythsman.com/douban/4ff8c3faa716caa4cf2c13b9cd55f165.jpg
+      meta: >-
+        动作 / 科幻 / 恐怖 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: '生化危机：终章 Resident Evil: The Final Chapter'
+      link: https://movie.douban.com/subject/20471852/
+      image:
+        - https://minio.mythsman.com/douban/6a6b04a5b39943ae5a7d933ae904f47f.jpg
+      meta: >-
+        动作 / 科幻 / 恐怖 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 异形 Alien
+      link: https://movie.douban.com/subject/1300868/
+      image:
+        - https://minio.mythsman.com/douban/ef7b37ce85ade786430ad0ba869ad0df.jpg
+      meta: >-
+        科幻 / 恐怖 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 太空旅客 Passengers
+      link: https://movie.douban.com/subject/3434070/
+      image:
+        - https://minio.mythsman.com/douban/96bf83052c3ec664f4ca27910d1e26f4.jpg
+      meta: >-
+        科幻 / 冒险 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 开端
+      link: https://movie.douban.com/subject/35332289/
+      image:
+        - https://minio.mythsman.com/douban/d758bc53cbdd42daa903fe80b58d16b3.jpg
+      meta: >-
+        剧情 /白敬亭 / 赵今麦 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 狂飙
+      link: https://movie.douban.com/subject/35465232/
+      image:
+        - https://minio.mythsman.com/douban/c866507c91b161e5ff9d5c82f7a53896.jpg
+      meta: >-
+        剧情 / 犯罪 / 张译 / 张颂文 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 显微镜下的大明
+      link: https://movie.douban.com/subject/35465011/
+      image:
+        - https://minio.mythsman.com/douban/6a04a72629dc44b5b5184823ee2c25fa.jpg
+      meta: 剧情 / 悬疑 / 古装 / 张若昀 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 庆余年 第一季
+      link: https://movie.douban.com/subject/25853071/
+      image:
+        - https://minio.mythsman.com/douban/1cee5fa9e28fa3c9d0aac5a3bcfcd6c1.jpg
+      meta: >-
+        剧情 / 古装 / 张若昀 / 李沁 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 雪中悍刀行
+      link: https://movie.douban.com/subject/27034752/
+      image:
+        - https://minio.mythsman.com/douban/227674467e2cbcf72c3a4269156446e1.jpg
+      meta: >-
+        剧情 / 武侠 / 古装 /张若昀 / 李庚希
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 谍战深海之惊蛰
+      link: https://movie.douban.com/subject/30464506/
+      image:
+        - https://minio.mythsman.com/douban/f3bf0e6cd6a99a1f11d4531b737fd384.jpg
+      meta: >-
+        剧情 /张若昀 / 王鸥 / 孙艺洲 / 阚清子
+        姚安濂
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 黑狐
+      link: https://movie.douban.com/subject/5993188/
+      image:
+        - https://minio.mythsman.com/douban/7a08deb81c321f69e0e92364ac98df61.jpg
+      meta: >-
+        战争 / 张若昀 /  文章 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 雪豹
+      link: https://movie.douban.com/subject/4917908/
+      image:
+        - https://minio.mythsman.com/douban/0b69ed9c1d95c4873523ddea627b0a45.jpg
+      meta: >-
+        剧情 / 战争 / 文章 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 他是谁
+      link: https://movie.douban.com/subject/35873870/
+      image:
+        - https://minio.mythsman.com/douban/19d4b9c901c705e5a3516dded5e80911.jpg
+      meta: >-
+        剧情 / 悬疑 / 犯罪 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 狐妖小红娘剧场版：下沙
+      link: https://movie.douban.com/subject/26685413/
+      image:
+        - https://minio.mythsman.com/douban/b83c7b7ffcc833d0d13e069f8a89e6ff.jpg
+      meta: 动画 / 小新 / 小新 / 杨天翔 / 刘校妤 / 乔诗语 / 2015-12-11
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 狐妖小红娘剧场版：千颜
+      link: https://movie.douban.com/subject/27101874/
+      image:
+        - https://minio.mythsman.com/douban/199cb34fe45e797a86abd8dec85762e0.jpg
+      meta: >-
+        剧情 / 爱情 / 动画 / 奇幻
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 狐妖小红娘·月红2
+      link: https://movie.douban.com/subject/35489154/
+      image:
+        - https://minio.mythsman.com/douban/9fa41b0f0416898c6491093b69869f4e.jpg
+      meta: >-
+        剧情 / 动画 /
+        2021-08-14(中国大陆)
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 狐妖小红娘剧场版：月红篇
+      link: https://movie.douban.com/subject/26972694/
+      image:
+        - https://minio.mythsman.com/douban/eb7bf1cb8aa68a331d236a663d5c5ffa.jpg
+      meta: >-
+        爱情 / 动画 / 奇幻 /
+        2016-06-24(中国大陆)
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 狐妖小红娘剧场版：王权富贵
+      link: https://movie.douban.com/subject/26946612/
+      image:
+        - https://minio.mythsman.com/douban/28591d3e8bedfa7dc4da04f3c11a2c19.jpg
+      meta: >-
+        剧情 / 喜剧 / 爱情 / 动画 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 狐妖小红娘 无暮篇
+      link: https://movie.douban.com/subject/36055455/
+      image:
+        - https://minio.mythsman.com/douban/e704ec35a97245de9023f2decb57d006.jpg
+      meta: 动画
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 一人之下 第一季
+      link: https://movie.douban.com/subject/26815153/
+      image:
+        - https://minio.mythsman.com/douban/41bd78575898cd05cad6fe20d175f90e.jpg
+      meta: >-
+        喜剧 / 动作 / 动画 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 一人之下 第二季
+      link: https://movie.douban.com/subject/27034748/
+      image:
+        - https://minio.mythsman.com/douban/5970fe54b41132a717baeed7a34052a0.jpg
+      meta: >-
+        喜剧 / 动作 / 动画 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 一人之下 第三季
+      link: https://movie.douban.com/subject/34456079/
+      image:
+        - https://minio.mythsman.com/douban/98d23427305ea782ce9e4d1920732c81.jpg
+      meta: 动画 / 米二 / 米二
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 一人之下 第四季
+      link: https://movie.douban.com/subject/35169989/
+      image:
+        - https://minio.mythsman.com/douban/433825bf7ea4b198e2b00640c6287b46.jpg
+      meta: 剧情 / 动画 / 冒险
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 剑网3·侠肝义胆沈剑心 第一季
+      link: https://movie.douban.com/subject/30243303/
+      image:
+        - https://minio.mythsman.com/douban/d42191ca8499be8a40b574bc7056de1f.jpg
+      meta: 剧情 / 喜剧 / 动画 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 剑网3·侠肝义胆沈剑心 第二季
+      link: https://movie.douban.com/subject/34845689/
+      image:
+        - https://minio.mythsman.com/douban/8a600a7bbdbdcb19037000420ae46aba.jpg
+      meta: 剧情 / 喜剧 / 动画 / 武侠
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 剑网3·侠肝义胆沈剑心 第三季
+      link: https://movie.douban.com/subject/35198625/
+      image:
+        - https://minio.mythsman.com/douban/4b9f20ca4a5819012c4a947e3ade4ba6.jpg
+      meta: 剧情 / 喜剧 / 动画 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 剑网3·侠肝义胆沈剑心之长漂
+      link: https://movie.douban.com/subject/35196790/
+      image:
+        - https://minio.mythsman.com/douban/ae6ec5ce251f36957727feb35dbd945e.jpg
+      meta: 剧情 / 喜剧 / 动画 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 终结的炽天使 終わりのセラフ
+      link: https://movie.douban.com/subject/25972405/
+      image:
+        - https://minio.mythsman.com/douban/d561b18055c345978a5fe522190053f9.jpg
+      meta: >-
+        动作 / 动画 / 奇幻 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 终结的炽天使：名古屋决战篇 終わりのセラフ 名古屋決戦編
+      link: https://movie.douban.com/subject/26368434/
+      image:
+        - https://minio.mythsman.com/douban/94518c14463ea0ecfaa899636f35f6ce.jpg
+      meta: >-
+        动作 / 动画 / 奇幻 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 伍六七
+      link: https://movie.douban.com/subject/27624762/
+      image:
+        - https://minio.mythsman.com/douban/0e3c14f50b311c90a90c6acfd8b890ab.jpg
+      meta: >-
+        剧情 / 喜剧 / 动作 / 动画 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 伍六七之最强发型师
+      link: https://movie.douban.com/subject/30371751/
+      image:
+        - https://minio.mythsman.com/douban/ea34b86666a9c7ecd7057f5be9b522ec.jpg
+      meta: 剧情 / 喜剧 / 动作 / 动画 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 伍六七之玄武国篇
+      link: https://movie.douban.com/subject/35161255/
+      image:
+        - https://minio.mythsman.com/douban/fc3002f444199afcd0467ff24c27f1e9.jpg
+      meta:  剧情 / 喜剧 / 动作 / 动画 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 伍六七之暗影宿命
+      link: https://movie.douban.com/subject/36093359/
+      image:
+        - https://minio.mythsman.com/douban/4201639b3ade630f016783e6b4320967.jpg
+      meta:  剧情 / 喜剧 / 动作 / 动画 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 镇魂街 第一季
+      link: https://movie.douban.com/subject/26392671/
+      image:
+        - https://minio.mythsman.com/douban/7f9f0e284b64b1842674e4a64b3700bf.jpg
+      meta: >-
+        剧情 / 动作 / 动画 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 爱情公寓
+      link: https://movie.douban.com/subject/3926132/
+      image:
+        - https://minio.mythsman.com/douban/58a2730b184e07d736f5368265d15232.jpg
+      meta: 喜剧 / 爱情 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 爱情公寓2
+      link: https://movie.douban.com/subject/4707205/
+      image:
+        - https://minio.mythsman.com/douban/79cc80d11bf606c2c20a9056cba46fe3.jpg
+      meta: 喜剧 / 爱情 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 爱情公寓3
+      link: https://movie.douban.com/subject/6312211/
+      image:
+        - https://minio.mythsman.com/douban/78b152eceecdb823f508bce02d912cfb.jpg
+      meta: >-
+        剧情 / 喜剧 / 爱情 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 爱情公寓4
+      link: https://movie.douban.com/subject/10793510/
+      image:
+        - https://minio.mythsman.com/douban/002aae4a49ca474eee461958ff7f0c59.jpg
+      meta: 喜剧 / 爱情 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 爱情公寓5
+      link: https://movie.douban.com/subject/25931446/
+      image:
+        - https://minio.mythsman.com/douban/d2b8e587edf201e3a091407cbf6170a4.jpg
+      meta: >-
+        喜剧 / 爱情 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 流浪地球2
+      link: https://movie.douban.com/subject/35267208/
+      image:
+        - https://minio.mythsman.com/douban/7d34fbbd31f8dc845a4888a75cba402c.jpg
+      meta: >-
+        科幻 / 冒险 / 灾难 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 我爱你！
+      link: https://movie.douban.com/subject/35818074/
+      image:
+        - https://minio.mythsman.com/douban/a73a737e4fbbce111180a9fe70b25e89.jpg
+      meta: 剧情 / 爱情 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 满江红
+      link: https://movie.douban.com/subject/35766491/
+      image:
+        - https://minio.mythsman.com/douban/cc2120d014a1ed1e943879a81ddc1f79.jpg
+      meta: >-
+        剧情 / 喜剧 / 悬疑 / 古装 /
+      rating: 2023-11-01 / ★★★☆☆ 还行
+      comment: 搞笑是真搞笑，剧情是真没有，篡改历史，还洗白秦桧，抛开历史是不错，问题上你演历史剧不能尊重历史还算什么历史剧啊？，强行煽情，比较拉夸。
+    - content: 警察荣誉
+      link: https://movie.douban.com/subject/35429466/
+      image:
+        - https://minio.mythsman.com/douban/fd524b675881dfc0353ecfe4359a5956.jpg
+      meta: >-
+        剧情 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 梦华录
+      link: https://movie.douban.com/subject/35231822/
+      image:
+        - https://minio.mythsman.com/douban/f8f78421f37078f5a72bec34e4338f91.jpg
+      meta: >-
+        剧情 / 爱情 / 古装 /
+      rating: 2023-11-01 / ★★★☆☆ 还行
+      comment: ''
+    - content: 对手
+      link: https://movie.douban.com/subject/35235428/
+      image:
+        - https://minio.mythsman.com/douban/1733dc2ba7a5a3f5599b8a50a7673c48.jpg
+      meta: >-
+        剧情 / 悬疑 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 觉醒年代
+      link: https://movie.douban.com/subject/30228394/
+      image:
+        - https://minio.mythsman.com/douban/0075c477a8850a21b631464a029c3502.jpg
+      meta: >-
+        剧情 / 历史 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 财阀家的小儿子 재벌집 막내아들
+      link: https://movie.douban.com/subject/30291070/
+      image:
+        - https://minio.mythsman.com/douban/8eaeaf1046c2db8207e9a9f41208443d.jpg
+      meta: >-
+        剧情 / 爱情 / 奇幻 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 鱿鱼游戏 第一季 오징어 게임
+      link: https://movie.douban.com/subject/34812928/
+      image:
+        - https://minio.mythsman.com/douban/768237fa8e833e74f09e79abd471fe78.jpg
+      meta: >-
+        悬疑 / 惊悚 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 三体
+      link: https://movie.douban.com/subject/26647087/
+      image:
+        - https://minio.mythsman.com/douban/6cd51979f004cede9bb972f5f5555a40.jpg
+      meta: >-
+        剧情 / 科幻 /
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 迪迦奥特曼 ウルトラマンティガ
+      link: https://movie.douban.com/subject/2264567/
+      image:
+        - https://minio.mythsman.com/douban/cb1a5c594a4f14b4609cacc049d14493.jpg
+      meta: >-
+        动作 / 科幻 / 奇幻 / 冒险 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 迪迦奥特曼：最终圣战 ウルトラマンティガ THE FINAL ODYSSEY
+      link: https://movie.douban.com/subject/3321892/
+      image:
+        - https://minio.mythsman.com/douban/bc360114823ba5cc1ae45deae005e5e7.jpg
+      meta: >-
+        动作 / 科幻 / 奇幻 / 冒险 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 超兽武装之勇者无惧
+      link: https://movie.douban.com/subject/10728463/
+      image:
+        - https://minio.mythsman.com/douban/a13cfec9cea6a2a007d18be1448d6eba.jpg
+      meta: >-
+        科幻 / 动画 /  冒险 /
+        陈轶 / 高全胜 / 刘筱天 / 王巍
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 超兽武装之仁者无敌
+      link: https://movie.douban.com/subject/6126501/
+      image:
+        - https://minio.mythsman.com/douban/a0eb4db0cf1336831250d8197e996802.jpg
+      meta: >-
+        动作 / 科幻 / 动画 /
+        李团 / 陈轶 / 高全胜 / 刘筱天 / 王巍
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 果宝特攻
+      link: https://movie.douban.com/subject/4840353/
+      image:
+        - https://minio.mythsman.com/douban/d9f34303a762bba90004f1b93e6328c8.jpg
+      meta: 喜剧 / 动作 / 动画 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 果宝特攻2
+      link: https://movie.douban.com/subject/10573507/
+      image:
+        - https://minio.mythsman.com/douban/6ca36f8fa3f5183ef1a3283ebfc50091.jpg
+      meta: >-
+        喜剧 / 动作 / 动画 /
+        赵俊驹 / 祖晴 / 陆双 / 王巍 / 李团 / 廖春玉 / 鞠月斌 / 赵然 / 刘筱天 / 马瑞 / 邓红 / 陈轶
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 果宝特攻3
+      link: https://movie.douban.com/subject/25857295/
+      image:
+        - https://minio.mythsman.com/douban/759fbc17b6c706989f60a823f6870c46.jpg
+      meta: >-
+        喜剧 / 动作 / 动画 /
+        / 邓红 / 王巍 / 李团
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 哈尔的移动城堡 ハウルの動く城
+      link: https://movie.douban.com/subject/1308807/
+      image:
+        - https://minio.mythsman.com/douban/5aeaa5469985839ee79d60c80c3e6eab.jpg
+      meta: >-
+        动画 / 奇幻 / 冒险 / 宫崎骏
+        2004-09-05(威尼斯电影节) / 2004-11-20(日本)
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 天空之城 天空の城ラピュタ
+      link: https://movie.douban.com/subject/1291583/
+      image:
+        - https://minio.mythsman.com/douban/65e7534a4679be627b941520e40fca47.jpg
+      meta: >-
+        动画 / 奇幻 / 冒险 / 宫崎骏 /
+        1986-08-02(日本)
+      rating: 2023-11-01 / ★★★★☆ 推荐
+      comment: ''
+    - content: 夏洛特烦恼
+      link: https://movie.douban.com/subject/25964071/
+      image:
+        - https://minio.mythsman.com/douban/1c744f1b58b57c8ceca9733ef2f9d8f0.jpg
+      meta: >-
+        喜剧 / 爱情 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+    - content: 流浪地球
+      link: https://movie.douban.com/subject/26266893/
+      image:
+        - https://minio.mythsman.com/douban/5b3c4783dc8ca575151182a0fbe4ffb5.jpg
+      meta: >-
+        科幻 / 冒险 / 灾难 /
+      rating: 2023-11-01 / ★★★★★ 力荐
+      comment: ''
+

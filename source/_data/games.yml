@@ -1,0 +1,186 @@
+- title: 游戏列表
+  subTitle: 玩一场游戏，度过无聊的时光
+  tips: 成大事 在玩
+  buttonText: 关于我
+  buttonLink: /about/
+  pagesize: 99
+  top_background: /img/books.png
+  games_list:
+
+      - content: 强力冲洗模拟器 PowerWash Simulator
+        link: https://www.douban.com/game/35471359/
+        image:
+          - https://minio.mythsman.com/douban/58f04b14f2bf1df1523078ca7e532d93.jpg
+        meta: PC / 游戏 / 模拟 / FuturLab / FuturLab
+        rating: 2023-11-01 / ★★★★★ 力荐
+
+      - content: 桥梁构造者 Poly Bridge
+        link: https://www.douban.com/game/26615419/
+        image:
+          - https://minio.mythsman.com/douban/403c0fa9423084ff97d789f62d8f80d9.jpg
+        meta: PC / Mac / iPhone / iPad / Nintendo Switch / Linux / 游戏 / 益智 / 模拟
+        rating: 2023-11-01 / ★★★★★ 力荐
+
+      - content: 小小梦魇 Little Nightmares
+        link: https://www.douban.com/game/26968745/
+        image:
+          - https://minio.mythsman.com/douban/6a6d721f5b4f6c945bf34b8ebd42ef1d.jpg
+        meta: >-
+          PC / Android / PS4 / Xbox One / Nintendo Switch / 游戏 / 横版过关 / 冒险 / 动作 /
+          Tarsier Studios / Bandai Namco Entertainment
+        rating: 2023-11-01 / ★★★★★ 力荐
+
+      - content: 小小梦魇2 Little Nightmares II
+        link: https://www.douban.com/game/34800645/
+        image:
+          - https://minio.mythsman.com/douban/eff402f0a91d2261981ac0848dab1928.jpg
+        meta: >-
+          PC / PS4 / Xbox One / Nintendo Switch / PS5 / XSX / Stadia / 游戏 / 横版过关 /
+          冒险 / 动作 / Tarsier Studios / Bandai Namco Entertainment
+        rating: 2023-11-01 / ★★★★★ 力荐
+
+      - content: 穿越火线 크로스파이어
+        link: https://www.douban.com/game/10740751/
+        image:
+          - https://minio.mythsman.com/douban/c9b735cb8beab771bb5faa60bae7f93a.jpg
+        meta: PC / 游戏 / 第一人称射击 / 大型多人在线 / Neowiz Games / Tencent Games
+        rating: 2023-11-01 / ★★★☆☆ 还行
+
+      - content: '反恐精英：全球攻势 Counter-Strike: Global Offensive'
+        link: https://www.douban.com/game/23079363/
+        image:
+          - https://minio.mythsman.com/douban/71e98d85330d57667d536186b0de8037.jpg
+        meta: >-
+          PC / Mac / 游戏 / 第一人称射击
+        rating: 2023-11-01 / ★★★☆☆ 还行
+
+      - content: 双人成行 It Takes Two
+        link: https://www.douban.com/game/35110438/
+        image:
+          - https://minio.mythsman.com/douban/1a195e4149c97417c7cfe3982cceb087.jpg
+        meta: >-
+          PC / PS4 / Xbox One / Nintendo Switch / PS5 / XSX / 游戏 / 冒险 / 动作 /
+          Electronic Arts
+        rating: 2023-11-01 / ★★★★★ 力荐
+
+      - content: 鹅鸭杀 Goose Goose Duck
+        link: https://www.douban.com/game/35943819/
+        image:
+          - https://minio.mythsman.com/douban/f480f789f4633149359ceaede469b122.jpg
+        meta: PC / 游戏 / 大型多人在线 / 策略
+        rating: 2023-11-01 / ★★★★☆ 推荐
+
+      - content: '人类：一败涂地 Human: Fall Flat'
+        link: https://www.douban.com/game/26864634/
+        image:
+          - https://minio.mythsman.com/douban/12658c5377e089b4b6289b4fdf10b87e.jpg
+        meta: PC / Mac / PS4 / Xbox One / Nintendo Switch / 游戏 / 益智 / 冒险
+        rating: 2023-11-01 / ★★★★☆ 推荐
+
+      - content: 泰坦陨落2 Titanfall 2
+        link: https://www.douban.com/game/26771824/
+        image:
+          - https://minio.mythsman.com/douban/5244e274cf5559b0a6f36a62b8e492a0.jpg
+        meta: >-
+          PC / PS4 / Xbox One / PS5 / XSX / 游戏 / 第一人称射击 / 大型多人在线 / 射击 / 冒险 / 动作 /
+          Respawn Entertainment / Electronic Arts
+        rating: 2023-11-01 / ★★★★★ 力荐
+
+      - content: '糖豆人: 终极淘汰赛 Fall Guys: Ultimate Knockout'
+        link: https://www.douban.com/game/35055474/
+        image:
+          - https://minio.mythsman.com/douban/ea4c777ee997ad9c733bf77d74e00d4e.jpg
+        meta: PC / PS4 / Xbox One / Nintendo Switch / PS5 / XSX / 游戏 / 大型多人在线 / 动作
+        rating: 2023-11-01 / ★★★★☆ 推荐
+
+      - content: 故事叙述者 Storyteller
+        link: https://www.douban.com/game/30209827/
+        image:
+          - https://minio.mythsman.com/douban/61fc94b46bd584cf22a56eee560ced83.jpg
+        meta: PC / Nintendo Switch / 游戏 / 冒险
+        rating: 2023-11-01 / ★★★★★ 力荐
+
+      - content: 笼中窥梦 Moncage
+        link: https://www.douban.com/game/34997500/
+        image:
+          - https://minio.mythsman.com/douban/0fa1120b1f600be7bdaca9a447f4f440.jpg
+        meta: PC / Mac / iPhone / iPad / Android / Nintendo Switch / 游戏 / 益智 / 冒险
+        rating: 2023-11-01 / ★★★★☆ 推荐
+
+      - content: 赛博朋克 2077 Cyberpunk 2077
+        link: https://www.douban.com/game/25931998/
+        image:
+          - https://minio.mythsman.com/douban/a0fa34f60f9db62d4828561703bfdcdc.jpg
+        meta: >-
+          PC / PS4 / Xbox One / PS5 / XSX / 游戏 / 第一人称射击 / 射击 / 角色扮演 / 冒险 / 动作 / CD
+          Projekt RED Sp. z o.o. / CD Projekt Sp. z o.o.
+        rating: 2023-11-01 / ★★★★☆ 推荐
+
+      - content: 侠盗猎车手4 Grand Theft Auto IV
+        link: https://www.douban.com/game/10749581/
+        image:
+          - https://minio.mythsman.com/douban/cf1d9a49209830c5f915051d74f8c5d9.jpg
+        meta: >-
+          PC / PS3 / Xbox 360 / 游戏 / 射击 / 冒险 / 动作 / Rockstar North / Rockstar
+          Games
+        rating: 2023-11-01 / ★★★★☆ 推荐
+        
+      - content: 和平精英
+        link: https://www.douban.com/game/33438620/
+        image:
+          - https://minio.mythsman.com/douban/b640de5aec3432f49ac332569cad9b84.jpg
+        meta: iPhone / iPad / Android / 游戏 / 大型多人在线 / 射击
+        rating: 2023-11-01 / ★★★☆☆ 还行
+        
+      - content: 原神
+        link: https://www.douban.com/game/34441376/
+        image:
+          - https://minio.mythsman.com/douban/71c9c0eb43f751f567eaf446711920b3.jpg
+        meta: PC / iPhone / iPad / Android / PS4 / PS5 / 游戏 / 冒险 / 动作
+        rating: 2023-11-01 / ★★★★★ 力荐
+  
+      - content: 王者荣耀
+        link: https://www.douban.com/game/26655376/
+        image:
+          - https://minio.mythsman.com/douban/02f4a646dc778c9b82503c39c03e986c.jpg
+        meta: iPhone / iPad / Android / 游戏 / 大型多人在线 / Tencent Games
+        rating: 2023-11-01 / ★★★☆☆ 还行
+        
+      - content: 饥荒联机版 Don't Starve Together
+        link: https://www.douban.com/game/26419552/
+        image:
+         - https://minio.mythsman.com/douban/faddfe86e1c9955b860c80dfdb19b680.jpg
+        meta: PC / Mac / PS4 / Xbox One / Nintendo Switch / Linux / 游戏 / 冒险 / 动作
+        rating: '2023-11-01'
+
+      - content: '永劫无间 Naraka: Bladepoint'
+        link: https://www.douban.com/game/35156043/
+        image:
+         - https://minio.mythsman.com/douban/275257ffcf0115bd6e6c0fe494f064b7.jpg
+        meta: PC / PS5 / XSX / 游戏 / 大型多人在线 / 射击 / 格斗 / 动作
+        rating: '2023-11-01'
+
+      - content: 森林 The Forest
+        link: https://www.douban.com/game/30226211/
+        image:
+         - https://minio.mythsman.com/douban/50bb2bfeddf49f7babe667eaa5c0eb29.jpg
+        meta: PC / PS4 / 游戏 / 角色扮演 / 冒险 / Endnight Games / Endnight Games
+        rating: '2023-11-01'
+
+      - content: 塞尔达传说 王国之泪 ゼルダの伝説 ティアーズ オブ ザ キングダム
+        link: https://www.douban.com/game/34430168/
+        image:
+         - https://minio.mythsman.com/douban/0beeb69f488643696cf66f8156da9524.jpg
+        meta: Nintendo Switch / 游戏 / 冒险 / 动作 / Nintendo
+        rating: '2023-11-01'
+
+      - content: 塞尔达传说：旷野之息 ゼルダの伝説 ブレス オブ ザ ワイルド
+        link: https://www.douban.com/game/26817171/
+        image:
+         - https://minio.mythsman.com/douban/82aa9a93d5561d15285fef75890e005a.jpg
+        meta: Wii U / Nintendo Switch / 游戏 / 动作冒险 / Nintendo EAD / Nintendo
+        rating: '2023-11-01'
+
+
+
+
