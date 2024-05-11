@@ -4,7 +4,7 @@
   buttonText: 关于我
   buttonLink: /about/
   pagesize: 99
-  top_background: /img/books.png
+  top_background: /img/games.png
   games_list:
 
       - content: 强力冲洗模拟器 PowerWash Simulator

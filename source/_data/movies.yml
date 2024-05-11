@@ -4,7 +4,7 @@
   buttonText: 关于我
   buttonLink: /about/
   pagesize: 99
-  top_background: /img/books.png
+  top_background: /img/movies.png
   movies_list:
 
     - content: 让子弹飞
