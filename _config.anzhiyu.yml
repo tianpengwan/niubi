@@ -121,7 +121,9 @@ author_status:
    - 💢 壮汉人狠话不多
 
 # search (搜索)
-# see https://blog.anheyu.com/posts/c27d.html
+# 安装 npm install hexo-generator-search --save
+# Local search
+
 #搜索系统
 # --------------------------------------
 
@@ -147,8 +149,8 @@ docsearch:
 
 # Local search
 local_search:
-  enable: false
-  preload: true
+  enable: true
+  preload: false
   CDN:
 
 # Math (数学)
