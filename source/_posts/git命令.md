@@ -3,7 +3,7 @@ layout: title
 title: git命令
 date: 2024-05-11 16:40:51
 categories: git
-tags: git
+tags: git命令
 cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17154172358271715417234833.png
 ---
 ## 一、 常用的git命令

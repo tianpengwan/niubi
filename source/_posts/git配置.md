@@ -3,7 +3,7 @@ layout: title
 title: git配置
 date: 2024-05-11 16:27:10
 categories: git
-tags: git
+tags: git配置
 cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17154168758251715416874953.png
 ---
 ## git github配置
