@@ -48,8 +48,4 @@ date: 2019-10-31 09:32:24
 
 ![wall4](https://gitee.com/AsteroidQiao/library-management-system/raw/master/wall/wall4.jpg)
 
-
-
-
-![shoegaze@prod$3ason - Jazz Club  [126bpm d #  min].00_04_08_18.Still001](shoegaze@prod$3ason - Jazz Club  [126bpm d #  min].00_04_08_18.Still001.png)
 {% endgallery %}

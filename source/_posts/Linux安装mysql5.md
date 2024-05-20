@@ -1,11 +1,10 @@
 ---
 title: Linux安装mysql5
-
 date: 2022-10-12 16:05:31
 categories: 云部署
 tags: mysql
+cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17161896821131716189681529.png
 ---
-#  Linux安装mysql5
 
 ## 一、下载mysql安装包
 
@@ -33,7 +32,7 @@ yum repolist enabled | grep "mysql.*-community.*"
 vim /etc/yum.repos.d/mysql-community.repo    
 ```
 
-###### mysql-community.repo文件
+#### mysql-community.repo文件
 
 ```shell
 [mysql-connectors-community]
@@ -168,24 +167,5 @@ set password for 'root'@'localhost'=password('root');
  GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;
 ```
 
-::: tips
-**提示**
-这是一个提示
-:::
-
-::: warning
-**注意**
-这是一个警告
-:::
-
-::: danger
-**警告**
-这是一个危险信号
-:::
-
-::: success
-**成功**
-这是一个成功信号
-:::
 
 
