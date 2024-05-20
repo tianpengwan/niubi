@@ -1,9 +1,9 @@
 ---
 title: Linux安装mysql5
-abbrlink: 51533
+
 date: 2022-10-12 16:05:31
 categories: 云部署
-tags: linux,mysql
+tags: mysql
 ---
 #  Linux安装mysql5
 

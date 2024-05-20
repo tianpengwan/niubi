@@ -1,6 +1,5 @@
 ---
 title: Hello World
-abbrlink: 16107
 date: 2019-09-18 14:03:39
 categories: 其他
 tags: 其他

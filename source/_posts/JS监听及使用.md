@@ -10,7 +10,6 @@ wrong_pass_message: 这个密码看着不太对，再试试
 wrong_hash_message: 这个文章不能被纠正，不过还是能看看解密后的内容
 cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17161710589721716171058571.png
 ---
-## 监听
 
 南北有一套自己的客户端框架xjs,特点是通过按规则编写java代码，然后使用底层提供java2js工具
 
