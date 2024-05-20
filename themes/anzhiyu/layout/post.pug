@@ -16,8 +16,7 @@ block content
           each item, index in page.tags.data
             a(href=url_for(item.path) tabindex="-1" itemprop="url")=item.name
         h1#CrawlerTitle(itemprop="name headline")= page.title || _p('no_title')
-        - let author = page.copyright_author || config.author
-        span(itemprop="author" itemscope itemtype="http://schema.org/Person")=author
+
         if (theme.post_meta.post.date_type)
           if (theme.post_meta.post.date_type === 'both')
             time(itemprop="dateCreated datePublished" datetime=date_xml(page.date) title=_p('post.created') + ' ' + full_date(page.date))=date(page.date, config.date_format)
@@ -42,4 +41,3 @@ block content
     if page.comments !== false && theme.comments && theme.comments.use
       - var commentsJsLoad = true
       !=partial('includes/third-party/comments/index', {}, {cache: true})
-      
