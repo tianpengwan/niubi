@@ -1,8 +1,8 @@
 ---
-title: JS监听及使用
+title: 🚂JS监听及使用
 date: 2024-05-20 10:09:02
-tags: JS
-category: snsoft
+tags: snsoft
+category: 开发
 password: snsoft123
 abstract: 本篇文章已加密，需要输入密码查看
 message: 本篇文章已加密，需要输入密码查看

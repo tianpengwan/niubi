@@ -1,7 +1,7 @@
 ---
-title: Redis笔记
+title: 🍌Redis笔记
 date: 2024-05-20 15:38:11
-categories: redis
+categories: 开发
 tags: redis
 password: snsoft123
 abstract: 本篇文章已加密，需要输入密码查看

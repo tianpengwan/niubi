@@ -1,7 +1,7 @@
 ---
-title: Alist+RaiDrive挂载阿里云盘
-categories: 网盘
-tags: alist
+title: 🚀Alist+RaiDrive挂载阿里云盘
+categories: 配置
+tags: 网盘挂载
 sticky: 1
 date: 2023-07-31 09:33:25
 cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699196452934wall7.png

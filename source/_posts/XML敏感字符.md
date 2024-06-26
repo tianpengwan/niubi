@@ -1,8 +1,8 @@
 ---
-title: XML敏感字符
+title: 🍍XML敏感字符
 date: 2024-05-20 13:48:40
+categories: 开发
 tags: 敏感字符
-categories: XML
 cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17161842071141716184206438.png
 ---
 
