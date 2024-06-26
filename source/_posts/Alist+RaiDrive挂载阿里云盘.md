@@ -9,7 +9,7 @@ cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-
 
 ## Alist+RaiDrive挂载阿里云盘
 
-记录挂载阿里云盘，alist加阿里云盘实在太香了~
+记录挂载阿里云盘，alist加阿里云盘实在太香了~`
 
 Alist + RaiDrive 实现网盘挂载，Alist可以添加很多类型网盘，[如阿里云盘](https://www.aliyundrive.com/drive)、百度云盘、天翼云盘等等
 
