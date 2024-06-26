@@ -7,14 +7,16 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
-    - content: 武汉突然变天了，冷死了，一下子零度，还下着小雨，直接原地过冬！
-      date: 2023/11/10
-      image:
-        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699196452934wall7.png
+    - content: 👀太懒了，博客一直忘了写，得好好整理一下了
+      date: 2024/6/26
     - content: 今天吃火锅~
       date: 2024/5/11
       image:
         - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17155821196986751d27347eb490ed381de8819ba9b3.jpg
+    - content: 武汉突然变天了，冷死了，一下子零度，还下着小雨，直接原地过冬！
+      date: 2023/11/10
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699196452934wall7.png
 #    - content: 支持了Accesskey快捷键，可以直接按下shift + ?组合键以查看快捷键选项。
 #      date: 2023/07/01
 #      video:
