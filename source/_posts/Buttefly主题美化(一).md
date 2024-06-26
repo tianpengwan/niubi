@@ -6,7 +6,7 @@ tags: Buttefly
 cover: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17161754241141716175423782.png
 ---
 
-### Git安装 (Github)
+### 安装主题 (Github)
 
 #### 1、安装
 
