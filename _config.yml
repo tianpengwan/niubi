@@ -219,9 +219,6 @@ pwa:
         - src: /image/96.png
           type: image/png
           sizes: 96x96
-        - src: /image/128.png
-          type: image/png
-          sizes: 128x128
         - src: /image/144.png
           type: image/png
           sizes: 144x144
