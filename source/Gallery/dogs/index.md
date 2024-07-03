@@ -103,4 +103,8 @@ date: 2019-10-31 09:32:24
 
 ![72e05ae2ly1hi27tu0duaj21vi2mk7wi](https://gitee.com/AsteroidQiao/library-management-system/raw/master/typora/2023-11-01/22285c7b1220f8a081ad7f028b05b95b.jpg)
 
+![17199713290021719971328976.png](https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17199713290021719971328976.png)
+
+![17199713248821719971324507.png](https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17199713248821719971324507.png)
+
 {% endgallery %}
