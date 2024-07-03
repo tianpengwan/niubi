@@ -7,6 +7,8 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
+    - content: 🌤️放晴了嘿，久违的晴天
+      date: 2024/7/03 09:13:02
     - content: 📣早啊，又是元气满满的一天
       date: 2024/7/02
     - content: 🌧️连着下了一个多星期的雨了，什么时候能停啊
@@ -17,6 +19,15 @@
       date: 2024/5/11
       image:
         - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17155821196986751d27347eb490ed381de8819ba9b3.jpg
+    - content: 下次见~
+      date: 2024/5/01
+      video:
+        - https://niuniu.asteroidrocket.top/video/cg0501.mp4
+    - content: 💓去见狗哥啦，不得不说，阿狗今天的cos真是太酷了!
+      date: 2024/5/01
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17199713290021719971328976.png
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17199713248821719971324507.png
     - content: 武汉突然变天了，冷死了，一下子零度，还下着小雨，直接原地过冬！
       date: 2023/11/10
       image:
