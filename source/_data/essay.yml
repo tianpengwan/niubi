@@ -7,7 +7,11 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
-    - content: 不打无准备的仗！
+    - content: 可恶，我居然有强迫症。对不齐我好难受
+      date: 2024/7/05 14:30:02
+    - content: 🔅好热呀，跟蒸桑拿一样
+      date: 2024/7/05 09:12:02
+    - content: 无聊，不知道要干什么，太闲了
       date: 2024/7/04 16:02:02
     - content: 🌤️放晴了嘿，久违的晴天
       date: 2024/7/03 09:13:02
@@ -17,6 +21,10 @@
       date: 2024/6/28
     - content: 👀太懒了，博客一直忘了写，得好好整理一下了
       date: 2024/6/26
+    - content: 线条小狗真的好看
+      date: 2024/5/25
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1720158418021IMG20240525203356.jpg
     - content: 今天吃火锅~
       date: 2024/5/11
       image:
