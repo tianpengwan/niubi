@@ -7,6 +7,10 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
+    - content: 💦完了，好像感冒了，嗓子疼死了，不停的干水，盒润喉糖吃了也还是好疼
+      date: 2024/7/08 09:30:02
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1720402538678ed06966c780b08427f32bd9c9d93702.jpg
     - content: 🐒是谁周六在加班啊，可恶，本来都计划好出去玩的，全被打乱了
       date: 2024/7/06 09:30:02
     - content: 明天出去玩，嘿嘿
