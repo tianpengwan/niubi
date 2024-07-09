@@ -7,6 +7,10 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
+    - content: 我靠，昨天下班忘了打卡了，可恶啊
+      date: 2024/7/09 09:20:02
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17204875891931720487589154.png
     - content: 💦完了，好像感冒了，嗓子疼死了，不停的干水，盒润喉糖吃了也还是好疼
       date: 2024/7/08 09:30:02
       image:
