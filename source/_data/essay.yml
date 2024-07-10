@@ -7,6 +7,8 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
+    - content: One is never too old to learn.
+      date: 2024/7/10 10:20:02
     - content: 我靠，昨天下班忘了打卡了，可恶啊
       date: 2024/7/09 09:20:02
       image:
