@@ -7,6 +7,16 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
+    - content: 感谢小弟的投喂
+      date: 2024/7/12 20:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1721010051866eb3a920da27480e8727228d02155b9f.jpg
+    - content: 别想骗我加班
+      date: 2024/7/12 16:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17210094488671721009448026.png
+    - content: 鼻子擤破了，嗓子也冒烟了，咳嗽也停不下来了，嘴也口腔溃疡了，感冒真的是哪哪都疼
+      date: 2024/7/11 14:30:04
     - content: One is never too old to learn.
       date: 2024/7/10 10:20:02
     - content: 我靠，昨天下班忘了打卡了，可恶啊
