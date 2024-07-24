@@ -7,6 +7,16 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
+    - content: 青春没有售价，夜骑就在当下
+      date: 2024/7/20 20:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1721806606233464915fa4deb80cf6bafd147f2ea9f2.jpg
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1721806617234db38aa66386b3b10151487bed0b9d56.jpg
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1721806628234c67a363c8cf071543ae1f49a5539ad1.jpg
+    - content: 好好好
+      date: 2024/7/19 16:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1721805945234c018f7c81e2bd158210b78d71ad0e5f.png
     - content: 感谢小弟的投喂
       date: 2024/7/12 20:30:04
       image:
