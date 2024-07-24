@@ -200,8 +200,117 @@ INNER JOIN score sc ON st.sid=sc.sid
 
 ![image-20240705111249057](https://gitee.com/AsteroidQiao/library-management-system/raw/master/typora/2024-07-05/162a04d1ec0063b09e61b783a7f08192.png)
 
-### 3、练习题及答案
+### 3、练习题
 
+```sql
+
+#1、查询"01"课程比"02"课程成绩高的学生的信息及课程分数
+
+#2、查询"01"课程比"02"课程成绩低的学生的信息及课程分数
+
+#3、查询平均成绩大于等于60分的同学的学生编号和学生姓名和平均成绩
+
+#4、查询平均成绩小于60分的同学的学生编号和学生姓名和平均成绩
+– (包括有成绩的和无成绩的)
+
+#5、查询所有同学的学生编号、学生姓名、选课总数、所有课程的总成绩
+
+#6、查询"李"姓老师的数量
+
+#7、查询学过"培根"老师授课的同学的信息
+
+#8、查询没学过"培根"老师授课的同学的信息
+
+#9、查询学过编号为"01"并且也学过编号为"02"的课程的同学的信息
+
+#10、查询学过编号为"01"但是没有学过编号为"02"的课程的同学的信息
+
+#11、查询没有学全所有课程的同学的信息
+
+#12、查询至少有一门课与学号为"08"的同学所学相同的同学的信息
+
+#13、查询和"08"号的同学学习的课程完全相同的其他同学的信息
+
+#14、查询没学过"培根"老师讲授的任一门课程的学生姓名
+
+#15、查询两门及其以上不及格课程的同学的学号，姓名及其平均成绩
+
+#16、检索"01"课程分数小于60，按分数降序排列的学生信息
+
+#17、按平均成绩从高到低显示所有学生的所有课程的成绩以及平均成绩
+
+
+#18.查询各科成绩最高分、最低分和平均分：以如下形式显示：课程ID，课程name，最高分，最低分，平均分，及格率，中等率，优良率，优秀率 及格为>=60，中等为：70-80，优良为：80-90，优秀为：>=90
+
+#19、按各科成绩进行排序，并显示排名
+
+#20、查询学生的总成绩并进行排名
+
+#21、查询不同老师所教不同课程平均分从高到低显示
+
+#22、查询所有课程的成绩第2名到第3名的学生信息及该课程成绩
+
+#23、统计各科成绩各分数段人数：课程编号,课程名称,[100-85],[85-70],[70-60],[0-60]及所占百分比
+
+#24、查询学生平均成绩及其名次
+
+# 25、查询各科成绩前三名的记录
+
+#26、查询每门课程被选修的学生数
+
+ #27、查询出只有两门课程的全部学生的学号和姓名
+
+#28、查询男生、女生人数
+
+#29、查询名字中含有"雯"字的学生信息
+
+#30、查询同名学生名单，并统计同名人数
+
+#31、查询2001年出生的学生名单
+
+#32、查询每门课程的平均成绩，结果按平均成绩降序排列，平均成绩相同时，按课程编号升序排列
+
+#33、查询平均成绩大于等于85的所有学生的学号、姓名和平均成绩
+
+#34、查询课程名称为"数学"，且分数低于60的学生姓名和分数
+
+#35、查询所有学生的课程及分数情况
+
+#36、查询任何一门课程成绩在70分以上的学生姓名、课程名称和分数
+
+#37、查询不及格的课程
+
+#38、查询课程编号为01且课程成绩在80分以上的学生的学号和姓名
+
+#39、求每门课程的学生人数
+
+#40、查询选修"培根"老师所授课程的学生中，成绩最高的学生信息及其成绩
+
+#41、查询不同课程成绩相同的学生的学生编号、课程编号、学生成绩
+
+#42、查询每门功成绩最好的前两名
+
+#43、统计每门课程的学生选修人数（超过5人的课程才统计）。要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列
+
+#44、检索至少选修两门课程的学生信息及选课数量
+
+#45、查询选修了全部课程的学生信息
+
+#46、查询各学生的年龄
+
+#47、查询本周过生日的学生
+
+#48、查询下周过生日的学生
+
+#49、查询本月过生日的学生
+
+#50、查询下月过生日的学生
+
+```
+
+### 4、练习题及答案
+
+#### 基础
 ```sql
 #左连接（左连接全称为左外连接，是外连接的一种），以左表为主，左表查出来后，根据on条件查右表，右表不全补null
 SELECT student.*,sc.* FROM student
@@ -222,7 +331,9 @@ SELECT st.*,sc.* FROM (SELECT student.* FROM student WHERE student.sex=2) st
 INNER JOIN score sc ON st.sid=sc.sid
 
 #sql执行顺序：FROM 、 WHERE 、 GROUP BY 、 HAVING 、 ORDER BY
-
+```
+#### 练习题及答案
+```sql
 #1、查询"01"课程比"02"课程成绩高的学生的信息及课程分数
 select student.*,sc1.score as '语文' ,sc2.score '数学'
 from student
@@ -235,7 +346,7 @@ SELECT student.*,sc1.score '语文',sc2.score '数学' FROM student
 JOIN score sc1 on sc1.sid=student.sid AND sc1.cid=1
 JOIN score sc2 on sc2.sid=student.sid AND sc2.cid=2
 WHERE sc2.score>sc1.score 
- 
+
 #3、查询平均成绩大于等于60分的同学的学生编号和学生姓名和平均成绩
 SELECT student.sid '学生编号',student.sname '学生姓名',AVG(score.score) '平均成绩' FROM student
 JOIN score ON student.sid=score.sid 
@@ -319,7 +430,7 @@ select group_concat(sc2.cid) from student st2
 join score sc2 on sc2.sid=st2.sid
 where st2.sid =8
 )AND st.sid!=8
- 
+
 #14、查询没学过"培根"老师讲授的任一门课程的学生姓名
 SELECT student.* FROM student WHERE sid NOT IN
 (SELECT score.sid FROM score 
@@ -341,7 +452,6 @@ FROM student st
 JOIN score sc ON st.sid = sc.sid
 WHERE sc.cid = 1 AND sc.score < 60
 ORDER BY sc.score DESC;
-
 
 #17、按平均成绩从高到低显示所有学生的所有课程的成绩以及平均成绩
 
@@ -415,7 +525,6 @@ JOIN score sc ON st.sid = sc.sid
 GROUP BY st.sid, st.sname;
 
 #21、查询不同老师所教不同课程平均分从高到低显示
-
 SELECT te.tname, co.cname, AVG(sc.score) AS '平均成绩'
 FROM teacher te
 JOIN course co ON te.tid = co.tid
@@ -435,7 +544,6 @@ WHERE (
 ) BETWEEN 1 AND 2;
 
 #23、统计各科成绩各分数段人数：课程编号,课程名称,[100-85],[85-70],[70-60],[0-60]及所占百分比
-
 SELECT co.cid AS '课程编号',
        co.cname AS '课程名称',
        SUM(CASE WHEN sc.score BETWEEN 85 AND 100 THEN 1 ELSE 0 END) AS '[100 - 85]人数',
@@ -457,7 +565,7 @@ FROM student st
 JOIN score sc ON st.sid = sc.sid
 GROUP BY st.sid, st.sname;
 
-# 25、查询各科成绩前三名的记录
+#25、查询各科成绩前三名的记录
 SELECT *
 FROM (
     SELECT st.*, co.cname '学科', sc.score '成绩',
@@ -481,7 +589,6 @@ WHERE (
 ORDER BY co.cid, sc.score DESC;
 
 #26、查询每门课程被选修的学生数
-
 SELECT co.cid, co.cname, COUNT(st.sid) AS '选修学生数'
 FROM course co
 JOIN score sc ON co.cid = sc.cid
@@ -520,14 +627,13 @@ GROUP BY st.sname,st.sex HAVING COUNT(*)>1
 
 #31、查询2001年出生的学生名单
 SELECT st.* FROM student st WHERE YEAR(st.brith)=2001
- #32、查询每门课程的平均成绩，结果按平均成绩降序排列，平均成绩相同时，按课程编号升序排列
- 
+
+#32、查询每门课程的平均成绩，结果按平均成绩降序排列，平均成绩相同时，按课程编号升序排列
 SELECT co.cid '课程编号', co.cname '课程',AVG(sc.score) '平均成绩' FROM course co 
 JOIN score sc on sc.cid=co.cid
 GROUP BY co.cid ORDER BY AVG(sc.score) DESC,co.cid ASC
 
 #33、查询平均成绩大于等于85的所有学生的学号、姓名和平均成绩
- 
 SELECT st.sid,st.sname,AVG(sc.score) FROM student st
 JOIN score sc on sc.sid=st.sid
 GROUP BY st.sid
@@ -563,14 +669,15 @@ JOIN score sc ON st.sid=sc.sid
 GROUP BY st.sid
 
 #36、查询任何一门课程成绩在70分以上的学生姓名、课程名称和分数
-
 SELECT st.sname,co.cname,sc.score FROM student st
 JOIN score sc ON st.sid = sc.sid AND sc.score>70
 JOIN course co ON sc.cid = co.cid
+
 #37、查询不及格的课程
 SELECT st.sname,co.cname,sc.score FROM student st
 JOIN score sc ON st.sid = sc.sid AND sc.score<60
 JOIN course co ON sc.cid = co.cid
+
 #38、查询课程编号为01且课程成绩在80分以上的学生的学号和姓名
 SELECT st.sid,st.sname,co.cname,sc.score FROM student st
 JOIN score sc ON st.sid = sc.sid AND sc.score>80 
@@ -604,7 +711,7 @@ AND sc.score = (
 		JOIN course co2 ON sc2.cid = co2.cid 
 		WHERE co2.cid = co.cid
 		)
-		
+
 #41、查询不同课程成绩相同的学生的学生编号、课程编号、学生成绩
 SELECT sc.sid, co.cid, sc.score
 FROM score sc
@@ -613,7 +720,6 @@ JOIN course co ON sc.cid = co.cid
 GROUP BY sc.sid, co.cid, sc.score
 
 #42、查询每门功成绩最好的前两名
-
 SELECT co.cname, st.sname, sc.score
 FROM student st
 JOIN score sc ON st.sid = sc.sid AND sc.score IS NOT NULL
@@ -627,21 +733,19 @@ WHERE (
 ORDER BY co.cid, sc.score DESC;
 
 #43、统计每门课程的学生选修人数（超过5人的课程才统计）。要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列
-
 SELECT sc.cid, COUNT(sc.sid) AS student_count
 FROM score sc
 GROUP BY sc.cid
 HAVING COUNT(sc.sid) >=5
 ORDER BY student_count DESC, sc.cid ASC;
 
-# 44、检索至少选修两门课程的学生信息及选课数量
+#44、检索至少选修两门课程的学生信息及选课数量
 SELECT st.*,COUNT(cid) FROM student st
 JOIN score sc ON st.sid=sc.sid
 GROUP BY st.sid 
 HAVING COUNT(cid)>=2
 
 #45、查询选修了全部课程的学生信息
-
 SELECT st.* FROM student st
 JOIN score sc ON st.sid=sc.sid
 GROUP BY st.sid 
@@ -664,6 +768,7 @@ WHERE WEEK(brith, 1) = WEEK(DATE_ADD(CURDATE(),INTERVAL 1 WEEK), 1);
 SELECT * 
 FROM student 
 WHERE MONTH(brith) = MONTH(CURDATE());
+
 #50、查询下月过生日的学生
 SELECT * 
 FROM student 
