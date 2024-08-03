@@ -7,6 +7,10 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
+    - content: 加班常态化。。。
+      date: 2024/8/02 16:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17226536337710f981c90967f55afa3fa30089a95eae.png
     - content: 青春没有售价，夜骑就在当下
       date: 2024/7/20 20:30:04
       image:
