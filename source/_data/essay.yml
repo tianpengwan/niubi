@@ -7,6 +7,36 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
+    - content: 一家三狗✌️
+      date: 2024/8/26 9:30:04
+      image:
+       - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1724634401733fc4e06e1e69a7b5faa7cf1b9819af35.jpg
+    - content: 小电驴油门捏掉了，离谱
+      date: 2024/8/25 10:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17246344647308b314c540d254b26cd0b57217ed06fe.jpg
+    - content: 炫个火锅😋
+      date: 2024/8/25 10:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1724634433733c91471d581e252c6de3671d02a310f0.jpg
+    - content: 我还没上班，你就开始上班了，你真的，我哭死
+      date: 2024/8/19 09:00:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/172402966261307ddc3310f3b3ae815f40c358092d66.jpg
+    - content: 火锅，好兄弟要去上海了发展了
+      date: 2024/8/11 16:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1724634967731ba56e4e9e7ec962d1a6f7128ceb1229.jpg
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17246349827300cea31777240212e88565b8262c1ade.jpg
+    - content: 烧烤
+      date: 2024/8/11 16:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/172463485173189b80567218ca32b455abc31eddbe87.jpg
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1724634866731b0dd30bebbc8f7563aea6eb43904aec.jpg
+    - content: 火烧云
+      date: 2024/8/02 16:30:04
+      image:
+        - https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17246348147306abbf76cfeff19b59f6453567e6fc56.jpg
     - content: 加班常态化。。。
       date: 2024/8/02 16:30:04
       image:
