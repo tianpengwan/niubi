@@ -3,7 +3,7 @@
   tips: 和 成大事一起阅读书籍
   buttonText: 关于我
   buttonLink: /about/
-  pagesize: 99
+  pagesize: 9999
   top_background: /img/books.png
   books_list:
 

@@ -3,7 +3,7 @@
   tips: 随时随地，分享生活
   buttonText: 关于我
   buttonLink: /about/
-  limit: 30
+  limit: 9999
   home_essay: true
   top_background: /img/top.png
   essay_list:
