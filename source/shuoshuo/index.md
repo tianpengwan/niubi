@@ -10,7 +10,7 @@ date: 2029-1-24 17:09:10
 <!-- 存放说说的容器 
     appId: 'H5uDbNpEu1fJcVIlpdRDWLEw-gzGzoHsz',
     appKey: 'pXjk8QIq7J8jth475GTpYTHl',
-    serverURL: 'https://hexo.asteroidrocket.top/',
+    serverURL: 'https://hexo.asteroid-qiao.top/',
 -->
 
 <!-- 引用 artitalk -->

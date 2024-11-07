@@ -34,18 +34,18 @@ nav:
     - title: 博客
       item:
         - name: 博客站点
-          link: https://hexo.asteroidrocket.top/
+          link: https://hexo.asteroid-qiao.top/
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1697097432990%E6%88%90%E5%A4%A7%E4%BA%8B.jpg
     - title: 收集的有趣网页
       item:
         - name: tower
-          link: https://tower.asteroidrocket.top/
+          link: https://tower.asteroid-qiao.top/
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990216818761699021681322.png
         - name: 烟花
-          link: https://fireworks.asteroidrocket.top/
+          link: https://fireworks.asteroid-qiao.top/
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990211070371699021106243.png
         - name: 魔方
-          link: https://cube.asteroidrocket.top/
+          link: https://cube.asteroid-qiao.top/
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990226138881699022613057.png
         - name: 收集中~
           link: /
@@ -53,16 +53,16 @@ nav:
     - title: 项目
       item:
         - name: 音乐小行星
-          link: https://music.asteroidrocket.top/
+          link: https://music.asteroid-qiao.top/
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17193929684811024x1024.png
         - name: 社团活动平台
-          link: https://club.asteroidrocket.top/
+          link: https://club.asteroid-qiao.top/
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1698653924814dragon1.jpg
         - name: 快乐买鞋城
-          link: https://buy.asteroidrocket.top/
+          link: https://buy.asteroid-qiao.top/
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1698653667259%E9%85%B7-1.png
         - name: ChatGPT
-          link: https://chat.asteroidrocket.top/
+          link: https://chat.asteroid-qiao.top/
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699022251879chatgpt.jpg
         - name: 待补充
           link: /
@@ -381,7 +381,7 @@ valine:
   option:
 # waline
 waline:
-  serverURL: https://waline.asteroidrocket.top/
+  serverURL: https://waline.asteroid-qiao.top/
   bg: /img/lazyload9.webp
   pageview: false
   meta: false
@@ -1055,7 +1055,7 @@ home_top:
   timemode: date #date/updated
   title: 生活明朗
   subTitle: 万物可爱。
-  siteText: asteroidrocket.com
+  siteText: asteroid-qiao.com
   category:
     - name: 开发
       path: /categories/开发/
@@ -1081,7 +1081,7 @@ home_top:
     tips: 文章推荐
     title: Alist+RaiDrive挂载阿里云盘
     image: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699196452934wall7.png
-    link: https://blog.asteroidrocket.top/2023/07/31/Alist-RaiDrive%E6%8C%82%E8%BD%BD%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/
+    link: https://blog.asteroid-qiao.top/2023/07/31/Alist-RaiDrive%E6%8C%82%E8%BD%BD%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/
 
 # 朋友圈配置
 friends_vue:
