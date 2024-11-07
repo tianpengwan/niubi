@@ -88,7 +88,7 @@ public class SwaggerConfig {
     public OpenAPI openAPI() {
         Contact contact = new Contact().name("成大事")
                                   .email("asteroidqiao@163.com")
-                                  .url("https://blog.asteroidrocket.top/");
+                                  .url("https://blog.XXX.top/");
         return new OpenAPI()
                        .info(new Info()
                                      .title("XIAOBAO-小宝")
