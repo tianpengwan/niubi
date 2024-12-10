@@ -175,11 +175,11 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699024682079QQ2.png
+favicon: https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
 
 # Avatar (头像)
 avatar:
-  img: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699024679080QQ6.jpg
+  img: https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
   effect: false
 
 # Disable all banner image
@@ -272,7 +272,7 @@ post_copyright:
   enable: true
   decode: false
   author_href:
-  location: 杭州
+  location: 重庆
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
   avatarSinks: false # hover时头像下沉
@@ -284,10 +284,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: /img/WX.png
+    - img: https://ghtpdl.20010501.xyz/tptp/mm_facetoface_collect_qrcode_1733833437800.png
       link:
       text: 微信
-    - img: /img/ZFB.png
+    - img: https://ghtpdl.20010501.xyz/tptp/1733833464982.jpg
       link:
       text: 支付宝
 
