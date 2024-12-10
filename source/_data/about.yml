@@ -104,8 +104,8 @@
     like_bottom: JavaEE Spring全家桶 NoSql Redis
   music:
     music_tips: 音乐偏好
-    music_title: G.E.M.邓紫棋、华语流行、轻音乐
-    music_bg: /img/GEM.jpg
+    music_title: 许嵩、华语流行、轻音乐
+    music_bg: https://ghtpdl.20010501.xyz/tptp/OIP.jpeg
     music_link: /music
   reward_list:
     - name: 海阔蓝
