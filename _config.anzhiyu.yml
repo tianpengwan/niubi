@@ -381,7 +381,7 @@ valine:
   option:
 # waline
 waline:
-  serverURL: https://waline.asteroid-qiao.top/
+  serverURL: https://pl.20010501.xyz/
   bg: /img/lazyload9.webp
   pageview: false
   meta: false
