@@ -1,11 +1,8 @@
 ---
-abbrlink: ''
-categories: []
-cover: https://tc.20010501.xyz/file/2733222acbaf480a89e5e.jpg
-date: ''
-tags: []
 title: Hello World
-updated: '2024-12-09T00:56:16.237+08:00'
+date: 2019-09-18 14:03:39
+categories: 其他
+tags: 其他
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
@@ -13,7 +10,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ### Create a new post
 
-```bash
+``` bash
 $ hexo new "My New Post"
 ```
 
@@ -21,7 +18,7 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 
 ### Run server
 
-```bash
+``` bash
 $ hexo server
 ```
 
@@ -29,7 +26,7 @@ More info: [Server](https://hexo.io/docs/server.html)
 
 ### Generate static files
 
-```bash
+``` bash
 $ hexo generate
 ```
 
@@ -37,8 +34,9 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 
 ### Deploy to remote sites
 
-```bash
+``` bash
 $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
