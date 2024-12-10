@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 成大事的小站
-subtitle: AsteroidQiao 环游的小行星
-description:
-keywords: 成果
-author: 成大事
+title: 宇外御风的博客
+subtitle: 人生到处知何似，应似飞鸿踏雪泥。
+description: 一个记录生活和技术的博客。
+keywords: 宇外御风
+author: 宇外御风
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://hexo.asteroid-qiao.top/
+url: https://520.20010501.xyx/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
