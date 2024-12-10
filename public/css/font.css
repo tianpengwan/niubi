@@ -1,0 +1,56 @@
+/* font.css */
+@font-face {
+    font-family: 'iconfont';  /* Project id 4313130 */
+    src:
+            url('//at.alicdn.com/t/c/font_4313130_9c757del0d.woff2?t=1698927663585') format('woff2'),
+            url('//at.alicdn.com/t/c/font_4313130_9c757del0d.woff?t=1698927663585') format('woff'),
+            url('//at.alicdn.com/t/c/font_4313130_9c757del0d.ttf?t=1698927663585') format('truetype');
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 28px; /* 字体大小自行修改 */
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*引入图标*/
+.icon-github:before {
+    content: "\e690";
+}
+
+.icon-gitee:before {
+    content: "\e60c";
+}
+
+.icon-bilibili1:before {
+    content: "\e72a";
+}
+
+.icon-weibo:before {
+    content: "\e667";
+}
+
+.icon-email:before {
+    content: "\e856";
+}
+
+.icon-rss:before {
+    content: "\e6eb";
+}
+
+/*.icon-QQ:before {*/
+/*    content: "\e73e";*/
+/*}*/
+
+/*.icon-weixin:before {*/
+/*    content: "\e607";*/
+/*}*/
+
+/*.icon-csdn:before {*/
+/*    content: "\e638";*/
+/*}*/
+
+
+
+

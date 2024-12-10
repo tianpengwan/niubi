@@ -1,0 +1,6 @@
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/AsteroidQiao/config/ArcStarry/Blue/Arrow.cur), default; }
+button,a{
+    cursor: url(https://cdn.jsdelivr.net/gh/AsteroidQiao/config/ArcStarry/Blue/Hand.cur), pointer; }
+textarea,input:focus{
+    cursor:url(https://cdn.jsdelivr.net/gh/AsteroidQiao/config/ArcStarry/Blue/IBeam.cur), text; }
