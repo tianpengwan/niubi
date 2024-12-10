@@ -1087,7 +1087,7 @@ home_top:
 friends_vue:
   enable: enable
   vue_js: /js/friends.js
-  apiurl: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699196452934wall7.png
+  apiurl: https://pyq.20010501.xyz/
   top_tips: 使用 友链朋友圈 订阅友链最新文章
   top_background:
 
