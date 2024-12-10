@@ -1086,11 +1086,9 @@ home_top:
 # 朋友圈配置
 friends_vue:
   enable: true
-  vue_js: /js/friends.js
-  apiurl: https://pyq.20010501.xyz
-  top_tips: 使用 友链朋友圈 订阅友链最新文章
-  top_background:
-
+  vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.2/friends/index.f9a2b8d2.js
+  apiurl: https://pyq.20010501.xyz/ # 朋友圈后端地址
+  top_background: https://ghtpdl.20010501.xyz/tptp/780.jpeg
 # 深色模式粒子效果canvas
 universe:
   enable: true
