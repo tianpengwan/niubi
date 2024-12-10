@@ -1,6 +1,6 @@
 - class_name: 关于页
   subtitle: 在我手中，开出未来✨
-  avatarImg: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699024679080QQ6.jpg
+  avatarImg: https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
 #  avatarSkills:
 #    left:
 #      - 🤖️ 数码科技爱好者
@@ -12,8 +12,8 @@
 #      - 脚踏实地行动派 🏃
 #      - 团队小组发动机 🧱
 #      - 壮汉人狠话不多 💢
-  name: 成大事
-  description: 是一名 Java工程师、独立开发者、博主、猫猫爱好者
+  name: 宇外御风
+  description: 是一名 苦逼打工人、笑话搬运者、博主、网络爱好者
   aboutsiteTips:
     tips: 追求
     title1: 源于
@@ -31,11 +31,11 @@
     tips: 生涯
     title: 无限进步
     list:
-      - desc: EDU,软件工程
+      - desc: 棱镜移动工程师
         color: "#357ef5"
-      - desc: 兼职教师
+      - desc: 混凝土试块搬运工程师
         color: "#357ef5"
-      - desc: 软件开发工程师
+      - desc: 兼职群主
         color: "#357ef5"
     img: /img/progress2.jpg
   statistic:
@@ -44,15 +44,15 @@
     cover: https://bu.dusays.com/2023/05/01/644f4b037b930.jpg
   map:
     title: 我现在住在
-    StrengthenTitle: 中国，信阳市
+    StrengthenTitle: 中国，重庆市
     background: /img/xys.png
   selfInfo:
     selfInfoTips1: 生于
-    selfInfoContentYear: 2000
-    selfInfoTips2: 毕业于河南师范大学
-    selfInfoContent2: 软件工程
+    selfInfoContentYear: 2001
+    selfInfoTips2: 毕业重庆交院
+    selfInfoContent2: 道桥工程
     selfInfoTips3: 现在职业
-    selfInfoContent3: Java开发工程师🆔
+    selfInfoContent3: 隧道监控
   personalities:
     author_name: 主人公
     personality_type: ENFJ-A / ENFJ-T
@@ -70,7 +70,7 @@
   game:
     game_tips: 爱好游戏
     game_title: 王者荣耀
-    game_uid: "中单法王，顺风不浪"
+    game_uid: "顶尖射手，带飞队友"
     game_bg: /img/sg.jpg
   comic:
     comic_tips: 爱好番剧
