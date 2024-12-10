@@ -1057,18 +1057,18 @@ home_top:
   subTitle: 万物可爱。
   siteText: asteroid-qiao.com
   category:
-    - name: 开发
-      path: /categories/开发/
+    - name: 技术教程
+      path: /categories/技术教程/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 美化
-      path: /categories/美化/
+    - name: 配置
+      path: https://hexoadmin.20010501.xyz/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
-    - name: 配置
-      path: /categories/配置/
+    - name: hexo问题
+      path: /tags/hexo/
       shadow: var(--anzhiyu-shadow-green)
       class: green
       icon: anzhiyu-icon-book
