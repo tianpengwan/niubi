@@ -817,7 +817,7 @@ aside:
     enable: false
     content:
   card_weixin:
-    enable: true
+    enable: false
     face: /img/wxgz.png
     backFace: /img/sys.png
   card_recent_post:
