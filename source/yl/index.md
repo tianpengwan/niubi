@@ -12,7 +12,7 @@ banner_img: https://t.alcy.cc/pc/
 🌴站点图片🏵️：https://20010501.xyz/img/fluid.png/
 🌿我的友链地址🌻：https://20010501.xyz/yll/
 
-# Friend's links
+# 我可爱的友友们
 
 <div id="qexo-friends"></div>
 <link rel="stylesheet" href="https://unpkg.com/qexo-static@1.6.0/hexo/friends.css"/>
@@ -20,113 +20,121 @@ banner_img: https://t.alcy.cc/pc/
 <script src="https://unpkg.com/qexo-static@1.6.0/hexo/friends.js"></script>
 <script>loadQexoFriends("qexo-friends", "https://hexoadmin.20010501.xyz")</script>
 
-# Apply for Apursuer's friend chain
+# 来这里申请友链吧
 <link rel="stylesheet" href="https://unpkg.com/apursuer-qexo-friend-links@1.0.2/apursuer-hexo-friend-links.css"/>
 
 <article class="message is-info">
     <div class="message-header">
-        Apply for friend chain
+        申请友链
     </div>
     <div class="message-body">
         <div class="form-ask-friend">
             <div class="field">
-                <label class="label">Name</label>
+                <label class="label">名称</label>
                 <div class="control has-icons-left">
-                    <input class="input" type="text" placeholder="Your site name" id="friend-name" required>
+                    <input class="input" type="text" placeholder="您的站点名称" id="friend-name" required>
                     <span class="icon is-small is-left">
                         <i class="fas fa-signature"></i>
                     </span>
                 </div>
             </div>
             <div class="field">
-                <label class="label">Link</label>
-            <div class="control has-icons-left">
-                <input class="input" type="url" placeholder="A link to your site's homepage" id="friend-link" required>
-                <span class="icon is-small is-left">
-                    <i class="fas fa-link"></i>
-                </span>
-            </div>
-            <p class="help ">Please make sure the site is accessible!</p>
+                <label class="label">链接</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="url" placeholder="您网站主页的链接" id="friend-link" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-link"></i>
+                    </span>
+                </div>
+                <p class="help">请确保该站点可访问！</p>
             </div>
             <div class="field">
-                <label class="label">Icon</label>
+                <label class="label">图标</label>
                 <div class="control has-icons-left">
-                    <input class="input" type="url" placeholder="Your website icon (as round as possible)" id="friend-icon" required>
+                    <input class="input" type="url" placeholder="您的网站图标（尽可能圆形）" id="friend-icon" required>
                     <span class="icon is-small is-left">
                         <i class="fas fa-image"></i>
                     </span>
                 </div>
             </div>
             <div class="field">
-                <label class="label">Description</label>
+                <label class="label">描述</label>
                 <div class="control has-icons-left">
-                    <input class="input" type="text" placeholder="Please describe your site in one sentence." id="friend-des" required>
+                    <input class="input" type="text" placeholder="请用一句话描述您的站点" id="friend-des" required>
                     <span class="icon is-small is-left">
-                        <i class="fas fa-info"></i>
+                        <i class="fas fa-comment"></i>
                     </span>
                 </div>
             </div>
-            <div class="field">
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" id="friend-check"/> I am not submitting nonsense information.
-                    </label>
-                </div>
-            </div>
-            <div class="field is-grouped">
-                <div class="control">
-                    <button class="button is-info" type="submit" onclick="askFriend(event)">Apply</button>
-                </div>
-            </div>
-        </div>
+<div class="field">
+    <label class="label">描述</label>
+    <div class="control has-icons-left">
+        <input class="input" type="text" placeholder="请用一句话描述您的站点" id="friend-des" required>
+        <span class="icon is-small is-left">
+            <i class="fas fa-info"></i>
+        </span>
     </div>
+</div>
+<div class="field">
+    <div class="control">
+        <label class="checkbox">
+            <input type="checkbox" id="friend-check"/> 我不是提交无意义的信息。
+        </label>
+    </div>
+</div>
+<div class="field is-grouped">
+    <div class="control">
+        <button class="button is-info" type="submit" onclick="askFriend(event)">申请</button>
+    </div>
+</div>
+</div>
+</div>
 </article>
 <script src="https://recaptcha.net/recaptcha/api.js?render=tianpeng"></script>
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script>
 function TestUrl(url) {
-    var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
-    var objExp=new RegExp(Expression);
-    if(objExp.test(url) != true){
+    var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+    var objExp = new RegExp(Expression);
+    if (objExp.test(url) != true) {
         return false;
     }
     return true;
 }
-function askFriend (event) {
+function askFriend(event) {
     let check = $("#friend-check").is(":checked");
     let name = $("#friend-name").val();
     let url = $("#friend-link").val();
     let image = $("#friend-icon").val();
     let des = $("#friend-des").val();
-    if(!check){
-        alert("Please check \"I am not submitting nonsense information\"");
+    if (!check) {
+        alert("请勾选\"我不是提交无意义的信息\"");
         return;
     }
-    if(!(name&&url&&image&&des)){
-        alert("The information is incomplete! ");
-        return;
-    }
-    if (!(TestUrl(url))){
-        alert("URL format error! Need to include HTTP protocol header! ");
-        return;
-    }
-    if (!(TestUrl(image))){
-        alert("The format of the slice URL is wrong! It needs to contain the HTTP protocol header! ");
-        return;
-    }
-    event.target.classList.add('is-loading');
-    grecaptcha.ready(function() {
-          grecaptcha.execute('tianpeng', {action: 'submit'}).then(function(token) {
-              $.ajax({
-                type: 'get',
-                cache: false,
-                url: url,
-                dataType: "jsonp",
-                async: false,
-                processData: false,
-                //timeout:10000, 
-                complete: function (data) {
-                    if(data.status==200){
+    if (!(name && url && image && des)) {
+    alert("信息不完整！");
+    return;
+}
+if (!(TestUrl(url))) {
+    alert("URL格式错误！需要包含HTTP协议头！");
+    return;
+}
+if (!(TestUrl(image))) {
+    alert("图标URL格式错误！需要包含HTTP协议头！");
+    return;
+}
+event.target.classList.add('is-loading');
+grecaptcha.ready(function() {
+    grecaptcha.execute('tianpeng', {action: 'submit'}).then(function(token) {
+        $.ajax({
+            type: 'get',
+            cache: false,
+            url: url,
+            dataType: "jsonp",
+            async: false,
+            processData: false,
+            complete: function (data) {
+                if (data.status == 200) {
                     $.ajax({
                         type: 'POST',
                         dataType: "json",
@@ -141,15 +149,14 @@ function askFriend (event) {
                         success: function (data) {
                             alert(data.msg);
                         }
-                    });}
-                    else{
-                        alert("The URL cannot be reached!");
-                    }
-                    event.target.classList.remove('is-loading');
+                    });
+                } else {
+                    alert("无法访问该URL！");
                 }
+                event.target.classList.remove('is-loading');
+            }
           });
         });
     });
 }
 </script>
-                 
