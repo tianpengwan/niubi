@@ -18,7 +18,7 @@ banner_img: https://t.alcy.cc/pc/
 <link rel="stylesheet" href="https://unpkg.com/qexo-static@1.6.0/hexo/friends.css"/>
 
 <script src="https://unpkg.com/qexo-static@1.6.0/hexo/friends.js"></script>
-<script>loadQexoFriends("qexo-friends", "https://qexo.apursuer.com")</script>
+<script>loadQexoFriends("qexo-friends", "https://hexoadmin.20010501.xyz")</script>
 
 # Apply for Apursuer's friend chain
 <link rel="stylesheet" href="https://unpkg.com/apursuer-qexo-friend-links@1.0.2/apursuer-hexo-friend-links.css"/>
