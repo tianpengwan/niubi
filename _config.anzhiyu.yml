@@ -1062,8 +1062,8 @@ home_top:
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 配置
-      path: https://hexoadmin.20010501.xyz/
+    - name: 钓鱼分享
+      path: /categories/钓鱼分享/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
