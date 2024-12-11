@@ -57,15 +57,6 @@ banner_img: https://t.alcy.cc/pc/
                     </span>
                 </div>
             </div>
-            <div class="field">
-                <label class="label">描述</label>
-                <div class="control has-icons-left">
-                    <input class="input" type="text" placeholder="请用一句话描述您的站点" id="friend-des" required>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-comment"></i>
-                    </span>
-                </div>
-            </div>
 <div class="field">
     <label class="label">描述</label>
     <div class="control has-icons-left">
