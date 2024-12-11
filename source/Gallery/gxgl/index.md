@@ -3,7 +3,7 @@ title:
 date: 2019-10-31 09:32:24
 ---
 
-{% gallery true,20,10 %}
+{% gallery true,,10 %}
 ![P20241203-091635.jpg](https://ghtpdl.20010501.xyz/tptp/P20241203-091635.jpg)
 ![P20241124-102616.jpg](https://ghtpdl.20010501.xyz/tptp/P20241124-102616.jpg)
 ![P20241114-153824.jpg](https://ghtpdl.20010501.xyz/tptp/P20241114-153824.jpg)
