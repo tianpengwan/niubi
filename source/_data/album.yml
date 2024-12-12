@@ -1,5 +1,5 @@
 - class_name: 我在各地旅游
-  path_name: /wordScenery
+  path_name: /lyzp
   type: 2
   description: 世界那么大，我想去看看
   cover: https://bu.dusays.com/2023/04/09/64329399d1175.jpg
@@ -27,7 +27,7 @@
         - https://bu.dusays.com/2023/04/09/64329399db2e1.webp
 
 - class_name: 我的日常
-  path_name: /dailyPhoto
+  path_name: /xiebrozp
   type: 1
   description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
   top_link: /album
