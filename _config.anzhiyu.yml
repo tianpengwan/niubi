@@ -35,8 +35,7 @@ nav:
       item:
         - name: 博客站点
           link: https://20010501.xyz/
-          icon:
-      item:
+          icon: https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
         - name: 管理
           link: https://hexoadmin.20010501.xyz/
           icon: https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
