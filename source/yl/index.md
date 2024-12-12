@@ -16,9 +16,9 @@ banner_img: https://t.alcy.cc/pc/
 # 我可爱的友友们
 
 <div id="qexo-friends"></div>
-<link rel="stylesheet" href="https://unpkg.com/qexo-static@1.6.0/hexo/friends.css"/>
+<link rel="stylesheet" href="css/yl.css"/>
 
-<script src="https://unpkg.com/qexo-static@1.6.0/hexo/friends.js"></script>
+<script src="js/yl.js"></script>
 <script>loadQexoFriends("qexo-friends", "https://hexoadmin.20010501.xyz")</script>
 
 # 留言申请友链吧
