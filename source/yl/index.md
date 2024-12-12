@@ -15,9 +15,20 @@ banner_img: https://t.alcy.cc/pc/
 
 # 我可爱的友友们
 
-<div id="qexo-friends"></div>
-<link rel="stylesheet" href="https://520.20010501.xyz//css/friends.css"/>
-<script src="https://520.20010501.xyz/js/friends.js"></script>
-<script>loadQexoFriends("qexo-friends", "https://hexoadmin.20010501.xyz")</script>
+<head>
+  <!-- ... -->
+  <script src="//cdn.jsdelivr.net/gh/Uyoahz26/qexo-link@main/main.min.js"></script>
+  <!-- ... -->
+</head>
+<body>
+  <!-- ... -->
+  <div id="qexo-friends"></div>
+  <script>
+    loadQexoFriends({
+        id: "qexo-friends",
+        url: "https://hexoadmin.20010501.xyz",
+    })
+  </script>
+</body>
 
 # 留言申请友链吧
