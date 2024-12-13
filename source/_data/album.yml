@@ -12,7 +12,7 @@
   top_link: /imgs
   top_btn_text: 返回
   album_list:
-  - date: 2024/12/14 01:00:00
+    - date: 2024/12/14 01:00:00
       content: 钓到好多好多鱼🐟
       address: 河南信阳
       from: 再吃一口就减肥
