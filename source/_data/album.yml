@@ -1,20 +1,21 @@
-- class_name: 我在各地工作和旅游
+- class_name: 各地工作和旅游
   path_name: /lyzp
   type: 2
   description: 世界那么大，我想去看看
-  cover: https://ghtpdl.20010501.xyz/tptp/mmexport1724410333934.jpg
-  top_background: https://ghtpdl.20010501.xyz/tptp/mmexport1724410333934.jpg
+  cover: https://bu.dusays.com/2023/04/09/64329399d1175.jpg
+  top_background: https://bu.dusays.com/2023/06/30/649e546ada7dd.webp
   rowHeight: 220
   limit: 10
   lazyload: true
   btnLazyload: false
   url: false
-  top_link: /imgs
+  top_link: /album
   top_btn_text: 返回
   album_list:
-    - date: 2024/8/13 01:00:00
-      content: 快乐钓鱼行动
+    - date: 2022/10/26 01:00:00
+      content: 茶叶之乡啊
       address: 河南信阳
+      from: 钓了好多好多鱼🐟啊
       image:
         - https://bu.dusays.com/2023/04/09/64329399db122.webp
         - https://ghtpdl.20010501.xyz/tptp/P20240820-120225.jpg
@@ -33,26 +34,24 @@
         - https://ghtpdl.20010501.xyz/tptp/P20240831-185301.jpg
         - https://ghtpdl.20010501.xyz/tptp/P20240830-205213.jpg
         - https://ghtpdl.20010501.xyz/tptp/P20240830-200148.jpg
-  album_list:
     - date: 2022-10-25
-      content: 洛阳暴雨后的天空。
-      address: 河南洛阳
-      from: 紫菜卷
+      content: 在公司和学校
+      address: 重庆交院
+      from: 累啊_(•̀ω•́ 」∠)_
       image:
         - https://bu.dusays.com/2023/04/09/64329399db122.webp
         - https://bu.dusays.com/2023/04/09/64329399db2e1.webp
 
-- class_name: xiebro的日常
+- class_name: 我的日常
   path_name: /xiebrozp
   type: 1
   description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
-  top_link: /imgs
+  top_link: /album
   top_btn_text: 返回
-  top_background: https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
-  cover: https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
+  top_background: - https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
+  cover: - https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
   album_list:
     - date: 2022-10-24
-      content: 在沙发上刚洗头
-      address: 重庆开州
+      content: 老妹的画
       image:
         - https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
