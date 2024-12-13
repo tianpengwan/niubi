@@ -9,7 +9,7 @@
   lazyload: true
   btnLazyload: false
   url: false
-  top_link: /album
+  top_link: /imgs
   top_btn_text: 返回
   album_list:
     - date: 2022/10/26 01:00:00
@@ -46,7 +46,7 @@
   path_name: /xiebrozp
   type: 1
   description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
-  top_link: /album
+  top_link: /imgs
   top_btn_text: 返回
   top_background: - https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
   cover: - https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
