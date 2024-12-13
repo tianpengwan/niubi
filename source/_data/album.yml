@@ -33,7 +33,13 @@
         - https://ghtpdl.20010501.xyz/tptp/P20240831-185301.jpg
         - https://ghtpdl.20010501.xyz/tptp/P20240830-205213.jpg
         - https://ghtpdl.20010501.xyz/tptp/P20240830-200148.jpg
-
+      - date: 2022-10-25
+      content: 洛阳暴雨后的天空。
+      address: 河南洛阳
+      from: 紫菜卷
+      image:
+        - https://bu.dusays.com/2023/04/09/64329399db122.webp
+        - https://bu.dusays.com/2023/04/09/64329399db2e1.webp
 
 - class_name: xiebro的日常
   path_name: /xiebrozp
