@@ -1,9 +1,9 @@
-- class_name: 我在各地旅游
+- class_name: 我在各地工作和旅游
   path_name: /lyzp
   type: 2
   description: 世界那么大，我想去看看
-  cover: https://bu.dusays.com/2023/04/09/64329399d1175.jpg
-  top_background: https://bu.dusays.com/2023/06/30/649e546ada7dd.webp
+  cover: https://ghtpdl.20010501.xyz/tptp/mmexport1724410333934.jpg
+  top_background: https://ghtpdl.20010501.xyz/tptp/mmexport1724410333934.jpg
   rowHeight: 220
   limit: 10
   lazyload: true
@@ -13,29 +13,39 @@
   top_btn_text: 返回
   album_list:
     - date: 2022/10/26 01:00:00
-      content: 湘潭的一角。
-      address: 湖南湘潭
-      from: 再吃一口就减肥
+      content: 河南信阳
+      address: 在信阳浉河区
+      from: 有很多的茶叶哇
       image:
         - https://bu.dusays.com/2023/04/09/64329399db122.webp
-    - date: 2022-10-25
-      content: 洛阳暴雨后的天空。
-      address: 河南洛阳
-      from: 紫菜卷
-      image:
-        - https://bu.dusays.com/2023/04/09/64329399db122.webp
-        - https://bu.dusays.com/2023/04/09/64329399db2e1.webp
+        - https://ghtpdl.20010501.xyz/tptp/P20240820-120225.jpg
+        - https://ghtpdl.20010501.xyz/tptp/P40819-225300.jpg
+        - https://cdn.jsdelivr.net/gh/tianpengwan/hexoxxtc/tptp/P20240816-190019.jpg
+        - https://cdn.jsdelivr.net/gh/tianpengwan/hexoxxtc/tptp/P20240816-190032(1).jpg
+        - https://cdn.jsdelivr.net/gh/tianpengwan/hexoxxtc/tptp/P20240727-135244.jpg
+        - https://raw.githubusercontent.com/tianpengwan/hexoxxtc/main/xiebro/P20240629-184408.jpg
+        - https://raw.githubusercontent.com/tianpengwan/hexoxxtc/main/xiebro/P20240629-184409.jpg
+        - https://ghtpdl.20010501.xyz/tptp/mmexport1724808565767.jpg
+        - https://ghtpdl.20010501.xyz/tptp/Image_1724808930761.jpg
+        - https://ghtpdl.20010501.xyz/tptp/P20240826-203939.jpg
+        - https://ghtpdl.20010501.xyz/tptp/P20240825-192749.jpg
+        - https://ghtpdl.20010501.xyz/tptp/P20240824-111033.jpg
+        - https://ghtpdl.20010501.xyz/tptp/mmexport1724410333934.jpg
+        - https://ghtpdl.20010501.xyz/tptp/P20240831-185301.jpg
+        - https://ghtpdl.20010501.xyz/tptp/P20240830-205213.jpg
+        - https://ghtpdl.20010501.xyz/tptp/P20240830-200148.jpg
 
-- class_name: 我的日常
+
+- class_name: xiebro的日常
   path_name: /xiebrozp
   type: 1
   description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
   top_link: /imgs
   top_btn_text: 返回
-  top_background: https://bu.dusays.com/2023/04/09/64329399cea5a.webp
-  cover: https://bu.dusays.com/2023/04/09/64329399cea5a.webp
+  top_background: https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
+  cover: https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
   album_list:
     - date: 2022-10-24
-      content: 老妹的画
+      content: 在沙发上刚洗头
       image:
-        - https://bu.dusays.com/2023/04/09/643293997b92b.jpeg
+        - https://ghtpdl.20010501.xyz/tptp/android-chrome-512x512.png
