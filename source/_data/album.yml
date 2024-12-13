@@ -1,15 +1,15 @@
-- class_name: 世界各地夕阳与风景
+- class_name: 在各地旅游工作的照片
   path_name: /lyzp
   type: 2
-  description: 因为到不了世界各地，所以请网友们发来了各地的夕阳与风景🌇。
-  cover: https://bu.dusays.com/2023/04/09/64329399d1175.jpg
-  top_background: https://bu.dusays.com/2023/06/30/649e546ada7dd.webp
+  description: 世界那么大，说好要用一生去探寻，恍然发现宝藏就是你，环游世界来找你。
+  cover: https://ghtpdl.20010501.xyz/tptp/mmexport1724410333934.jpg
+  top_background: https://ghtpdl.20010501.xyz/tptp/mmexport1724410333934.jpg
   rowHeight: 220
   limit: 10
   lazyload: true
   btnLazyload: false
   url: false
-  top_link: /album
+  top_link: /imgs
   top_btn_text: 返回
   album_list:
     - date: 2022/10/26 01:00:00
@@ -30,7 +30,7 @@
   path_name: /xiebrozp
   type: 1
   description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
-  top_link: /album
+  top_link: /imgs
   top_btn_text: 返回
   top_background: https://bu.dusays.com/2023/04/09/64329399cea5a.webp
   cover: https://bu.dusays.com/2023/04/09/64329399cea5a.webp
