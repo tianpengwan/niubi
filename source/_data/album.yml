@@ -69,6 +69,11 @@
   path_name: /xiebrozp
   type: 2
   description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
   top_link: /imgs
   top_btn_text: 返回
   top_background: https://ghtpdl.20010501.xyz/tptp/mmexport1708704524005.png
