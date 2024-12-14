@@ -14,7 +14,7 @@ menu:
 #   追番页: /bangumis/ || anzhiyu-icon-bilibili
    相册集: /imgs/ || anzhiyu-icon-images
    小空调: /air-conditioner/ || anzhiyu-icon-fan
-   说说: /shuo/ || anzhiyu-icon-envelope
+#   说说: /shuo/ || anzhiyu-icon-envelope
  分享:
    影视: /movies/ || fas fa-video
 #   追番页: /bangumis/ || anzhiyu-icon-bilibili
