@@ -14,7 +14,7 @@ date: 2020-07-22 22:06:17
   <script>
     qexoDaodao?.init({
       el: "#qexoDaoDao",
-      avatar:
+      avatar: -
       name: "UyoAhz",
       limit: 10,
       useLoadingImg: false,
