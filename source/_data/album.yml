@@ -67,7 +67,7 @@
 
 - class_name: 我的日常
   path_name: /xiebrozp
-  type: 1
+  type: 2
   description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
   top_link: /imgs
   top_btn_text: 返回
