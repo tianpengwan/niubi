@@ -16,7 +16,7 @@ date: 2020-07-22 22:06:17
       el: "#qexoDaoDao",
       avatar: "https://20010501.xyz/fluid.png",
       name: "宇外御风",
-      limit: 5,
+      limit: 10,
       useLoadingImg: false,
       baseURL: "https://hexoadmin.20010501.xyz/",
     }).then(function (){
