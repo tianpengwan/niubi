@@ -14,7 +14,7 @@ date: 2020-07-22 22:06:17
   <script>
     qexoDaodao?.init({
       el: "#qexoDaoDao",
-      avatar: "https://q1.qlogo.cn/g?b=qq&nk=2496091142&s=640",
+      avatar:
       name: "UyoAhz",
       limit: 10,
       useLoadingImg: false,
