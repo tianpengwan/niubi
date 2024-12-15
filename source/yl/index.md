@@ -17,7 +17,7 @@ banner_img: https://t.alcy.cc/pc/
 
 <head>
   <!-- ... -->
-  <script src="//cdn.jsdelivr.net/gh/Uyoahz26/qexo-link@main/main.min.js"></script>
+  <script src="/js/main.min.js"></script>
   <!-- ... -->
 </head>
 <body>
