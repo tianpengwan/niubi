@@ -14,7 +14,7 @@ date: 2020-07-22 22:06:17
   <script>
     qexoDaodao?.init({
       el: "#qexoDaoDao",
-      avatar: "https://20010501.xyz/fluid.png",
+      cnm: "https://20010501.xyz/fluid.png",
       name: "宇外御风",
       limit: 10,
       useLoadingImg: false,
