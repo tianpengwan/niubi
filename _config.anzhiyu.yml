@@ -1242,9 +1242,12 @@ inject:
     - <link rel="stylesheet" href="/css/font.css">
     - <link rel="stylesheet" href="/css/background.css">
     - <link rel="stylesheet" href="/css/mouse.css">
+    - <link rel="stylesheet" href="https://blog.bornforthis.cn/static/css/anniversary.css">
     # iconfont 图标引入
     - <meta name="referrer" content="no-referrer">
   bottom:
+    - <script src="https://blog.bornforthis.cn/static/js/anniversary.js"></script>
+    - <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.12/lunar.js"></script>
 #    <script src="/js/jquery.js"></script>
 #    <script src="https://unpkg.com/@waline/client@v2/dist/waline.mjs"></script>
 
