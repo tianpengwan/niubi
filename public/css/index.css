@@ -2656,7 +2656,7 @@ body {
   background-color: transparent;
 }
 * {
-  scrollbar-width: thin;
+  scrollbar-width: 8%;
   scrollbar-color: var(--scrollbar-color) transparent;
 }
 input::placeholder {
