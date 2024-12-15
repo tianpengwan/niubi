@@ -7,7 +7,7 @@
       lunar: false
       color: '#a8dadc'
       display_mode: "elapsed"  # 新增字段，显示已经过去的天数
-      show_copyright: true  # 新增字段，控制是否显示版权
+      show_copyright: false  # 新增字段，控制是否显示版权
       copyright_name: "喵喵纪念日"
       # copyright_link: "https://blog.bornforthis.cn/anniversary/"
 
