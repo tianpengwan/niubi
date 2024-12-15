@@ -9683,8 +9683,8 @@ h1.page-title + .tag-cloud-list {
   border: var(--style-border-avatar);
 }
 .avatar-img img {
-  width: 100%;
-  height: 100%;
+  width: 7%;
+  height: 7%;
   -webkit-transition: filter 375ms ease-in 0.2s, -webkit-transform 0.3s;
   -moz-transition: filter 375ms ease-in 0.2s, -moz-transform 0.3s;
   -o-transition: filter 375ms ease-in 0.2s, -o-transform 0.3s;
