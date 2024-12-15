@@ -1,0 +1,50 @@
+#anniversary-box
+    - let anniversary_background = page.top_background
+    .author-content.author-content-item.anniversary.single(style=anniversary_background ? `background: url(${anniversary_background}) top / cover no-repeat` : "")
+        .card-content
+            .author-content-item-tips anniversary
+            span.author-content-item-title 喵喵纪念日
+            .content-bottom
+            .tips 时间如潮水般涌动向前，你会为谁停留片刻？
+            .banner-button-group
+              a.banner-button(onclick='pjax.loadUrl("/about/")')
+                i.anzhiyufont.anzhiyu-icon-arrow-circle-right(style='font-size: 1.5rem')
+                span.banner-button-text 我的更多
+    #anniversary-main
+      each group in site.data.anniversary
+        .anniversary-group
+          .group-header
+            .group-title #{group.class_name} (#{group.anniversaries.length}) <!-- 显示分组名称和纪念日数量 -->
+            .group-desc #{group.class_desc} <!-- 显示分组说明 -->
+
+          .anniversary-cards
+            each item in group.anniversaries
+              .anniversary-card(style=`background-color: ${item.color}`)
+                .card-content
+                  .card-header(style="justify-content: center;")
+                    if item.icon
+                      img.card-icon(src=item.icon alt="icon")
+                    .card-title #{item.name} <!-- 始终显示标题 -->
+
+                  .card-body(style="background-color: white; padding: 20px; text-align: center;")
+                    .countdown-wrapper
+                      span.countdown(data-date=item.date data-lunar=item.lunar data-display-mode=item.display_mode) 计算中...
+                      .days-label 天后 <!-- "天后" 或 "天了" 根据模式动态显示 -->
+
+                  .card-footer
+                    .dashed-line(style="border-top: 1px dashed #ccc; margin: 10px 0;") <!-- 虚线 -->
+                    .target-info 
+                      if item.display_mode === 'elapsed'
+                        span.target-label - 起始日 -  <!-- 当 display_mode 为 elapsed 时显示起始日 -->
+                      else
+                        span.target-label - 目标日 -
+                      br
+                      span.target-date(data-date=item.date data-lunar=item.lunar data-display-mode=item.display_mode) 计算中...
+
+                // 根据 show_copyright 显示或隐藏卡片内的版权信息
+                if item.show_copyright
+                  - let copyrightName = item.copyright_name ? item.copyright_name : '喵喵纪念日'
+                  - let copyrightLink = item.copyright_link ? item.copyright_link : 'https://blog.bornforthis.cn/posts/41c7c45e.html'
+                  .card-copyright
+                    | 版权所有 © #{item.name}
+                    a(href=copyrightLink target="_blank") #{copyrightName}
