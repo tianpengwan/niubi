@@ -23,22 +23,24 @@ banner_img: https://t.alcy.cc/pc/
 <body>
   <!-- ... -->
   <div id="qexo-friends"></div>
+  <button id="reloadButton">点击重新加载</button>
   <script>
     function loadQexoFriends(options) {
-      const script = document.createElement('script');
-      script.src = options.url + '/friends.js';
-      script.onload = function() {
-        // 假设friends.js中有一个初始化函数
-        if (typeof initQexoFriends === 'function') {
-          initQexoFriends(options.id);
-        }
-      };
-      document.body.appendChild(script);
+      // 假设这是你的原有逻辑
+      console.log("Loading Qexo Friends with options:", options);
     }
 
-    loadQexoFriends({
+    document.getElementById('reloadButton').addEventListener('click', function() {
+      loadQexoFriends({
         id: "qexo-friends",
         url: "https://hexoadmin.20010501.xyz",
+      });
+    });
+
+    // 初始加载
+    loadQexoFriends({
+      id: "qexo-friends",
+      url: "https://hexoadmin.20010501.xyz",
     });
   </script>
 </body>
