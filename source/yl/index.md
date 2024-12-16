@@ -24,10 +24,22 @@ banner_img: https://t.alcy.cc/pc/
   <!-- ... -->
   <div id="qexo-friends"></div>
   <script>
+    function loadQexoFriends(options) {
+      const script = document.createElement('script');
+      script.src = options.url + '/friends.js';
+      script.onload = function() {
+        // 假设friends.js中有一个初始化函数
+        if (typeof initQexoFriends === 'function') {
+          initQexoFriends(options.id);
+        }
+      };
+      document.body.appendChild(script);
+    }
+
     loadQexoFriends({
         id: "qexo-friends",
         url: "https://hexoadmin.20010501.xyz",
-    })
+    });
   </script>
 </body>
 
