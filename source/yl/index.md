@@ -24,19 +24,10 @@ banner_img: https://t.alcy.cc/pc/
   <!-- ... -->
   <div id="qexo-friends"></div>
   <script>
-    // 初始加载
     loadQexoFriends({
-      id: "qexo-friends",
-      url: "https://hexoadmin.20010501.xyz",
-    });
-
-    // 在页面加载完成后重新加载JS
-    window.onload = function() {
-      loadQexoFriends({
         id: "qexo-friends",
         url: "https://hexoadmin.20010501.xyz",
-      });
-    };
+    })
   </script>
 </body>
 
