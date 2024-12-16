@@ -21,8 +21,7 @@ banner_img: https://t.alcy.cc/pc/
   <!-- ... -->
 </head>
 <body>
-  <!-- 添加按钮 -->
-  <button id="reload-js">点击这里重新加载JS</button>
+  <!-- ... -->
   <div id="qexo-friends"></div>
   <script>
     // 初始加载
@@ -31,13 +30,13 @@ banner_img: https://t.alcy.cc/pc/
       url: "https://hexoadmin.20010501.xyz",
     });
 
-    // 为按钮添加点击事件处理程序
-    document.getElementById('reload-js').addEventListener('click', function() {
+    // 在页面加载完成后重新加载JS
+    window.onload = function() {
       loadQexoFriends({
         id: "qexo-friends",
         url: "https://hexoadmin.20010501.xyz",
       });
-    });
+    };
   </script>
 </body>
 
