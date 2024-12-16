@@ -21,26 +21,22 @@ banner_img: https://t.alcy.cc/pc/
   <!-- ... -->
 </head>
 <body>
-  <!-- ... -->
+  <!-- 添加按钮 -->
+  <button id="reload-js">点击这里重新加载JS</button>
   <div id="qexo-friends"></div>
-  <button id="reloadButton">点击重新加载</button>
   <script>
-    function loadQexoFriends(options) {
-      // 假设这是你的原有逻辑
-      console.log("Loading Qexo Friends with options:", options);
-    }
-
-    document.getElementById('reloadButton').addEventListener('click', function() {
-      loadQexoFriends({
-        id: "qexo-friends",
-        url: "https://hexoadmin.20010501.xyz",
-      });
-    });
-
     // 初始加载
     loadQexoFriends({
       id: "qexo-friends",
       url: "https://hexoadmin.20010501.xyz",
+    });
+
+    // 为按钮添加点击事件处理程序
+    document.getElementById('reload-js').addEventListener('click', function() {
+      loadQexoFriends({
+        id: "qexo-friends",
+        url: "https://hexoadmin.20010501.xyz",
+      });
     });
   </script>
 </body>
