@@ -6,7 +6,7 @@ comments: false
 
 <style>
   #libCategories .card-wrap:hover .card-info:after {
-    width: 300%;
+    width: 150%;
   }
 </style>
 <link rel="stylesheet" type="text/css" href="https://npm.elemecdn.com/js-heo@1.0.11/3dCard/no3d.css">
