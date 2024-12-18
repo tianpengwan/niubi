@@ -1246,7 +1246,7 @@ inject:
     - <link rel="stylesheet" href="/css/background.css">
     - <link rel="stylesheet" href="/css/mouse.css">
     - <link rel="stylesheet" href="https://blog.bornforthis.cn/static/css/anniversary.css">
-    - <link rel="stylesheet" href="/css/welcome.css">
+    - <link rel="stylesheet" href="/css/welcome.css?1">
     # iconfont 图标引入
     - <meta name="referrer" content="no-referrer">
   bottom:
