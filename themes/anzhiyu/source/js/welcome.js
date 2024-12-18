@@ -1,40 +1,53 @@
-//get请求
-$.ajax({
-    type: 'get',
-    url: 'https://apis.map.qq.com/ws/location/v1/ip',
-    data: {
-        key: 'E46BZ-I7GCT-YU4XZ-VJFAC-6L3PH-GIBDV',
-        output: 'jsonp',
-    },
-    dataType: 'jsonp',
-    success: function (res) {
-        ipLocation = res;
-    }
-})
-function getDistance(e1, n1, e2, n2) {
-    const R = 6371
-    const { sin, cos, asin, PI, hypot } = Math
-    let getPoint = (e, n) => {
-        e *= PI / 180
-        n *= PI / 180
-        return { x: cos(n) * cos(e), y: cos(n) * sin(e), z: sin(n) }
-    }
+// 进行 fetch 请求
+fetch('https://api.nsmao.net/api/ip/query?key=hFbcVvrKNjQJIdfbrwWHaHYWOd') // 申请地址：https://api.nsmao.net
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        ipLocation = data;
+        if (isHomePage()) {
+            showWelcome();
+        }
+    })
+    .catch(error => console.error('Error:', error));
 
-    let a = getPoint(e1, n1)
-    let b = getPoint(e2, n2)
-    let c = hypot(a.x - b.x, a.y - b.y, a.z - b.z)
-    let r = asin(c / 2) * 2 * R
+function getDistance(e1, n1, e2, n2) {
+    const R = 6371;
+    const { sin, cos, asin, PI, hypot } = Math;
+    let getPoint = (e, n) => {
+        e *= PI / 180;
+        n *= PI / 180;
+        return { x: cos(n) * cos(e), y: cos(n) * sin(e), z: sin(n) };
+    };
+
+    let a = getPoint(e1, n1);
+    let b = getPoint(e2, n2);
+    let c = hypot(a.x - b.x, a.y - b.y, a.z - b.z);
+    let r = asin(c / 2) * 2 * R;
     return Math.round(r);
 }
 
 function showWelcome() {
+    if (!ipLocation || !ipLocation.data) {
+        console.error('ipLocation data is not available.');
+        return;
+    }
 
-    let dist = getDistance(108.41029, 31.177409, ipLocation.result.location.lng, ipLocation.result.location.lat); //这里记得换成自己的经纬度
-    let pos = ipLocation.result.ad_info.nation;
-    let ip;
+    let dist = getDistance(108.4102958, 31.1774095, ipLocation.data.lng, ipLocation.data.lat); // 修改自己的经度（121.413921）纬度（31.089290）
+    let pos = ipLocation.data.country;
+    let ip = ipLocation.ip;
     let posdesc;
-    //根据国家、省份、城市信息自定义欢迎语
-    switch (ipLocation.result.ad_info.nation) {
+
+    // 新增ipv6显示为指定内容
+    if (ip.includes(":")) {
+        ip = "<br>好复杂，咱看不懂~(ipv6)";
+    }
+    
+    // 以下的代码需要根据新API返回的结果进行相应的调整
+    switch (ipLocation.data.country) {
         case "日本":
             posdesc = "よろしく，一起去看樱花吗";
             break;
@@ -60,9 +73,8 @@ function showWelcome() {
             posdesc = "拾起一片枫叶赠予你";
             break;
         case "中国":
-            pos = ipLocation.result.ad_info.province + " " + ipLocation.result.ad_info.city + " " + ipLocation.result.ad_info.district;
-            ip = ipLocation.result.ip;
-            switch (ipLocation.result.ad_info.province) {
+            pos = ipLocation.data.prov + " " + ipLocation.data.city + " " + ipLocation.data.district;
+            switch (ipLocation.data.prov) {
                 case "北京市":
                     posdesc = "北——京——欢迎你~~~";
                     break;
@@ -91,7 +103,7 @@ function showWelcome() {
                     posdesc = "众所周知，中国只有两个城市";
                     break;
                 case "江苏省":
-                    switch (ipLocation.result.ad_info.city) {
+                    switch (ipLocation.data.city) {
                         case "南京市":
                             posdesc = "这是我挺想去的城市啦";
                             break;
@@ -104,12 +116,22 @@ function showWelcome() {
                     }
                     break;
                 case "浙江省":
-                    posdesc = "东风渐绿西湖柳，雁已还人未南归";
+                    switch (ipLocation.data.city) {
+                        case "杭州市":
+                            posdesc = "东风渐绿西湖柳，雁已还人未南归";
+                            break;
+                        default:
+                            posdesc = "望海楼明照曙霞,护江堤白蹋晴沙";
+                            break;
+                    }
                     break;
                 case "河南省":
-                    switch (ipLocation.result.ad_info.city) {
+                    switch (ipLocation.data.city) {
                         case "郑州市":
                             posdesc = "豫州之域，天地之中";
+                            break;
+                        case "信阳市":
+                            posdesc = "品信阳毛尖，悟人间芳华";
                             break;
                         case "南阳市":
                             posdesc = "臣本布衣，躬耕于南阳此南阳非彼南阳！";
@@ -141,7 +163,7 @@ function showWelcome() {
                     posdesc = "遥望齐州九点烟，一泓海水杯中泻";
                     break;
                 case "湖北省":
-                    switch (ipLocation.result.ad_info.city) {
+                    switch (ipLocation.data.city) {
                         case "黄冈市":
                             posdesc = "红安将军县！辈出将才！";
                             break;
@@ -154,7 +176,7 @@ function showWelcome() {
                     posdesc = "74751，长沙斯塔克";
                     break;
                 case "广东省":
-                    switch (ipLocation.result.ad_info.city) {
+                    switch (ipLocation.data.city) {
                         case "广州市":
                             posdesc = "看小蛮腰，喝早茶了嘛~";
                             break;
@@ -221,7 +243,7 @@ function showWelcome() {
             break;
     }
 
-    //根据本地时间切换欢迎语
+    // 根据本地时间切换欢迎语
     let timeChange;
     let date = new Date();
     if (date.getHours() >= 5 && date.getHours() < 11) timeChange = "<span>🌤️ 早上好，一日之计在于晨</span>";
@@ -231,18 +253,32 @@ function showWelcome() {
     else if (date.getHours() >= 19 && date.getHours() < 24) timeChange = "<span>🌙 晚上好，夜生活嗨起来！</span>";
     else timeChange = "夜深了，早点休息，少熬夜";
 
-// 新增ipv6显示为指定内容
-    if (ip.includes(":")) {
-        ip = "<br>好复杂，咱看不懂~(ipv6)";
-    }
-    try {
-        //自定义文本和需要放的位置
-        document.getElementById("welcome-info").innerHTML =
-            `欢迎来自 <b><span style="color: var(--kouseki-ip-color);font-size: var(--kouseki-gl-size)">${pos}</span></b> 的小友💖<br>${posdesc}🍂<br>当前位置距博主约 <b><span style="color: var(--kouseki-ip-color)">${dist}</span></b> 公里！<br>您的IP地址为：<b><span>${ip}</span></b><br>${timeChange} <br>`;
-    } catch (err) {
-         console.log("Pjax无法获取元素")
+    let welcomeInfoElement = document.getElementById("welcome-info");
+
+    if (welcomeInfoElement) {
+        welcomeInfoElement.innerHTML =
+            `欢迎来自 <b><span style="color: var(--anzhiyu-main)">${pos}</span></b> 的小友💖<br>当前位置距博主约 <b><span style="color: var(--anzhiyu-main)">${dist.toFixed(2)}</span></b> 公里！<br>${timeChange}<br>Tip：<b><span style="font-size: 15px;">${posdesc}</span></b>`;
+    } else {
+        console.log("Pjax无法获取元素");
     }
 }
-window.onload = showWelcome;
-// 如果使用了pjax在加上下面这行代码
-document.addEventListener('pjax:complete', showWelcome);
+
+// Pjax完成页面切换的事件回调处理
+function handlePjaxComplete() {
+    if (isHomePage()) {
+        showWelcome();
+    }
+}
+
+function isHomePage() {
+    return window.location.pathname === '/' || window.location.pathname === '/index.html';
+}
+
+
+// 添加pjax:complete事件监听
+window.onload = function () {
+    if (isHomePage()) {
+        showWelcome();
+    }
+    document.addEventListener("pjax:complete", handlePjaxComplete);
+};
