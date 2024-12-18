@@ -821,8 +821,8 @@ aside:
     name_link: /
 
   card_announcement:
-    enable: false
-    content:
+    enable: true
+    content: <div id="welcome-info"></div>
   card_weixin:
     enable: false
     face: /img/wxgz.png
