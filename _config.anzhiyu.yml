@@ -1253,6 +1253,7 @@ inject:
     - <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.12/lunar.js"></script>
     - <script src="/js/main.min.js"></script>
     - <script src="/js/qexo-dao.min.js"></script>
+    - <script type="text/javascript" src="https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js"></script> # jquery.min.js
 #    <script src="/js/jquery.js"></script>
 #    <script src="https://unpkg.com/@waline/client@v2/dist/waline.mjs"></script>
 
