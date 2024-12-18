@@ -29,7 +29,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-    let dist = getDistance(108.4102958, 31.1774095, ipLocation.result.location.lng, ipLocation.result.location.lat); //这里记得换成自己的经纬度
+    let dist = getDistance(108.41029, 31.177409, ipLocation.result.location.lng, ipLocation.result.location.lat); //这里记得换成自己的经纬度
     let pos = ipLocation.result.ad_info.nation;
     let ip;
     let posdesc;
@@ -233,7 +233,7 @@ function showWelcome() {
 
 // 新增ipv6显示为指定内容
     if (ip.includes(":")) {
-        ip = "ipv6.ip.mir6.com";
+        ip = "<br>好复杂，咱看不懂~(ipv6)";
     }
     try {
         //自定义文本和需要放的位置
