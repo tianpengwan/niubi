@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>切换安知鱼主题后遇到的一些问题</title>
+      <link href="/2024/12/16/%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/"/>
+      <url>/2024/12/16/%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>1.安知鱼与qexo说说关于头像的冲突问题导致qexo说说显示异常。解决方法：修改一下类型名我换成了“cnm”</p><p>2.qexo说说、友链功能点击第一次不能正常显示，刷新第二次才能正常显示。解决方法：在主题配置文件中将js、css文件引入</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 安知鱼 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2024/12/10/hello-world/"/>
       <url>/2024/12/10/hello-world/</url>
