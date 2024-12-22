@@ -77,6 +77,12 @@
         - https://ghtpdl.20010501.xyz/tptp/P20241103-160303.jpg
         - https://ghtpdl.20010501.xyz/tptp/P20241103-180130.jpg
         - https://ghtpdl.20010501.xyz/tptp/P20241103-180143.jpg
+    - date: 2024-10-25
+      content: 在旅途中
+      address: 湖北襄阳
+      from: xiebro
+      image:
+        - https://ghtpdl.20010501.xyz/tptp/P20240701-114529.jpg
 - class_name: 我的日常
   path_name: /xiebrozp
   type: 2
