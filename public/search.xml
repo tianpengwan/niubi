@@ -8,7 +8,7 @@
       <link href="/2024/12/16/%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/"/>
       <url>/2024/12/16/%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</url>
       
-        <content type="html"><![CDATA[<p>1.安知鱼与qexo说说关于头像的冲突问题导致qexo说说显示异常。解决方法：修改一下类型名我换成了“cnm”</p><p>2.qexo说说、友链功能点击第一次不能正常显示，刷新第二次才能正常显示。解决方法：在主题配置文件中将js、css文件引入</p>]]></content>
+        <content type="html"><![CDATA[<p>1.安知鱼与qexo说说关于头像的冲突问题导致qexo说说显示异常。解决方法：修改一下类型名我换成了“cnm”</p><p>2.qexo说说、友链功能点击第一次不能正常显示，刷新第二次才能正常显示。解决方法：在主题配置文件中将js、css文件引入</p><ol start="3"><li>“未解决”副标题显示不正常</li></ol>]]></content>
       
       
       <categories>
