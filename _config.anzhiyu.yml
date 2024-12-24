@@ -531,7 +531,7 @@ footer:
     #     - title: 版权协议
     #       link: /copyright/
   footerBar:
-    enable: true
+    enable: false
     authorLink: /
     cc:
       enable: false
