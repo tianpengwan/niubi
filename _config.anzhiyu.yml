@@ -433,11 +433,11 @@ crisp:
 # --------------------------------------
 footer:
   owner:
-    enable: true
+    enable: false
     since: 2023
   custom_text:
   runtime:
-    enable: true
+    enable: false
     launch_time: 7/25/2023 00:00:00 # 网站上线时间
     work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 距离月入25k也就还差一个大佬带我~
@@ -1090,7 +1090,7 @@ home_top:
     tips: 文章推荐
     title: 中国移动ZN-H91最新光猫破解方法
     image: https://ghtpdl.20010501.xyz/tptp/mmexport1733481756261.png
-    link: https://520.20010501.xyz/2024/12/05/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8ZN-H91%E6%9C%80%E6%96%B0%E5%85%89%E7%8C%AB%E7%A0%B4%E8%A7%A3%E6%96%B9%E6%B3%95/
+    link: https://20010501.xyz/2024/12/05/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8ZN-H91%E6%9C%80%E6%96%B0%E5%85%89%E7%8C%AB%E7%A0%B4%E8%A7%A3%E6%96%B9%E6%B3%95/
 
 # 朋友圈配置
 friends_vue:
