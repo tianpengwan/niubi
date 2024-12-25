@@ -1245,7 +1245,7 @@ dynamicEffect:
 inject:
   head:
     - <link rel="stylesheet" href="/css/font.css">
-    - <link rel="stylesheet" href="/css/custom.styl">
+    - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="/css/background.css">
     - <link rel="stylesheet" href="/css/mouse.css">
     - <link rel="stylesheet" href="https://blog.bornforthis.cn/static/css/anniversary.css">
