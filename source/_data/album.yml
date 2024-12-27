@@ -1,3 +1,28 @@
+- class_name: 陌上颜如玉
+  path_name: /love
+  type: 2
+  description: 曾经沧海难为水,除却巫山不是云。
+  cover: https://ghtpdl.20010501.xyz/tptp/20210426024710_4ae5d.png
+  top_background: https://ghtpdl.20010501.xyz/tptp/20210426024710_4ae5d.png
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
+  top_link: /imgs
+  top_btn_text: 返回
+  album_list:
+    - date: 2024/12/15 01:00:00
+      content: 妳的背影
+      address: 云想衣裳花想容，春风拂槛露华浓
+      from: xiebro干饭饭
+      image:
+        - https://ghtpdl.20010501.xyz/tptp/20220707125039_06f59.jpg
+        - https://ghtpdl.20010501.xyz/tptp/20210504152032_7b6bc.jpg
+        - https://ghtpdl.20010501.xyz/tptp/20210904101740_e260b.png
+        - https://ghtpdl.20010501.xyz/tptp/20210426024710_4ae5d.png
+        - https://ghtpdl.20010501.xyz/tptp/779018894.jpg
+        - https://ghtpdl.20010501.xyz/tptp/1732341323.jpg
 - class_name: 在各地旅游工作的照片
   path_name: /lyzp
   type: 2
