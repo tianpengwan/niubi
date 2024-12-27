@@ -109,7 +109,7 @@ social:
 #   微博: https://weibo.com/asteroidqiao || anzhiyu-icon-weibo
 #   RSS: /atom.xml || anzhiyu-icon-rss
 #   Gitee: https://gitee.com/AsteroidQiao || anzhiyu-icon-github
-#   Email: mailto:2551845461@qq.com || icon-email
+#   Email: QQ邮箱:184637599@qq.com || icon-email
 # 作者卡片 状态
 author_status:
   enable: true
@@ -456,12 +456,12 @@ footer:
       - link: https://blog.anheyu.com/
         shields: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg
         message: 本站使用AnZhiYu主题
+      - link: https://github.com/
+        shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
+        message: 本站项目由Github托管
       # - link: https://www.dogecloud.com/
       #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
       #   message: 本站使用多吉云为静态资源提供CDN加速
-      # - link: https://github.com/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
-      #   message: 本站项目由Github托管
       # - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
       #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
       #   message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
@@ -552,7 +552,7 @@ footer:
       typeSpeed: 150 # type speed in milliseconds
       backSpeed: 50 # backspacing speed in milliseconds
       # loop (循环打字)
-      loop: true
+      loop: false
       # source 调用第三方服务
       # source: false 关闭调用
       # source: 1  调用一言网的一句话（简体） https://hitokoto.cn/
@@ -772,7 +772,7 @@ hr_icon:
 
 # the subtitle on homepage (主页subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Effect Speed Options (打字效果速度参数)
@@ -780,14 +780,14 @@ subtitle:
   typeSpeed: 150 # type speed in milliseconds
   backSpeed: 50 # backspacing speed in milliseconds
   # loop (循环打字)
-  loop: true
+  loop: false
   # source 调用第三方服务
   # source: false 关闭调用
   # source: 1  调用一言网的一句话（简体） https://hitokoto.cn/
   # source: 2  调用一句网（简体） http://yijuzhan.com/
   # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
   # subtitle 会先显示 source , 再显示 sub 的内容
-  source: 1
+  source: 3  调用今日诗词（简体） https://www.jinrishici.com/
   # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
   sub:
   # - 生活明朗&#44;万物可爱&#44;人间值得&#44;未来可期.
@@ -863,15 +863,15 @@ aside:
 # busuanzi count for PV / UV in site
 # 访问人数
 busuanzi:
-  site_uv: false
-  site_pv: false
-  page_pv: false
+  site_uv: true
+  site_pv: true
+  page_pv: true
 
 # Time difference between publish date and now (网页运行时间)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 4/1/2021 00:00:00
+  publish_date: 7/12/2024 00:00:00
 
 # Console - Newest Comments
 newest_comments:
