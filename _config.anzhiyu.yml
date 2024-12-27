@@ -109,8 +109,8 @@ social:
 #   微博: https://weibo.com/asteroidqiao || anzhiyu-icon-weibo
 #   RSS: /atom.xml || anzhiyu-icon-rss
 #   Gitee: https://gitee.com/AsteroidQiao || anzhiyu-icon-github
-#   Email: mailto:2551845461@qq.com || icon-email
-# 作者卡片 状态
+   Email: QQ邮箱:184637599@qq.com || icon-email
+#   作者卡片 状态
 author_status:
   enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
@@ -244,7 +244,7 @@ mainTone:
 # wordcount (字数统计)
 # see https://blog.anheyu.com/posts/c27d.html#字数统计
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -329,7 +329,7 @@ post_pagination: 2
 
 # Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
   limit_day: 365 # When will it be shown
   position: top # position: top/bottom
@@ -712,16 +712,16 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
+  enable: true
   colorful: true # open particle animation (冒光特效)
-  shake: false #  open shake (抖动特效)
-  mobile: false
+  shake: true #  open shake (抖动特效)
+  mobile: true
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999 # -1 or 9999
-  mobile: false
+  mobile: true
 
 # Mouse click effects: Heart symbol (鼠标点击效果: 爱心)
 click_heart:
