@@ -450,6 +450,7 @@ footer:
     list:
       - link: https://www.cloudflare-cn.com/enterprise/ #徽标指向网站链接
         shields: /svg/CDN-Cloudflare-yellow.svg
+        message: 本站使用Cloudflare CDN
       - link: https://hexo.io/zh-cn/
         shields: /svg/Frame-Hexo -blue.svg
         message: 本站使用hexo框架
