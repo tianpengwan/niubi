@@ -16,7 +16,7 @@ banner_img: https://t.alcy.cc/pc/
 # 我可爱的友友们
 <head>
   <!-- ... -->
-  <script src="//cdn.jsdelivr.net/gh/Uyoahz26/qexo-link@main/main.min.js"></script>
+  <script src="/js/main.min.js"></script>
   <!-- ... -->
 </head>
 <body>
