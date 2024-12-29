@@ -5,7 +5,7 @@ date: 2020-07-22 22:06:17
 
 <head>
   <!-- ... -->
-  <script src="//cdn.jsdelivr.net/gh/Uyoahz26/daodao@main/dist/qexo-dao.min.js"></script>
+  <script src="/js/qexo-dao.min.js"></script>
   <!-- ... -->
 </head>
 <body>
