@@ -1,15 +1,12 @@
-<div id="anniversary-box" class="author-content author-content-item anniversary single" style="background: url({{ page.top_background }}) top / cover no-repeat;">
-  <div class="card-content">
-    <div class="author-content-item-tips anniversary">说说</div>
-    <span class="author-content-item-title">喵喵纪念日</span>
-    <div class="content-bottom">
-      <div class="tips">时间如潮水般涌动向前，你会为谁停留片刻？</div>
-      <div class="banner-button-group">
-        <a href="/about/" class="banner-button" onclick="pjax.loadUrl('/about/'); return false;">
-          <i class="anzhiyufont anzhiyu-icon-arrow-circle-right" style="font-size: 1.5rem;"></i>
-          <span class="banner-button-text">我的更多</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+#shuo-box
+  - let shuo_background = page.top_background
+  .author-content.author-content-item.shuo.single(style=shuo_background ? `background: url(${shuo_background}) top / cover no-repeat` : "")
+    .card-content
+      .author-content-item-tips anniversary
+      span.author-content-item-title 说说
+      .content-bottom
+      .tips 时间如潮水般涌动向前，你会为谁停留片刻？
+      .banner-button-group
+        a.banner-button(onclick='pjax.loadUrl("/about/")')
+          i.anzhiyufont.anzhiyu-icon-arrow-circle-right(style='font-size: 1.5rem')
+          span.banner-button-text 我的更多
