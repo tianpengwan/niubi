@@ -67,13 +67,13 @@ function addStyles() {
             pointer-events: none;
         }
         .deng-box {
-            position: fixed;
+            position: absolute;
             right: 10px;
             top: 72px;
         }
-        .deng-box1 { position: fixed; top: 75px; left: 20px; }
-        .deng-box2 { position: fixed; top: 72px; left: 130px; }
-        .deng-box3 { position: fixed; top: 70px; right: 110px; }
+        .deng-box1 { position: absolute; top: 75px; left: 20px; }
+        .deng-box2 { position: absolute; top: 72px; left: 130px; }
+        .deng-box3 { position: absolute; top: 70px; right: 110px; }
         .deng {
             position: relative;
             width: 120px;
