@@ -6,24 +6,24 @@
 }
 .lantern-box {
   position: fixed;
-  top: 50px; /* 修改后的值 */
+  top: 110px; /* 修改后的值 */
   left: 0px;
   max-width: 200px;
   z-index: 1999;
 }
 
 .lantern-box1 {
-  top: 40px; /* 修改后的值 */
+  top: 100px; /* 修改后的值 */
   left: 80px;
 }
 
 .lantern-box2 {
-  top: 110px; /* 修改后的值 */
+  top: 170px; /* 修改后的值 */
   left: 160px;
 }
 
 .lantern-box3 {
-  top: 50px; /* 修改后的值 */
+  top: 110px; /* 修改后的值 */
   left: 240px;
 }
 
@@ -65,7 +65,7 @@
 
 .lantern-line {
   position: absolute;
-  top: 0px; /* 修改后的值 */
+  top: 60px; /* 修改后的值 */
   left: 60px;
   width: 2px;
   height: 60px;
