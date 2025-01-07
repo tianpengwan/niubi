@@ -13,7 +13,7 @@ function createDengContainer() {
 
     texts.forEach((text, index) => {
         const box = document.createElement('div');
-        box.className = `deng-box deng-box${index + 1}`;
+        box.className = 'deng-box';
 
         const deng = document.createElement('div');
         deng.className = 'deng';
@@ -61,21 +61,22 @@ function addStyles() {
     style.textContent = `
         .deng-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            position: absolute;
+            position: relative;
             top: 60px; /* 始终保持60像素的顶部边距 */
-            left: 0;
             width: 100%;
-            height: 100px; /* 根据需要调整 */
+            height: auto; /* 根据需要调整 */
             opacity: 0.9;
             z-index: 9999;
             pointer-events: none;
+            flex-wrap: wrap; /* 允许换行 */
         }
 
         .deng-box {
             position: relative; /* 不再是fixed或absolute */
-            margin: 0 10px;
+            margin: 10px; /* 保持一定的间距 */
+            flex: 0 0 120px; /* 保证每个灯笼的最小宽度 */
         }
         .deng-box1, .deng-box2, .deng-box3 {
             /* 在此处删除冲突的样式 */
@@ -164,18 +165,12 @@ function addStyles() {
             line-height: 85px; 
             text-align: center; 
         }
-        @media (max-width: 768px) { 
-            .deng-t { font-size: 2.5rem; }  
-            .deng-box { transform: scale(0.5); top: -15px; }  
-            .deng-box1 { left: -22%; }  
-            .deng-box2 { left: 0px; }  
-            .deng-box3 { right: 50px; }  
-            .deng-box4 { right: -10px; }  
-        }
-        @keyframes swing { 
-            0% { transform: rotate(-10deg); }  
-            50% { transform: rotate(10deg); }  
-            100% { transform: rotate(-10deg); }  
+        @media (max-width: 768px) {
+            .deng-box {
+                flex: 0 0 80px; /* 缩小灯笼宽度 */
+                margin: 5px;    /* 缩小间距 */
+            }
+            .deng-t { font-size: 2rem; } /* 缩小字体大小 */
         }
     `;
     document.head.appendChild(style);
