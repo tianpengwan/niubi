@@ -4,11 +4,6 @@
   --lantern-text-color: #ffc14e;
   --lantern-line-color: #ffa500;
 }
-/* 添加 margin-top 到父容器 */
-.lantern-container { /* 新的容器 */
-  margin-top: 60px;
-  position: relative; /* 保证子元素正确定位 */
-}
 .lantern-box {
   position: fixed;
   top: -10px;
