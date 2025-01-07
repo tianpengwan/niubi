@@ -60,21 +60,27 @@ function addStyles() {
     style.type = 'text/css';
     style.textContent = `
         .deng-container {
-            position: relative;
-            top: 0; /* 将top重置为0 */
-            height: 100vh; /* 占据整个视口高度 */
+            display: flex;
+            justify-content: space-around; /* 元素平均分布 */
+            align-items: center; /* 垂直居中 */
+            position: absolute; /* 相对body定位，方便控制位置 */
+            top: 70px; /* 下移60px */
+            left: 0;
+            width: 100%;
+            height: 100px; /* 设置容器高度 */
             opacity: 0.9;
             z-index: 9999;
             pointer-events: none;
         }
         .deng-box {
-            position: absolute;
+            position: relative;
+            margin: 0 10px;
             right: 10px;
-            top: 10vh; /* 使用vh单位以获得响应性 */
+            top: 12px;
         }
-        .deng-box1 { position: absolute; top: 20vh; left: 20px; }
-        .deng-box2 { position: absolute; top: 30vh; left: 130px; }
-        .deng-box3 { position: absolute; top: 40vh; right: 110px; }
+        .deng-box1 { position: fixed; top: 15px; left: 20px; }
+        .deng-box2 { position: fixed; top: 12px; left: 130px; }
+        .deng-box3 { position: fixed; top: 10px; right: 110px; }
         .deng {
             position: relative;
             width: 120px;
