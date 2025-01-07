@@ -1259,7 +1259,7 @@ inject:
     - <script src="/js/main.min.js"></script>
     - <script src="/js/qexo-dao.min.js"></script>
     - <script src="/js/welcome.js"></script>
-    - <script src="https://www.vae.zhangweicheng.xyz/web/denglong.js?text=新年快乐"> </script>
+    - <script src="/js/denglong.js"></script>
 #    <script src="/js/jquery.js"></script>
 #    <script src="https://unpkg.com/@waline/client@v2/dist/waline.mjs"></script>
 
