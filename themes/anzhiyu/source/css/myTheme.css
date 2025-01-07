@@ -6,24 +6,24 @@
 }
 .lantern-box {
   position: fixed;
-  top: -130px; /* 修改为 -70px */
+  top: -10px; /* 修改为 -70px */
   left: 0px;
   max-width: 200px;
   z-index: 1999;
 }
 
 .lantern-box1 {
-  top: -140px; /* 修改为 -80px */
+  top: -20px; /* 修改为 -80px */
   left: 80px;
 }
 
 .lantern-box2 {
-  top: -120px; /* 修改为 -60px */
+  top: 0px; /* 修改为 -60px */
   left: 160px;
 }
 
 .lantern-box3 {
-  top: -130px; /* 修改为 -70px */
+  top: -10px; /* 修改为 -70px */
   left: 240px;
 }
 
@@ -65,7 +65,7 @@
 
 .lantern-line {
   position: absolute;
-  top: -180px; /* 修改为 -120px */
+  top: -20px; /* 修改为 -120px */
   left: 60px;
   width: 2px;
   height: 60px;
