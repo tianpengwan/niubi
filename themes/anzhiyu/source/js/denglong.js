@@ -60,123 +60,108 @@ function addStyles() {
     style.type = 'text/css';
     style.textContent = `
         .deng-container {
-            display: flex;
-            justify-content: center; /* 水平居中 */
-            align-items: center; /* 垂直居中，这一行很重要！ */
-            position: relative;
-            top: 60px;
-            width: 100%;
-            height: auto;
-            opacity: 0.9;
-            z-index: 9999;
-            pointer-events: none;
-            flex-wrap: wrap;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    z-index: 9999;
+    pointer-events: none;
+    flex-wrap: wrap;
+}
 
-        .deng-box {
-            position: relative;
-            margin: 10px;
-            flex: 0 0 120px;
-        }
-        .deng-box1, .deng-box2, .deng-box3 {
-            /* 在此处删除冲突的样式 */
-        }
-        .deng {
-            position: relative;
-            width: 120px;
-            height: 90px;
-            background: rgba(216, 0, 15, .8);
-            border-radius: 50% 50%;
-            animation: swing 3s infinite ease-in-out;
-            box-shadow: -5px 5px 50px 4px #fa6c00;
-        }
-        .deng-a { 
-            width: 100px; 
-            height: 90px; 
-            background: rgba(216, 0, 15, .1); 
-            border-radius: 50%;  
-            border: 2px solid #dc8f03; 
-            margin-left: 7px; 
-            display: flex; 
-            justify-content: center; 
-        }
-        .deng-b { 
-            width: 65px; 
-            height: 83px; 
-            background: rgba(216, 0, 15, .1); 
-            border-radius: 60%; 
-            border: 2px solid #dc8f03; 
-        }
-        .xian { 
-            position: absolute; 
-            top: -20px; 
-            left: 60px; 
-            width: 2px; 
-            height: 20px; 
-            background: #dc8f03; 
-        }
-        .shui-a { 
-            position: relative; 
-            width: 5px; 
-            height: 20px; 
-            margin: -5px 0 0 59px; 
-            animation: swing 4s infinite ease-in-out; 
-            transform-origin: 50% -45px; 
-            background: orange; 
-            border-radius: 0 0 5px 5px; 
-        }
-        .shui-b { 
-            position: absolute; 
-            top: 14px; 
-            left: -2px; 
-            width: 10px; 
-            height: 10px; 
-            background: #dc8f03; 
-            border-radius: 50%; 
-        }
-        .shui-c { 
-            position: absolute; 
-            top: 18px; 
-            left: -2px; 
-            width: 10px; 
-            height: 35px; 
-            background: orange; 
-            border-radius: 0 0 0 5px; 
-        }
-        .deng:before, .deng:after { 
-            content: " "; 
-            display: block; 
-            position: absolute; 
-            border-radius: 5px; 
-            border: solid 1px #dc8f03; 
-            background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03); 
-        }
-        .deng:before { 
-            top: -7px; left: 29px; height: 12px; width: 60px; z-index: 999; 
-        }
-        .deng:after { 
-            bottom: -7px; left: 10px; height: 12px; width: 60px; margin-left: 20px; 
-        }
-        .deng-t { 
-            font-family: '华文行楷', Arial, Lucida Grande, Tahoma, sans-serif; 
-            font-size: 3.2rem; 
-            color: #dc8f03; 
-            font-weight: 700; 
-            line-height: 85px; 
-            text-align: center; 
-        }
-        @media (max-width: 768px) {
-            .deng-container {
-                height: auto; /* 允许高度自动调整 */
-            }
-            .deng-box {
-                flex: 0 0 80px;
-                margin: 5px;
-            }
-            .deng-t { font-size: 2rem; }
-        }
-    `;
-    document.head.appendChild(style);
+.deng-box {
+    position: relative;
+    margin: 10px;
+    flex: 0 0 120px; /* 保持最小宽度 */
+}
+
+.deng {
+    position: relative;
+    width: 100%;  /* 使用百分比宽度 */
+    height: 100%; /* 使用百分比高度 */
+    max-width: 120px; /* 设置最大宽度，防止在较大屏幕上过大 */
+    max-height: 90px;  /* 设置最大高度 */
+    background: rgba(216, 0, 15, .8);
+    border-radius: 50% 50%;
+    animation: swing 3s infinite ease-in-out;
+    box-shadow: -5px 5px 50px 4px #fa6c00;
+}
+
+.deng-a {
+    width: 85%; /* 百分比宽度 */
+    height: 100%; /* 百分比高度 */
+    background: rgba(216, 0, 15, .1);
+    border-radius: 50%;
+    border: 2px solid #dc8f03;
+    margin-left: 7.5%; /* 百分比边距 */
+    display: flex;
+    justify-content: center;
+}
+
+.deng-b {
+    width: 70%; /* 百分比宽度 */
+    height: 90%; /* 百分比高度 */
+    background: rgba(216, 0, 15, .1);
+    border-radius: 60%;
+    border: 2px solid #dc8f03;
+}
+
+.xian {
+    position: absolute;
+    top: -20%; /* 百分比 top */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 微调水平位置 */
+    width: 2%; /* 百分比宽度 */
+    height: 20%; /* 百分比高度 */
+    background: #dc8f03;
+}
+
+.shui-a {
+    position: relative;
+    width: 5%; /* 百分比宽度 */
+    height: 22%; /* 百分比高度 */
+    margin: -5% 0 0 47.5%; /* 百分比边距，调整以居中 */
+    animation: swing 4s infinite ease-in-out;
+    transform-origin: 50% -45%; /* 百分比 transform-origin */
+    background: orange;
+    border-radius: 0 0 5px 5px;
+}
+
+.shui-b, .shui-c {
+    /*  保持原样，或根据需要修改为百分比 */
+}
+
+.deng:before, .deng:after {
+    /* 保持原样，或根据需要修改为百分比 */
+}
+
+.deng-t {
+    font-family: '华文行楷', Arial, sans-serif;
+    font-size: 3.2rem;
+    color: #dc8f03;
+    font-weight: 700;
+    line-height: 1; /* 调整行高，使文字适应高度 */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .deng-box {
+        flex: 0 0 80px;
+        margin: 5px;
+    }
+    .deng-t {
+        font-size: 1.6rem; /* 显著减小字体大小 */
+    }
+}
+
+@keyframes swing {
+    0% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
 }
 
 function init() {
