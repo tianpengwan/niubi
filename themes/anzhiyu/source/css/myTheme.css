@@ -1,3 +1,55 @@
+@charset 'utf-8';
+
+:root {
+  /* --main-color: #1e9fff; */
+  --main-color: #ff0000;
+  --main-color-hover: #fb5050;
+  --main: var(--btn-bg);
+  --button_hover: var(--text-bg-hover);
+  --box-shadow-color: rgba(7, 17, 27, 0.05);
+  --hr-border: var(--main-color);
+  --hr-before-color: var(--main-color);
+  --card-box-shadow: 0 3px 8px 6px var(--box-shadow-color);
+  --box-shadow-color: rgba(255, 0, 0, 0.05);
+  --card-hover-box-shadow: 0 3px 8px 6px rgba(255, 0, 0, 0.09);
+  --global-bg: #fff6f6;
+  /* code */
+  --hl-bg: #fff2f2;
+  --hltools-bg: #ffd4d4;
+}
+/*封面遮罩层*/
+#page-header:not(.not-top-img):before {
+  /* background-color: rgba(0,0,0,0.3); */
+  background-color: rgba(255, 0, 0, 0.3);
+}
+/* 公告 */
+#aside-content .card-info .card-info-social-icons i {
+  color: var(--main-color);
+}
+#aside-content .card-info .card-info-social-icons i:hover {
+  color: var(--main-color-hover);
+}
+#aside-content .fa-solid,
+#aside-content .fas {
+  color: var(--main-color);
+}
+/* -------------- code -------------- */
+#article-container a {
+  color: var(--main-color);
+}
+/* -------------- 评论 -------------- */
+#post-comment .comment-head #comment-switch .switch-btn {
+  background: var(--main-color);
+}
+#post-comment .comment-head #comment-switch .first-comment {
+  color: var(--main-color);
+}
+.comment-headline > .fas {
+  color: var(--main-color);
+}
+.vpower > a {
+  color: var(--main-color) !important;
+}
 /* --- 过年灯笼 --- */
 :root {
   --lantern-bg: rgba(255, 0, 0, 0.8);
