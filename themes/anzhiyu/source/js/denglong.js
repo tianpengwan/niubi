@@ -131,30 +131,38 @@ function addStyles() {
     border-radius: 0 0 5px 5px;
 }
 
-.shui-b, .shui-c {
-    /*  保持原样，或根据需要修改为百分比 */
-}
-
-.deng:before, .deng:after {
-    /* 保持原样，或根据需要修改为百分比 */
-}
-
 .deng-t {
     font-family: '华文行楷', Arial, sans-serif;
     font-size: 3.2rem;
     color: #dc8f03;
     font-weight: 700;
-    line-height: 1; /* 调整行高，使文字适应高度 */
-    text-align: center;
+    line-height: 1;
 }
 
+/* 媒体查询，适应不同屏幕宽度 */
 @media (max-width: 768px) {
     .deng-box {
-        flex: 0 0 80px;
-        margin: 5px;
+        flex: 0 0 80px; /* 减小每个灯笼的宽度 */
+    }
+    .deng {
+        max-width: 80px; /* 减小最大宽度 */
+        max-height: 60px; /* 减小最大高度 */
     }
     .deng-t {
-        font-size: 1.6rem; /* 显著减小字体大小 */
+        font-size: 2.4rem; /* 减小字体大小 */
+    }
+}
+
+@media (max-width: 480px) {
+    .deng-box {
+        flex: 0 0 60px; /* 进一步减小每个灯笼的宽度 */
+    }
+    .deng {
+        max-width: 60px; /* 进一步减小最大宽度 */
+        max-height: 45px; /* 进一步减小最大高度 */
+    }
+    .deng-t {
+        font-size: 1.8rem; /* 进一步减小字体大小 */
     }
 }
 
