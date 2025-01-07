@@ -61,26 +61,25 @@ function addStyles() {
     style.textContent = `
         .deng-container {
             display: flex;
-            justify-content: space-around; /* 元素平均分布 */
-            align-items: center; /* 垂直居中 */
-            position: absolute; /* 相对body定位，方便控制位置 */
-            top: 70px; /* 下移60px */
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            top: 60px; /* 始终保持60像素的顶部边距 */
             left: 0;
             width: 100%;
-            height: 100px; /* 设置容器高度 */
+            height: 100px; /* 根据需要调整 */
             opacity: 0.9;
             z-index: 9999;
             pointer-events: none;
         }
+
         .deng-box {
-            position: relative;
+            position: relative; /* 不再是fixed或absolute */
             margin: 0 10px;
-            right: 10px;
-            top: 12px;
         }
-        .deng-box1 { position: fixed; top: 15px; left: 20px; }
-        .deng-box2 { position: fixed; top: 12px; left: 130px; }
-        .deng-box3 { position: fixed; top: 10px; right: 110px; }
+        .deng-box1, .deng-box2, .deng-box3 {
+            /* 在此处删除冲突的样式 */
+        }
         .deng {
             position: relative;
             width: 120px;
@@ -182,11 +181,9 @@ function addStyles() {
     document.head.appendChild(style);
 }
 
-// 引入时调用
 function init() {
     addStyles();
     createDengContainer();
 }
 
-// 调用初始化函数
 init();
