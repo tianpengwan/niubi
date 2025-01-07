@@ -61,7 +61,8 @@ function addStyles() {
     style.textContent = `
         .deng-container {
             position: relative;
-            top: 70px;
+            top: 0; /* 将top重置为0 */
+            height: 100vh; /* 占据整个视口高度 */
             opacity: 0.9;
             z-index: 9999;
             pointer-events: none;
@@ -69,11 +70,11 @@ function addStyles() {
         .deng-box {
             position: absolute;
             right: 10px;
-            top: 72px;
+            top: 10vh; /* 使用vh单位以获得响应性 */
         }
-        .deng-box1 { position: absolute; top: 75px; left: 20px; }
-        .deng-box2 { position: absolute; top: 72px; left: 130px; }
-        .deng-box3 { position: absolute; top: 70px; right: 110px; }
+        .deng-box1 { position: absolute; top: 20vh; left: 20px; }
+        .deng-box2 { position: absolute; top: 30vh; left: 130px; }
+        .deng-box3 { position: absolute; top: 40vh; right: 110px; }
         .deng {
             position: relative;
             width: 120px;
