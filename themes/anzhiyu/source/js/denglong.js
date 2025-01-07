@@ -61,22 +61,22 @@ function addStyles() {
     style.textContent = `
         .deng-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中，这一行很重要！ */
             position: relative;
-            top: 60px; /* 始终保持60像素的顶部边距 */
+            top: 60px;
             width: 100%;
-            height: auto; /* 根据需要调整 */
+            height: auto;
             opacity: 0.9;
             z-index: 9999;
             pointer-events: none;
-            flex-wrap: wrap; /* 允许换行 */
+            flex-wrap: wrap;
         }
 
         .deng-box {
-            position: relative; /* 不再是fixed或absolute */
-            margin: 10px; /* 保持一定的间距 */
-            flex: 0 0 120px; /* 保证每个灯笼的最小宽度 */
+            position: relative;
+            margin: 10px;
+            flex: 0 0 120px;
         }
         .deng-box1, .deng-box2, .deng-box3 {
             /* 在此处删除冲突的样式 */
@@ -166,11 +166,14 @@ function addStyles() {
             text-align: center; 
         }
         @media (max-width: 768px) {
-            .deng-box {
-                flex: 0 0 80px; /* 缩小灯笼宽度 */
-                margin: 5px;    /* 缩小间距 */
+            .deng-container {
+                height: auto; /* 允许高度自动调整 */
             }
-            .deng-t { font-size: 2rem; } /* 缩小字体大小 */
+            .deng-box {
+                flex: 0 0 80px;
+                margin: 5px;
+            }
+            .deng-t { font-size: 2rem; }
         }
     `;
     document.head.appendChild(style);
