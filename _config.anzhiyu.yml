@@ -1254,6 +1254,7 @@ inject:
     - <link rel="stylesheet" href="/css/mouse.css">
     - <link rel="stylesheet" href="https://blog.bornforthis.cn/static/css/anniversary.css">
     - <link rel="stylesheet" href="/css/welcome.css">
+    - <link rel="stylesheet" href="/css/myTheme.css">
     # iconfont 图标引入
     - <meta name="referrer" content="no-referrer">
   bottom:
@@ -1262,7 +1263,6 @@ inject:
     - <script src="/js/main.min.js"></script>
     - <script src="/js/qexo-dao.min.js"></script>
     - <script src="/js/welcome.js"></script>
-    - <script src="/js/denglong.js"></script>
 #    <script src="/js/jquery.js"></script>
 #    <script src="https://unpkg.com/@waline/client@v2/dist/waline.mjs"></script>
 
