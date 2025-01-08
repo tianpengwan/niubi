@@ -2,6 +2,7 @@
 title: 说说
 date: 2020-07-22 22:06:17
 top_img: https://t.alcy.cc/pc/
+type: "shuo"
 ---
 
 <head>
