@@ -3,6 +3,16 @@ title: none
 date: 2020-07-22 22:06:17
 top_img: https://t.alcy.cc/pc/
 ---
+/*全局样式*/
+h1 {
+     display: none;
+}
+div#page {
+     background: none !important;
+     box-shadow: none;
+     padding: 0;
+     border: none;
+}
 <div class="author-content author-content-item single" style="background:url(https://t.alcy.cc/pc/) center /cover no-repeat!important">
     <div class="card-content">
         <div class="author-content-item-tips">说说</div>
