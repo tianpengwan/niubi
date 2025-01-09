@@ -1,14 +1,13 @@
 ---
-title: 说说
 date: 2020-07-22 22:06:17
 top_img: https://t.alcy.cc/pc/
 ---
-<div class="author-content author-content-item single" style="background:url(https://lib.bsgun.cn/Hexo-static/img/essay-bg.avif) center /cover no-repeat!important">
+<div class="author-content author-content-item single" style="background:url(https://t.alcy.cc/pc/) center /cover no-repeat!important">
     <div class="card-content">
-        <div class="author-content-item-tips">留言</div>
-        <span class="author-content-item-title">畅所欲言</span>
+        <div class="author-content-item-tips">说说</div>
+        <span class="author-content-item-title">记录生活</span>
         <div class="content-bottom">
-            <div class="tips">请遵守中华人民共和国互联网相关的法律法规</div>
+            <div class="tips">人生到处知何似，应似飞鸿踏雪泥</div>
         </div>
         <div class="banner-button-group">
             <a class="banner-button" style="padding: 8px 12px;color: var(--anzhiyu-white);" onclick="pjax.loadUrl(&quot;/about&quot;)" data-pjax-state="">
