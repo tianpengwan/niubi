@@ -37,6 +37,15 @@
   top_link: /imgs
   top_btn_text: 返回
   album_list:
+    - date: 2025/1/20 12:00:00
+      content: 好冷🥶
+      address: 重庆万州
+      from: xiebro干饭饭
+      image:
+        - https://ghtpdl.20010501.xyz/tptp/S50112-22152575_com.autonavi.minimap.tianpengwan
+        - https://ghtpdl.20010501.xyz/tptp/P20250112-171359.jpg
+        - https://ghtpdl.20010501.xyz/tptp/P20250113-172945.jpg
+        - https://ghtpdl.20010501.xyz/tptp/P20250115-090935.jpg
     - date: 2024/12/15 01:00:00
       content: 橘子🍊不错
       address: 广西桂林
