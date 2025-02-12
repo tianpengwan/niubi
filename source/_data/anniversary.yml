@@ -1,15 +1,39 @@
-#- class_name: 喵喵纪念日页面
-#  class_desc: "系统纪念日"
-#  anniversaries:
-#    - name: 喵喵纪念日
-#      date: '2024-09-18'
-#      icon: '/img/favicon.svg'
-#      lunar: false
-#      color: '#a8dadc'
-#      display_mode: "elapsed"  # 新增字段，显示已经过去的天数
-#      show_copyright: false  # 新增字段，控制是否显示版权
-#      copyright_name: "喵喵纪念日"
+- class_name: 喵喵纪念日页面
+  class_desc: "系统纪念日"
+  anniversaries:
+    - name: 喵喵纪念日
+      date: '2024-09-18'
+      icon: '/img/favicon.svg'
+      lunar: false
+      color: '#a8dadc'
+      display_mode: "elapsed"  # 新增字段，显示已经过去的天数
+      show_copyright: true  # 新增字段，控制是否显示版权
+      copyright_name: "喵喵纪念日"
       # copyright_link: "https://blog.bornforthis.cn/anniversary/"
+
+- class_name: 黄家蓉宝
+  class_desc: "黄家蓉宝的小窝·我们一生中重要的纪念日"
+  anniversaries:
+    - name: 结婚纪念日
+      date: '2024-05-02'
+      lunar: false
+      color: '#f1faee'
+      display_mode: "remaining"  # 显示剩余天数
+      show_copyright: false  # 不显示版权
+    - name: 怀孕🫄
+      date: '2024-04-02'
+      display_mode: "elapsed"
+      lunar: false
+      color: '#f7a072'
+    - name: 见面
+      date: '2024-02-08'
+      lunar: false
+      color: '#f7a072'
+    - name: 结婚证
+      date: '2024-02-26'
+      lunar: false
+      color: '#ffb3c6'
+
 - class_name: 家人纪念日
   class_desc: "属于家人的珍贵时刻"
   anniversaries:
@@ -21,16 +45,16 @@
       date: '1967-07-29'
       lunar: true
       color: '#ffb3c6'
-    - name: 奶奶👩
+    - name: 丈母娘👩
       date: '1977-08-22'
       lunar: true
       color: '#e3d5ca'
-    - name: 爷爷👨
+    - name: 老丈人👨
       date: '1975-10-04'
       lunar: true
       color: '#ffb3c6'
-    - name: 我🎂
-      date: '2001-05-01'
+    - name: Bornforthis🎂
+      date: '1997-11-26'
       lunar: true
       color: '#a8dadc'
     
@@ -50,3 +74,9 @@
       date: '2018-10-01'
       lunar: false
       color: '#457b9d'
+
+
+作者: Bornforthis
+链接: https://blog.bornforthis.cn/posts/41c7c45e.html#2-%E5%BC%80%E5%A7%8B%E5%AE%9E%E7%8E%B0
+来源: 别碰我的镜头盖
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
