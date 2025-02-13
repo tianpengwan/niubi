@@ -15,7 +15,7 @@ menu:
    相册集: /imgs/ || anzhiyu-icon-images
    小空调: /air-conditioner/ || anzhiyu-icon-fan
    说说: /shuo/ || anzhiyu-icon-envelope
-   纪念日: /anniversary/ || anzhiyu-icon-dice-d20
+#   纪念日: /anniversary/ || anzhiyu-icon-dice-d20
  分享:
    影视: /movies/ || fas fa-video
 #   追番页: /bangumis/ || anzhiyu-icon-bilibili
