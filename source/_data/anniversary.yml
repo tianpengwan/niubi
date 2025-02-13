@@ -20,7 +20,7 @@
       color: '#f1faee'
       display_mode: "remaining"  # 显示剩余天数
       show_copyright: false  # 不显示版权
-    - name: 怀孕🫄
+    - name: 怀孕U0001fac4
       date: '2024-04-02'
       display_mode: "elapsed"
       lunar: false
@@ -74,9 +74,3 @@
       date: '2018-10-01'
       lunar: false
       color: '#457b9d'
-
-
-作者: Bornforthis
-链接: https://blog.bornforthis.cn/posts/41c7c45e.html#2-%E5%BC%80%E5%A7%8B%E5%AE%9E%E7%8E%B0
-来源: 别碰我的镜头盖
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
