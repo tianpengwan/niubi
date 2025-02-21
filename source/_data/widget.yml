@@ -1,0 +1,16 @@
+ top:
+  - class_name: card-latest-comments
+    id_name:
+    name: 最新评论
+    icon: fas fa-comments
+    html: |
+        <div id="waline-recent"></div>
+        <script type="module">
+          import { RecentComments } from 'https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.mjs';
+
+          RecentComments({
+            el: '#waline-recent',
+            serverURL: 'http://pl.20010501.xyz',
+            count: 10,
+          });
+        </script>
