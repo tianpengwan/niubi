@@ -46,32 +46,32 @@ nav:
         - name: 记事本
           link: https://20010501.xyz/记事本/
           icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990216818761699021681322.png
-        - name: 烟花
-          link: https://fireworks.asteroid-qiao.top/
-          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990211070371699021106243.png
-        - name: 魔方
-          link: https://cube.asteroid-qiao.top/
-          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990226138881699022613057.png
-        - name: 收集中~
-          link: /
-          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699023059974tianj.png
-    - title: 项目
-      item:
-        - name: 音乐小行星
-          link: https://music.asteroid-qiao.top/
-          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17193929684811024x1024.png
-        - name: 社团活动平台
-          link: https://club.asteroid-qiao.top/
-          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1698653924814dragon1.jpg
-        - name: 快乐买鞋城
-          link: https://buy.asteroid-qiao.top/
-          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1698653667259%E9%85%B7-1.png
-        - name: ChatGPT
-          link: https://chat.asteroid-qiao.top/
-          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699022251879chatgpt.jpg
-        - name: 待补充
-          link: /
-          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699022918966Projector.png
+#        - name: 烟花
+#          link: https://fireworks.asteroid-qiao.top/
+#          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990211070371699021106243.png
+#        - name: 魔方
+#          link: https://cube.asteroid-qiao.top/
+#          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/16990226138881699022613057.png
+#        - name: 收集中~
+#          link: /
+#          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699023059974tianj.png
+#    - title: 项目
+#      item:
+#        - name: 音乐小行星
+#          link: https://music.asteroid-qiao.top/
+#          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/17193929684811024x1024.png
+#        - name: 社团活动平台
+#          link: https://club.asteroid-qiao.top/
+#          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1698653924814dragon1.jpg
+#        - name: 快乐买鞋城
+#          link: https://buy.asteroid-qiao.top/
+#          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1698653667259%E9%85%B7-1.png
+#        - name: ChatGPT
+#          link: https://chat.asteroid-qiao.top/
+#          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699022251879chatgpt.jpg
+#        - name: 待补充
+#          link: /
+#          icon: https://gitee.com/AsteroidQiao/library-management-system/raw/master/book-avatar/1699022918966Projector.png
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
