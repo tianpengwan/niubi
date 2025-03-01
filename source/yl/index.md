@@ -5,7 +5,7 @@ comment: 'waline'
 top_img: https://t.alcy.cc/pc/
 ---
 
-<div class="author-content author-content-item single" style="background:url(https://lib.bsgun.cn/Hexo-static/img/essay-bg.avif) center /cover no-repeat!important">
+<div class="author-content author-content-item single" style="background:url(https://t.alcy.cc/pc/) center /cover no-repeat!important">
     <div class="card-content">
         <div class="author-content-item-tips">友链</div>
         <span class="author-content-item-title">我的友友们呀</span>
