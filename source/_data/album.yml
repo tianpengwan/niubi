@@ -186,3 +186,29 @@
         - https://ghtpdl.20010501.xyz/tptp/mmexport1708704530687.png
         - https://ghtpdl.20010501.xyz/tptp/mmexport1708704543919.png
         - https://ghtpdl.20010501.xyz/tptp/mmexport1708704539928.png
+- class_name: 鹏栖云崖，峡枕星河。
+  path_name: /woheni
+  type: 2
+  description: "愿我如星君如月，夜夜流光相皎洁。"
+  cover: https://cftcr2.20010501.xyz/PicHoro/P20250502-205511.jpg
+  top_background: https://cftcr2.20010501.xyz/PicHoro/P20250502-205511.jpg
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
+  top_link: /imgs
+  top_btn_text: 返回
+  album_list:
+    - date: 2025/5/2 01:00:00
+      content: 河山大好，出去走走
+      address: 一起旅游
+      from: xiebro干饭饭
+      image:
+        - https://cftcr2.20010501.xyz/PicHoro/S50428-16360570_com.tencent.mm.png
+        - https://cftcr2.20010501.xyz/PicHoro/P20250501-134454.jpg
+        - https://cftcr2.20010501.xyz/PicHoro/P20250501-134601.jpg
+        - https://cftcr2.20010501.xyz/PicHoro/P20250502-201136.jpg
+        - https://cftcr2.20010501.xyz/PicHoro/P20250502-201136(1).jpg
+        - https://cftcr2.20010501.xyz/PicHoro/P20250502-205511.jpg
+        - https://cftcr2.20010501.xyz/PicHoro/P20250502-205515.jpg
