@@ -200,9 +200,9 @@
   top_link: /imgs
   top_btn_text: 返回
   album_list:
-    - date: 2025/5/2 01:00:00
+    - date: 2025/5/23 01:00:00
       content: 河山大好，出去走走
-      address: 一起旅游
+      address: 吃火锅
       from: xiebro干饭饭
       image:
         - https://cftcr2.20010501.xyz/PicHoro/mmexport1748005076390.jpg
@@ -221,6 +221,11 @@
         - https://cftcr2.20010501.xyz/PicHoro/mmexport1748005051427.jpg
         - https://cftcr2.20010501.xyz/PicHoro/mmexport1748005066651.jpg
         - https://cftcr2.20010501.xyz/PicHoro/mmexport1748005070572.jpg
+    - date: 2025-5-3 01:00:00
+      content: 天生天城
+      address: 吃烤鱼哈哈
+      from: xiebro
+      image:
         - https://cftcr2.20010501.xyz/PicHoro/mmexport1748005073411.jpg
         - https://cftcr2.20010501.xyz/PicHoro/mmexport1746262204228.jpg
         - https://cftcr2.20010501.xyz/PicHoro/mmexport1746262202586.jpg
