@@ -277,6 +277,13 @@
   top_btn_text: 返回
   album_list:
     - date: 2025/5/23 01:00:00
+      content: 爷爷过生日
+      address: 回老家
+      from: xiebro干饭饭
+      image:
+        - https://cftcr2.20010501.xyz/PicHoro/P20250607-115052.webp
+        - https://cftcr2.20010501.xyz/PicHoro/P20250606-210549.webp
+    - date: 2025/5/23 01:00:00
       content: 模糊的影子
       address: 逛街街哎
       from: xiebro干饭饭
