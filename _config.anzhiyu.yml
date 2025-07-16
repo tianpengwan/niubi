@@ -41,6 +41,11 @@ nav:
         - name: 管理
           link: https://hexoadmin.20010501.xyz/
           icon: https://s2.loli.net/2024/08/25/sFHO2tV5SjWPvnB.png
+   - title: ipv6媒体服务器
+      item:
+        - name: nastools
+          link: http://dn.20010501.xyz:3000/
+          icon: https://icon.nastool.de/images/docker/NAStool.png
     - title: 收集的有趣网页
       item:
         - name: 记事本
