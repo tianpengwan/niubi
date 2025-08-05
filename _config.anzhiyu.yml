@@ -50,10 +50,7 @@ nav:
         - name: Jackett
           link: http://dn.20010501.xyz:9117/
           icon: https://icon.nastool.de/images/docker/Jackett.png
-        - name: Qbittorrent
-          link: http://dn.20010501.xyz:8080/
-          icon: https://icon.nastool.de/images/docker/qBittorrent.png
-        - name: Qbittorrent
+        - name: Plex
           link: http://dn.20010501.xyz:32400/
           icon: https://icon.nastool.de/images/docker/Plex.png
         - name: ddnsgo
