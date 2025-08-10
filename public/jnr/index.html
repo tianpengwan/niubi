@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珍重时光记忆</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #5B8CBF;
+            --secondary: #4C7FA0;
+            --family: #A06B9A;
+            --couple: #FF6B8B;
+            --holiday: #E99A5B;
+            --accent: #FFD700;
+            --light: #F7FBFF;
+            --dark: #333333;
+            --text: #4A4A4A;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f7fbff 0%, #e6f0ff 100%);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        .particle-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--primary);
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(91, 140, 191, 0.2);
+        }
+        
+        .subtitle {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            color: var(--secondary);
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: white;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 8px 15px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .timeline-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 20px 0 40px;
+        }
+        
+        .event-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideUp 0.8s ease-out;
+            animation-fill-mode: backwards;
+        }
+        
+        .event-card.couple {
+            border-top: 4px solid var(--couple);
+        }
+        
+        .event-card.family {
+            border-top: 4px solid var(--family);
+        }
+        
+        .event-card.holiday {
+            border-top: 4px solid var(--holiday);
+        }
+        
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(31, 38, 135, 0.25);
+        }
+        
+        .event-title {
+            font-size: 1.6rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .event-title.couple i {
+            color: var(--couple);
+        }
+        
+        .event-title.family i {
+            color: var(--family);
+        }
+        
+        .event-title.holiday i {
+            color: var(--holiday);
+        }
+        
+        .event-date {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .countdown {
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 15px 0;
+            min-height: 50px;
+        }
+        
+        .couple .countdown {
+            color: var(--couple);
+        }
+        
+        .family .countdown {
+            color: var(--family);
+        }
+        
+        .holiday .countdown {
+            color: var(--holiday);
+        }
+        
+        .countdown-label {
+            text-align: center;
+            color: var(--dark);
+            font-size: 1rem;
+            margin-top: -5px;
+        }
+        
+        .description {
+            margin-top: 15px;
+            fo
