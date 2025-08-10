@@ -6,8 +6,8 @@ cover: https://cftcr2.20010501.xyz/PicHoro/S50810-15434098_com.webp
 date: '2025-08-10T16:15:01.860914+08:00'
 tags:
 - 魅族手机
-title: title
-updated: '2025-08-10T16:18:26.319+08:00'
+title: 魅族20Pro系统更新支持朋友圈动图
+updated: '2025-08-10T16:34:26.263+08:00'
 ---
 **Flyme 12.1.0A 稳定版**
 
