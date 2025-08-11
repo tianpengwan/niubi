@@ -15,7 +15,7 @@
   class_desc: "黄家蓉宝的小窝·我们一生中重要的纪念日"
   anniversaries:
     - name: 结婚纪念日
-      date: '2024-05-02'
+      date: '2024-05-01'
       lunar: false
       color: '#f1faee'
       display_mode: "remaining"  # 显示剩余天数
