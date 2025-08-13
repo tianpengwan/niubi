@@ -16,11 +16,6 @@
             --light: #F7FBFF;
             --dark: #333333;
             --text: #4A4A4A;
-            
-            /* 新增CSS变量 */
-            --body-bg-start: #f7fbff;
-            --body-bg-end: #e6f0ff;
-            --card-bg: rgba(255, 255, 255, 0.85);
         }
         
         * {
@@ -31,42 +26,34 @@
         }
         
         body {
-            background: linear-gradient(135deg, var(--body-bg-start) 0%, var(--body-bg-end) 100%);
+            background: transparent;
             color: var(--text);
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
-            transition: background 0.5s ease;
-        }
-        
-        .particle-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            position: relative;
-            z-index: 10;
         }
         
         header {
             text-align: center;
             padding: 40px 20px;
             animation: fadeIn 1.5s ease-out;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
         
         h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
             color: var(--primary);
             margin-bottom: 15px;
-            text-shadow: 0 2px 10px rgba(91, 140, 191, 0.2);
         }
         
         .subtitle {
@@ -86,19 +73,20 @@
         }
         
         .filter-btn {
-            background: white;
-            border: 2px solid var(--primary);
-            color: var(--primary);
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            color: var(--text);
             padding: 8px 15px;
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 500;
+            backdrop-filter: blur(5px);
         }
         
         .filter-btn.active, .filter-btn:hover {
-            background: var(--primary);
-            color: white;
+            background: rgba(255, 255, 255, 0.3);
+            border-color: var(--primary);
         }
         
         .timeline-container {
@@ -109,14 +97,15 @@
         }
         
         .event-card {
-            background: var(--card-bg);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 25px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: slideUp 0.8s ease-out;
             animation-fill-mode: backwards;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
         .event-card.couple {
@@ -133,7 +122,7 @@
         
         .event-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 12px 40px rgba(31, 38, 135, 0.25);
+            background: rgba(255, 255, 255, 0.2);
         }
         
         .event-title {
@@ -260,7 +249,9 @@
             color: var(--text);
             font-size: 0.9rem;
             margin-top: 40px;
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
         }
         
         .category-badge {
@@ -308,32 +299,6 @@
             50% { transform: scale(1.1); }
         }
         
-        /* 暗色模式媒体查询 */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --body-bg-start: #1a1a2e;
-                --body-bg-end: #16213e;
-                --card-bg: rgba(30, 30, 46, 0.7);
-                --text: #e0e0e0;
-                --dark: #e0e0e0;
-            }
-            
-            .photo-caption {
-                background: rgba(30, 30, 46, 0.85);
-            }
-            
-            .filter-btn {
-                background: rgba(30, 30, 46, 0.7);
-                border-color: var(--secondary);
-                color: var(--light);
-            }
-            
-            .filter-btn.active, .filter-btn:hover {
-                background: var(--secondary);
-                color: var(--light);
-            }
-        }
-        
         /* 响应式设计 */
         @media (max-width: 768px) {
             .timeline-container {
@@ -356,8 +321,6 @@
     </style>
 </head>
 <body>
-    <canvas id="particleCanvas" class="particle-bg"></canvas>
-    
     <div class="container">
         <header>
             <h1>珍重时光记忆</h1>
@@ -404,69 +367,6 @@
     </footer>
 
     <script>
-        // 粒子背景效果
-        const canvas = document.getElementById('particleCanvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        
-        // 设置canvas尺寸为窗口大小
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        
-        // 初始化粒子
-        function initParticles() {
-            particles = [];
-            const particleCount = Math.min(150, Math.floor(window.innerWidth * window.innerHeight / 5000));
-            
-            for (let i = 0; i < particleCount; i++) {
-                particles.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    size: Math.random() * 3 + 1,
-                    speedX: (Math.random() - 0.5) * 0.5,
-                    speedY: (Math.random() - 0.5) * 0.5,
-                    color: `rgba(${Math.floor(Math.random() * 100 + 155)}, ${Math.floor(Math.random() * 100 + 50)}, ${Math.floor(Math.random() * 100 + 155)}, ${Math.random() * 0.5 + 0.2})`
-                });
-            }
-        }
-        
-        // 动画循环
-        function animateParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            // 更新粒子位置
-            particles.forEach(p => {
-                p.x += p.speedX;
-                p.y += p.speedY;
-                
-                // 边界检查
-                if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
-                if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
-                
-                // 绘制粒子
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                ctx.fillStyle = p.color;
-                ctx.fill();
-            });
-            
-            requestAnimationFrame(animateParticles);
-        }
-        
-        // 初始化画布和粒子
-        window.addEventListener('load', () => {
-            resizeCanvas();
-            initParticles();
-            animateParticles();
-        });
-        
-        window.addEventListener('resize', () => {
-            resizeCanvas();
-            initParticles();
-        });
-        
         // 重要事件数据库 - 用户可以直接在此修改添加事件
         const eventsData = [
             {
