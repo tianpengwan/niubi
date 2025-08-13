@@ -16,6 +16,11 @@
             --light: #F7FBFF;
             --dark: #333333;
             --text: #4A4A4A;
+            
+            /* 新增CSS变量 */
+            --body-bg-start: #f7fbff;
+            --body-bg-end: #e6f0ff;
+            --card-bg: rgba(255, 255, 255, 0.85);
         }
         
         * {
@@ -26,11 +31,12 @@
         }
         
         body {
-            background: linear-gradient(135deg, #f7fbff 0%, #e6f0ff 100%);
+            background: linear-gradient(135deg, var(--body-bg-start) 0%, var(--body-bg-end) 100%);
             color: var(--text);
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
+            transition: background 0.5s ease;
         }
         
         .particle-bg {
@@ -103,7 +109,7 @@
         }
         
         .event-card {
-            background: rgba(255, 255, 255, 0.85);
+            background: var(--card-bg);
             backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 25px;
@@ -300,6 +306,32 @@
         @keyframes heartbeat {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.1); }
+        }
+        
+        /* 暗色模式媒体查询 */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --body-bg-start: #1a1a2e;
+                --body-bg-end: #16213e;
+                --card-bg: rgba(30, 30, 46, 0.7);
+                --text: #e0e0e0;
+                --dark: #e0e0e0;
+            }
+            
+            .photo-caption {
+                background: rgba(30, 30, 46, 0.85);
+            }
+            
+            .filter-btn {
+                background: rgba(30, 30, 46, 0.7);
+                border-color: var(--secondary);
+                color: var(--light);
+            }
+            
+            .filter-btn.active, .filter-btn:hover {
+                background: var(--secondary);
+                color: var(--light);
+            }
         }
         
         /* 响应式设计 */
