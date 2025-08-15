@@ -574,18 +574,15 @@ footer:
       typeSpeed: 150 # type speed in milliseconds
       backSpeed: 50 # backspacing speed in milliseconds
       # loop (循环打字)
-      loop: false
-      # source 调用第三方服务
-      # source: false 关闭调用
-      # source: 1  调用一言网的一句话（简体） https://hitokoto.cn/
-      # source: 2  调用一句网（简体） http://yijuzhan.com/
-      # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
-      # subtitle 会先显示 source , 再显示 sub 的内容
-      source: true
-      # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
-      sub: 1
-       
-      # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
+     loop: false      # 开启循环打字
+  # 调用一言API
+      source: 3
+  # 备用静态文本（API不可用时显示）
+      sub: 
+  #  - "生活明朗，万物可爱，人间值得"
+  #  - "保持热爱，奔赴山海"
+  #  - "知足且上进，温柔而坚定"
+  # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
 
 # Analysis
 # --------------------------------------
