@@ -574,7 +574,7 @@ footer:
       typeSpeed: 150 # type speed in milliseconds
       backSpeed: 50 # backspacing speed in milliseconds
       # loop (循环打字)
-     loop: false      # 开启循环打字
+      loop: false      # 开启循环打字
   # 调用一言API
       source: 3
   # 备用静态文本（API不可用时显示）
