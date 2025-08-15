@@ -1,11 +1,13 @@
-.post .layout#content-inner
-  +maxWidth768()
-    background: var(--anzhiyu-main);
 #body-wrap
   display: flex
   flex-direction: column
   min-height: 100vh
   justify-content: space-between;
+  /* 新增全局背景设置 */
+  background: var(--anzhiyu-background) 
+  background-size: cover
+  background-attachment: fixed
+  background-position: center
   +maxWidth768()
     .layout
       padding: 0;
@@ -13,7 +15,10 @@
       background: var(--anzhiyu-background)
       border: none
       padding-top: 0px
-  
+    /* 移动端背景优化 */
+    background-size: 100% 100%
+    background-attachment: scroll
+
 .layout
   display: flex
   flex: 1 auto
@@ -35,19 +40,15 @@
     max-width: 1700px
 
   & > div:first-child:not(.recent-posts)
-    box-shadow: var(--anzhiyu-shadow-border);
     padding: 2rem 2.5rem;
     border-radius: 12px;
-    background: var(--anzhiyu-card-bg);
-    border: var(--style-border);
     width: calc(100% - 300px);
     align-self: flex-start;
     animation: slide-in 0.6s 0.1s backwards;
 
     +maxWidth768()
       padding: 1rem 1rem;
-      box-shadow: none;
-      background: var(--anzhiyu-background);
+      background: transparent;
 
   & > div:first-child
     width: calc(100% - 300px)
@@ -60,7 +61,6 @@
       +minWidth900()
         order: 2
 
-  // 隱藏aside
   &.hide-aside
     max-width: 1000px
 
@@ -70,12 +70,16 @@
     & > div
       width: 100% !important
 
-// for apple device
+// 苹果设备适配
 .apple
   #page-header.full_page
     background-attachment: scroll !important
+  /* 防止Safari背景抖动 */
+  #body-wrap
+    background-attachment: scroll !important
 
-  .recent-post-item,
-  .avatar-img,
-  .flink-item-icon
-    transform: translateZ(0)
+/* 内容区块保持透明 */
+.card, .post-block {
+  background: transparent !important;
+  box-shadow: none !important;
+}

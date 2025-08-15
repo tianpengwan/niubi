@@ -2,8 +2,7 @@ extends includes/layout.pug
 
 block content
   #page
-    if top_img === false && !page.top_single
-      h1.page-title= page.title
+    //- 已移除标题显示逻辑（原条件判断top_img和top_single）[1](@ref)
     case page.type
       when 'tags'
         include includes/page/tags.pug

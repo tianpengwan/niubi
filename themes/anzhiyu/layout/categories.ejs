@@ -1,0 +1,20 @@
+<!-- 顶部卡片区域 -->
+<div class="page-top-card" 
+     style="<%- page.top_background ? 'background: url(' + url_for(page.top_background) + ') left 28%/cover no-repeat;' : '' %>">
+  <div class="card-content">
+    <div class="author-content-item-tips"><%= page.title || '分类' %></div>
+    <span class="author-content-item-title"><%= page.subTitle || '文章分类汇总' %></span>
+    <div class="content-bottom">
+      <div class="tips"><%= page.tips || '共收录 ' + site.categories.length + ' 个分类' %></div>
+    </div>
+    <% if (page.buttonLink) { %>
+      <a href=" >" class="banner-button">
+        <i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i>
+        <span class="banner-button-text"><%= page.buttonText || '查看全部' %></span>
+      </a >
+    <% } %>
+  </div>
+</div>
+
+#tag
+  .category-lists#tag-page-tags!= tags_page_list("categories")

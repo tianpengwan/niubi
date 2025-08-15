@@ -1,0 +1,31 @@
+.page-top-card {
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  position: relative;
+  color: white; /* 文字颜色 */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3); /* 增强文字可读性 */
+}
+.card-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.banner-button {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 8px 25px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.banner-button:hover {
+  background: var(--theme-color); /* 主题色 */
+  transform: translateY(-3px);
+}
+@media (max-width: 768px) {
+  .page-top-card { padding: 1.5rem 1rem; }
+  .author-content-item-title { font-size: 1.5rem; }
+}
