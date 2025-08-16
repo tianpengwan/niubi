@@ -1,85 +1,116 @@
-#body-wrap
-  display: flex
-  flex-direction: column
-  min-height: 100vh
+#body-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   justify-content: space-between;
-  /* 新增全局背景设置 */
-  background: var(--anzhiyu-background) 
-  background-size: cover
-  background-attachment: fixed
-  background-position: center
-  +maxWidth768()
-    .layout
-      padding: 0;
-    #archive
-      background: var(--anzhiyu-background)
-      border: none
-      padding-top: 0px
-    /* 移动端背景优化 */
-    background-size: 100% 100%
-    background-attachment: scroll
+  background: var(--anzhiyu-background); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 
-.layout
-  display: flex
-  flex: 1 auto
-  margin: 0 auto
-  padding: 1.25rem 1.5rem
-  max-width: 1200px
-  width: 100%
+/* 新增：全局透明容器 */
+#page {
+  background: transparent !important; /* 关键透明设置 */
+}
+
+@media (max-width: 768px) {
+  #body-wrap {
+    background-size: 100% 100%;
+    background-attachment: scroll;
+  }
+  .layout {
+    padding: 0;
+  }
+  #archive {
+    background: var(--anzhiyu-background);
+    border: none;
+    padding-top: 0;
+  }
+}
+
+.layout {
+  display: flex;
+  flex: 1 auto;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  max-width: 1200px;
+  width: 100%;
   justify-content: center;
+}
 
-  +maxWidth1200()
-    flex-direction: column
-    padding-top: 10px
+@media (max-width: 1200px) {
+  .layout {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
 
-  +maxWidth768()
+@media (max-width: 768px) {
+  .layout {
     padding: 20px 15px;
-    z-index: 3
+    z-index: 3;
+  }
+}
 
-  +minWidth2000()
-    max-width: 1700px
+@media (min-width: 2000px) {
+  .layout {
+    max-width: 1700px;
+  }
+}
 
-  & > div:first-child:not(.recent-posts)
-    padding: 2rem 2.5rem;
-    border-radius: 12px;
-    width: calc(100% - 300px);
-    align-self: flex-start;
-    animation: slide-in 0.6s 0.1s backwards;
+/* 移除透明效果 */
+.layout > div:first-child:not(.recent-posts) {
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  width: calc(100% - 300px);
+  align-self: flex-start;
+  animation: slide-in 0.6s 0.1s backwards;
+  background: var(--anzhiyu-background) !important; /* 覆盖透明 */
+}
 
-    +maxWidth768()
-      padding: 1rem 1rem;
-      background: transparent;
+@media (max-width: 768px) {
+  .layout > div:first-child:not(.recent-posts) {
+    padding: 1rem;
+    background: transparent; /* 移动端特殊处理 */
+  }
+}
 
-  & > div:first-child
-    width: calc(100% - 300px)
-    transition: all .3s ease 0s
+.layout > div:first-child {
+  width: calc(100% - 300px);
+  transition: all 0.3s ease 0s;
+}
 
-    +maxWidth900()
-      width: 100% !important
+@media (max-width: 900px) {
+  .layout > div:first-child {
+    width: 100% !important;
+  }
+}
 
-    if hexo-config('aside.position') == 'left'
-      +minWidth900()
-        order: 2
+.layout.hide-aside {
+  max-width: 1000px;
+}
 
-  &.hide-aside
-    max-width: 1000px
+@media (min-width: 2000px) {
+  .layout.hide-aside {
+    max-width: 1200px;
+  }
+}
 
-    +minWidth2000()
-      max-width: 1200px
+.layout.hide-aside > div {
+  width: 100% !important;
+}
 
-    & > div
-      width: 100% !important
-
-// 苹果设备适配
-.apple
-  #page-header.full_page
-    background-attachment: scroll !important
-  /* 防止Safari背景抖动 */
-  #body-wrap
-    background-attachment: scroll !important
-
-/* 内容区块保持透明 */
+/* 核心修改：移除内容区块透明 */
 .card, .post-block {
-  background: transparent !important;
+  background: var(--anzhiyu-background) !important; /* 实体背景色 */
   box-shadow: none !important;
+}
+
+/* 苹果设备适配 */
+.apple #page-header.full_page {
+  background-attachment: scroll !important;
+}
+.apple #body-wrap {
+  background-attachment: scroll !important;
 }

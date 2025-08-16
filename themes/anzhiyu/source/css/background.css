@@ -20,13 +20,15 @@
     background: rgba(255, 255, 255, .5);
 }
 
-/*侧边栏页面*/
-#aside-content > .card-widget {
-    background: rgba(255, 255, 255, .6);
+/* 侧边栏卡片透明 */
+#aside-content > .card-widget,
+#aside-content > .sticky_layout > .card-widget {
+    background: transparent;
 }
 
-#aside-content > .sticky_layout > .card-widget {
-    background: rgba(255, 255, 255, .6);
+/* 黑暗模式适配 */
+[data-theme="dark"] .card-widget {
+    background: rgba(30, 30, 30, 0.15) !important; 
 }
 
 /*文章页面*/
