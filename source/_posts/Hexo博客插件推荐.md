@@ -3,15 +3,15 @@ abbrlink: ''
 banner_img: https://ghtpdl.20010501.xyz/Qexo/24/8/1000022876_2eb5af6a7ee0d33d58e167a4e09a7f80.jpg
 categories:
 - - 技术教程
-date: '2024-08-12T21:03:02.455084+08:00'
 cover: https://ghtpdl.20010501.xyz/Qexo/24/8/1000022876_2eb5af6a7ee0d33d58e167a4e09a7f80.jpg
+date: '2024-08-12T21:03:02.455084+08:00'
 tags:
 - hexo
 - 插件
 title: Hexo博客的插件推荐
-updated: '2024-08-16T15:52:32.047+08:00'
+updated: '2025-08-17T14:21:39.942+08:00'
 ---
-对于Hexo博客的插件推荐，以下是一些值得考虑的选择，这些插件可以帮助您优化博客功能、提升用户体验以及增强SEO效果。
+大家好啊！对于Hexo博客的插件推荐，以下是一些值得考虑的选择，这些插件可以帮助您优化博客功能、提升用户体验以及增强SEO效果。
 
 ### 1. hexo-abbrlink
 
