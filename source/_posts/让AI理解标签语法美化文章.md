@@ -10,93 +10,33 @@ title: 让AI理解标签语法美化文章
 updated: '2025-08-18T03:39:23.552+08:00'
 ---
 以下是利用安知鱼Tag Plugins语法美化的文章，结合了交互式组件和视觉增强：
-```
-{% note danger border:2px solid #c62828 %}
-🔥 **最高级别军事动态**  
-美国在拉美部署兵力达冷战以来峰值，涉及8个被制裁贩毒集团  
-{% endnote %}
 
----
+{% p blue, 崇祯五年十二月，余住西湖。 %}
+{% p cyan, 大雪三日，湖中人鸟声俱绝。 %}
+{% p gray, 是日更定矣，余拏一小舟，拥毳衣炉火，独往湖心亭看雪。 %}
 
-## 🌎 行动全景图
-{% image src="https://example.com/military-deployment.jpg" width="100%" height="auto" alt="美军舰队部署示意图" bg="#0d2a42" %}
+{% folding cyan 展开雪景描写 %}
+{% p white, 雾凇沆砀，天与云与山与水，上下一白。 %}
+{% span red, 湖上影子，惟长堤一痕、湖心亭一点、与余舟一芥，舟中人两三粒而已。 %}[1](@ref)
+{% endfolding %}
 
----
-
-## 🛡️ 委内瑞拉防御体系
-{% tabs defense-system %}
-<!-- tab 陆上防线 -->
-{% label red, 14万现役部队 %}  
-- 防空系统覆盖全国80%空域  
-- 边境部署3000+移动雷达站  
+{% tabs 湖心奇遇,3 %}
+<!-- tab 相遇场景 -->
+{% p #8B4513, 到亭上，有两人铺毡对坐，一童子烧酒，炉正沸。 %}
+见余，大喜曰：{% u “湖中焉得更有此人？” %}
 <!-- endtab -->
-
-<!-- tab 海上防御 -->
-{% label blue, 20万民兵武装 %}  
-- 拦截可疑船只成功率97%  
-- 部署20艘巡逻艇封锁海峡  
+<!-- tab 对饮 -->
+{% p #DB7093, 拉余同饮。余强饮三大白而别。 %}
+问其姓氏，{% kbd 是金陵人，客此。 %}
 <!-- endtab -->
 {% endtabs %}
 
----
+{% note modern anzhiyufont anzhiyu-icon-quote-left %}
+及下船，舟子喃喃曰：{% emp “莫说相公痴，更有痴似相公者。” %}[1](@ref)
+{% endnote %}
 
-## 🌐 国际反应矩阵
-{% columns 3 %}
-{% column %}
-🇲🇽 **墨西哥**  
-- 总统辛鲍姆：「不会允许美军入境」  
-- 冻结美国银行在墨资产  
-{% endcolumn %}
+{% image https://cftcr2.20010501.xyz/PicHoro/124922Hc-6.webp, 85%, 湖心亭雪景意境图, #B0E2FF %}
 
-{% column %}
-🇨🇴 **哥伦比亚**  
-- 禁止美军借道攻委  
-- 向边境增派1.2万士兵  
-{% endcolumn %}
-
-{% column %}
-🇷🇺 **俄罗斯**  
-- 派遣「马卡洛夫」号护卫舰  
-- 签署石油换武器协议  
-{% endcolumn %}
-{% endcolumns %}
-
----
-
-## 🔍 深层动因分析
-{% folding cyan open, 展开战略图谱 %}
-| 驱动因素       | 具体表现                          | 风险等级 |
-|----------------|-----------------------------------|----------|
-| 能源控制       | 控制委内瑞拉3030亿桶石油储量      | ⭐⭐⭐⭐     |
-| 地缘博弈       | 遏制中俄在拉美影响力              | ⭐⭐⭐      |
-| 国内政治       | 转移爱泼斯坦丑闻等舆论压力        | ⭐⭐       |
-{% endfolding %}
-
----
-
-## ⚖️ 军事经济成本
-{% btns grid2 %}
-{% btn 每日消耗, https://example.com/cost-detail, red outline larger %}
-{% btn 潜在损失, https://example.com/risk-analysis, blue outline larger %}
-{% endbtns %}
-
-{% p left, 主要支出项：}
-- 舰队维护：$2.3亿/月
-- 石油期货波动：±18%
-{% endp %}
-
----
-
-## 📜 事件时间线
-{% timeline %}
-<!-- timeline 2025-08-16 -->
-美军部署「硫磺岛」号戒备群  
-<!-- timeline 2025-08-18 -->
-委启动「主权盾牌」战备计划  
-<!-- timeline 2025-08-20 -->
-俄舰队进入加勒比海域  
-{% endtimeline %}
-```
 
 
 我：
