@@ -1,9 +1,7 @@
 ---
-date: '2024-07-14T18:51:29.824805+08:00'		
-title: 友链		
-updated: '2024-07-14T18:51:33.351+08:00'		
-comment: 'waline'		
-banner_img: https://t.alcy.cc/pc/
+title: link
+date: 2020-12-01 22:19:45
+type: "link"
 ---
 
 🌵站点名称🌺：宇外御风的hexo博客
