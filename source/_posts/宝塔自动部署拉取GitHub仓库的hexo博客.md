@@ -10,56 +10,72 @@ title: 宝塔自动部署拉取GitHub仓库的hexo博客
 updated: '2025-08-18T09:44:45.147+08:00'
 ---
 
-{% p blue, **背景与需求** %}
-无意间发现又拍云CDN的免费试用活动（提供每月 **10GB存储+15GB流量**）[1](@ref)。由于原部署在 **{% span red, Cloudflare %}** 的博客访问速度较慢（尤其国内用户），希望改用国内CDN加速服务。但国内CDN需满足 **{% u 备案域名 %}** 和 **{% u 国内服务器 %}** 两大条件[2,3](@ref)，因此需将GitHub托管的博客迁移至阿里云服务器。
 
-{% p green, **解决方案设计** %}
-保留 **{% span purple, qexo %}** 作为博客管理系统，将阿里云服务器作为静态资源生成节点，形成多平台协同架构：
+{% p cyan, **起因**：无意间发现又拍云 CDN 的 {% span red, 免费试用活动 %}。由于部署在 Cloudflare 的速度较慢，想体验国内 CDN 加速效果。  
+通过 Cloudflare 页面规则将 `20010501.xyz/*` 重定向至 `cn.20010501.xyz/*`。  
+但国内 CDN 需 {% u 备案及国内主机 %}，因此需将 GitHub 博客文件迁移至阿里云服务器。 %}
 
-qexo管理 → GitHub仓库 → 触发自动部署 → 阿里云服务器生成静态页面 → 又拍云CDN加速
+{% note warning modern @fas fa-exclamation-circle %}
+**原架构**：  
+GitHub 作仓库 + Cloudflare 部署生成 + Qexo 管理  
+**新目标**：  
+延续 Qexo 管理，将阿里云服务器作为静态页面生成器使用。
+{% endnote %}
 
-
-{% folding 更新: 技术实现细节, blue %}
-**通过宝塔面板实现GitHub到服务器的自动部署流程：**
-1. **服务器环境配置**  
-   - 安装宝塔面板：执行 `wget -O install.sh https://download.bt.cn/install/install_6.0.sh && sh install.sh`[9](@ref)  
-   - 创建Git仓库：`git init --bare blog.git` 并配置钩子文件 `post-receive`[12](@ref)  
-
-bash
-
-!/bin/sh
-
-git --work-tree=/www/wwwroot/blog --git-dir=/home/git/repos/blog.git checkout -f
-
-2. **本地与服务器联动**  
-- 在Hexo的 `_config.yml` 中新增阿里云部署地址：  
-
-yaml
-
-deploy:
-
-- type: gitrepo: git@server:/home/git/repos/blog.gitbranch: master
-
-- 添加SSH公钥到服务器 `authorized_keys` 实现免密推送[9](@ref)  
-3. **自动化触发**  
-GitHub Actions 或 Webhook 监听仓库更新，推送后自动执行：  
-
-bash
-
-hexo clean && hexo g && hexo d
-
+{% folding green 查看总体思路 %}
+{% timeline green %}
+- **核心流程**  
+  Qexo 管理 GitHub 文件 → 触发自动部署 → 生成静态页面至阿里云服务器  
+- **技术组合**  
+  `Cloudflare`（域名解析） + `阿里云`（主机/CDN） + `Qexo`（内容管理） + `其他生成器`（可选）
+{% endtimeline %}
 {% endfolding %}
 
-{% p orange, **关键优势** %}
-- **速度提升**：国内用户通过又拍云CDN访问，延迟降低50%+[3](@ref)  
-- **无缝管理**：继续使用qexo编辑内容，GitHub仍为版本控制核心  
-- **资源免费**：又拍云联盟提供12个月免费资源（需在网站底部添加其LOGO及链接）[1](@ref)
+### {% inlineimage https://cdn-icons-png.flaticon.com/512/217/217854.png, 20px %} 宝塔面板实现自动部署流程
+{% tabs deploy %}
+<!-- tab 关键步骤 -->
+1. **服务器配置**  
+   - 安装宝塔面板，配置 Nginx/Apache  
+   - 创建网站目录并绑定域名 `cn.20010501.xyz`  
+   - 开启 HTTPS 并配置 CDN 回源  
+2. **GitHub Webhook**  
+   - 在仓库设置中添加 Webhook，指向宝塔的部署脚本 URL  
+   - 设置触发条件为 `push` 事件  
+3. **宝塔自动脚本**  
 
-{% btns rounded grid5 %}
-{% btn https://blog.anheyu.com/posts/d50a.html, 安知鱼标签语法, %}
-{% btn https://www.upyun.com/league, 又拍云联盟, %}
-{% btn https://blog.csdn.net/2302_80729149/article/details/146304980, 宝塔部署指南, %}
-{% endbtns %}
+bash
+
+!/bin/bash
+
+git pull origin main  # 拉取最新代码
+
+hexo clean && hexo g  # 生成静态文件
+
+cp -R public/* /wwwroot/cn.20010501.xyz/  # 同步到网站目录
+
+<!-- endtab -->
+<!-- tab 架构示意图 -->
+
+mermaid
+
+graph LR
+
+A[GitHub 仓库] -- Push 事件 --> B[宝塔 Webhook]
+
+B --> C[执行部署脚本]
+
+C --> D[生成静态文件]
+
+D --> E[同步至阿里云服务器]
+
+E --> F[又拍云 CDN 加速]
+
+<!-- endtab -->
+{% endtabs %}
+
+{% btn https://github.com, 查看 GitHub 仓库, @fab fa-github, blue, larger %}
+
+
 
 
 ![1755477834160.webp](https://cftcr2.20010501.xyz/PicHoro/1755477834160.webp)
