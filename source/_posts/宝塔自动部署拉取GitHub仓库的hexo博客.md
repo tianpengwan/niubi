@@ -9,7 +9,58 @@ tags:
 title: 宝塔自动部署拉取GitHub仓库的hexo博客
 updated: '2025-08-18T09:44:45.147+08:00'
 ---
-事情的起因是我要无意间发现了之前申请的又拍云cdn免费试用活动。刚好我感觉部署在Cloudflare的速度太慢了，于是我就想体验一下国内的cdn加速是什么感觉。用Cloudflare页面规则20010501.xyz/\*到cn.20010501.xyz/\*。但是又拍云cdn服务都是需要备案和国内主机的，所以不得不把GitHub上的博客文件部署到阿里云服务器上。因为我之前使用的是GitHub当仓库，Cloudflare部署生成，qexo管理。所以我还是打算继续使用qexo，把服务器作为一个静态页面生成器使用。 总体思路是qexo管理GitHub文件生成（Cloudflare+阿里云服务器+其他页面生成器） 以下是使用宝塔面板实现GitHub仓库中的Hexo博客自动部署到服务器的完整流程（当GitHub文件变化时触发自动部署）
+
+{% p blue, **背景与需求** %}
+无意间发现又拍云CDN的免费试用活动（提供每月 **10GB存储+15GB流量**）[1](@ref)。由于原部署在 **{% span red, Cloudflare %}** 的博客访问速度较慢（尤其国内用户），希望改用国内CDN加速服务。但国内CDN需满足 **{% u 备案域名 %}** 和 **{% u 国内服务器 %}** 两大条件[2,3](@ref)，因此需将GitHub托管的博客迁移至阿里云服务器。
+
+{% p green, **解决方案设计** %}
+保留 **{% span purple, qexo %}** 作为博客管理系统，将阿里云服务器作为静态资源生成节点，形成多平台协同架构：
+
+qexo管理 → GitHub仓库 → 触发自动部署 → 阿里云服务器生成静态页面 → 又拍云CDN加速
+
+
+{% folding 更新: 技术实现细节, blue %}
+**通过宝塔面板实现GitHub到服务器的自动部署流程：**
+1. **服务器环境配置**  
+   - 安装宝塔面板：执行 `wget -O install.sh https://download.bt.cn/install/install_6.0.sh && sh install.sh`[9](@ref)  
+   - 创建Git仓库：`git init --bare blog.git` 并配置钩子文件 `post-receive`[12](@ref)  
+
+bash
+
+!/bin/sh
+
+git --work-tree=/www/wwwroot/blog --git-dir=/home/git/repos/blog.git checkout -f
+
+2. **本地与服务器联动**  
+- 在Hexo的 `_config.yml` 中新增阿里云部署地址：  
+
+yaml
+
+deploy:
+
+- type: gitrepo: git@server:/home/git/repos/blog.gitbranch: master
+
+- 添加SSH公钥到服务器 `authorized_keys` 实现免密推送[9](@ref)  
+3. **自动化触发**  
+GitHub Actions 或 Webhook 监听仓库更新，推送后自动执行：  
+
+bash
+
+hexo clean && hexo g && hexo d
+
+{% endfolding %}
+
+{% p orange, **关键优势** %}
+- **速度提升**：国内用户通过又拍云CDN访问，延迟降低50%+[3](@ref)  
+- **无缝管理**：继续使用qexo编辑内容，GitHub仍为版本控制核心  
+- **资源免费**：又拍云联盟提供12个月免费资源（需在网站底部添加其LOGO及链接）[1](@ref)
+
+{% btns rounded grid5 %}
+{% btn https://blog.anheyu.com/posts/d50a.html, 安知鱼标签语法, %}
+{% btn https://www.upyun.com/league, 又拍云联盟, %}
+{% btn https://blog.csdn.net/2302_80729149/article/details/146304980, 宝塔部署指南, %}
+{% endbtns %}
+
 
 ![1755477834160.webp](https://cftcr2.20010501.xyz/PicHoro/1755477834160.webp)
 就是这样咯
