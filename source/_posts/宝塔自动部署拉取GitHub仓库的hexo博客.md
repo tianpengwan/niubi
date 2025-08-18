@@ -8,6 +8,22 @@ tags:
 title: 宝塔自动部署拉取GitHub仓库的hexo博客
 updated: '2025-08-18T08:11:08.723+08:00'
 ---
+事情的起因是我要无意间发现了之前申请的又拍云cdn免费试用活动。刚好我感觉部署在Cloudflare的速度太慢了，于是我就想体验一下国内的cdn加速是什么感觉。用Cloudflare页面规则20010501.xyz/\*到cn.20010501.xyz/\*。但是又拍云cdn服务都是需要备案和国内主机的，所以不得不把GitHub上的博客文件部署到阿里云服务器上。因为我之前使用的是GitHub当仓库，Cloudflare部署生成，qexo管理。所以我还是打算继续使用qexo，把服务器作为一个静态页面生成器使用。 总体思路是qexo管理GitHub文件生成（Cloudflare+阿里云服务器+其他页面生成器） 以下是使用宝塔面板实现GitHub仓库中的Hexo博客自动部署到服务器的完整流程（当GitHub文件变化时触发自动部署）
+
+```
+graph LR
+    A[Qexo管理系统] -->|内容更新| B[GitHub文件仓库]
+    B -->|自动触发| C[Cloudflare Pages]
+    B -->|代码同步| D[阿里云服务器]
+    B -->|静态资源推送| E[其他页面生成器<br>如Netlify/Vercel]
+
+    style A fill:#4CAF50,stroke:#388E3C
+    style B fill:#2196F3,stroke:#1976D2
+    style C fill:#FF9800,stroke:#F57C00
+    style D fill:#9C27B0,stroke:#7B1FA2
+    style E fill:#00BCD4,stroke:#0097A7
+```
+
 ### 🛠️ 一、服务器环境准备
 
 1. **安装宝塔面板**
@@ -38,9 +54,12 @@ updated: '2025-08-18T08:11:08.723+08:00'
    git clone git@github.com:你的用户名/Hexo仓库.git hexo
    # 修改目录权限（根据实际需求操作）
    ```
+   
+   ![mmexport1755476054606.webp](https://cftcr2.20010501.xyz/PicHoro/mmexport1755476054606.webp)
 2. **添加 WebHook 脚本**
    
    * 在宝塔面板安装 **WebHook 插件**。
+   ![mmexport1755476060516.webp](https://cftcr2.20010501.xyz/PicHoro/mmexport1755476060516.webp)
    * 添加脚本：
      
      **名称**：如 `Hexo-Auto-Deploy`
@@ -98,6 +117,7 @@ updated: '2025-08-18T08:11:08.723+08:00'
 2. 配置参数：
    
    * **Payload URL**：粘贴宝塔生成的 WebHook URL。
+     ![mmexport1755476057459.webp](https://cftcr2.20010501.xyz/PicHoro/mmexport1755476057459.webp)
    * **Content type**：`application/json`。
    * **Secret**：留空。
    * **触发事件**：选择 `Just the push event`。
@@ -112,12 +132,4 @@ updated: '2025-08-18T08:11:08.723+08:00'
 2. 运行 `hexo generate`后，所有内容将保存在 `public`目录下，作为最终发布版本。
 3. 为网站绑定域名，配置 HTTPS 证书。
 
----
-
-> **💡 提示**：以上步骤完整保留了您的原始流程，仅通过以下 Markdown 技巧提升可读性：
-> 
-> * **分层标题**（`###`、`**`）明确步骤模块 ；
-> * **代码块**（\`\`\`）突出命令与脚本 ；
-> * **符号图标**（⚙️、🔗）增强视觉引导；
-> * **关键步骤加粗**强调操作重点 。
 
