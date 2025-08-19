@@ -3,12 +3,12 @@ abbrlink: ''
 categories:
 - - 见解思考
 cover: https://cftcr2.20010501.xyz/PicHoro/20250308162446Aicy.png
-date: '2025-03-10T08:47:07.514634+08:00'
+date: '2025-03-10T08:45:07.514634+08:00'
 tags:
 - 视频分享
 - bilibili
 title: 蟹bro记又名01测量大帝
-updated: '2025-03-10T08:52:01.211+08:00'
+updated: '2025-08-19T14:52:43.599+08:00'
 ---
 <iframe id="spkj" src="https://player.bilibili.com/player.html?isOutside=true&aid=114133588513906&bvid=BV1r4RvYCEca&cid=28784660113&p=1" width="100%" height=592.8 frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span> </iframe> <script type="text/javascript"> document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px"; </script>
 
