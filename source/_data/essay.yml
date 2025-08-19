@@ -7,7 +7,7 @@
   home_essay: true
   top_background: /img/top.png
   essay_list:
-      - content: 接入了又拍云和Cloudflare双CDN哈哈加入了Cloudflare免费防御了
+    - content: 接入了又拍云和Cloudflare双CDN哈哈加入了Cloudflare免费防御了
       date: 2025/08/19 20:51:00
       image:
         - https://cftcr2.20010501.xyz/PicHoro/1755608123473(1).webp
