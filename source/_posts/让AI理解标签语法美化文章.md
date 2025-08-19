@@ -2,12 +2,13 @@
 abbrlink: ''
 categories:
 - - 技术教程
+cover: https://cftcr2.20010501.xyz/PicHoro/1755587646885(1).webp
 date: '2025-08-18T03:12:09.547379+08:00'
 tags:
 - hexo
 - AI
 title: 让AI理解标签语法美化文章
-updated: '2025-08-18T03:39:23.552+08:00'
+updated: '2025-08-19T15:12:28.329+08:00'
 ---
 以下是利用安知鱼Tag Plugins语法美化的文章，结合了交互式组件和视觉增强：
 
@@ -21,14 +22,21 @@ updated: '2025-08-18T03:39:23.552+08:00'
 {% endfolding %}
 
 {% tabs 湖心奇遇,3 %}
+
 <!-- tab 相遇场景 -->
+
 {% p #8B4513, 到亭上，有两人铺毡对坐，一童子烧酒，炉正沸。 %}
 见余，大喜曰：{% u “湖中焉得更有此人？” %}
+
 <!-- endtab -->
+
 <!-- tab 对饮 -->
+
 {% p #DB7093, 拉余同饮。余强饮三大白而别。 %}
 问其姓氏，{% kbd 是金陵人，客此。 %}
+
 <!-- endtab -->
+
 {% endtabs %}
 
 {% note modern anzhiyufont anzhiyu-icon-quote-left %}
@@ -36,8 +44,6 @@ updated: '2025-08-18T03:39:23.552+08:00'
 {% endnote %}
 
 {% image https://cftcr2.20010501.xyz/PicHoro/124922Hc-6.webp, 85%, 湖心亭雪景意境图, #B0E2FF %}
-
-
 
 我：
 
