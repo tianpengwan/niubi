@@ -1,0 +1,8 @@
+.card-widget.card-info {
+    background: url(https://ghtpdl.20010501.xyz/tptp/fluid.png) center/cover no-repeat !important;
+}
+
+#aside-content > .card-widget.card-info::before {
+    background-image: linear-gradient(-25deg, hsl(204deg 100% 50% / 45%), hsl(36.71deg 100% 50% / 45%), hsl(204deg 100% 50% / 45%), hsl(36.71deg 100% 50% / 45%));
+    backdrop-filter: blur(5px);
+}
