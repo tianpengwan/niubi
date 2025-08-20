@@ -1,13 +1,15 @@
 ---
-abbrlink: ''
-banner_img: https://ghtpdl.20010501.xyz/Qexo/24/8/1000022876_2eb5af6a7ee0d33d58e167a4e09a7f80.jpg
+abbrlink: a825
+banner_img: >-
+  https://ghtpdl.20010501.xyz/Qexo/24/8/1000022876_2eb5af6a7ee0d33d58e167a4e09a7f80.jpg
 categories:
-- - 技术教程
-cover: https://ghtpdl.20010501.xyz/Qexo/24/8/1000022876_2eb5af6a7ee0d33d58e167a4e09a7f80.jpg
+  - - 技术教程
+cover: >-
+  https://ghtpdl.20010501.xyz/Qexo/24/8/1000022876_2eb5af6a7ee0d33d58e167a4e09a7f80.jpg
 date: '2024-08-12T21:03:02.455084+08:00'
 tags:
-- hexo
-- 插件
+  - hexo
+  - 插件
 title: Hexo博客的插件推荐
 updated: '2025-08-17T14:21:39.942+08:00'
 ---

@@ -1,14 +1,15 @@
 ---
-abbrlink: ''
+abbrlink: b37a
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2024-08-09T11:22:31.723483+08:00'
-cover: https://ghtpdl.20010501.xyz/Qexo/24/8/OIP-C%20(1)_7f66845f09cc8a86ba80f4084b9071b3.jfif
+cover: >-
+  https://ghtpdl.20010501.xyz/Qexo/24/8/OIP-C%20(1)_7f66845f09cc8a86ba80f4084b9071b3.jfif
 tags:
-- Serv00
-- 小雅Alist
-- GitHub
-- FreeBSD
+  - Serv00
+  - 小雅Alist
+  - GitHub
+  - FreeBSD
 title: Serv00搭建小雅Alist
 updated: '2024-08-16T15:52:59.219+08:00'
 ---

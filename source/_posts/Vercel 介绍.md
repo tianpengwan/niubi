@@ -1,12 +1,12 @@
 ---
-abbrlink: ''
+abbrlink: 867d
 categories:
-- - 技术教程
-cover: https://tc.20010501.xyz/file/dab87946d8dea4732d790.jpg
+  - - 技术教程
+cover: 'https://tc.20010501.xyz/file/dab87946d8dea4732d790.jpg'
 date: '2024-07-13T08:11:42.242611+08:00'
 tags:
-- 测试
-- Vercel
+  - 测试
+  - Vercel
 title: Vercel 介绍
 updated: '2025-08-17T16:59:31.934+08:00'
 ---

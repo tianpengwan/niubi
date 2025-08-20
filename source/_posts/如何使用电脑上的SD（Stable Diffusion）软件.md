@@ -1,13 +1,14 @@
 ---
-abbrlink: ''
+abbrlink: '9419'
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2024-08-06T12:40:01.943228+08:00'
-cover: https://ghtpdl.20010501.xyz/Qexo/24/8/1000022782_636c597cf780a10a2d936ce4822371f8.jpg
+cover: >-
+  https://ghtpdl.20010501.xyz/Qexo/24/8/1000022782_636c597cf780a10a2d936ce4822371f8.jpg
 tags:
-- SD
-- AI绘画
-- Stable Diffusion
+  - SD
+  - AI绘画
+  - Stable Diffusion
 title: 如何使用电脑上的StableDiffusion软件
 updated: '2024-08-20T21:29:31.166+08:00'
 ---

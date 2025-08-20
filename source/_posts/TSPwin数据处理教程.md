@@ -1,11 +1,11 @@
 ---
-abbrlink: ''
+abbrlink: c01c
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2024-12-02T03:58:48.760543+08:00'
-cover: https://ghtpdl.20010501.xyz/tptp/图片1.png
+cover: 'https://ghtpdl.20010501.xyz/tptp/图片1.png'
 tags:
-- TSP
+  - TSP
 title: TSPwin数据处理教程
 updated: '2024-12-02T03:58:48.455+08:00'
 ---

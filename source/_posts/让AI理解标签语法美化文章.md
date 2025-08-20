@@ -1,12 +1,12 @@
 ---
-abbrlink: ''
+abbrlink: 152e
 categories:
-- - 技术教程
-cover: https://cftcr2.20010501.xyz/PicHoro/1755587646885(1).webp
+  - - 技术教程
+cover: 'https://cftcr2.20010501.xyz/PicHoro/1755587646885(1).webp'
 date: '2025-08-18T03:12:09.547379+08:00'
 tags:
-- hexo
-- AI
+  - hexo
+  - AI
 title: 让AI理解标签语法美化文章
 updated: '2025-08-19T15:12:28.329+08:00'
 ---

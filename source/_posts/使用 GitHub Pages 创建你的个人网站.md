@@ -1,11 +1,11 @@
 ---
-abbrlink: ''
+abbrlink: caab
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2024-07-12T16:35:09.039031+08:00'
-cover: https://tc.20010501.xyz/file/59f604a703de092b7314f.jpg
+cover: 'https://tc.20010501.xyz/file/59f604a703de092b7314f.jpg'
 tags:
-- GitHub Pages
+  - GitHub Pages
 title: 使用 GitHub Pages 创建你的个人网站
 updated: '2024-07-12T20:19:11.957+08:00'
 ---

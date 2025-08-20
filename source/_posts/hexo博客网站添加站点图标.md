@@ -1,13 +1,14 @@
 ---
-abbrlink: ''
+abbrlink: '750'
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2024-08-18T17:38:26.995500+08:00'
-cover: https://ghtpdl.20010501.xyz/Qexo/24/8/微信图片_20240818174133_6120a200576885626c9c50f075fc085d.jpg
+cover: >-
+  https://ghtpdl.20010501.xyz/Qexo/24/8/微信图片_20240818174133_6120a200576885626c9c50f075fc085d.jpg
 tags:
-- hexo
-- 站点图标
-- favicon
+  - hexo
+  - 站点图标
+  - favicon
 title: hexo博客网站添加站点图标
 updated: '2024-08-18T17:38:31.273+08:00'
 ---

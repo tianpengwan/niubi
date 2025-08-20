@@ -1,11 +1,11 @@
 ---
-abbrlink: ''
+abbrlink: 30ae
 categories:
-- - 技术教程
-cover: https://cftcr2.20010501.xyz/PicHoro/1755479687394(1).webp
+  - - 技术教程
+cover: 'https://cftcr2.20010501.xyz/PicHoro/1755479687394(1).webp'
 date: '2025-08-17T18:40:51.053688+08:00'
 tags:
-- hexo
+  - hexo
 title: 宝塔自动部署拉取GitHub仓库的hexo博客
 updated: '2025-08-18T09:44:45.147+08:00'
 ---

@@ -1,12 +1,12 @@
 ---
-abbrlink: ''
+abbrlink: '8577'
 categories:
-- - 技术教程
-cover: https://cftcr2.20010501.xyz/PicHoro/S50222-06140704_com.zol.android.png
+  - - 技术教程
+cover: 'https://cftcr2.20010501.xyz/PicHoro/S50222-06140704_com.zol.android.png'
 date: '2025-01-21T23:36:51.944535+08:00'
 tags:
-- AI
-- 魅族
+  - AI
+  - 魅族
 title: 魅族手机AI体验
 updated: '2025-02-22T06:17:04.990+08:00'
 ---

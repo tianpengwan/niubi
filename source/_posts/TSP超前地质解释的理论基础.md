@@ -1,10 +1,10 @@
 ---
-abbrlink: ''
-banner_img: https://ghtpdl.20010501.xyz/tptp/WPS图片1.png
+abbrlink: 8ab0
+banner_img: 'https://ghtpdl.20010501.xyz/tptp/WPS图片1.png'
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2024-12-02T16:53:02.638459+08:00'
-cover: https://ghtpdl.20010501.xyz/tptp/WPS图片1.png
+cover: 'https://ghtpdl.20010501.xyz/tptp/WPS图片1.png'
 tags: []
 title: TSP超前地质解释的理论基础
 updated: '2024-12-02T16:53:03.856+08:00'

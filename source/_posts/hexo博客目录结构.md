@@ -1,12 +1,13 @@
 ---
-abbrlink: ''
+abbrlink: '31e3'
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2024-08-12T17:08:04.202849+08:00'
-cover: https://ghtpdl.20010501.xyz/Qexo/24/8/u=1347888029,3956638534&fm=253&fmt=auto&app=138&f=JPEG_35caba261c8abba22d22e080456ad035.jpeg
+cover: >-
+  https://ghtpdl.20010501.xyz/Qexo/24/8/u=1347888029,3956638534&fm=253&fmt=auto&app=138&f=JPEG_35caba261c8abba22d22e080456ad035.jpeg
 tags:
-- hexo
-- 博客
+  - hexo
+  - 博客
 title: hexo博客目录结构
 updated: '2024-08-16T15:53:51.570+08:00'
 ---

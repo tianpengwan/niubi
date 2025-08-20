@@ -1,17 +1,18 @@
 ---
-abbrlink: ''
+abbrlink: a2b
 categories:
-- - 软件推荐
-cover: https://ghtpdl.20010501.xyz/Qexo/24/8/324371839-a4064a6b-6dd8-4ead-be83-3820845a81e4_8c0b56a594071755f5d0fb1738bd2ec7.jpg
+  - - 软件推荐
+cover: >-
+  https://ghtpdl.20010501.xyz/Qexo/24/8/324371839-a4064a6b-6dd8-4ead-be83-3820845a81e4_8c0b56a594071755f5d0fb1738bd2ec7.jpg
 date: '2024-08-06T16:46:18.230098+08:00'
 tags:
-- AfuseKt
-- 开源播放器
-- 阿里云盘
-- Alist
-- WebDAV
-- Emby
-- Jellyfin
+  - AfuseKt
+  - 开源播放器
+  - 阿里云盘
+  - Alist
+  - WebDAV
+  - Emby
+  - Jellyfin
 title: AfuseKt开源播放器介绍
 updated: '2025-08-17T15:13:33.603+08:00'
 ---

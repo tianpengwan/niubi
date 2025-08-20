@@ -1,11 +1,11 @@
 ---
-abbrlink: ''
+abbrlink: e67f
 categories:
-- - 见解思考
+  - - 见解思考
 date: '2024-09-28T01:22:16.877192+08:00'
-cover: https://ghtpdl.20010501.xyz/tptp/OIP-C (1).jpeg
+cover: 'https://ghtpdl.20010501.xyz/tptp/OIP-C (1).jpeg'
 tags:
-- 波士顿圆脸
+  - 波士顿圆脸
 title: 纽约市长要坐牢FBI抄家发现其是土耳其好兄弟
 updated: '2024-09-28T01:40:47.677+08:00'
 ---

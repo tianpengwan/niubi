@@ -1,12 +1,12 @@
 ---
-abbrlink: ''
+abbrlink: ec63
 categories:
-- - 见解思考
-cover: https://cftcr2.20010501.xyz/PicHoro/20250308162446Aicy.png
+  - - 见解思考
+cover: 'https://cftcr2.20010501.xyz/PicHoro/20250308162446Aicy.png'
 date: '2025-03-10T08:45:07.514634+08:00'
 tags:
-- 视频分享
-- bilibili
+  - 视频分享
+  - bilibili
 title: 蟹bro记又名01测量大帝
 updated: '2025-08-19T14:52:43.599+08:00'
 ---

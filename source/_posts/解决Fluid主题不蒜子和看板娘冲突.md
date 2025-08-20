@@ -1,13 +1,13 @@
 ---
-abbrlink: ''
+abbrlink: '8e28'
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2024-09-01T23:47:42.063149+08:00'
-cover: https://ghtpdl.20010501.xyz/tptp/P40902-240843.jpg
+cover: 'https://ghtpdl.20010501.xyz/tptp/P40902-240843.jpg'
 tags:
-- Fluid主题
-- 不蒜子
-- 看板娘
+  - Fluid主题
+  - 不蒜子
+  - 看板娘
 title: 解决Fluid主题不蒜子和看板娘冲突
 updated: '2024-09-02T00:23:20.656+08:00'
 ---

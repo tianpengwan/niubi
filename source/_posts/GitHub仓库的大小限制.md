@@ -1,10 +1,10 @@
 ---
-abbrlink: ''
+abbrlink: 7f30
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2024-08-25T22:06:43.989428+08:00'
 tags:
-- GitHub
+  - GitHub
 title: GitHub仓库的大小限制
 updated: '2025-08-17T17:39:44.516+08:00'
 ---

@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://20010501.xyz/
-permalink: :post_title.html
+permalink: :abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # 设置为false将从永久链接中删除尾随的'index.html'
@@ -200,4 +200,19 @@ bangumi: # 追番设置
     top_img: false
     lazyload:
       enable: false
-
+# 一个 Hexo 插件，用于根据帖子正面的标题和数据生成静态帖子链接。
+# https://github.com/rozbo/hexo-abbrlink
+# abbrlink config
+abbrlink:
+  alg: crc16      #support crc16(default) and crc32
+  rep: hex        #support dec(default) and hex
+  drafts: false   #(true)处理草稿，(false)不处理草稿。false（默认值）
+  # 从目录树生成类别
+  # 深度：要生成的目录树的最大深度应大于0
+  auto_category:
+    enable: true  #true(default)
+    depth:        #3(default)
+    over_write: false 
+  auto_title: false #启用自动标题，可以按路径自动填充标题
+  auto_date: false #启用自动日期，它可以自动填写日期的时间今天
+  force: false #启用强制模式，在这种模式下，插件将忽略缓存，并为每个帖子计算abbrlink，即使它已经有了abbrlink。

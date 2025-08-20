@@ -1,15 +1,16 @@
 ---
-abbrlink: ''
+abbrlink: e6dc
 categories:
-- - 软件推荐
+  - - 软件推荐
 date: '2024-08-06T14:17:56.194270+08:00'
-cover: https://ghtpdl.20010501.xyz/Qexo/24/8/1000022784_0ab47fdb1c29d73607b029a5fcfbb1b1.png
+cover: >-
+  https://ghtpdl.20010501.xyz/Qexo/24/8/1000022784_0ab47fdb1c29d73607b029a5fcfbb1b1.png
 tags:
-- Filmly
-- 播放器
-- 阿里云
-- 115网盘
-- webdav
+  - Filmly
+  - 播放器
+  - 阿里云
+  - 115网盘
+  - webdav
 title: Filmly播放器介绍
 updated: '2024-08-16T15:52:11.419+08:00'
 ---
