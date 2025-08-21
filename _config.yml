@@ -172,8 +172,9 @@ feed:
 # Sitemap Generator
 sitemap:
   path: sitemap.xml
-  prettyURLs:
-    trailingSlash: false
+  priority: 0.5
+  changefreq: daily
+  lastmod: true
 # 追番插件
 # https://github.com/HCLonely/hexo-bilibili-bangumi
 bangumi: # 追番设置
