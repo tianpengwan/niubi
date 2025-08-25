@@ -5,8 +5,8 @@ hexo.extend.tag.register('daily_news', function(args, content) {
   <div class="daily-news-container">
     <style>
       .daily-news-container {
-        --blue: #3498db;         /* 蓝色 */
-        --orange: #FF8C00;       /* 橘黄色 */
+        --blue: #3498db;
+        --orange: #FF8C00;
         --text-color: #333;
         --bg-color: transparent;
         --card-bg: rgba(255, 255, 255, 0.1);
@@ -15,7 +15,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         font-size: 17px;
         font-style: italic;
         text-align: center;
-        color: var(--blue);      /* 全局文字颜色改为蓝色 */
+        color: var(--blue);
       }
 
       .daily-news-container * {
@@ -95,7 +95,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
       .daily-news-container h1 {
         font-size: 26px;
         font-weight: 700;
-        background: linear-gradient(45deg, var(--orange), #FFA500, #FFD700); /* 橘黄色渐变 */
+        background: linear-gradient(45deg, var(--orange), #FFA500, #FFD700);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -111,7 +111,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(5px);
         justify-content: center;
-        color: var(--blue); /* 日期文字蓝色 */
+        color: var(--blue);
       }
 
       .daily-news-container .date-item {
@@ -122,7 +122,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
 
       .daily-news-container .date-item i {
         font-size: 18px;
-        color: var(--orange); /* 橘黄色图标 */
+        color: var(--orange);
       }
 
       .daily-news-container .controls {
@@ -161,7 +161,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
       }
 
       .daily-news-container .btn-refresh {
-        background: rgba(255, 140, 0, 0.3); /* 橘黄色按钮 */
+        background: rgba(255, 140, 0, 0.3);
         border: 1px solid rgba(255, 140, 0, 0.4);
       }
 
@@ -175,7 +175,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(5px);
         justify-content: center;
-        color: var(--blue); /* 更新状态文字蓝色 */
+        color: var(--blue);
       }
 
       .daily-news-container .news-container {
@@ -187,7 +187,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         padding: 18px 0;
         border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
         transition: all 0.3s;
-        color: var(--blue); /* 新闻文字蓝色 */
+        color: var(--blue);
       }
 
       .daily-news-container .news-card:hover {
@@ -215,7 +215,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         width: 26px;
         height: 26px;
         border-radius: 50%;
-        background: var(--orange); /* 橘黄色背景 */
+        background: var(--orange);
         color: white;
         margin-right: 12px;
         flex-shrink: 0;
@@ -229,7 +229,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         margin: 30px 0;
         position: relative;
         backdrop-filter: blur(5px);
-        color: var(--orange); /* 提示文字橘黄色 */
+        color: var(--orange);
       }
 
       .daily-news-container .tip-box::before {
@@ -246,11 +246,11 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         text-align: center;
         margin-top: 20px;
         padding: 20px 0;
-        color: var(--blue); /* 页脚文字蓝色 */
+        color: var(--blue);
       }
 
       .daily-news-container .source-link {
-        color: var(--orange); /* 链接文字橘黄色 */
+        color: var(--orange);
         text-decoration: none;
         font-weight: 500;
         transition: all 0.3s;
@@ -269,14 +269,14 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         justify-content: center;
         padding: 60px 20px;
         text-align: center;
-        color: var(--blue); /* 加载文字蓝色 */
+        color: var(--blue);
       }
 
       .daily-news-container .loader {
         width: 60px;
         height: 60px;
         border: 5px solid rgba(255, 255, 255, 0.2);
-        border-top: 5px solid var(--orange); /* 橘黄色加载动画 */
+        border-top: 5px solid var(--orange);
         border-radius: 50%;
         animation: spin 1s linear infinite;
         margin-bottom: 25px;
@@ -290,7 +290,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
       .daily-news-container .no-data {
         text-align: center;
         padding: 50px 20px;
-        color: var(--blue); /* 无数据文字蓝色 */
+        color: var(--blue);
       }
 
       .daily-news-container .no-data i {
@@ -306,12 +306,12 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         align-items: center;
         justify-content: flex-end;
         gap: 8px;
-        color: var(--orange); /* 更新时间橘黄色 */
+        color: var(--orange);
       }
 
       .daily-news-container .next-update {
         font-weight: 500;
-        color: var(--orange); /* 下次更新时间橘黄色 */
+        color: var(--orange);
       }
 
       @media (max-width: 600px) {
@@ -440,9 +440,6 @@ hexo.extend.tag.register('daily_news', function(args, content) {
           setupAutoUpdate(); // 重新设置明天的定时器
         }, timeUntilUpdate);
       }
-      
-      // 事件监听器
-      refreshBtn.addEventListener('click', fetchNewsData);
       
       // 获取新闻数据
       async function fetchNewsData() {
@@ -579,18 +576,21 @@ hexo.extend.tag.register('daily_news', function(args, content) {
         });
       }
       
-      // 初始化
-      document.addEventListener('DOMContentLoaded', () => {
-        // 初始获取数据
+      // 核心修复：重构初始化逻辑
+      function initModule() {
         fetchNewsData();
-        
-        // 启动当前时间更新
         updateCurrentTime();
         setInterval(updateCurrentTime, 1000);
-        
-        // 设置每天9点自动更新
         setupAutoUpdate();
-      });
+        refreshBtn.addEventListener('click', fetchNewsData);
+      }
+
+      // 双保险初始化机制
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(initModule, 100);  // 给Hexo的DOM渲染留出时间
+      } else {
+        document.addEventListener('DOMContentLoaded', initModule);
+      }
     })();
   </script>
   `;
