@@ -455,8 +455,14 @@ hexo.extend.tag.register('daily_news', function(args, content) {
             </div>
           \`;
           
+          // 添加随机参数避免缓存问题
+          const cacheBuster = 't=' + new Date().getTime();
+          const apiUrlWithCacheBuster = API_URL.includes('?') 
+            ? API_URL + '&' + cacheBuster 
+            : API_URL + '?' + cacheBuster;
+          
           // 从API获取数据
-          const response = await fetch(API_URL);
+          const response = await fetch(apiUrlWithCacheBuster);
           
           if (!response.ok) {
             throw new Error(\`API请求失败: \${response.status} \${response.statusText}\`);
