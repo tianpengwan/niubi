@@ -108,6 +108,9 @@
     music_bg: https://ghtpdl.20010501.xyz/tptp/OIP.jpeg
     music_link: /music
   reward_list:
+    - name: 妈妈
+      amount: 5.20
+      datatime: 2025-08-26
     - name: 宇外御风
       amount: 888888.8
       datatime: 2023-03-28
