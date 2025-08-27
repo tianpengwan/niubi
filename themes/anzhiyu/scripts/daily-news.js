@@ -387,7 +387,7 @@ hexo.extend.tag.register('daily_news', function(args, content) {
   <script>
     (function() {
       // 全局变量
-      const API_URL = 'https://60s.viki.moe/v2/60s';
+      const API_URL = 'https://60s.20010501.xyz/v2/60s';
       
       // DOM元素
       const newsDataElement = document.getElementById('daily-news-content');
