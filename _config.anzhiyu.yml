@@ -1,21 +1,21 @@
 menu:
  文章:
-   归档: /archives/ || fa-book
-   分类: /categories/ || fa-tasks
-   标签: /tags/ || fa-tags
+   归档: /archives/ || anzhiyu-icon-box-archive
+   分类: /categories/ || anzhiyu-icon-shapes
+   标签: /tags/ || anzhiyu-icon-tags
 
  友链:
-   友人帐: /yl/ || fa-link
-   朋友圈: /pyq/ || fa-weixin
+   友人帐: /yl/ || anzhiyu-icon-link
+   朋友圈: /pyq/ || anzhiyu-icon-artstation
 #   留言板: /comments/ || anzhiyu-icon-envelope
 
  我的:
 #   音乐馆: /music/ || anzhiyu-icon-music
 #   追番页: /bangumis/ || anzhiyu-icon-bilibili
-   相册集: /imgs/ || fa-image
-   小空调: /air-conditioner/ || fa-snowflake-o
-   说说: /shuo/ || fa-twitch
-   纪念日: /jnr/ || fa-heart
+   相册集: /imgs/ || anzhiyu-icon-images
+   小空调: /air-conditioner/ || anzhiyu-icon-fan
+   说说: /shuo/ || anzhiyu-icon-envelope
+   纪念日: /jnr/ || anzhiyu-icon-dice-d20
  分享:
    影视: /movies/ || fas fa-video
 #   追番页: /bangumis/ || anzhiyu-icon-bilibili
@@ -23,9 +23,9 @@ menu:
    游戏: /games/ || fa-solid fa-gamepad
 
  关于:
-   关于本人: /about/ || fa-user-circle
-   闲言碎语: /essay/ || fa-commenting
-   随便逛逛: javascript:toRandomPost() || fa-cubes
+   关于本人: /about/ || anzhiyu-icon-paper-plane
+   闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+   随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # nav相关配置
 nav:
