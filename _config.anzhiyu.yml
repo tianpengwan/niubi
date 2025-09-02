@@ -1274,6 +1274,7 @@ inject:
     - <script src="/js/main.min.js"></script>
     - <script src="/js/qexo-dao.min.js"></script>
     - <script src="/js/welcome.js"></script>
+    - <script src="https://cdn.apple-livephotoskit.com/lpk/1/livephotoskit.js"></script>
 #    <script src="/js/jquery.js"></script>
 #    <script src="https://unpkg.com/@waline/client@v2/dist/waline.mjs"></script>
 
