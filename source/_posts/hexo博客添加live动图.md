@@ -17,7 +17,7 @@ updated: '2025-09-02T19:07:39.486+08:00'
     muted 
     playsinline
   >
-    <source src=" https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4" type="video/mp4">
+    <source src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4" type="video/mp4">
     <img src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854.webp" alt="Live photo">
   </video>
   
@@ -145,7 +145,7 @@ updated: '2025-09-02T19:07:39.486+08:00'
     muted 
     playsinline
   >
-    <source src=" https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4" type="video/mp4">
+    <source src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4" type="video/mp4">
     <img src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854.webp" alt="Live photo">
   </video>
   
