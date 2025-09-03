@@ -217,3 +217,19 @@ abbrlink:
   auto_title: false #启用自动标题，可以按路径自动填充标题
   auto_date: false #启用自动日期，它可以自动填写日期的时间今天
   force: false #启用强制模式，在这种模式下，插件将忽略缓存，并为每个帖子计算abbrlink，即使它已经有了abbrlink。
+
+livephoto:
+  enable: true
+  autoplay: true
+  hover_to_play: true
+  click_to_play: true
+  lazy_load: true
+  threshold: 0.8
+  badge: true
+  badge_text: 'Live'
+  badge_position: 'bottom-left'
+  loading_animation: true
+  preload: 'auto'
+  keep_observing: false
+  hover_delay: 300
+  weixin_disable_autoplay: true
