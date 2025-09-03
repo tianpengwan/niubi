@@ -1257,23 +1257,17 @@ dynamicEffect:
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="/custom/css/schedule.css">
     - <link rel="stylesheet" href="/css/font.css">
-    - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="/css/background.css">
     - <link rel="stylesheet" href="/css/mouse.css">
-    - <link rel="stylesheet" href="https://blog.bornforthis.cn/static/css/anniversary.css">
-    - <link rel="stylesheet" href="/css/welcome.css">
     # iconfont 图标引入
     - <meta name="referrer" content="no-referrer">
   bottom:
-    - <script src="/custom/js/schedule.js"></script>
     - <script src="/custom/js/chineselunar.js"></script>
     - <script src="https://blog.bornforthis.cn/static/js/anniversary.js"></script>
     - <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.12/lunar.js"></script>
     - <script src="/js/main.min.js"></script>
     - <script src="/js/qexo-dao.min.js"></script>
-    - <script src="/js/welcome.js"></script>
 #    <script src="/js/jquery.js"></script>
 #    <script src="https://unpkg.com/@waline/client@v2/dist/waline.mjs"></script>
 
