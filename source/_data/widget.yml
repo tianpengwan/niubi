@@ -1,9 +1,9 @@
  top:
-#  - class_name: card-latest-comments
-#    id_name:
-#    name: 最新评论
-#    icon: fas fa-comments
-#    html: |
+   - class_name: card-latest-comments
+     id_name:
+     name: 最新评论
+     icon: fas fa-comments
+     html: |
         <div id="waline-recent"></div>
         <script type="module">
           import { RecentComments } from '/css/waline.mjs';
@@ -31,12 +31,12 @@
         </div>
       </div>
 
-#  - class_name: schedule
-#    id_name: card-widget-schedule
-#    name:
-#    icon:
-#    order: -1
-#    html: |
+   - class_name: schedule
+     id_name: card-widget-schedule
+     name:
+     icon:
+     order: -1
+     html: |
       <div id="schedule-area-left">
         <div id="schedule-title">距离除夕</div>
         <div id="schedule-days"></div>
