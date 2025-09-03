@@ -8,9 +8,11 @@
     'onmicrosoft': '//npm.onmicrosoft.cn',
     'cbd': '//cdn.cbd.int',
     'anheyu': '//cdn.anheyu.com',
+    'smartcis': '//cdn.smartcis.cn',
     'custom': custom_format && custom_format.match(/^((https?:)?(\/\/[^/]+)|([^/]+))(\/|$)/)[1]
   }
 -
+
 
 if internal_provider === third_party_provider && internal_provider !== 'local'
   link(rel="preconnect" href=providers[internal_provider])

@@ -99,6 +99,7 @@ hexo.extend.filter.register("before_generate", () => {
         onmicrosoft: `https://npm.onmicrosoft.cn/${name}${verType}/${file}`,
         cbd: `https://cdn.cbd.int/${name}${verType}/${file}`,
         anheyu: `https://cdn.anheyu.com/npm/${name}${verType}/${min_file}`,
+        smartcis: `https://cdn.smartcis.cn/npm/${name}${verType}/${file}`,
         custom: (CDN.custom_format || "").replace(/\$\{(.+?)\}/g, (match, $1) => value[$1]),
       };
 
