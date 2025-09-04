@@ -1,0 +1,1141 @@
+/* 文章页H1-H6图标样式效果 */
+/* 控制风车转动速度 4s那里可以自己调节快慢 */
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  -webkit-animation: ccc 4s linear infinite;
+  animation: ccc 4s linear infinite;
+}
+
+/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */
+@-webkit-keyframes ccc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn);
+  }
+}
+
+@keyframes ccc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn);
+  }
+}
+
+/* 设置风车颜色 */
+#content-inner.layout h1::before {
+  color: #ef50a8;
+  margin-left: -1.55rem;
+  font-size: 1.3rem;
+  margin-top: -0.23rem;
+}
+
+#content-inner.layout h2::before {
+  color: #fb7061;
+  margin-left: -1.35rem;
+  font-size: 1.1rem;
+  margin-top: -0.12rem;
+}
+
+#content-inner.layout h3::before {
+  color: #ffbf00;
+  margin-left: -1.22rem;
+  font-size: 0.95rem;
+  margin-top: -0.09rem;
+}
+
+#content-inner.layout h4::before {
+  color: #a9e000;
+  margin-left: -1.05rem;
+  font-size: 0.8rem;
+  margin-top: -0.09rem;
+}
+
+#content-inner.layout h5::before {
+  color: #57c850;
+  margin-left: -0.9rem;
+  font-size: 0.7rem;
+  margin-top: 0rem;
+}
+
+#content-inner.layout h6::before {
+  color: #5ec1e0;
+  margin-left: -0.9rem;
+  font-size: 0.66rem;
+  margin-top: 0rem;
+}
+
+/* s设置风车hover动效 6s那里可以自己调节快慢*/
+#content-inner.layout h1:hover,
+#content-inner.layout h2:hover,
+#content-inner.layout h3:hover,
+#content-inner.layout h4:hover,
+#content-inner.layout h5:hover,
+#content-inner.layout h6:hover {
+  color: var(--theme-color);
+}
+
+#content-inner.layout h1:hover::before,
+#content-inner.layout h2:hover::before,
+#content-inner.layout h3:hover::before,
+#content-inner.layout h4:hover::before,
+#content-inner.layout h5:hover::before,
+#content-inner.layout h6:hover::before {
+  color: var(--theme-color);
+  -webkit-animation: ccc 6s linear infinite;
+  animation: ccc 6s linear infinite;
+}
+
+/* 添加友链按钮 */
+/* 快速填写格式 */
+.addBtn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.addBtn button {
+  transition: .2s;
+  display: flex;
+  margin: 5px auto;
+  color: var(--global-bg);
+  padding: 15px;
+  border-radius: 40px;
+  background: var(--search-result-title);
+  align-items: center;
+}
+
+button {
+  padding: 0;
+  outline: 0;
+  border: none;
+  background: 0 0;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.fa-solid,
+.fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.addBtn i {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+.addBtn button:hover {
+  background: var(--theme-color);
+  color: #fff;
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+  transition: all 0.3s;
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+  transition: all 0.3s;
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
+
+/*---字体css start---*/
+
+/* 字体css */
+@font-face {
+  font-family: 'HuangkaihuaLawyerFont';
+  /* 其中HuangkaihuaLawyerFont是引入的字体的名称，可以自定义 */
+  font-display: swap;
+  src: url('https://pcgdemo.chfychin.cn/fonts/huangkaihuaLawyerfont-2.ttf') format("truetype");
+  /* url中填写自己的字体地址，我使用的是本地文件夹所以用的是相对路径，如果是外部引用的话在其中写入链接地址就好了 */
+}
+
+/*---字体css end---*/
+
+/*---纪念日start---*/
+
+/* 背景与页面基本样式 */
+body[data-type="anniversary"] #web_bg {
+  background: var(--anzhiyu-background);
+}
+
+body[data-type="anniversary"] #page {
+  border: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  background: 0 0 !important;
+}
+
+body[data-type="anniversary"] #page .page-title {
+  display: none;
+}
+
+/* 卡片整体布局 */
+.anniversary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* 响应式布局 */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 卡片样式 */
+.anniversary-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.anniversary-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片标题和图标水平居中对齐的样式 */
+.card-header {
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  /* 文本居中 */
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  /* 图标与标题之间的间距 */
+}
+
+/* 白色背景的中间部分 */
+.card-body {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: #333;
+  text-align: center;
+}
+
+/* 剩余天数与"天后"的样式 */
+.countdown-wrapper {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  /* 设置数字大小 */
+  color: #6b4226;
+  /* 设置数字的颜色 */
+  font-weight: bold;
+}
+
+.days-label {
+  position: absolute;
+  top: -10px;
+  right: -45px;
+  background-color: #36c5b2;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: normal;
+  display: inline-block;
+}
+
+/* 目标日样式 */
+.target-info {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.target-label {
+  display: inline-block;
+  margin: 0;
+  /* 去掉额外的边距 */
+  font-size: 1rem;
+  letter-spacing: 2px;
+  /* 保持文字间距 */
+}
+
+.target-date {
+  display: inline-block;
+  /* 改为inline-block，直接与目标日标签对齐 */
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  /* 去掉所有的上下边距 */
+  font-weight: normal;
+  /* 去掉加粗效果 */
+}
+
+/* 虚线样式 */
+.dashed-line {
+  border-top: 1px dashed #ccc;
+  margin: 10px 0;
+}
+
+/* 目标日期与已经过去的天数信息 */
+.target-info,
+.total-days-info {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+/* 响应式布局优化，适配不同设备 */
+@media (max-width: 768px) {
+  .anniversary-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .anniversary-card {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* 动画效果 */
+.anniversary-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.anniversary-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 版权信息的样式 */
+.card-copyright {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #777;
+  text-align: right;
+}
+
+.card-copyright a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-copyright a:hover {
+  text-decoration: underline;
+}
+
+/*---纪念日end---*/
+
+/* twikoo评论美化start */
+/* 自定义twikoo评论输入框高度 */
+#twikoo .el-textarea textarea {
+  min-height: 120px !important;
+  background-size: 90px;
+}
+
+/* 自定义表情优化 */
+#twikoo .OwO-body {
+  max-width: 100% !important;
+}
+
+/* 选择某个框 #twikoo .OwO .OwO-body .OwO-items:nth-child(1) */
+#twikoo .OwO .OwO-body .OwO-items {
+  max-height: 250px !important;
+}
+
+.OwO .OwO-body .OwO-items-image .OwO-item {
+  max-width: calc(9% - 10px);
+  box-sizing: content-box;
+}
+
+.OwO .OwO-body .OwO-items-image .OwO-item[title|="Heybox"],
+.OwO .OwO-body .OwO-items-image .OwO-item[title|="Tieba"],
+.OwO .OwO-body .OwO-items-show .OwO-item[title*="bilibili"] {
+  max-width: calc(7% - 10px) !important;
+  box-sizing: content-box;
+}
+
+#twikoo .OwO-items li img {
+  width: 100% !important;
+}
+
+.tk-comment .vemoji[alt|="Menhera"],
+.tk-comment .tk-owo-emotion[alt*="Menhera"],
+.tk-comment .vemoji[alt|="Snow"],
+.tk-comment .tk-owo-emotion[alt*="Snow"],
+.tk-comment .vemoji[alt|="Sweetie"],
+.tk-comment .tk-owo-emotion[alt*="Sweetie"],
+.tk-comment .vemoji[alt|="Tsuri"],
+.tk-comment .tk-owo-emotion[alt*="Tsuri"],
+.tk-comment .vemoji[alt|="Yurui"],
+.tk-comment .tk-owo-emotion[alt*="Yurui"] {
+  max-width: 120px !important;
+  max-height: 120px !important;
+  width: 120px;
+  margin: 8px 1px;
+  display: block !important;
+}
+
+/* 手机端适配 */
+@media screen and (max-width: 768px) {
+
+  .tk-comment .vemoji[alt|="Menhera"],
+  .tk-comment .tk-owo-emotion[alt*="Menhera"],
+  .tk-comment .vemoji[alt|="Snow"],
+  .tk-comment .tk-owo-emotion[alt*="Snow"],
+  .tk-comment .vemoji[alt|="Sweetie"],
+  .tk-comment .tk-owo-emotion[alt*="Sweetie"],
+  .tk-comment .vemoji[alt|="Tsuri"],
+  .tk-comment .tk-owo-emotion[alt*="Tsuri"],
+  .tk-comment .vemoji[alt|="Yurui"],
+  .tk-comment .tk-owo-emotion[alt*="Yurui"] {
+    max-width: calc(100% - 30px) !important;
+    max-height: calc(100% - 30px) !important;
+  }
+
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Menhera"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Snow"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Sweetie"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tsuri"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Yurui"] {
+    max-width: calc(33% - 10px);
+    box-sizing: border-box;
+  }
+
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Heybox"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="bilibili"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tieba"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="QQ"] {
+    max-width: calc(18% - 10px) !important;
+    box-sizing: content-box;
+  }
+}
+
+/* 右下角闭眼 */
+.el-textarea__inner {
+  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/open.webp) !important;
+}
+
+.el-textarea__inner:focus {
+  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/close.webp) !important;
+}
+
+/* twikoo评论美化end */
+
+
+/* 一图流start */
+
+/* 首页头图加载 */
+.pl-container {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  position: fixed;
+  overflow: hidden;
+  will-change: transform;
+  /* 添加性能优化 */
+  animation: blur-to-clear 2s cubic-bezier(.62, .21, .25, 1) 0s 1 normal backwards running, scale 1.5s cubic-bezier(.62, .21, .25, 1) 0s 1 both;
+}
+
+.pl-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+@keyframes blur-to-clear {
+  0% {
+    filter: blur(50px);
+    opacity: 1;
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1.5) translateZ(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.pl-visible {
+  opacity: 1;
+}
+
+.pl-blur {
+  /* 小图锯齿多，增加高斯模糊 */
+  filter: blur(50px);
+}
+
+/* 页脚透明 */
+#footer {
+  background: transparent !important;
+}
+
+/* 头图透明 */
+#page-header {
+  background: transparent !important;
+}
+
+/* 底部透明 */
+#footer-bar {
+  background: transparent !important;
+}
+
+/* 更多透明 */
+#category-bar {
+  background: transparent !important;
+}
+
+/* 一图流end */
+
+/* chinese-new-year start*/
+
+/* 新年灯笼🏮 */
+.deng-box1 {
+  position: fixed;
+  top: -30px;
+  left: 10px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.deng-box2 {
+  position: fixed;
+  top: -30px;
+  right: 10px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.deng-box3 {
+  position: fixed;
+  top: -40px;
+  left: -20px;
+  z-index: 9998;
+  pointer-events: none;
+}
+
+.deng-box4 {
+  position: fixed;
+  top: -40px;
+  right: -20px;
+  z-index: 9998;
+  pointer-events: none;
+}
+
+.deng-box4 .deng,
+.deng-box1 .deng {
+  position: relative;
+  width: 120px;
+  height: 90px;
+  margin: 50px;
+  background: #d8000f;
+  background: rgba(216, 0, 15, .8);
+  border-radius: 50% 50%;
+  transform-origin: 50% -100px;
+  animation: swing 5s infinite ease-in-out;
+  box-shadow: -5px 5px 30px 4px #fc903d;
+}
+
+.deng {
+  position: relative;
+  width: 120px;
+  height: 90px;
+  margin: 50px;
+  background: #d8000f;
+  background: rgba(216, 0, 15, .8);
+  border-radius: 50% 50%;
+  transform-origin: 50% -100px;
+  animation: swing 3s infinite ease-in-out;
+  box-shadow: -5px 5px 50px 4px #fa6c00;
+}
+
+.deng-a {
+  width: 100px;
+  height: 90px;
+  background: #d8000f;
+  background: rgba(216, 0, 15, .1);
+  margin: 12px 8px 8px 8px;
+  border-radius: 50% 50%;
+  border: 2px solid #dc8f03;
+}
+
+.deng-b {
+  width: 45px;
+  height: 90px;
+  background: #d8000f;
+  background: rgba(216, 0, 15, .1);
+  margin: -4px 8px 8px 26px;
+  border-radius: 50% 50%;
+  border: 2px solid #dc8f03;
+}
+
+.xian {
+  position: absolute;
+  top: -20px;
+  left: 60px;
+  width: 2px;
+  height: 20px;
+  background: #dc8f03;
+}
+
+.shui-a {
+  position: relative;
+  width: 5px;
+  height: 20px;
+  margin: -5px 0 0 59px;
+  animation: swing 4s infinite ease-in-out;
+  transform-origin: 50% -45px;
+  background: orange;
+  border-radius: 0 0 5px 5px;
+}
+
+.shui-b {
+  position: absolute;
+  top: 14px;
+  left: -2px;
+  width: 10px;
+  height: 10px;
+  background: #dc8f03;
+  border-radius: 50%;
+}
+
+.shui-c {
+  position: absolute;
+  top: 18px;
+  left: -2px;
+  width: 10px;
+  height: 35px;
+  background: orange;
+  border-radius: 0 0 0 5px;
+}
+
+.deng:before {
+  position: absolute;
+  top: -7px;
+  left: 29px;
+  height: 12px;
+  width: 60px;
+  content: " ";
+  display: block;
+  z-index: 999;
+  border-radius: 5px 5px 0 0;
+  border: solid 1px #dc8f03;
+  background: orange;
+  background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03);
+}
+
+.deng:after {
+  position: absolute;
+  bottom: -7px;
+  left: 10px;
+  height: 12px;
+  width: 60px;
+  content: " ";
+  display: block;
+  margin-left: 20px;
+  border-radius: 0 0 5px 5px;
+  border: solid 1px #dc8f03;
+  background: orange;
+  background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03);
+}
+
+.deng-t {
+  font-family: chengrongguangke, 华文行楷, Arial, Lucida Grande, Tahoma, sans-serif;
+  font-size: 4.5rem;
+  color: #dc8f03;
+  font-weight: 500;
+  line-height: 85px;
+  text-align: center;
+  margin: 0 0 0 -16px;
+}
+
+.night .deng-box2,
+.night .deng-box4,
+.night .deng-t {
+  background: 0 0 !important;
+}
+
+@-moz-keyframes swing {
+  0% {
+    -moz-transform: rotate(-10deg);
+  }
+
+  50% {
+    -moz-transform: rotate(10deg);
+  }
+
+  100% {
+    -moz-transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-10deg);
+  }
+}
+
+
+/* 对联 */
+.loading-bg .duilian .left-panel,
+.loading-bg .duilian .right-panel {
+  width: 40%;
+  height: 100%;
+  position: fixed;
+  top: 40px;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-bg .duilian .couplet-container {
+  background: rgba(216, 0, 15, 0.8);
+  position: relative;
+  box-shadow: 0 0 20px rgba(220, 143, 3, 0.1);
+  border-radius: 30px 30px 5px 5px;
+  width: 90px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid rgba(255, 217, 0, 0.831);
+}
+
+.loading-bg .duilian .couplet-container:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid rgba(255, 217, 0, 0.831);
+  border-radius: 25px 25px 3px 3px;
+  opacity: 0.6;
+}
+
+.loading-bg .duilian .couplet-container .couplet-decor.top {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 30px;
+  background: rgba(216, 0, 15, 0.8);
+  border: 4px solid rgba(255, 217, 0, 0.831);
+  border-radius: 15px 15px 0 0;
+}
+
+.loading-bg .duilian .couplet-container .couplet-decor.top:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: rgba(216, 0, 15, 0.8);
+  border: 4px solid #dcbf03;
+  border-radius: 50%;
+}
+
+.loading-bg .duilian .couplet-container .couplet-decor.bottom {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 30px;
+  background: rgba(216, 0, 15, 0.8);
+  border: 4px solid rgba(255, 217, 0, 0.831);
+  border-radius: 0 0 15px 15px;
+}
+
+.loading-bg .duilian .couplet-container .couplet-decor.bottom:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: rgba(216, 0, 15, 0.8);
+  border: 4px solid rgba(255, 217, 0, 0.831);
+  border-radius: 50%;
+}
+
+.loading-bg .duilian .couplet {
+  color: rgba(255, 217, 0, 0.831);
+  font-size: 2.5rem;
+  writing-mode: vertical-rl;
+  font-family: "华文行楷", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  letter-spacing: 15px;
+  line-height: 1.3;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.loading-bg .duilian .left-panel {
+  left: 0;
+  /* transform: translateX(-100%); */
+}
+
+.loading-bg .duilian .right-panel {
+  right: 0;
+  /* transform: translateX(100%); */
+}
+
+.loading-bg .duilian .center-panel {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loading-bg .duilian .center-panel .horizontal-scroll {
+  background: rgba(216, 0, 15, 0.8);
+  width: 240px;
+  height: 80px;
+  border: 4px solid rgba(255, 217, 0, 0.831);
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(220, 143, 3, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 25px;
+}
+
+.loading-bg .duilian .center-panel .horizontal-scroll:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid rgba(255, 217, 0, 0.831);
+  border-radius: 25px;
+  opacity: 0.6;
+}
+
+.loading-bg .duilian .center-panel .horizontal-scroll .couplet-decor.left,
+.loading-bg .duilian .center-panel .horizontal-scroll .couplet-decor.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 50px;
+  background: rgba(216, 0, 15, 0.8);
+  border: 4px solid rgba(255, 217, 0, 0.831);
+}
+
+.loading-bg .duilian .center-panel .horizontal-scroll .couplet-decor.left {
+  left: -15px;
+  border-radius: 15px 0 0 15px;
+}
+
+.loading-bg .duilian .center-panel .horizontal-scroll .couplet-decor.left:before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: rgba(216, 0, 15, 0.8);
+  border: 4px solid rgba(255, 217, 0, 0.831);
+  border-radius: 50%;
+}
+
+.loading-bg .duilian .center-panel .horizontal-scroll .couplet-decor.right {
+  right: -15px;
+  border-radius: 0 15px 15px 0;
+}
+
+.loading-bg .duilian .center-panel .horizontal-scroll .couplet-decor.right:after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: rgba(216, 0, 15, 0.8);
+  border: 4px solid rgba(255, 217, 0, 0.831);
+  border-radius: 50%;
+}
+
+.loading-bg .duilian .center-panel .horizontal-scroll .couplet {
+  color: rgba(255, 217, 0, 0.831);
+  font-size: 2.5rem;
+  writing-mode: horizontal-tb;
+  font-family: "华文行楷", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: 0.3em;
+}
+
+
+/* chinese-new-yearend */
+
+/* essay-style-start */
+
+/* .author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  top: -35px;
+  z-index: 3;
+  margin-right: 25px;
+}
+
+.author-info .msg {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+a.essay-avatar {
+  height: 60px;
+  width: 60px;
+  display: block;
+  border-radius: 10px;
+  background: #fff;
+}
+
+[data-theme=dark] a.essay-avatar {
+  background: #ffffffad;
+}
+
+.eassy-name {
+  margin-right: 10px;
+  padding-top: 2px;
+  color: #eee;
+  font-weight: 600;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.content.narrow-row {
+  padding: 0 50px;
+}
+
+#bber {
+  margin-top: -2rem;
+}
+
+#bber div.bber-content {
+  position: relative;
+  flex-direction: column;
+}
+
+#bber .bber-container-img {
+  justify-content: flex-start;
+}
+
+#bber .bber-content-img,
+#bber .bber-content-video {
+  width: 32%;
+  margin-right: 1%;
+}
+
+#bber .bber-content .datacont {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--font-color);
+}
+
+#bber .bber-content-img img {
+  width: 100%;
+}
+
+#bber .bber-bottom {
+  display: inline !important;
+}
+
+#bber>section>ul>li>div .bber-info-from,
+#bber>section>ul>li>div .bber-info-time {
+  background: 0 0;
+  padding: 0;
+  height: 26px;
+}
+
+hr.essay-hr {
+  margin: 25px auto;
+  border: 1px solid var(--hr-border);
+}
+
+.bber-name,
+.user-avatar {
+  display: none;
+}
+
+.bber-reply {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  height: 26px;
+  line-height: 26px;
+}
+
+time.datatime {
+  font-size: 13px;
+}
+
+.bber-info-link {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  line-height: 26px;
+}
+
+.bber-info-address {
+  color: #4e9df8;
+  font-size: .7rem;
+}
+
+div#bber-tips {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width:900px),
+(max-height:580px) {
+  body[data-type=essay] #body-wrap .layout #page {
+    padding: 0 5px !important;
+  }
+
+  body[data-type=essay] div#post-comment {
+    padding: 20px 15px !important;
+  }
+
+  body[data-type=essay] .layout {
+    padding: 0 !important;
+  }
+
+  body[data-type=essay] .right {
+    margin-left: 55px;
+  }
+
+  div#essay_page {
+    border: var(--style-border);
+    box-shadow: var(--anzhiyu-shadow-border);
+    border-radius: 10px;
+  }
+
+  a.essay-avatar {
+    height: 60px;
+    width: 60px;
+  }
+
+  .author-content.author-content-item.essayPage.single {
+    height: 16rem;
+    border-radius: 10px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  #bber {
+    margin-top: -3rem !important;
+    width: 95%;
+    margin: auto;
+  }
+
+  #bber .timeline ul li.bber-item {
+    width: 95%;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: 0 0;
+    box-shadow: none;
+  }
+
+  #bber .timeline ul li.bber-item:hover {
+    border: none;
+  }
+
+  .bber-name {
+    font-size: 16px;
+    font-weight: 800;
+    display: block;
+  }
+
+  .user-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+} */
+
+/* essay-style-end */
