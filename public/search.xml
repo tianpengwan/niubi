@@ -8,7 +8,7 @@
       <link href="/1ef3/"/>
       <url>/1ef3/</url>
       
-        <content type="html"><![CDATA[<h1 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h1>      <div class="live-photo-container" id="livephoto-1sf89r20x" >        <img src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539.webp" alt="Live Photo" class="live-photo-static"  >        <video muted playsinline preload="auto" class="live-photo-video">          <source src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4" type="video/mp4">        </video>            <div class="live-badge bottom-left">Live</div>              <div class="live-loading"></div>      </div><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>在 Hexo 博客根目录下执行以下命令：</p><pre class="line-numbers language-none"><code class="language-none">npm install hexo-live-photo --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>在 Hexo 的主配置文件 _config.yml 中添加以下选项：</p><pre class="line-numbers language-none"><code class="language-none">livephoto:  enable: true  autoplay: true  hover_to_play: true  click_to_play: true  lazy_load: true  threshold: 0.8  badge: true  badge_text: &#39;Live&#39;  badge_position: &#39;bottom-left&#39;  loading_animation: true  preload: &#39;auto&#39;  keep_observing: false  hover_delay: 300  weixin_disable_autoplay: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h1>      <div class="live-photo-container" id="livephoto-t3fqtvkoi" >        <img src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539.webp" alt="Live Photo" class="live-photo-static"  >        <video muted playsinline preload="auto" class="live-photo-video">          <source src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4" type="video/mp4">        </video>            <div class="live-badge bottom-left">Live</div>              <div class="live-loading"></div>      </div><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>在 Hexo 博客根目录下执行以下命令：</p><pre class="line-numbers language-none"><code class="language-none">npm install hexo-live-photo --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>在 Hexo 的主配置文件 _config.yml 中添加以下选项：</p><pre class="line-numbers language-none"><code class="language-none">livephoto:  enable: true  autoplay: true  hover_to_play: true  click_to_play: true  lazy_load: true  threshold: 0.8  badge: true  badge_text: &#39;Live&#39;  badge_position: &#39;bottom-left&#39;  loading_animation: true  preload: &#39;auto&#39;  keep_observing: false  hover_delay: 300  weixin_disable_autoplay: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       
@@ -830,7 +830,7 @@
       <link href="/517c/"/>
       <url>/517c/</url>
       
-        <content type="html"><![CDATA[      <div class="live-photo-container" id="livephoto-aje0vn32j" >        <img src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854.webp" alt="Live Photo" class="live-photo-static"  >        <video muted playsinline preload="auto" class="live-photo-video">          <source src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854-1.mp4" type="video/mp4">        </video>            <div class="live-badge bottom-left">Live</div>              <div class="live-loading"></div>      </div><h3 id="钓鱼的第7天准备买路亚竿，台钓路亚两手抓！"><a href="#钓鱼的第7天准备买路亚竿，台钓路亚两手抓！" class="headerlink" title="钓鱼的第7天准备买路亚竿，台钓路亚两手抓！"></a>钓鱼的第7天准备买路亚竿，台钓路亚两手抓！</h3><ol><li><h5 id="为什么买？"><a href="#为什么买？" class="headerlink" title="为什么买？"></a>为什么买？</h5></li></ol><p>每次都看到他们玩路亚的上一堆鱼，我在旁边台钓都搓冒烟了，就这一点点收获“如图”。直接买一手路亚感受白嫖的快乐（那有鱼吃塑料啊！不是😂）。</p><ol start="2"><li><h5 id="会放弃台钓吗？"><a href="#会放弃台钓吗？" class="headerlink" title="会放弃台钓吗？"></a>会放弃台钓吗？</h5></li></ol><p>不会的啊，我直接大水面，近处台钓（挂个螺蛳能等一天没有雨），远处路亚（手上有玩的不至于无聊）。挑战次次不空军。</p><ol start="3"><li><h5 id="在哪里钓，钓上来都干嘛？"><a href="#在哪里钓，钓上来都干嘛？" class="headerlink" title="在哪里钓，钓上来都干嘛？"></a>在哪里钓，钓上来都干嘛？</h5></li></ol><p>主要是在本地信阳南湾湖，水面大怎么扔都没事，就是不知道会不会挂底哇！大鱼当然我框框炫，小鱼给猫框框炫。不理解钓上来又扔回去的啊🌝。<br><img src="https://ghtpdl.20010501.xyz/tptp/P40819-225300.jpg"></p>]]></content>
+        <content type="html"><![CDATA[      <div class="live-photo-container" id="livephoto-q379gj5g8" >        <img src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854.webp" alt="Live Photo" class="live-photo-static"  >        <video muted playsinline preload="auto" class="live-photo-video">          <source src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854-1.mp4" type="video/mp4">        </video>            <div class="live-badge bottom-left">Live</div>              <div class="live-loading"></div>      </div><h3 id="钓鱼的第7天准备买路亚竿，台钓路亚两手抓！"><a href="#钓鱼的第7天准备买路亚竿，台钓路亚两手抓！" class="headerlink" title="钓鱼的第7天准备买路亚竿，台钓路亚两手抓！"></a>钓鱼的第7天准备买路亚竿，台钓路亚两手抓！</h3><ol><li><h5 id="为什么买？"><a href="#为什么买？" class="headerlink" title="为什么买？"></a>为什么买？</h5></li></ol><p>每次都看到他们玩路亚的上一堆鱼，我在旁边台钓都搓冒烟了，就这一点点收获“如图”。直接买一手路亚感受白嫖的快乐（那有鱼吃塑料啊！不是😂）。</p><ol start="2"><li><h5 id="会放弃台钓吗？"><a href="#会放弃台钓吗？" class="headerlink" title="会放弃台钓吗？"></a>会放弃台钓吗？</h5></li></ol><p>不会的啊，我直接大水面，近处台钓（挂个螺蛳能等一天没有雨），远处路亚（手上有玩的不至于无聊）。挑战次次不空军。</p><ol start="3"><li><h5 id="在哪里钓，钓上来都干嘛？"><a href="#在哪里钓，钓上来都干嘛？" class="headerlink" title="在哪里钓，钓上来都干嘛？"></a>在哪里钓，钓上来都干嘛？</h5></li></ol><p>主要是在本地信阳南湾湖，水面大怎么扔都没事，就是不知道会不会挂底哇！大鱼当然我框框炫，小鱼给猫框框炫。不理解钓上来又扔回去的啊🌝。<br><img src="https://ghtpdl.20010501.xyz/tptp/P40819-225300.jpg"></p>]]></content>
       
       
       <categories>
@@ -902,9 +902,9 @@
       
         <tags>
             
-            <tag> Cloudflare </tag>
-            
             <tag> Crawler Hints </tag>
+            
+            <tag> Cloudflare </tag>
             
             <tag> 搜索引擎 </tag>
             
@@ -933,11 +933,11 @@
       
         <tags>
             
+            <tag> Cloudflare </tag>
+            
             <tag> HTTP/3 </tag>
             
             <tag> QUIC </tag>
-            
-            <tag> Cloudflare </tag>
             
             <tag> 网站优化 </tag>
             
