@@ -520,7 +520,7 @@ if (true) {
 <p>地震剖面显示设置——右键地震波——点击属性——依照需求进行显示效果修改（勾选应用到所有地震剖面可以将改显示设置同步到之后所有地震波型图中）</p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ghtpdl.20010501.xyz/tptp/%E5%9B%BE%E7%89%8711.png"></p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ghtpdl.20010501.xyz/tptp/%E5%9B%BE%E7%89%8712.png"></p>
-<p>数据设置：邮件数据设置——点击属性——依据本次实验所需探测距离设置数据长度（数据长度&#x3D;2<em>探测长度（m）</em>2.5&#x2F;纵波波速（m&#x2F;s））——归零选择默认或者数据前无有效信号部分——运行——结果有频谱图与地震波</p>
+<p>数据设置：邮件数据设置——点击属性——依据本次实验所需探测距离设置数据长度（数据长度&#x3D;2*探测长度（m）*2.5&#x2F;纵波波速（m&#x2F;s））——归零选择默认或者数据前无有效信号部分——运行——结果有频谱图与地震波</p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ghtpdl.20010501.xyz/tptp/%E5%9B%BE%E7%89%8713.png"></p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ghtpdl.20010501.xyz/tptp/%E5%9B%BE%E7%89%8714.png"></p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ghtpdl.20010501.xyz/tptp/%E5%9B%BE%E7%89%8715.png"></p>
@@ -829,7 +829,6 @@ class LivePhoto {
     this.hasAutoPlayed = false;
     this.isPlaying = false;
     this.hoverTimeout = null;
-    this.touchTimeout = null;
     this.isWeixin = this.detectWeixinBrowser();
 
     // 在微信环境中调整配置
@@ -865,7 +864,11 @@ class LivePhoto {
 
     // 修改badge内容和样式
     if (badge) {
-      badge.innerHTML = this.config.badge_text + " | 点击播放";
+      if(!this.config.badge_text) {
+        badge.innerHTML = "点击播放";
+      } else{
+        badge.innerHTML = this.config.badge_text + " | 点击播放";
+      }
     }
   }
 

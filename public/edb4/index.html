@@ -522,7 +522,7 @@ if (true) {
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://fxdl.20010501.xyz/https://raw.githubusercontent.com/tianpengwan/hexoxxtc/master/Qexo/24/8/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240815111824_9c68f4d0dc3f69b54246168e6d418276.png" alt="点击主页网站按钮"></p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://fxdl.20010501.xyz/https://raw.githubusercontent.com/tianpengwan/hexoxxtc/master/Qexo/24/8/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240815111830_9dc6c99040db09ed6326e3f4acb5b3fe.png" alt="选择自己的域名"></p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://fxdl.20010501.xyz/https://raw.githubusercontent.com/tianpengwan/hexoxxtc/master/Qexo/24/8/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240815111833_6664aed6aa250e119af3266c807cbc02.png" alt="点击域名优化"></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://fxdl.20010501.xyz/https://raw.githubusercontent.com/tianpengwan/hexoxxtc/master/Qexo/24/8/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240815111838_8ed9c91c8ebd662def723e180e7f8b26.png" alt="开启http/3 quic协议"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://fxdl.20010501.xyz/https://raw.githubusercontent.com/tianpengwan/hexoxxtc/master/Qexo/24/8/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240815111838_8ed9c91c8ebd662def723e180e7f8b26.png" alt="开启http&#x2F;3 quic协议"></p>
 <h3 id="四、现阶段，HTTP-3-QUIC协议在浏览器中的支持情况已经相当广泛。以下是目前主流浏览器对HTTP-3-QUIC协议的支持概述："><a href="#四、现阶段，HTTP-3-QUIC协议在浏览器中的支持情况已经相当广泛。以下是目前主流浏览器对HTTP-3-QUIC协议的支持概述：" class="headerlink" title="四、现阶段，HTTP&#x2F;3 QUIC协议在浏览器中的支持情况已经相当广泛。以下是目前主流浏览器对HTTP&#x2F;3 QUIC协议的支持概述："></a>四、现阶段，HTTP&#x2F;3 QUIC协议在浏览器中的支持情况已经相当广泛。以下是目前主流浏览器对HTTP&#x2F;3 QUIC协议的支持概述：</h3><ul>
 <li><strong>Chrome</strong>：Chrome浏览器是较早支持HTTP&#x2F;3 QUIC协议的浏览器之一。随着Chrome的持续更新，它对HTTP&#x2F;3的支持也日益完善。Chrome在底层网络架构中集成了QUIC协议，以实现更快速安全的网络通信。</li>
 <li><strong>Microsoft Edge</strong>：作为基于Chromium内核的浏览器，Microsoft Edge同样支持HTTP&#x2F;3 QUIC协议。这意味着使用Edge浏览器的用户也可以享受到HTTP&#x2F;3带来的性能提升和安全保障。</li>
@@ -802,7 +802,6 @@ class LivePhoto {
     this.hasAutoPlayed = false;
     this.isPlaying = false;
     this.hoverTimeout = null;
-    this.touchTimeout = null;
     this.isWeixin = this.detectWeixinBrowser();
 
     // 在微信环境中调整配置
@@ -838,7 +837,11 @@ class LivePhoto {
 
     // 修改badge内容和样式
     if (badge) {
-      badge.innerHTML = this.config.badge_text + " | 点击播放";
+      if(!this.config.badge_text) {
+        badge.innerHTML = "点击播放";
+      } else{
+        badge.innerHTML = this.config.badge_text + " | 点击播放";
+      }
     }
   }
 
