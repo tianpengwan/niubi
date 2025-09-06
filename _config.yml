@@ -220,7 +220,7 @@ abbrlink:
 
 livephoto:
   enable: true
-  autoplay: true
+  autoplay: false
   hover_to_play: true
   click_to_play: true
   lazy_load: true
@@ -230,6 +230,6 @@ livephoto:
   badge_position: 'bottom-left'
   loading_animation: true
   preload: 'auto'
-  keep_observing: false
-  hover_delay: 300
+  keep_observing: true
+  hover_delay: 200
   weixin_disable_autoplay: true
