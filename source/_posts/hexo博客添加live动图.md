@@ -8,7 +8,7 @@ updated: '2025-09-02T19:07:39.486+08:00'
 ---
 # 演示
 
-{% livephoto https://cftcr2.20010501.xyz/PicHoro/P20250902-182539.webp https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4 %}
+{% livephoto https://cftcr2.20010501.xyz/PicHoro/P20250902-182539.webp https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.webm %}
 
 # 安装
 在 Hexo 博客根目录下执行以下命令：
