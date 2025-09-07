@@ -9,6 +9,8 @@ updated: '2025-09-06T23:44:17.778+08:00'
 ---
 # 演示
 
+{% livephoto /tpspk/1757135220615.png /tpspk/1757173192196.mp4 %}
+
 {% livephoto https://cftcr2.20010501.xyz/PicHoro/1757173197761.webp https://cftcr2.20010501.xyz/PicHoro/1757173192196.mp4 %}
 
 {% livephoto https://cftcr2.20010501.xyz/PicHoro/P20250902-182539.webp https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.webm %}
