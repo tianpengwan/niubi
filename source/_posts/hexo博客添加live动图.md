@@ -36,6 +36,78 @@ updated: '2025-09-06T23:44:17.778+08:00'
 </div>
 {% endraw %}
 
+{% raw %}
+<div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
+    <!-- 静态图片 -->
+    <img src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854.webp" 
+         class="live-photo-static" 
+         alt="Live Photo" 
+         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854.webp">
+    
+    <!-- 动态视频 -->
+    <video class="live-photo-video" 
+           preload="metadata" 
+           muted
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854-1.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854-1.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Live 标志 -->
+    <div class="live-badge">LIVE</div>
+    
+    <!-- 静音切换按钮 -->
+    <button class="live-photo-mute-btn" aria-label="切换静音"></button>
+</div>
+{% endraw %}
+
+{% raw %}
+<div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
+    <!-- 静态图片 -->
+    <img src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539.webp" 
+         class="live-photo-static" 
+         alt="Live Photo" 
+         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539.webp">
+    
+    <!-- 动态视频 -->
+    <video class="live-photo-video" 
+           preload="metadata" 
+           muted
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854-1.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/P20250815-192854-1.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Live 标志 -->
+    <div class="live-badge">LIVE</div>
+    
+    <!-- 静音切换按钮 -->
+    <button class="live-photo-mute-btn" aria-label="切换静音"></button>
+</div>
+{% endraw %}
+
+{% raw %}
+<div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
+    <!-- 静态图片 -->
+    <img src="https://cftcr2.20010501.xyz/PicHoro/P20250908-143830.webp" 
+         class="live-photo-static" 
+         alt="Live Photo" 
+         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20250908-143830.webp">
+    
+    <!-- 动态视频 -->
+    <video class="live-photo-video" 
+           preload="metadata" 
+           muted
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/redpandacompress_1000035579.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/redpandacompress_1000035579.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Live 标志 -->
+    <div class="live-badge">LIVE</div>
+    
+    <!-- 静音切换按钮 -->
+    <button class="live-photo-mute-btn" aria-label="切换静音"></button>
+</div>
+{% endraw %}
+
 # 安装
 
 在主题js和css文件夹添加livephoto.css、livephoto.js、csh.js
