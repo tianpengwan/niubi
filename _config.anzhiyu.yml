@@ -1264,6 +1264,7 @@ inject:
     - <meta name="referrer" content="no-referrer">
   bottom:
     - <script src="/custom/js/chineselunar.js"></script>
+    - <script src="/js/custom.js"></script>
     - <script src="https://blog.bornforthis.cn/static/js/anniversary.js"></script>
     - <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.12/lunar.js"></script>
     - <script src="/js/main.min.js"></script>
