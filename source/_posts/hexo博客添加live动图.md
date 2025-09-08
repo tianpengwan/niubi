@@ -21,7 +21,7 @@ updated: '2025-09-06T23:44:17.778+08:00'
   
   <!-- 视频元素 -->
   <video class="live-video" preload="none" muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.3s ease; object-fit: cover;">
-    <source src="https://cftcr2.20010501.xyz/PicHoro/P20250908-143830-1.mp4" type="video/mp4">
+    <source src="https://cftcr2.20010501.xyz/PicHoro/redpandacompress_1000035579.mp4" type="video/mp4">
     您的浏览器不支持HTML5视频播放
   </video>
   
