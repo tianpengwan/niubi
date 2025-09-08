@@ -1257,15 +1257,16 @@ dynamicEffect:
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <link rel="stylesheet" href="/css/livephoto.css">
     - <link rel="stylesheet" href="/css/font.css">
     - <link rel="stylesheet" href="/css/background.css">
     # iconfont 图标引入
     - <meta name="referrer" content="no-referrer">
   bottom:
+    - <script src="/js/csh.js"></script>
     - <script src="/js/livephoto.js"></script>
     - <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
     - <script src="/custom/js/chineselunar.js"></script>
-    - <script src="/js/custom.js"></script>
     - <script src="https://blog.bornforthis.cn/static/js/anniversary.js"></script>
     - <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.12/lunar.js"></script>
     - <script src="/js/main.min.js"></script>
