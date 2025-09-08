@@ -317,7 +317,7 @@
   localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
   noticeOutdate: undefined,
-  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
   copy: {
     success: '复制成功',
     error: '复制错误',
@@ -770,9 +770,9 @@ queueMicrotask(() => {
   newestCommentInit()
   document.addEventListener('pjax:complete', newestCommentInit)
 })</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "asteroidqiao@163.com";
-</script><script async data-pjax src="https://cdn.smartcis.cn/npm/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.smartcis.cn/npm/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script src="/custom/js/chineselunar.js"></script><script src="https://blog.bornforthis.cn/static/js/anniversary.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.12/lunar.js"></script><script src="/js/main.min.js"></script><script src="/js/qexo-dao.min.js"></script><link rel="stylesheet" href="https://cdn.smartcis.cn/npm/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.smartcis.cn/npm/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.smartcis.cn/npm/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.smartcis.cn/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+</script><script async data-pjax src="https://cdn.smartcis.cn/npm/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.smartcis.cn/npm/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script src="/custom/js/chineselunar.js"></script><script src="/js/custom.js"></script><script src="https://blog.bornforthis.cn/static/js/anniversary.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.12/lunar.js"></script><script src="/js/main.min.js"></script><script src="/js/qexo-dao.min.js"></script><link rel="stylesheet" href="https://cdn.smartcis.cn/npm/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.smartcis.cn/npm/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.smartcis.cn/npm/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.smartcis.cn/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 var pjax = new Pjax({
-  elements: 'a:not([target="_blank"]):not([href="/music/"])',
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/1ef3/"])',
   selectors: pjaxSelectors,
   cacheBust: false,
   analytics: false,

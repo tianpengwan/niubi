@@ -52,14 +52,14 @@ future: true
 
 # 代码高亮配置文件
 highlight:
-  enable: false
+  enable: true
   line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: true
 prismjs:
-  enable: true
+  enable: false
   preprocess: true
   line_number: false
   line_threshold: 0
