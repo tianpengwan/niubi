@@ -72,8 +72,8 @@ updated: '2025-09-06T23:44:17.778+08:00'
     <video class="live-photo-video" 
            preload="metadata" 
            muted
-           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4">
-        <source src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4" type="video/mp4">
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/redpandacompress_P20250902-182539-2.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/redpandacompress_P20250902-182539-2.mp4" type="video/mp4">
     </video>
     
     <!-- Live 标志 -->
