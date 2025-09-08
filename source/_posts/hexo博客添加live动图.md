@@ -12,7 +12,7 @@ updated: '2025-09-06T23:44:17.778+08:00'
 <!-- Live图容器 -->
 <div class="live-figure-container" style="position: relative; display: inline-block; width: 100%; max-width: 640px; margin: 1rem auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <!-- 静态封面图 -->
-  <img src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539.webp" alt="Live图封面" style="width: 100%; height: auto; display: block;">
+  <img src="https://cftcr2.20010501.xyz/PicHoro/1757173197761.webp" alt="Live图封面" style="width: 100%; height: auto; display: block;">
   
   <!-- Live指示标志 -->
   <div class="live-indicator" style="position: absolute; top: 12px; right: 12px; background-color: rgba(255, 0, 0, 0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; pointer-events: none;">
@@ -21,7 +21,7 @@ updated: '2025-09-06T23:44:17.778+08:00'
   
   <!-- 视频元素 -->
   <video class="live-video" preload="none" muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.3s ease; object-fit: cover;">
-    <source src="https://cftcr2.20010501.xyz/PicHoro/P20250902-182539-1.mp4" type="video/mp4">
+    <source src="https://cftcr2.20010501.xyz/PicHoro/1757173192196.mp4" type="video/mp4">
     您的浏览器不支持HTML5视频播放
   </video>
   
