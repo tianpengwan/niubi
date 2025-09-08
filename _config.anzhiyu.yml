@@ -1259,11 +1259,11 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/font.css">
     - <link rel="stylesheet" href="/css/background.css">
-    - <link rel="stylesheet" href="/css/mouse.css">
     # iconfont 图标引入
     - <meta name="referrer" content="no-referrer">
   bottom:
     - <script src="/js/livephoto.js"></script>
+    - <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
     - <script src="/custom/js/chineselunar.js"></script>
     - <script src="/js/custom.js"></script>
     - <script src="https://blog.bornforthis.cn/static/js/anniversary.js"></script>
