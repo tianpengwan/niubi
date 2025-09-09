@@ -1013,8 +1013,9 @@ pjax:
   enable: true
   exclude:
     - /music/
-  # - /1ef3/
-  # - xxxx
+    - /pyq/
+    - /yl/
+    - /shuo/
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
