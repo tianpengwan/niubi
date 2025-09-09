@@ -141,7 +141,6 @@ snackbar:
   version: 0.1.16
 fontawesome:
   cdn: https://use.fontawesome.com/releases/v6.4.0/css/all.css
-  
 flickr_justified_gallery_js:
   name: flickr-justified-gallery
   file: dist/fjGallery.min.js
