@@ -140,9 +140,9 @@ snackbar:
   file: dist/snackbar.min.js
   version: 0.1.16
 fontawesome:
-  enable: true
-  cdn: https://use.fontawesome.com/releases/v6.4.0/css/all.css
-  name: font-awesome
+  name: "@fortawesome/fontawesome-free"
+  file: css/all.min.css
+  other_name: font-awesome
   version: 6.4.0
 flickr_justified_gallery_js:
   name: flickr-justified-gallery
