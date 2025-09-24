@@ -1,8 +1,8 @@
 'use strict';
 
-hexo.extend.tag.register('memory_timeline', function(args, content) {
+hexo.extend.tag.register('memorable_days', function(args, content) {
   return `
-  <div class="memory-timeline-container">
+  <div class="memorable-days-container">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
       :root {
@@ -17,14 +17,14 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           --text: #4A4A4A;
       }
 
-      .memory-timeline-container * {
+      .memorable-days-container * {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
 
-      .memory-timeline-container {
+      .memorable-days-container {
           background: transparent;
           color: var(--text);
           min-height: 100vh;
@@ -32,13 +32,13 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           position: relative;
       }
 
-      .memory-timeline-container .container {
+      .memorable-days-container .container {
           max-width: 1200px;
           margin: 0 auto;
           padding: 20px;
       }
 
-      .memory-timeline-container header {
+      .memorable-days-container header {
           text-align: center;
           padding: 40px 20px;
           animation: fadeIn 1.5s ease-out;
@@ -49,13 +49,13 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
       }
 
-      .memory-timeline-container h1 {
+      .memorable-days-container h1 {
           font-size: clamp(2.5rem, 5vw, 4rem);
           color: var(--primary);
           margin-bottom: 15px;
       }
 
-      .memory-timeline-container .subtitle {
+      .memorable-days-container .subtitle {
           font-size: clamp(1.2rem, 2.5vw, 1.8rem);
           color: var(--secondary);
           font-weight: 300;
@@ -63,7 +63,7 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           margin: 0 auto 30px;
       }
 
-      .memory-timeline-container .filter-container {
+      .memorable-days-container .filter-container {
           display: flex;
           justify-content: center;
           gap: 15px;
@@ -71,7 +71,7 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           flex-wrap: wrap;
       }
 
-      .memory-timeline-container .filter-btn {
+      .memorable-days-container .filter-btn {
           background: rgba(255, 255, 255, 0.15);
           border: 2px solid rgba(255, 255, 255, 0.25);
           color: var(--text);
@@ -83,20 +83,20 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           backdrop-filter: blur(5px);
       }
 
-      .memory-timeline-container .filter-btn.active, 
-      .memory-timeline-container .filter-btn:hover {
+      .memorable-days-container .filter-btn.active, 
+      .memorable-days-container .filter-btn:hover {
           background: rgba(255, 255, 255, 0.3);
           border-color: var(--primary);
       }
 
-      .memory-timeline-container .timeline-container {
+      .memorable-days-container .timeline-container {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 25px;
           margin: 20px 0 40px;
       }
 
-      .memory-timeline-container .event-card {
+      .memorable-days-container .event-card {
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(10px);
           border-radius: 16px;
@@ -108,24 +108,24 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           border: 1px solid rgba(255, 255, 255, 0.2);
       }
 
-      .memory-timeline-container .event-card.couple {
+      .memorable-days-container .event-card.couple {
           border-top: 4px solid var(--couple);
       }
 
-      .memory-timeline-container .event-card.family {
+      .memorable-days-container .event-card.family {
           border-top: 4px solid var(--family);
       }
 
-      .memory-timeline-container .event-card.holiday {
+      .memorable-days-container .event-card.holiday {
           border-top: 4px solid var(--holiday);
       }
 
-      .memory-timeline-container .event-card:hover {
+      .memorable-days-container .event-card:hover {
           transform: translateY(-10px);
           background: rgba(255, 255, 255, 0.2);
       }
 
-      .memory-timeline-container .event-title {
+      .memorable-days-container .event-title {
           font-size: 1.6rem;
           color: var(--dark);
           margin-bottom: 15px;
@@ -134,26 +134,26 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           gap: 10px;
       }
 
-      .memory-timeline-container .event-title.couple i {
+      .memorable-days-container .event-title.couple i {
           color: var(--couple);
       }
 
-      .memory-timeline-container .event-title.family i {
+      .memorable-days-container .event-title.family i {
           color: var(--family);
       }
 
-      .memory-timeline-container .event-title.holiday i {
+      .memorable-days-container .event-title.holiday i {
           color: var(--holiday);
       }
 
-      .memory-timeline-container .event-date {
+      .memorable-days-container .event-date {
           font-size: 1.1rem;
           color: var(--secondary);
           margin-bottom: 20px;
           font-weight: 500;
       }
 
-      .memory-timeline-container .countdown {
+      .memorable-days-container .countdown {
           font-size: 2.2rem;
           font-weight: 700;
           text-align: center;
@@ -161,40 +161,40 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           min-height: 50px;
       }
 
-      .memory-timeline-container .couple .countdown {
+      .memorable-days-container .couple .countdown {
           color: var(--couple);
       }
 
-      .memory-timeline-container .family .countdown {
+      .memorable-days-container .family .countdown {
           color: var(--family);
       }
 
-      .memory-timeline-container .holiday .countdown {
+      .memorable-days-container .holiday .countdown {
           color: var(--holiday);
       }
 
-      .memory-timeline-container .countdown-label {
+      .memorable-days-container .countdown-label {
           text-align: center;
           color: var(--dark);
           font-size: 1rem;
           margin-top: -5px;
       }
 
-      .memory-timeline-container .description {
+      .memorable-days-container .description {
           margin-top: 15px;
           font-size: 1rem;
           line-height: 1.5;
           color: var(--text);
       }
 
-      .memory-timeline-container .photo-gallery {
+      .memorable-days-container .photo-gallery {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
           gap: 15px;
           margin: 50px 0;
       }
 
-      .memory-timeline-container .photo-item {
+      .memorable-days-container .photo-item {
           border-radius: 12px;
           overflow: hidden;
           height: 250px;
@@ -203,22 +203,22 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           transition: transform 0.3s ease;
       }
 
-      .memory-timeline-container .photo-item:hover {
+      .memorable-days-container .photo-item:hover {
           transform: scale(1.03);
       }
 
-      .memory-timeline-container .photo-item img {
+      .memorable-days-container .photo-item img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           transition: transform 0.5s ease;
       }
 
-      .memory-timeline-container .photo-item:hover img {
+      .memorable-days-container .photo-item:hover img {
           transform: scale(1.1);
       }
 
-      .memory-timeline-container .photo-caption {
+      .memorable-days-container .photo-caption {
           position: absolute;
           bottom: 0;
           left: 0;
@@ -231,11 +231,11 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           text-align: center;
       }
 
-      .memory-timeline-container .photo-item:hover .photo-caption {
+      .memorable-days-container .photo-item:hover .photo-caption {
           transform: translateY(0);
       }
 
-      .memory-timeline-container .heart {
+      .memorable-days-container .heart {
           color: var(--couple);
           font-size: 2rem;
           text-align: center;
@@ -243,7 +243,7 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           animation: heartbeat 1.5s infinite;
       }
 
-      .memory-timeline-container footer {
+      .memorable-days-container footer {
           text-align: center;
           padding: 30px 20px;
           color: var(--text);
@@ -254,7 +254,7 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           border-radius: 16px;
       }
 
-      .memory-timeline-container .category-badge {
+      .memorable-days-container .category-badge {
           display: inline-block;
           padding: 3px 8px;
           border-radius: 12px;
@@ -263,17 +263,17 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           margin-top: 10px;
       }
 
-      .memory-timeline-container .couple .category-badge {
+      .memorable-days-container .couple .category-badge {
           background-color: rgba(255, 107, 139, 0.1);
           color: var(--couple);
       }
 
-      .memory-timeline-container .family .category-badge {
+      .memorable-days-container .family .category-badge {
           background-color: rgba(160, 107, 154, 0.1);
           color: var(--family);
       }
 
-      .memory-timeline-container .holiday .category-badge {
+      .memorable-days-container .holiday .category-badge {
           background-color: rgba(233, 154, 91, 0.1);
           color: var(--holiday);
       }
@@ -299,21 +299,20 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           50% { transform: scale(1.1); }
       }
 
-      /* 响应式设计 */
       @media (max-width: 768px) {
-          .memory-timeline-container .timeline-container {
+          .memorable-days-container .timeline-container {
               grid-template-columns: 1fr;
           }
 
-          .memory-timeline-container .photo-gallery {
+          .memorable-days-container .photo-gallery {
               grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
           }
 
-          .memory-timeline-container .filter-container {
+          .memorable-days-container .filter-container {
               gap: 8px;
           }
 
-          .memory-timeline-container .filter-btn {
+          .memorable-days-container .filter-btn {
               padding: 6px 12px;
               font-size: 0.9rem;
           }
@@ -336,26 +335,26 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
         <div class="filter-btn" data-category="holiday">节日庆典</div>
       </div>
 
-      <div class="timeline-container" id="eventsContainer">
+      <div class="timeline-container" id="memorable-days-eventsContainer">
         <!-- 事件卡片将由JavaScript动态生成 -->
       </div>
 
       <h2 style="text-align: center; margin: 50px 0 30px; color: var(--primary);">珍贵瞬间</h2>
       <div class="photo-gallery">
         <div class="photo-item">
-          <img src="https://cftcr2.20010501.xyz/PicHoro/P20250606-210549.webp" alt="全家福">
+          <img src="https://cftcr2.20010501.xyz/PicHoro/P20250606-210549.webp" alt="全家福" onerror="this.style.display='none'">
           <div class="photo-caption">全家欢聚时刻</div>
         </div>
         <div class="photo-item">
-          <img src="https://cftcr2.20010501.xyz/PicHoro/P20250607-115052.webp" alt="节日庆典">
+          <img src="https://cftcr2.20010501.xyz/PicHoro/P20250607-115052.webp" alt="节日庆典" onerror="this.style.display='none'">
           <div class="photo-caption">节日欢乐</div>
         </div>
         <div class="photo-item">
-          <img src="https://cftcr2.20010501.xyz/PicHoro/mmexport1747102178258.jpg" alt="浪漫时刻">
+          <img src="https://cftcr2.20010501.xyz/PicHoro/mmexport1747102178258.jpg" alt="浪漫时刻" onerror="this.style.display='none'">
           <div class="photo-caption">浪漫回忆</div>
         </div>
         <div class="photo-item">
-          <img src="https://cftcr2.20010501.xyz/PicHoro/mmexport1746262181543.jpg" alt="特别时刻">
+          <img src="https://cftcr2.20010501.xyz/PicHoro/mmexport1746262181543.jpg" alt="特别时刻" onerror="this.style.display='none'">
           <div class="photo-caption">特别纪念</div>
         </div>
       </div>
@@ -368,7 +367,7 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
   
   <script>
     (function() {
-      // 重要事件数据库 - 用户可以直接在此修改添加事件
+      // 重要事件数据库
       const eventsData = [
         {
           id: 'meet',
@@ -398,7 +397,7 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           countDirection: 'future'
         },
         {
-          id: 'mother-birthday',
+          id: 'my-birthday',
           title: '我的生日',
           date: '2001-05-01',
           category: 'family',
@@ -407,7 +406,7 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
           countDirection: 'future'
         },
         {
-          id: 'mother-birthday',
+          id: 'mom-birthday',
           title: '妈妈生日',
           date: '1983-08-03',
           category: 'family',
@@ -451,7 +450,6 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
 
         // 对于每年重复的事件
         if (event.countDirection === 'future') {
-          // 如果今年的该日期已过，计算明年的
           const currentYear = now.getFullYear();
           targetDate.setFullYear(currentYear);
 
@@ -495,7 +493,9 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
 
       // 渲染所有事件卡片
       function renderEvents(category = 'all') {
-        const container = document.getElementById('eventsContainer');
+        const container = document.getElementById('memorable-days-eventsContainer');
+        if (!container) return;
+        
         container.innerHTML = '';
 
         const filterEvents = category === 'all' 
@@ -516,10 +516,10 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
 
       // 初始化筛选按钮事件
       function initFilterButtons() {
-        const buttons = document.querySelectorAll('.filter-btn');
+        const buttons = document.querySelectorAll('.memorable-days-container .filter-btn');
         buttons.forEach(btn => {
           btn.addEventListener('click', () => {
-            document.querySelector('.filter-btn.active').classList.remove('active');
+            document.querySelector('.memorable-days-container .filter-btn.active').classList.remove('active');
             btn.classList.add('active');
             renderEvents(btn.dataset.category);
           });
@@ -533,8 +533,11 @@ hexo.extend.tag.register('memory_timeline', function(args, content) {
 
         // 每天更新一次倒计时
         setInterval(() => {
-          renderEvents(document.querySelector('.filter-btn.active').dataset.category);
-        }, 86400000); // 24小时
+          const activeBtn = document.querySelector('.memorable-days-container .filter-btn.active');
+          if (activeBtn) {
+            renderEvents(activeBtn.dataset.category);
+          }
+        }, 86400000);
       }
 
       // 双保险初始化机制
