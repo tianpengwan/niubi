@@ -1263,6 +1263,7 @@ inject:
     - <link rel="stylesheet" href="/css/background.css">
     # iconfont 图标引入
     - <meta name="referrer" content="no-referrer">
+    - <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   bottom:
     - <script src="/js/livephoto.js"></script>
     - <script src="/js/csh.js"></script>
