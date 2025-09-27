@@ -5,7 +5,6 @@ hexo.extend.tag.register('memorable_days', function(args) {
   
   return `
     <div class="memorable-days-container">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       <style>
         :root {
             --primary: #5B8CBF;
@@ -49,70 +48,63 @@ hexo.extend.tag.register('memorable_days', function(args) {
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
 
-        .memorable-days-container header h1 {
-            font-size: 2.5rem;
+        .memorable-days-container h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--primary);
             margin-bottom: 15px;
-            color: var(--text);
         }
 
-        .memorable-days-container header .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: var(--text);
-        }
-
-        .memorable-days-container .heart {
-            animation: heartbeat 1.5s infinite;
-            font-size: 2.5rem;
-            color: var(--couple);
+        .memorable-days-container .subtitle {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            color: var(--secondary);
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto 30px;
         }
 
         .memorable-days-container .filter-container {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-bottom: 30px;
+            margin: 20px 0;
             flex-wrap: wrap;
         }
 
         .memorable-days-container .filter-btn {
-            padding: 8px 16px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            color: var(--text);
+            padding: 8px 15px;
+            border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            color: var(--text);
+            font-weight: 500;
+            backdrop-filter: blur(5px);
         }
 
-        .memorable-days-container .filter-btn.active {
-            background: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        .memorable-days-container .filter-btn.active, 
+        .memorable-days-container .filter-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: var(--primary);
         }
 
         .memorable-days-container .timeline-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
-            margin-bottom: 40px;
+            margin: 20px 0 40px;
         }
 
         .memorable-days-container .event-card {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border-radius: 16px;
             padding: 25px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.2);
             animation: slideUp 0.8s ease-out;
-            animation-fill-mode: both;
-        }
-
-        .memorable-days-container .event-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            animation-fill-mode: backwards;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .memorable-days-container .event-card.couple {
@@ -127,96 +119,87 @@ hexo.extend.tag.register('memorable_days', function(args) {
             border-top: 4px solid var(--holiday);
         }
 
+        .memorable-days-container .event-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
         .memorable-days-container .event-title {
+            font-size: 1.6rem;
+            color: var(--dark);
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-            color: var(--text);
         }
 
-        .memorable-days-container .event-title.couple {
+        .memorable-days-container .event-title.couple i {
             color: var(--couple);
         }
 
-        .memorable-days-container .event-title.family {
+        .memorable-days-container .event-title.family i {
             color: var(--family);
         }
 
-        .memorable-days-container .event-title.holiday {
+        .memorable-days-container .event-title.holiday i {
             color: var(--holiday);
         }
 
-        .memorable-days-container .event-title i {
-            font-size: 1.5rem;
-        }
-
         .memorable-days-container .event-date {
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-            color: var(--text);
-            opacity: 0.8;
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-weight: 500;
         }
 
         .memorable-days-container .countdown {
-            font-size: 3.5rem;
-            font-weight: bold;
-            margin: 15px 0;
+            font-size: 2.2rem;
+            font-weight: 700;
             text-align: center;
-            color: var(--text);
+            margin: 15px 0;
+            min-height: 50px;
+        }
+
+        .memorable-days-container .couple .countdown {
+            color: var(--couple);
+        }
+
+        .memorable-days-container .family .countdown {
+            color: var(--family);
+        }
+
+        .memorable-days-container .holiday .countdown {
+            color: var(--holiday);
         }
 
         .memorable-days-container .countdown-label {
             text-align: center;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-            color: var(--text);
+            color: var(--dark);
+            font-size: 1rem;
+            margin-top: -5px;
         }
 
         .memorable-days-container .description {
+            margin-top: 15px;
             font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
+            line-height: 1.5;
             color: var(--text);
-        }
-
-        .memorable-days-container .category-badge {
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
-        .memorable-days-container .couple .category-badge {
-            background: rgba(255, 107, 139, 0.2);
-            color: var(--couple);
-        }
-
-        .memorable-days-container .family .category-badge {
-            background: rgba(160, 107, 154, 0.2);
-            color: var(--family);
-        }
-
-        .memorable-days-container .holiday .category-badge {
-            background: rgba(233, 154, 91, 0.2);
-            color: var(--holiday);
         }
 
         .memorable-days-container .photo-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
+            gap: 15px;
+            margin: 50px 0;
         }
 
         .memorable-days-container .photo-item {
-            border-radius: 10px;
+            border-radius: 12px;
             overflow: hidden;
+            height: 250px;
+            position: relative;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            height: 250px;
         }
 
         .memorable-days-container .photo-item:hover {
@@ -225,56 +208,90 @@ hexo.extend.tag.register('memorable_days', function(args) {
 
         .memorable-days-container .photo-item img {
             width: 100%;
-            height: 200px;
+            height: 100%;
             object-fit: cover;
-            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .memorable-days-container .photo-item:hover img {
+            transform: scale(1.1);
         }
 
         .memorable-days-container .photo-caption {
-            padding: 12px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
             text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            color: var(--text);
-            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30%; /* 调整高度使文字居中 */
+        }
+
+        .memorable-days-container .photo-item:hover .photo-caption {
+            transform: translateY(0);
+        }
+
+        .memorable-days-container .heart {
+            color: var(--couple);
+            font-size: 2rem;
+            text-align: center;
+            margin: 30px 0;
+            animation: heartbeat 1.5s infinite;
         }
 
         .memorable-days-container footer {
             text-align: center;
-            padding: 30px 20px;
+            padding: 15px 20px; /* 调整高度使文字居中 */
+            color: var(--text);
+            font-size: 0.9rem;
             margin-top: 40px;
-            background: linear-gradient(45deg, #6a11cb, #2575fc, #ff8a00, #ff2079);
+            backdrop-filter: blur(5px);
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
             background-size: 300% 300%;
             animation: gradientBG 15s ease infinite;
-            border-radius: 10px;
-        }
-
-        .memorable-days-container footer p {
-            font-size: 1.1rem;
-            color: white;
-            font-weight: 500;
+            border-radius: 16px;
+            line-height: 1.5; /* 行高调整使文字垂直居中 */
         }
 
         .memorable-days-container footer a {
-            color: white;
+            color: #4a4a4a;
             text-decoration: none;
             font-weight: bold;
-            position: relative;
         }
 
-        .memorable-days-container footer a::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background: white;
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
+        .memorable-days-container footer a:hover {
+            text-decoration: underline;
         }
 
-        .memorable-days-container footer a:hover::after {
-            transform: scaleX(1);
+        .memorable-days-container .category-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        .memorable-days-container .couple .category-badge {
+            background-color: rgba(255, 107, 139, 0.1);
+            color: var(--couple);
+        }
+
+        .memorable-days-container .family .category-badge {
+            background-color: rgba(160, 107, 154, 0.1);
+            color: var(--family);
+        }
+
+        .memorable-days-container .holiday .category-badge {
+            background-color: rgba(233, 154, 91, 0.1);
+            color: var(--holiday);
         }
 
         @keyframes fadeIn {
@@ -304,6 +321,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
             100% { background-position: 0% 50%; }
         }
 
+        /* 响应式设计 */
         @media (max-width: 768px) {
             .memorable-days-container .timeline-container {
                 grid-template-columns: 1fr;
@@ -323,6 +341,9 @@ hexo.extend.tag.register('memorable_days', function(args) {
             }
         }
       </style>
+      
+      <!-- 确保Font Awesome图标库被加载 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       
       <div class="container">
         <header>
@@ -345,7 +366,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
         </div>
 
         ${includeGallery ? `
-        <h2 style="text-align: center; margin: 50px 0 30px; color: var(--text);">珍贵瞬间</h2>
+        <h2 style="text-align: center; margin: 50px 0 30px; color: var(--primary);">珍贵瞬间</h2>
         <div class="photo-gallery">
           <div class="photo-item">
             <img src="https://cftcr2.20010501.xyz/PicHoro/P20250606-210549.webp" alt="全家福">
@@ -368,7 +389,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
       </div>
 
       <footer>
-        <p>珍藏每一份回忆 © 2023-2025 <a href="https://space.bilibili.com/440611061/">宇外御风</a></p>
+        <p>珍藏每一份回忆 © 2025 <a href="https://space.bilibili.com/440611061/" target="_blank">宇外御风</a></p>
       </footer>
 
       <script>
@@ -398,7 +419,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '妳的生日',
                 date: '2007-03-25',
                 category: 'family',
-                icon: 'fa-birthday-cake',
+                icon: 'fa-birthday-cake', // 修改为生日蛋糕图标
                 description: '为小乖送上祝福的日子',
                 countDirection: 'future'
             },
@@ -407,7 +428,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '我的生日',
                 date: '2001-05-01',
                 category: 'family',
-                icon: 'fa-birthday-cake',
+                icon: 'fa-birthday-cake', // 修改为生日蛋糕图标
                 description: '为我送上祝福的日子',
                 countDirection: 'future'
             },
@@ -416,7 +437,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '妈妈生日',
                 date: '1983-08-03',
                 category: 'family',
-                icon: 'fa-user',
+                icon: 'fa-birthday-cake', // 修改为生日蛋糕图标
                 description: '为妈妈送上祝福的日子',
                 countDirection: 'future'
             },
@@ -425,7 +446,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '爸爸生日',
                 date: '1978-06-28',
                 category: 'family',
-                icon: 'fa-user',
+                icon: 'fa-birthday-cake', // 修改为生日蛋糕图标
                 description: '为爸爸庆祝的特殊日子',
                 countDirection: 'future'
             },
@@ -434,7 +455,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '春节',
                 date: '2026-02-17',
                 category: 'holiday',
-                icon: 'fa-gift',
+                icon: 'fa-gift', // 修改为礼物图标
                 description: '中国最重要的传统节日',
                 countDirection: 'future'
             }
@@ -512,7 +533,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
             });
 
             if (filterEvents.length === 0) {
-              container.innerHTML = '<p style="text-align:center;grid-column:1/-1;padding:40px;">暂时没有此类事件</p>';
+              container.innerHTML = '<p style="text-align:center;grid-column:1/-1;padding:40px;color:var(--text);">暂时没有此类事件</p>';
             }
           }
 
@@ -529,17 +550,39 @@ hexo.extend.tag.register('memorable_days', function(args) {
           }
 
           // 初始化页面
-          document.addEventListener('DOMContentLoaded', () => {
+          function init() {
             renderEvents();
             initFilterButtons();
 
-            setInterval(() => {
-              const activeBtn = document.querySelector('.memorable-days-container .filter-btn.active');
-              if (activeBtn) {
-                renderEvents(activeBtn.dataset.category);
-              }
-            }, 86400000);
-          });
+            // 设置9点自动更新
+            const now = new Date();
+            const nextUpdateTime = new Date(now);
+            nextUpdateTime.setHours(9, 0, 0, 0);
+            
+            // 如果今天9点已过，设置为明天9点
+            if (now >= nextUpdateTime) {
+              nextUpdateTime.setDate(nextUpdateTime.getDate() + 1);
+            }
+            
+            // 计算到9点的毫秒数
+            const timeUntilUpdate = nextUpdateTime - now;
+            
+            // 设置定时器
+            setTimeout(() => {
+              renderEvents();
+              // 重新设置明天的定时器
+              setInterval(() => {
+                renderEvents();
+              }, 86400000); // 24小时
+            }, timeUntilUpdate);
+          }
+
+          // 确保在DOM加载完成后执行
+          if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            setTimeout(init, 0);
+          } else {
+            document.addEventListener('DOMContentLoaded', init);
+          }
         })();
       </script>
     </div>
