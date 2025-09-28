@@ -92,7 +92,7 @@ hexo.extend.filter.register("before_generate", () => {
       };
       const cdnSource = {
         local: cond === "internal" ? cdnjs_file : `/pluginsSrc/${name}/${file}`,
-        unpkg: `https://unpkg.com/${name}${verType}/${file}`,
+        unpkg: `https://npm.elemecdn.com/${name}${verType}/${file}`,
         cdnjs: `https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}`,
         elemecdn: `https://npm.elemecdn.com/${name}${verType}/${file}`,
         onmicrosoft: `https://npm.onmicrosoft.cn/${name}${verType}/${file}`,
