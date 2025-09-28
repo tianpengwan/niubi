@@ -5,7 +5,6 @@ hexo.extend.tag.register('memorable_days', function(args) {
   
   return `
     <div class="memorable-days-container">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       <style>
         :root {
             --primary: #5B8CBF;
@@ -16,7 +15,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
             --accent: #FFD700;
             --light: #F7FBFF;
             --dark: #333333;
-            --text: #FFA500; /* 所有文字改为橘黄色 */
+            --text: #FFA500; /* 修改为橘黄色 */
         }
 
         .memorable-days-container * {
@@ -127,22 +126,11 @@ hexo.extend.tag.register('memorable_days', function(args) {
 
         .memorable-days-container .event-title {
             font-size: 1.6rem;
+            color: var(--dark);
             margin-bottom: 15px;
             display: flex;
             align-items: center;
             gap: 10px;
-        }
-
-        .memorable-days-container .event-title.couple {
-            color: var(--couple);
-        }
-
-        .memorable-days-container .event-title.family {
-            color: var(--family);
-        }
-
-        .memorable-days-container .event-title.holiday {
-            color: var(--holiday);
         }
 
         .memorable-days-container .event-title.couple i {
@@ -186,7 +174,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
 
         .memorable-days-container .countdown-label {
             text-align: center;
-            color: var(--text);
+            color: var(--dark);
             font-size: 1rem;
             margin-top: -5px;
         }
@@ -234,16 +222,16 @@ hexo.extend.tag.register('memorable_days', function(args) {
             bottom: 0;
             left: 0;
             right: 0;
-            height: 30%; /* 调整高度 */
             background: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 10px;
             transform: translateY(100%);
             transition: transform 0.3s ease;
             text-align: center;
-            display: flex; /* 使用flex布局 */
-            align-items: center; /* 垂直居中 */
-            justify-content: center; /* 水平居中 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30%; /* 调整高度使文字居中 */
         }
 
         .memorable-days-container .photo-item:hover .photo-caption {
@@ -260,16 +248,26 @@ hexo.extend.tag.register('memorable_days', function(args) {
 
         .memorable-days-container footer {
             text-align: center;
-            padding: 15px 20px; /* 调整内边距使文字居中 */
-            color: white;
+            padding: 15px 20px; /* 调整高度使文字居中 */
+            color: var(--text);
             font-size: 0.9rem;
             margin-top: 40px;
             backdrop-filter: blur(5px);
-            background: linear-gradient(45deg, #ff9966, #ff5e62, #ff9966, #ff5e62);
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
             background-size: 300% 300%;
             animation: gradientBG 15s ease infinite;
             border-radius: 16px;
-            line-height: 1.5; /* 行高调整 */
+            line-height: 1.5; /* 行高调整使文字垂直居中 */
+        }
+
+        .memorable-days-container footer a {
+            color: #4a4a4a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .memorable-days-container footer a:hover {
+            text-decoration: underline;
         }
 
         .memorable-days-container .category-badge {
@@ -316,7 +314,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.1); }
         }
-        
+
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -343,6 +341,9 @@ hexo.extend.tag.register('memorable_days', function(args) {
             }
         }
       </style>
+      
+      <!-- 确保Font Awesome图标库被加载 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       
       <div class="container">
         <header>
@@ -388,7 +389,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
       </div>
 
       <footer>
-        <p>珍藏每一份回忆 © 2025 <a href="https://space.bilibili.com/440611061/" style="color: white; text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.5);">宇外御风</a></p>
+        <p>珍藏每一份回忆 © 2025 <a href="https://space.bilibili.com/440611061/" target="_blank">宇外御风</a></p>
       </footer>
 
       <script>
@@ -418,7 +419,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '妳的生日',
                 date: '2007-03-25',
                 category: 'family',
-                icon: 'fa-birthday-cake',
+                icon: 'fa-birthday-cake', // 修改为生日蛋糕图标
                 description: '为小乖送上祝福的日子',
                 countDirection: 'future'
             },
@@ -427,7 +428,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '我的生日',
                 date: '2001-05-01',
                 category: 'family',
-                icon: 'fa-birthday-cake',
+                icon: 'fa-birthday-cake', // 修改为生日蛋糕图标
                 description: '为我送上祝福的日子',
                 countDirection: 'future'
             },
@@ -436,7 +437,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '妈妈生日',
                 date: '1983-08-03',
                 category: 'family',
-                icon: 'fa-birthday-cake',
+                icon: 'fa-birthday-cake', // 修改为生日蛋糕图标
                 description: '为妈妈送上祝福的日子',
                 countDirection: 'future'
             },
@@ -445,7 +446,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '爸爸生日',
                 date: '1978-06-28',
                 category: 'family',
-                icon: 'fa-birthday-cake',
+                icon: 'fa-birthday-cake', // 修改为生日蛋糕图标
                 description: '为爸爸庆祝的特殊日子',
                 countDirection: 'future'
             },
@@ -454,7 +455,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
                 title: '春节',
                 date: '2026-02-17',
                 category: 'holiday',
-                icon: 'fa-gift',
+                icon: 'fa-gift', // 修改为礼物图标
                 description: '中国最重要的传统节日',
                 countDirection: 'future'
             }
@@ -532,7 +533,7 @@ hexo.extend.tag.register('memorable_days', function(args) {
             });
 
             if (filterEvents.length === 0) {
-              container.innerHTML = '<p style="text-align:center;grid-column:1/-1;padding:40px;color:var(--text)">暂时没有此类事件</p>';
+              container.innerHTML = '<p style="text-align:center;grid-column:1/-1;padding:40px;color:var(--text);">暂时没有此类事件</p>';
             }
           }
 
@@ -548,34 +549,39 @@ hexo.extend.tag.register('memorable_days', function(args) {
             });
           }
 
-          // 双保险初始化机制
-          function initModule() {
+          // 初始化页面
+          function init() {
             renderEvents();
             initFilterButtons();
-            
-            // 每天9点自动更新
+
+            // 设置9点自动更新
             const now = new Date();
-            const nextUpdate = new Date(now);
-            nextUpdate.setHours(9, 0, 0, 0);
-            if (now >= nextUpdate) {
-              nextUpdate.setDate(nextUpdate.getDate() + 1);
+            const nextUpdateTime = new Date(now);
+            nextUpdateTime.setHours(9, 0, 0, 0);
+            
+            // 如果今天9点已过，设置为明天9点
+            if (now >= nextUpdateTime) {
+              nextUpdateTime.setDate(nextUpdateTime.getDate() + 1);
             }
             
-            const timeUntilUpdate = nextUpdate - now;
+            // 计算到9点的毫秒数
+            const timeUntilUpdate = nextUpdateTime - now;
+            
+            // 设置定时器
             setTimeout(() => {
               renderEvents();
-              // 设置每天9点自动更新
+              // 重新设置明天的定时器
               setInterval(() => {
                 renderEvents();
-              }, 86400000);
+              }, 86400000); // 24小时
             }, timeUntilUpdate);
           }
 
-          // 确保DOM加载完成后执行
+          // 确保在DOM加载完成后执行
           if (document.readyState === 'complete' || document.readyState === 'interactive') {
-            setTimeout(initModule, 100);
+            setTimeout(init, 0);
           } else {
-            document.addEventListener('DOMContentLoaded', initModule);
+            document.addEventListener('DOMContentLoaded', init);
           }
         })();
       </script>
