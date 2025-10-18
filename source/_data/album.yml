@@ -200,6 +200,18 @@
   top_link: /imgs
   top_btn_text: 返回
   album_list:
+      - date: 2025/10/1 01:00:00
+      content: 国庆节
+      address: 节日快乐
+      from: xiebro干饭饭
+      image:
+        - https://cftcr2.20010501.xyz/PicHoro/P20250830-211721.webp
+        - https://cftcr2.20010501.xyz/PicHoro/P20250830-211719.webp
+        - https://cftcr2.20010501.xyz/PicHoro/P20250830-211703.webp
+        - https://cftcr2.20010501.xyz/PicHoro/P20250926-135942.webp
+        - https://cftcr2.20010501.xyz/PicHoro/P20250926-135947.webp
+        - https://cftcr2.20010501.xyz/PicHoro/P20251005-164345.webp
+        - https://cftcr2.20010501.xyz/PicHoro/P20251005-164925.webp
     - date: 2025/5/23 01:00:00
       content: 河山大好，出去走走
       address: 吃火锅
