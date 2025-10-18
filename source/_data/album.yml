@@ -200,7 +200,7 @@
   top_link: /imgs
   top_btn_text: 返回
   album_list:
-      - date: 2025/10/1 01:00:00
+    - date: 2025/10/1 01:00:00
       content: 国庆节
       address: 节日快乐
       from: xiebro干饭饭
