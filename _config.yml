@@ -160,8 +160,8 @@ douban:
 
 # RSS
 feed:
-  type: atom
-  path: atom.xml
+  type: rss
+  path: rss.xml
   limit: 20
   hub:
   content:
