@@ -1,20 +1,19 @@
 ---
 abbrlink: a2b
 categories:
-  - - 软件推荐
-cover: >-
-  https://ghtpdl.20010501.xyz/Qexo/24/8/324371839-a4064a6b-6dd8-4ead-be83-3820845a81e4_8c0b56a594071755f5d0fb1738bd2ec7.jpg
+- - 软件推荐
+cover: https://ghtpdl.20010501.xyz/Qexo/24/8/324371839-a4064a6b-6dd8-4ead-be83-3820845a81e4_8c0b56a594071755f5d0fb1738bd2ec7.jpg
 date: '2024-08-06T16:46:18.230098+08:00'
 tags:
-  - AfuseKt
-  - 开源播放器
-  - 阿里云盘
-  - Alist
-  - WebDAV
-  - Emby
-  - Jellyfin
+- AfuseKt
+- 开源播放器
+- 阿里云盘
+- Alist
+- WebDAV
+- Emby
+- Jellyfin
 title: AfuseKt开源播放器介绍
-updated: '2025-08-17T15:13:33.603+08:00'
+updated: '2025-11-04T01:17:50.829+08:00'
 ---
 大家好呀！今天介绍一个播放器。AfuseKt是一款功能丰富的安卓端在线视频播放器，为用户提供了便捷的视频观看和管理体验。以下是对AfuseKt的详细介绍：
 
@@ -36,8 +35,6 @@ updated: '2025-08-17T15:13:33.603+08:00'
 2. **影视爱好者**：影视爱好者可以通过AfuseKt轻松管理和查找自己的视频收藏，享受高清流畅的观看体验。
 
 综合来看，AfuseKt是一款功能强大、使用便捷的安卓端在线视频播放器，适合广大视频爱好者和家庭用户使用。
-
-下载地址：**https://fxdl.20010501.xyz/https://github.com/AttemptD/AfuseKt-release/releases/download/AfuseKt-1.3.4-10082/AfuseKt-arm64-1.3.4-10082.apk**
 
 软件截图：
 
