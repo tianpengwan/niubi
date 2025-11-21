@@ -12,6 +12,26 @@ style.
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    /* 确保文字颜色在浅色背景下可见 */
+    color: #333;
+  }
+  
+  /* 暗色模式适配 */
+  @media (prefers-color-scheme: dark) {
+    #nav-music {
+      color: #fff;
+    }
+  }
+  
+  /* 主题类名适配 */
+  body.light #nav-music,
+  body[data-theme='light'] #nav-music {
+    color: #333 !important;
+  }
+  
+  body.dark #nav-music,
+  body[data-theme='dark'] #nav-music {
+    color: #fff !important;
   }
   
   /* 背景渐变效果 */
@@ -26,7 +46,7 @@ style.
     z-index: -1;
   }
   
-  /* 控制按钮样式 */
+  /* 控制按钮样式 - 修复白天模式文字颜色 */
   #nav-music-hoverTips {
     display: inline-block;
     padding: 10px 20px;
@@ -34,7 +54,7 @@ style.
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 25px;
-    color: white;
+    color: inherit; /* 继承父级颜色 */
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -47,6 +67,18 @@ style.
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
   
+  /* 确保按钮文字在白天模式可见 */
+  body.light #nav-music-hoverTips,
+  body[data-theme='light'] #nav-music-hoverTips {
+    color: #333 !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  body.dark #nav-music-hoverTips,
+  body[data-theme='dark'] #nav-music-hoverTips {
+    color: #fff !important;
+  }
+  
   /* 音乐播放器容器样式 */
   .aplayer {
     background: rgba(255, 255, 255, 0.1) !important;
@@ -54,6 +86,21 @@ style.
     -webkit-backdrop-filter: blur(15px) !important;
     border-radius: 10px !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  /* 确保Aplayer内部文字颜色适配 */
+  .aplayer .aplayer-info .aplayer-controller .aplayer-bar,
+  .aplayer .aplayer-info .aplayer-music .aplayer-title,
+  .aplayer .aplayer-info .aplayer-music .aplayer-author {
+    color: inherit;
+  }
+  
+  /* 白天模式Aplayer文字颜色 */
+  body.light .aplayer .aplayer-info .aplayer-music .aplayer-title,
+  body[data-theme='light'] .aplayer .aplayer-info .aplayer-music .aplayer-title,
+  body.light .aplayer .aplayer-info .aplayer-music .aplayer-author,
+  body[data-theme='light'] .aplayer .aplayer-info .aplayer-music .aplayer-author {
+    color: #333 !important;
   }
 
 #nav-music
