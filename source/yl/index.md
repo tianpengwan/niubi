@@ -23,9 +23,9 @@ aside: false
 
 🌵站点名称🌺：宇外御风的hexo博客
 🌲站点简介🌸：分享免费有趣的知识
-🌳站点地址🌼：https://20010501.xyz/
-🌴站点图片🏵️：https://20010501.xyz/fluid.png
-🌿我的友链地址🌻：https://20010501.xyz/yl/
+🌳站点地址🌼：https://ypy.20010501.xyz/
+🌴站点图片🏵️：https://ypy.20010501.xyz/fluid.png
+🌿我的友链地址🌻：https://ypy.20010501.xyz/yl/
 
 # 我可爱的友友们
 <head>
