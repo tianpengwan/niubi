@@ -15,7 +15,7 @@ updated: '2025-09-06T23:44:17.778+08:00'
 {% raw %}
 <div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
     <!-- 静态图片 -->
-    <img src="https://cftcr2.20010501.xyz/PicHoro/1757173197761.webp" 
+    <img src="https://cftcr2.20010501.xyz/PicHoro/P20251112-100611.webp" 
          class="live-photo-static" 
          alt="Live Photo" 
          data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251112-100611.webp">
