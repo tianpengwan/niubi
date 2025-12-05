@@ -19,14 +19,14 @@ updated: '2025-09-06T23:44:17.778+08:00'
     < img src="https://cftcr2.20010501.xyz/PicHoro/P20251129-100726.webp" 
          class="live-photo-static" 
          alt="Live Photo" 
-         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-100726.webp"">
+         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-100726.webp">
 
     <!-- 动态视频 -->
     <video class="live-photo-video" 
            preload="metadata" 
            muted
-           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-100726.webp""">
-        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-100726.webp" type="video/mp4">
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-100726-1.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-100726-1.mp4" type="video/mp4">
     </video>
 
     <!-- Live 标志 -->
@@ -36,21 +36,20 @@ updated: '2025-09-06T23:44:17.778+08:00'
     <button class="live-photo-mute-btn" aria-label="切换静音"></button>
 </div>
 {% endraw %}
-
 {% raw %}
 <div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
     <!-- 静态图片 -->
     < img src="https://cftcr2.20010501.xyz/PicHoro/P20251129-102855.webp" 
          class="live-photo-static" 
          alt="Live Photo" 
-         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-102855.webp"">
+         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-102855.webp">
 
     <!-- 动态视频 -->
     <video class="live-photo-video" 
            preload="metadata" 
            muted
-           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-102855.webp""">
-        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-102855.webp" type="video/mp4">
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-102855-1.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-102855-1.mp4" type="video/mp4">
     </video>
 
     <!-- Live 标志 -->
@@ -60,21 +59,20 @@ updated: '2025-09-06T23:44:17.778+08:00'
     <button class="live-photo-mute-btn" aria-label="切换静音"></button>
 </div>
 {% endraw %}
-
 {% raw %}
 <div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
     <!-- 静态图片 -->
     < img src="https://cftcr2.20010501.xyz/PicHoro/P20251129-111355.webp" 
          class="live-photo-static" 
          alt="Live Photo" 
-         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-111355.webp"">
+         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-111355.webp">
 
     <!-- 动态视频 -->
     <video class="live-photo-video" 
            preload="metadata" 
            muted
-           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-111355.webp""">
-        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-111355.webp" type="video/mp4">
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-111355-1.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-111355-1.mp4" type="video/mp4">
     </video>
 
     <!-- Live 标志 -->
@@ -84,21 +82,20 @@ updated: '2025-09-06T23:44:17.778+08:00'
     <button class="live-photo-mute-btn" aria-label="切换静音"></button>
 </div>
 {% endraw %}
-
 {% raw %}
 <div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
     <!-- 静态图片 -->
     < img src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135459.webp" 
          class="live-photo-static" 
          alt="Live Photo" 
-         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135459.webp"">
+         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135459.webp">
 
     <!-- 动态视频 -->
     <video class="live-photo-video" 
            preload="metadata" 
            muted
-           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135459.webp""">
-        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135459.webp" type="video/mp4">
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135509-1.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135509-1.mp4" type="video/mp4">
     </video>
 
     <!-- Live 标志 -->
@@ -108,21 +105,20 @@ updated: '2025-09-06T23:44:17.778+08:00'
     <button class="live-photo-mute-btn" aria-label="切换静音"></button>
 </div>
 {% endraw %}
-
 {% raw %}
 <div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
     <!-- 静态图片 -->
     < img src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135509.webp" 
          class="live-photo-static" 
          alt="Live Photo" 
-         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135509.webp"">
+         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135509.webp">
 
     <!-- 动态视频 -->
     <video class="live-photo-video" 
            preload="metadata" 
            muted
-           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135509.webp""">
-        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135509.webp" type="video/mp4">
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-162003-1.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-162003-1.mp4" type="video/mp4">
     </video>
 
     <!-- Live 标志 -->
@@ -132,21 +128,20 @@ updated: '2025-09-06T23:44:17.778+08:00'
     <button class="live-photo-mute-btn" aria-label="切换静音"></button>
 </div>
 {% endraw %}
-
 {% raw %}
 <div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
     <!-- 静态图片 -->
     < img src="https://cftcr2.20010501.xyz/PicHoro/P20251129-162003.webp" 
          class="live-photo-static" 
          alt="Live Photo" 
-         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-162003.webp"">
+         data-photo-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-162003.webp">
 
     <!-- 动态视频 -->
     <video class="live-photo-video" 
            preload="metadata" 
            muted
-           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-162003.webp""">
-        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-162003.webp" type="video/mp4">
+           data-video-src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135459-1.mp4">
+        <source src="https://cftcr2.20010501.xyz/PicHoro/P20251129-135459-1.mp4" type="video/mp4">
     </video>
 
     <!-- Live 标志 -->
@@ -156,6 +151,11 @@ updated: '2025-09-06T23:44:17.778+08:00'
     <button class="live-photo-mute-btn" aria-label="切换静音"></button>
 </div>
 {% endraw %}
+
+
+
+
+
 
 {% raw %}
 <div class="live-photo-container" style="width: 100%; max-width: 800px; height: auto;">
