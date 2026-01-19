@@ -9,19 +9,17 @@ tags:
 - 阅读
 - 视频
 title: 推荐三个应用tx box、lx音乐、阅读
-updated: '2026-01-19T12:02:56.742+08:00'
+updated: '2026-01-19T12:27:17.773+08:00'
 ---
-1. https://tianpeng.lanzout.com/iee3H3ghzekbo密码:1koe
+1. https://tianpeng.lanzout.com/iee3H3ghzekb  密码:1koe
 
 阅读APP
 
-https://tianpeng.lanzout.com/idrrv3ghzvgj
-
-密码:7t2u
+https://tianpeng.lanzout.com/idrrv3ghzvgj  密码:7t2u
 
 书源改后缀apk为json
 
-2. https://tianpeng.lanzout.com/i3E9U3ghzefg密码:7kn6
+2. https://tianpeng.lanzout.com/i3E9U3ghzefg  密码:7kn6
 
 音乐APP
 
@@ -56,7 +54,7 @@ https://tianpeng.lanzout.com/idrrv3ghzvgj
 [野草音源（最高支持部分平台普通音质）.js] https://pan.xxbyq.net/f/WXBhQ/%E9%87%8E%E8%8D%89%E9%9F%B3%E6%BA%90%EF%BC%88%E6%9C%80%E9%AB%98%E6%94%AF%E6%8C%81%E9%83%A8%E5%88%86%E5%B9%B3%E5%8F%B0%E6%99%AE%E9%80%9A%E9%9F%B3%E8%B4%A8%EF%BC%89.js
 ```
 
-3. https://tianpeng.lanzout.com/ihzXf3ghzede密码:3ymn
+3. https://tianpeng.lanzout.com/ihzXf3ghzede  密码:3ymn
 
 视频APP
 
