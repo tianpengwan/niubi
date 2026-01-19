@@ -41,4 +41,4 @@ aside: false
 <script type="text/javascript" src="https://cftcr2.20010501.xyz/jscss/bundle.js"></script>
 
 
-{% daily_news %}
+{% pyq %}
