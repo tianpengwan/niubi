@@ -41,4 +41,5 @@ aside: false
 <script type="text/javascript" src="https://cftcr2.20010501.xyz/jscss/bundle.js"></script>
 
 
-{% pyq %}
+<iframe src="https://20010501.xyz/html/source/html/pyq.html" height="1000px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;">
+</iframe>
