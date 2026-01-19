@@ -39,3 +39,6 @@ aside: false
 <link rel="stylesheet" href="https://cftcr2.20010501.xyz/jscss/heoMainColor.css">
 <script type="text/javascript" src="https://cftcr2.20010501.xyz/jscss/app.min.js"></script>
 <script type="text/javascript" src="https://cftcr2.20010501.xyz/jscss/bundle.js"></script>
+
+
+{% daily_news %}
