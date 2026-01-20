@@ -13,8 +13,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            background-attachment: fixed;
+            background: transparent;
             min-height: 100vh;
             padding: 15px;
             display: flex;
@@ -25,14 +24,15 @@
         .glass-container {
             width: 100%;
             max-width: 1400px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             padding: 20px;
+            min-height: 600px;
         }
 
         .header {
@@ -67,7 +67,7 @@
         }
 
         .stat-card {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             padding: 15px 20px;
             text-align: center;
@@ -80,7 +80,7 @@
 
         .stat-card:hover {
             transform: translateY(-3px);
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         }
 
@@ -113,7 +113,7 @@
         }
 
         .last-updated {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
             color: #87CEEB;
             padding: 10px 15px;
             border-radius: 12px;
@@ -179,7 +179,7 @@
             padding: 12px 20px;
             border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 40px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             color: #FFD700;
             font-size: 1rem;
             outline: none;
@@ -190,7 +190,7 @@
         .search-input:focus {
             border-color: #87CEEB;
             box-shadow: 0 0 12px rgba(135, 206, 235, 0.4);
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.12);
         }
 
         .search-input::placeholder {
@@ -198,12 +198,12 @@
         }
 
         .random-article-card {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(135, 206, 235, 0.1));
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(135, 206, 235, 0.08));
             border-radius: 15px;
             padding: 20px;
             margin: 15px 0 25px 0;
-            border: 2px solid rgba(255, 215, 0, 0.3);
-            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.2);
+            border: 2px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.15);
             position: relative;
             overflow: hidden;
             width: 100%;
@@ -272,7 +272,7 @@
         }
 
         .random-article-excerpt {
-            color: rgba(255, 255, 255, 0.85);
+            color: #FFD700;
             font-size: 0.95rem;
             line-height: 1.5;
             margin-bottom: 15px;
@@ -329,7 +329,7 @@
             text-align: center;
             margin-bottom: 15px;
             padding: 8px 15px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             border-radius: 8px;
             display: inline-block;
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -343,11 +343,11 @@
         }
 
         .article-item {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
             padding: 20px;
             transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             cursor: pointer;
             display: flex;
             flex-direction: column;
@@ -369,9 +369,9 @@
 
         .article-item:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.08);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-            border-color: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.15);
         }
 
         .article-header {
@@ -437,7 +437,7 @@
         }
 
         .article-excerpt {
-            color: rgba(255, 255, 255, 0.85);
+            color: #FFD700;
             font-size: 0.95rem;
             line-height: 1.5;
             margin-top: 15px;
@@ -454,7 +454,7 @@
             align-items: center;
             margin-top: 20px;
             padding-top: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .article-date {
@@ -470,14 +470,14 @@
             font-weight: 600;
             transition: all 0.3s ease;
             padding: 6px 12px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.15);
         }
 
         .read-more:hover {
             color: #FFFFFF;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
             transform: translateX(3px);
         }
 
@@ -487,7 +487,7 @@
             color: #FFD700;
             font-size: 1.1rem;
             padding: 30px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             border-radius: 12px;
             margin: 15px 0;
         }
@@ -500,7 +500,7 @@
             text-align: center;
             margin-top: 35px;
             padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .footer a {
@@ -511,13 +511,13 @@
             transition: all 0.3s ease;
             padding: 8px 16px;
             border-radius: 40px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             display: inline-block;
         }
 
         .footer a:hover {
             color: #FFFFFF;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
         }
@@ -607,7 +607,7 @@
         }
 
         .modal-article-excerpt {
-            color: rgba(255, 255, 255, 0.8);
+            color: #FFD700;
             font-size: 0.9rem;
             line-height: 1.4;
             max-height: 2.8em;
@@ -623,7 +623,7 @@
             padding: 30px;
             font-size: 1.1rem;
             grid-column: 1 / -1;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             border-radius: 12px;
         }
 
@@ -636,6 +636,7 @@
             .glass-container {
                 padding: 15px;
                 border-radius: 15px;
+                min-height: 500px;
             }
             
             h1 {
