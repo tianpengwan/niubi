@@ -1131,9 +1131,9 @@
                 return;
             }
             
-            // 按更新日期排序（从新到旧）
+            // 按发布日期排序（从新到旧）- 修改点
             const sortedArticles = [...filteredArticles].sort((a, b) => 
-                new Date(b.updated || b.created) - new Date(a.updated || a.created)
+                new Date(b.created) - new Date(a.created)
             );
             
             sortedArticles.forEach(article => {
@@ -1142,7 +1142,7 @@
                 articleElement.onclick = () => window.open(article.link, '_blank');
                 
                 const excerpt = article.summary || generateExcerpt(article.title, 120);
-                const date = article.updated || article.created;
+                const date = article.created; // 修改点：只显示发布日期
                 
                 articleElement.innerHTML = `
                     <div class="article-header">
@@ -1202,7 +1202,7 @@
             const randomArticle = filteredArticles[randomIndex];
             
             const excerpt = randomArticle.summary || generateExcerpt(randomArticle.title, 150);
-            const date = randomArticle.updated || randomArticle.created;
+            const date = randomArticle.created; // 修改点：显示发布日期
             
             randomContent.innerHTML = `
                 <img src="${randomArticle.avatar || DEFAULT_AVATAR}" alt="${randomArticle.author}" class="random-article-avatar"
@@ -1285,12 +1285,12 @@
                 if (authorArticles.length === 0) {
                     modalArticlesList.innerHTML = '<li style="color: #FFD700; text-align: center; padding: 20px;">暂无文章</li>';
                 } else {
-                    // 按更新日期排序
-                    authorArticles.sort((a, b) => new Date(b.updated || b.created) - new Date(a.updated || a.created));
+                    // 按发布日期排序（从新到旧）- 修改点
+                    authorArticles.sort((a, b) => new Date(b.created) - new Date(a.created));
                     
                     authorArticles.forEach(article => {
                         const excerpt = article.summary || generateExcerpt(article.title, 80);
-                        const date = article.updated || article.created;
+                        const date = article.created; // 修改点：显示发布日期
                         
                         const articleItem = document.createElement('li');
                         articleItem.className = 'modal-article-item';
