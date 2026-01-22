@@ -392,29 +392,6 @@ aside: false
 </body>
 
 # 留言申请友链吧！！！٩۹(๑•̀ω•́ ๑)۶
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 <div id="friends-api"></div>
 <script src="/js/friends-api.js"></script>
@@ -424,33 +401,4 @@ qexo_friend_api(
   "https://hexoadmin.20010501.xyz",  // 你的Qexo域名
   ""                          // 人机验证秘钥（没有可留空）
 );
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 </script>
->>>>>>> Stashed changes
-=======
-</script>
->>>>>>> Stashed changes
-=======
-</script>
->>>>>>> Stashed changes
-=======
-</script>
->>>>>>> Stashed changes
-=======
-</script>
->>>>>>> Stashed changes
-=======
-</script>
->>>>>>> Stashed changes
-=======
-</script>
->>>>>>> Stashed changes
-=======
-</script>
->>>>>>> Stashed changes
