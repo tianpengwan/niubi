@@ -373,8 +373,6 @@ aside: false
 </script>
 {% endraw %}
 
-
-
 # 我可爱的友友们
 
 <head>
@@ -394,3 +392,16 @@ aside: false
 </body>
 
 # 留言申请友链吧！！！٩۹(๑•̀ω•́ ๑)۶
+<<<<<<< Updated upstream
+=======
+
+<div id="friends-api"></div>
+<script src="/js/friends-api.js"></script>
+<script>
+qexo_friend_api(
+  "friends-api",              // 容器ID（保持默认）
+  "https://hexoadmin.20010501.xyz",  // 你的Qexo域名
+  ""                          // 人机验证秘钥（没有可留空）
+);
+</script>
+>>>>>>> Stashed changes

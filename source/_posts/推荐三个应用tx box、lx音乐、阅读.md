@@ -1,13 +1,13 @@
 ---
-abbrlink: ''
+abbrlink: 65f3
 categories:
-- - 技术教程
-cover: https://cftcr2.20010501.xyz/PicHoro/1768783655350.webp
+  - - 技术教程
+cover: 'https://cftcr2.20010501.xyz/PicHoro/1768783655350.webp'
 date: '2026-01-19T08:49:45.942239+08:00'
 tags:
-- 音乐
-- 阅读
-- 视频
+  - 音乐
+  - 阅读
+  - 视频
 title: 推荐三个应用tx box、lx音乐、阅读
 updated: '2026-01-19T17:32:08.209+08:00'
 ---
