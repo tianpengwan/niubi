@@ -316,103 +316,119 @@ if hexo-config('nav_music.enable') == false
 // 移动端适配（同步修正遮挡问题，列表不设置800px，保持原有适配）
 @media screen and (max-width: 768px)
   body[data-type="music"]
-    #rightside { display: none }
-    #content-inner,#page { z-index: auto }
+    #rightside
+      display none
+    #content-inner,#page
+      z-index auto
   #anMusic-page
     meting-js 
       .aplayer
-        height: calc(100vh - 100px);
-        flex-direction: column !important;
-        // 移动端列表 - 紧贴进度条
         .aplayer-list
-          position: fixed !important;
-          z-index: 1002;
-          width: 100%;
-          bottom: 80px !important; /* 下移至进度条上方，紧贴 */
-          left: 0;
-          background: var(--sidebar-bg);
-          height: 50vh !important; /* 变长，占50%屏幕 */
-          border-radius: 15px 15px 0 0;
-          padding: 15px 10px !important;
-          margin: 0;
-          &.aplayer-list-hide { bottom: 0% !important }
+          position fixed
+          z-index 1002
+          width 100%
+          bottom -88%
+          left 0
+          background var(--sidebar-bg)
+          height auto
+          border-radius 15px 15px 0px 0px
+          padding 15px 0px
+          &.aplayer-list-hide
+            bottom 0% !important
           ol
-            height: 100% !important;
-            padding: 0;
+            max-height 60vh !important
+            padding-right 0px
             & > li
-              display: flex;
-              align-items: center;
-              margin: 0 10px;
-              background: transparent;
-              padding: 12px 15px !important;
+              display flex
+              margin 0 10px
+              background transparent
               span
-                color: var(--font-color);
+                color var(--font-color)
                 &.aplayer-list-title
-                  width: auto;
-                  max-width: 60%;
-                  display: -webkit-box;
-                  -webkit-line-clamp: 1;
-                  overflow: hidden;
-                  -webkit-box-orient: vertical;
+                  width 30%
+                  max-width 55%
+                  width auto
+                  display -webkit-box
+                  -webkit-line-clamp 1
+                  overflow hidden
+                  -webkit-box-orient vertical
                 &.aplayer-list-author
-                  position: absolute;
-                  right: 20px;
-                  max-width: 30%;
-                  display: -webkit-box;
-                  -webkit-line-clamp: 1;
-                  overflow: hidden;
-                  -webkit-box-orient: vertical;
+                  position absolute
+                  right 10px
+                  width auto
+                  max-width 35%
+                  display -webkit-box
+                  -webkit-line-clamp 1
+                  overflow hidden
+                  -webkit-box-orient vertical
               &.aplayer-list-light
-                background: var(--anzhiyu-main);
-                padding: 12px 20px !important;
-                border-radius: 10px;
-                span { color: #fff }
-        // 移动端歌词区域 - 不挡进度条
+                background var(--anzhiyu-main)
+                padding 5px 20px
+                border-radius 10px
+                span
+                  color #fff
+                  &.aplayer-list-author
+                    right 15px
         .aplayer-body
-          width: 100%
-          height: 100% !important;
-          padding-bottom: 100px !important;
-          position: fixed;
-          top: 80px;
-          left: 0;
-          right: 0;
-          margin: auto;
-          .aplayer-pic { width: 150px; height: 150px; margin-top: 0 }
+          width 100%
+          position fixed
+          margin auto
+          left 0
+          right 0
+          top 100px
           .aplayer-info
-            height: calc(100% - 150px);
-            .aplayer-music { padding: 0; margin: 10px 0 }
-            .aplayer-music .aplayer-author, .aplayer-music .aplayer-title { font-size: 1.5rem }
             .aplayer-lrc
-              height: calc(100% - 30px) !important;
-              p { 
-                font-size: 18px; 
-                line-height: 32px !important; 
-                height: 32px !important;
-                &.aplayer-lrc-current {
-                  // 移动端同样修复文字阴影语法
-                  text-shadow: '0 0 10px rgba(var(--anzhiyu-main-rgb), 0.3)';
-                }
-              }
+              margin-top 40px
+              height auto
+              max-height 200%
+              min-height 100%
+              mask-image linear-gradient(to bottom, #000, #000, #000, #000, #0000, #0000)
+              p
+                &.aplayer-lrc-current
+                  color var(--anzhiyu-main)
             .aplayer-controller
-              bottom: 20px !important;
-              z-index: 9999;
-              width: 100%;
-              .aplayer-bar-wrap { margin: 0 20px }
+              width 100%
+              bottom 100px
+              .aplayer-volume-wrap
+                left -66px
+                .aplayer-volume-bar-wrap
+                  bottom 0px
+                  right 7px
+              .aplayer-bar-wrap
+                margin 0 30px
+            .aplayer-controller
               .aplayer-time
-                bottom: -40px;
+                bottom -40px
                 .aplayer-time-inner
-                  width: 100%;
-                  margin-right: 0;
-                  margin-top: -33px;
-                  .aplayer-dtime { right: 20px }
-                  .aplayer-ptime { left: 20px }
-                .aplayer-icon-back { right: 100px }
-                .aplayer-icon-play { left: 0; right: 0; margin: auto }
-                .aplayer-icon-forward { left: 100px }
-                .aplayer-icon-order { left: 20px }
-                .aplayer-icon-loop { right: 20px }
+                  position absolute
+                  width 100%
+                  margin-right 0
+                  margin-top -33px
+                  .aplayer-dtime
+                    position absolute
+                    right 30px
+                  .aplayer-ptime
+                    position absolute
+                    left 35px
+                .aplayer-icon-back
+                  margin auto
+                  right 110px
+                .aplayer-icon-play
+                  margin auto
+                  right 0
+                  left 0
+                .aplayer-icon-forward
+                  margin auto
+                  left 110px
+                  right 0
+                .aplayer-icon-order
+                  position absolute
+                  left 22px
+                .aplayer-icon-loop
+                  position absolute
+                  right 25px
                 .aplayer-icon-menu
-                  display: inline;
-                  position: absolute;
-                  right: 20px;
-                  top: -70px;
+                  display inline
+                  position absolute
+                  right 25px
+                  top -90px
