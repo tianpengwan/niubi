@@ -42,6 +42,52 @@ body[data-type="music"]
         &:before
           background-color transparent
 
+/* 白天模式支持 */
+[data-theme="light"]
+  body[data-type="music"]
+    background rgb(250, 250, 250)
+    #page-header
+      #nav
+        #blog_name,
+        .mask-name-container,
+        #menus,
+        #nav-right .nav-button,
+        #nav-right #toggle-menu
+          a, .back-home-button
+            color var(--font-color) !important
+    .s-sticker
+      div
+        color var(--font-color) !important
+    #anMusic-page
+      meting-js
+        .aplayer
+          .aplayer-info
+            .aplayer-music
+              .aplayer-author, .aplayer-title
+                color var(--font-color)
+            .aplayer-lrc
+              p
+                color var(--font-color)
+                &.aplayer-lrc-current
+                  color var(--anzhiyu-main)
+            .aplayer-controller
+              .aplayer-bar-wrap
+                .aplayer-bar
+                  background rgba(0, 0, 0, 0.1)
+                  .aplayer-played
+                    background var(--anzhiyu-main) !important
+                  .aplayer-loaded
+                    background rgba(0, 0, 0, 0.1)
+          .aplayer-list
+            ol
+              & > li
+                background rgba(255, 255, 255, 0.6)
+                &:hover
+                  background rgba(0, 0, 0, 0.1)
+                &.aplayer-list-light
+                  background rgba(0, 0, 0, 0.1)
+                span
+                  color var(--font-color)
 
 #an_music_bg
   display none
@@ -93,11 +139,11 @@ if hexo-config('nav_music.enable') == false
     height: 50px;
     bottom: 100px;
     padding: 5px;
-    background: var(--anzhiyu-white-op);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 50%;
-    color: #fff;
+    color: var(--font-color);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -122,256 +168,251 @@ if hexo-config('nav_music.enable') == false
   meting-js
     .aplayer
       display flex
-      flex-direction row-reverse
+      flex-direction: row-reverse
       background rgba(0, 0, 0, 0)
       border none
       box-shadow none
+      height: calc(100vh - 169px); /* 播放器整体高度固定 */
+      box-sizing: border-box;
+      // 右侧歌词区域 40%
       .aplayer-body
         width 40%
-        height calc(100vh - 169px)
+        height: 100% !important; /* 与播放器同高，两侧一致 */
+        padding-bottom: 120px !important; /* 底部强制留白120px，专门给进度条，彻底防遮挡 */
+        box-sizing: border-box; /* 留白不压缩歌词区域 */
+        position: relative;
         .aplayer-pic
           float none
           width 180px
           height 180px
           border-radius 12px
-          margin auto
+          margin: 20px auto 0;
           left 0
           right 0
           transition: background-image 0.5s ease-in-out;
           background-size: cover;
           background-color: transparent !important;
         .aplayer-info
-          margin 0 20px 0 20px
-          border-bottom none
+          margin: 0 20px;
+          border-bottom none;
+          height: calc(100% - 180px); /* 扣除封面高度，剩余给歌词 */
+          position: relative;
           .aplayer-music
             text-align center
             height auto
-            margin 15px
+            padding: 10px 0;
             .aplayer-author, .aplayer-title
               font-size 2rem
               font-weight 700
-              color #fff
-
+              color var(--font-color)
+          // 歌词区域 - 绝对不超留白，不挡进度条
           .aplayer-lrc
-            height 800%
-            margin-top 10px
-            mask-image linear-gradient(to bottom, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, #0000, #0000)
+            height: calc(100% - 40px) !important; /* 扣除歌曲名高度，纯歌词区域 */
+            margin: 0 !important; /* 去掉所有margin，避免偏移 */
+            padding: 0 10px;
+            overflow-y: auto; /* 歌词过多时内部滚动 */
+            mask-image: linear-gradient(to bottom, #000 90%, #0000 100%);
+            -webkit-mask-image: linear-gradient(to bottom, #000 90%, #0000 100%);
             p
               font-size 20px
-              line-height: 20px !important;
-              height: 20px !important;
-              margin: 20px 0 !important;
-              color #fff
+              line-height: 38px !important;
+              height: 38px !important;
+              margin: 5px 0 !important;
+              color var(--font-color)
+              text-align: center;
               &.aplayer-lrc-current {
-                min-height: 20px;
+                color var(--anzhiyu-main);
+                font-weight: 500;
+                // 修复Stylus编译错误：用单引号包裹，强制原样输出CSS
+                text-shadow: '0 0 10px rgba(var(--anzhiyu-main-rgb), 0.3)';
               }
-            &::after, &::before
-              display none
+            &::after, &::before { display: none }
+          // 进度条 - 强制置顶+固定位置，绝对不被遮挡
           .aplayer-controller 
-            position fixed
-            max-width 1500px
-            margin auto
-            left 0
-            right 0
-            bottom 50px
+            position: fixed !important;
+            max-width: 1500px;
+            width: 100%;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 30px !important; /* 进度条固定在底部30px */
+            z-index: 9999 !important; /* 置顶最高层级，秒杀所有遮挡 */
             .aplayer-bar-wrap 
-              margin 0 160px 0 150px
+              margin: 0 160px 0 150px;
               .aplayer-bar
                 height: 6px;
                 border-radius: 4px;
+                background rgba(0, 0, 0, 0.2)
                 .aplayer-played
                   height: 6px;
                   border-radius: 4px;
-                  background var(--anzhiyu-white) !important
+                  background var(--anzhiyu-main) !important
                   .aplayer-thumb
                     width 20px
                     height 20px
-                    margin-top: -7px
-                    transform none
-                    background #fff !important
+                    margin-top: -7px;
+                    transform: none;
+                    background var(--anzhiyu-main) !important
                 .aplayer-loaded
                   height: 6px;
                   border-radius: 4px;
+                  background rgba(0, 0, 0, 0.1)
             .aplayer-time
-              position absolute
-              width 100%
-              bottom 21px
-              height 0
-              display flex
-              justify-content flex-end
+              position: absolute;
+              width: 100%;
+              bottom: 21px;
+              height: 0;
+              display: flex;
+              justify-content: flex-end;
               .aplayer-volume-wrap
                 .aplayer-volume-bar-wrap
                   bottom: 0;
                   right: -5px;
               .aplayer-icon
-                width 2rem
-                height 2rem
-                margin-left 15px
-                path
-                  fill var(--anzhiyu-white)
-                  opacity 0.8
-                &.aplayer-icon-loop
-                  margin-right 15px
+                width: 2rem;
+                height: 2rem;
+                margin-left: 15px;
+                path { fill: var(--font-color); opacity: 0.8 }
+                &.aplayer-icon-loop { margin-right: 15px }
               .aplayer-time-inner
-                margin-right 18px
-                margin-top -8px
-              .aplayer-icon-back
-                position absolute
-                left 0
-                display inline
-              .aplayer-icon-play
-                position absolute
-                left 40px
-                display inline
-              .aplayer-icon-forward
-                position absolute
-                left 80px
-                display inline
-
-              .aplayer-icon-menu
-                display none
-
+                margin-right: 18px;
+                margin-top: -8px;
+                .aplayer-ptime, .aplayer-dtime { color: var(--font-color) }
+              .aplayer-icon-back { position: absolute; left: 0; display: inline }
+              .aplayer-icon-play { position: absolute; left: 40px; display: inline }
+              .aplayer-icon-forward { position: absolute; left: 80px; display: inline }
+              .aplayer-icon-menu { display: none }
+      // 左侧歌曲列表 60% - 核心修改：添加max-height:800px，保留下移+不挡进度条
       .aplayer-list
           width 60%
-          height 100%
-        ol
-          padding-right 25px
-          & > li
-            border-top 1px solid transparent
-            font-size 14px
-            &:hover
-              background #ffffff33
-              border-radius 6px
-            &.aplayer-list-light
-              background #ffffff33
-              border-radius 6px
-              padding 20px 15px
-              span.aplayer-list-title
-                font-weight: bolder;
-              .aplayer-list-cur
-                display none
+          height: 100% !important; /* 与右侧歌词区域高度完全一致 */
+          max-height: 800px !important; /* 强制最大高度800px */
+          padding: 0 25px 120px 0 !important; /* 底部留白120px，和右侧同步，紧贴进度条 */
+          box-sizing: border-box !important; /* 留白不压缩列表内容 */
+          position: relative;
+          overflow: hidden;
+          ol
+            height: 100% !important; /* 列表占满容器 */
+            max-height: 800px !important; /* 强制最大高度800px */
+            padding: 20px 0 0 0;
+            overflow-y: auto !important; /* 超过800px时内部滚动 */
+            & > li
+              border-top: 1px solid transparent;
+              font-size: 14px;
+              background: rgba(0, 0, 0, 0.1);
+              border-radius: 6px;
+              margin: 5px 0;
+              padding: 12px 15px;
+              &:hover { background: rgba(255, 255, 255, 0.2) }
+              &.aplayer-list-light
+                background: rgba(255, 255, 255, 0.3);
+                padding: 15px 15px;
+                span.aplayer-list-title { font-weight: bolder; }
+                .aplayer-list-cur { display: none }
             span
-              color var(--anzhiyu-white)
-              &.aplayer-list-author
-                opacity 0.6
+              color: var(--font-color);
+              &.aplayer-list-author { opacity: 0.6; margin-left: 8px }
 
-
+// 移动端适配（同步修正遮挡问题，列表不设置800px，保持原有适配）
 @media screen and (max-width: 768px)
   body[data-type="music"]
-    #rightside
-      display none
-    #content-inner,#page
-      z-index auto
+    #rightside { display: none }
+    #content-inner,#page { z-index: auto }
   #anMusic-page
     meting-js 
       .aplayer
+        height: calc(100vh - 100px);
+        flex-direction: column !important;
+        // 移动端列表 - 紧贴进度条
         .aplayer-list
-          position fixed
-          z-index 1002
-          width 100%
-          bottom -88%
-          left 0
-          background var(--sidebar-bg)
-          height auto
-          border-radius 15px 15px 0px 0px
-          padding 15px 0px
-          &.aplayer-list-hide
-            bottom 0% !important
+          position: fixed !important;
+          z-index: 1002;
+          width: 100%;
+          bottom: 80px !important; /* 下移至进度条上方，紧贴 */
+          left: 0;
+          background: var(--sidebar-bg);
+          height: 50vh !important; /* 变长，占50%屏幕 */
+          border-radius: 15px 15px 0 0;
+          padding: 15px 10px !important;
+          margin: 0;
+          &.aplayer-list-hide { bottom: 0% !important }
           ol
-            max-height 60vh !important
-            padding-right 0px
+            height: 100% !important;
+            padding: 0;
             & > li
-              display flex
-              margin 0 10px
+              display: flex;
+              align-items: center;
+              margin: 0 10px;
+              background: transparent;
+              padding: 12px 15px !important;
               span
-                color var(--font-color)
+                color: var(--font-color);
                 &.aplayer-list-title
-                  width 30%
-                  max-width 55%
-                  width auto
-                  display -webkit-box
-                  -webkit-line-clamp 1
-                  overflow hidden
-                  -webkit-box-orient vertical
+                  width: auto;
+                  max-width: 60%;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  overflow: hidden;
+                  -webkit-box-orient: vertical;
                 &.aplayer-list-author
-                  position absolute
-                  right 10px
-                  width auto
-                  max-width 35%
-                  display -webkit-box
-                  -webkit-line-clamp 1
-                  overflow hidden
-                  -webkit-box-orient vertical
+                  position: absolute;
+                  right: 20px;
+                  max-width: 30%;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  overflow: hidden;
+                  -webkit-box-orient: vertical;
               &.aplayer-list-light
-                background #33a673
-                padding 5px 20px
-                border-radius 10px
-                span
-                  color #fff
-                  &.aplayer-list-author
-                    right 15px
+                background: var(--anzhiyu-main);
+                padding: 12px 20px !important;
+                border-radius: 10px;
+                span { color: #fff }
+        // 移动端歌词区域 - 不挡进度条
         .aplayer-body
-          width 100%
-          position fixed
-          margin auto
-          left 0
-          right 0
-          top 100px
+          width: 100%
+          height: 100% !important;
+          padding-bottom: 100px !important;
+          position: fixed;
+          top: 80px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          .aplayer-pic { width: 150px; height: 150px; margin-top: 0 }
           .aplayer-info
+            height: calc(100% - 150px);
+            .aplayer-music { padding: 0; margin: 10px 0 }
+            .aplayer-music .aplayer-author, .aplayer-music .aplayer-title { font-size: 1.5rem }
             .aplayer-lrc
-              margin-top 40px
-              height auto
-              max-height 200%
-              min-height 100%
-              mask-image linear-gradient(to bottom, #000, #000, #000, #000, #0000, #0000)
-              p
-                &.aplayer-lrc-current
-                  color #33a673
+              height: calc(100% - 30px) !important;
+              p { 
+                font-size: 18px; 
+                line-height: 32px !important; 
+                height: 32px !important;
+                &.aplayer-lrc-current {
+                  // 移动端同样修复文字阴影语法
+                  text-shadow: '0 0 10px rgba(var(--anzhiyu-main-rgb), 0.3)';
+                }
+              }
             .aplayer-controller
-              width 100%
-              bottom 100px
-              .aplayer-volume-wrap
-                left -66px
-                .aplayer-volume-bar-wrap
-                  bottom 0px
-                  right 7px
-              .aplayer-bar-wrap
-                margin 0 30px
-            .aplayer-controller
+              bottom: 20px !important;
+              z-index: 9999;
+              width: 100%;
+              .aplayer-bar-wrap { margin: 0 20px }
               .aplayer-time
-                bottom -40px
+                bottom: -40px;
                 .aplayer-time-inner
-                  position absolute
-                  width 100%
-                  margin-right 0
-                  margin-top -33px
-                  .aplayer-dtime
-                    position absolute
-                    right 30px
-                  .aplayer-ptime
-                    position absolute
-                    left 35px
-                .aplayer-icon-back
-                  margin auto
-                  right 110px
-                .aplayer-icon-play
-                  margin auto
-                  right 0
-                  left 0
-                .aplayer-icon-forward
-                  margin auto
-                  left 110px
-                  right 0
-                .aplayer-icon-order
-                  position absolute
-                  left 22px
-                .aplayer-icon-loop
-                  position absolute
-                  right 25px
+                  width: 100%;
+                  margin-right: 0;
+                  margin-top: -33px;
+                  .aplayer-dtime { right: 20px }
+                  .aplayer-ptime { left: 20px }
+                .aplayer-icon-back { right: 100px }
+                .aplayer-icon-play { left: 0; right: 0; margin: auto }
+                .aplayer-icon-forward { left: 100px }
+                .aplayer-icon-order { left: 20px }
+                .aplayer-icon-loop { right: 20px }
                 .aplayer-icon-menu
-                  display inline
-                  position absolute
-                  right 25px
-                  top -90px
-
-      
+                  display: inline;
+                  position: absolute;
+                  right: 20px;
+                  top: -70px;
