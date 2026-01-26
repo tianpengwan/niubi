@@ -6,8 +6,15 @@ aside: false
 ---
 
 
-> 给博客装上了`小空调`，快来试试吧~
-<link rel="stylesheet" type="text/css" href="/themes/anzhiyu/source/css/air.css">
-<iframe height="720"  width="100%" src="https://air.asteroid-qiao.top/" scrolling="no" border="0" frameborder="no" framespacing="0" ></iframe>
+> 终于为博客安装上了便携小空调
 
+<style>
+.copyright-box a {
+  border-bottom: none !important;
+  padding: 0 !important;
+}
+</style>
+
+<div id="air-conditioner-vue"></div>
+<script defer data-pjax src='https://npm.elemecdn.com/anzhiyu-air-conditioner@1.0.1/index.3f125bc6.js'></script>
 
