@@ -1262,6 +1262,7 @@ inject:
     - <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   bottom:
     - <script src="/js/livephoto.js"></script>
+    - <script src="/js/friends-api.js"></script>
     - <script src="/js/csh.js"></script>
     - <script src="/js/qrcode.min.js"></script>
     - <script src="/custom/js/chineselunar.js"></script>
