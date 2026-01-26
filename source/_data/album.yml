@@ -70,6 +70,12 @@
   top_link: /imgs
   top_btn_text: 返回
   album_list:
+    - date: 2026/1/26 12:00:00
+      content: 好冷🥶
+      address: 四川泸州叙永
+      from: xiebro干饭饭
+      image:
+        - https://cftcr2.20010501.xyz/PicHoro/P20260126-090715.webp
     - date: 2025/1/20 12:00:00
       content: 好冷🥶
       address: 重庆万州
