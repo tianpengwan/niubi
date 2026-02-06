@@ -6,7 +6,7 @@ cover: https://cftcr2.20010501.xyz/PicHoro/1770383872210.webp
 date: '2026-02-06T21:00:15.361246+08:00'
 tags: []
 title: 更换vercel部署的Waline存储服务到TiDB
-updated: '2026-02-06T21:00:18.044+08:00'
+updated: '2026-02-06T21:44:50.101+08:00'
 ---
 # 首先登录导出.json的评论数据
 
@@ -20,7 +20,9 @@ updated: '2026-02-06T21:00:18.044+08:00'
 
 **TIDB_USER:TiDB数据库的用户名**
 
-**TIDB_PASSWORD:TiDB数据库的密码TIDB_HOST:127.0.0.1**
+**TIDB_PASSWORD:TiDB数据库的密码**
+
+**TIDB_HOST:127.0.0.1**
 
 **TIDB_PORT:4000**
 
