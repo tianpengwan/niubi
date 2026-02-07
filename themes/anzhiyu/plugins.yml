@@ -35,14 +35,18 @@ twikoo:
 waline_js:
   name: "@waline/client"
   file: dist/waline.js
-  other_name: Waline
-  version: 3.8.0
+  other_name: waline
+  version: 2.15.5
 waline_css:
   name: "@waline/client"
   file: dist/waline.css
   other_name: waline
-  version: 3.8.0
-# waline_meta_css:  # v3已移除waline-meta.css，合并到waline.css，必须删掉这行
+  version: 2.15.5
+waline_meta_css:
+  name: "@waline/client"
+  file: dist/waline-meta.css
+  other_name: waline
+  version: 2.15.5
 sharejs:
   name: butterfly-extsrc
   file: sharejs/dist/js/social-share.min.js
