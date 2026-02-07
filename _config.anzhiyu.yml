@@ -1312,8 +1312,8 @@ CDN:
   # blueimp_md5:
   # valine:
   # twikoo:
-  # waline_js:
-  # waline_css:
+   waline_js:https://unpkg.com/@waline/client@3.8.0/dist/waline.js
+   waline_css:https://unpkg.com/@waline/client@3.8.0/dist/waline.css
   # sharejs:
   # sharejs_css:
   # mathjax:
