@@ -32,21 +32,18 @@ twikoo:
   name: twikoo
   file: dist/twikoo.all.min.js
   version: 1.6.21
+# 替换你的yaml配置（版本3.8.0）
 waline_js:
   name: "@waline/client"
-  file: dist/waline.js
-  other_name: waline
-  version: 2.15.5
+  file: dist/index.umd.js  # v3入口变了，不是waline.js
+  other_name: Waline        # v3全局变量是Waline（大写W），不是waline
+  version: 3.8.0
 waline_css:
   name: "@waline/client"
   file: dist/waline.css
   other_name: waline
-  version: 2.15.5
-waline_meta_css:
-  name: "@waline/client"
-  file: dist/waline-meta.css
-  other_name: waline
-  version: 2.15.5
+  version: 3.8.0
+# waline_meta_css:  # v3已移除waline-meta.css，合并到waline.css，必须删掉这行
 sharejs:
   name: butterfly-extsrc
   file: sharejs/dist/js/social-share.min.js
