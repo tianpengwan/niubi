@@ -1,3 +1,4 @@
+/* ========== 你原有侧边卡片样式（保留） ========== */
 .card-widget.card-info {
     background: url(https://ghtpdl.20010501.xyz/tptp/fluid.png) center/cover no-repeat !important;
 }
@@ -5,4 +6,82 @@
 #aside-content > .card-widget.card-info::before {
     background-image: linear-gradient(-25deg, hsl(204deg 100% 50% / 45%), hsl(36.71deg 100% 50% / 45%), hsl(204deg 100% 50% / 45%), hsl(36.71deg 100% 50% / 45%));
     backdrop-filter: blur(5px);
+}
+
+/* ========== Waline 全局CSS变量覆盖（适配你的卡片配色） ========== */
+:root {
+    /* 基础颜色（沿用你卡片的蓝/橙主色调） */
+    --waline-white: #ffffff !important;
+    --waline-light-grey: #999999 !important;
+    --waline-dark-grey: #666666 !important;
+    --waline-black: #333333 !important;
+
+    /* 背景色（适配卡片的半透明模糊风格） */
+    --waline-bgcolor: rgba(255, 255, 255, 0.9) !important;
+    --waline-bgcolor-light: rgba(255, 255, 255, 0.8) !important;
+    --waline-hover-bgcolor: rgba(255, 255, 255, 0.95) !important;
+
+    /* 边框色（浅蓝，呼应你的渐变） */
+    --waline-border-color: rgba(0, 160, 255, 0.2) !important;
+    --waline-disable-bgcolor: rgba(245, 249, 255, 0.8) !important;
+
+    /* 主题色（完全复用你卡片的蓝/橙渐变主色） */
+    --waline-theme-color: hsl(204deg 100% 50%) !important; /* 你的蓝色 */
+    --waline-active-color: hsl(36.71deg 100% 50%) !important; /* 你的橙色 */
+
+    /* 通知色（适配主色调） */
+    --waline-info-color: hsl(204deg 100% 50%) !important;
+    --waline-success-color: #52c41a !important;
+    --waline-warning-color: hsl(36.71deg 100% 50%) !important;
+    --waline-error-color: #ff4d4f !important;
+
+    /* 字体/布局（可选优化） */
+    --waline-font-size: 14px !important;
+    --waline-border-radius: 8px !important; /* 圆角，和卡片风格统一 */
+}
+
+/* ========== 暗黑模式下的Waline样式适配 ========== */
+[data-theme="dark"] {
+    /* 暗黑模式背景（深色半透明） */
+    --waline-bgcolor: rgba(18, 20, 23, 0.9) !important;
+    --waline-bgcolor-light: rgba(27, 30, 35, 0.8) !important;
+    --waline-hover-bgcolor: rgba(32, 35, 40, 0.95) !important;
+
+    /* 暗黑模式边框色（深灰+浅蓝） */
+    --waline-border-color: rgba(0, 160, 255, 0.3) !important;
+    --waline-disable-bgcolor: rgba(30, 30, 46, 0.8) !important;
+
+    /* 暗黑模式文字色 */
+    --waline-white: #222428 !important;
+    --waline-light-grey: #a9a9b3 !important;
+    --waline-dark-grey: #c9c9d2 !important;
+    --waline-black: #e5e5e8 !important;
+}
+
+/* ========== 额外优化：Waline评论区整体风格（和卡片统一） ========== */
+#waline {
+    border-radius: 12px !important; /* 和你的卡片圆角呼应 */
+    box-shadow: 0 2px 12px rgba(0, 160, 255, 0.1) !important; /* 浅阴影，贴合卡片风格 */
+    padding: 16px !important;
+    margin: 20px auto !important;
+    backdrop-filter: blur(5px) !important; /* 和你的卡片模糊效果统一 */
+}
+
+/* 评论输入框样式优化（可选） */
+#waline .wl-editor-container {
+    border: 1px solid var(--waline-border-color) !important;
+    border-radius: var(--waline-border-radius) !important;
+    background: var(--waline-bgcolor-light) !important;
+}
+
+/* 评论按钮样式（适配你的渐变主色） */
+#waline .wl-submit {
+    background: linear-gradient(90deg, hsl(204deg 100% 50%), hsl(36.71deg 100% 50%)) !important;
+    border: none !important;
+    color: white !important;
+    border-radius: var(--waline-border-radius) !important;
+}
+
+#waline .wl-submit:hover {
+    opacity: 0.9 !important;
 }
