@@ -36,7 +36,7 @@ waline_js:
   name: "@waline/client"
   file: dist/waline.js
   other_name: waline
-  version: 2.15.5
+  version: 3.8.0
 waline_css:
   name: "@waline/client"
   file: dist/waline.css
