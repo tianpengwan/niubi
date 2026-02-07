@@ -1,76 +1,216 @@
 :root {
-    /* 基础颜色（沿用你卡片的蓝/橙主色调） */
-    --waline-white: #ffffff !important;
-    --waline-light-grey: #999999 !important;
-    --waline-dark-grey: #666666 !important;
-    --waline-black: #333333 !important;
-
-    /* 背景色（适配卡片的半透明模糊风格） */
-    --waline-bgcolor: rgba(255, 255, 255, 0.9) !important;
-    --waline-bgcolor-light: rgba(255, 255, 255, 0.8) !important;
-    --waline-hover-bgcolor: rgba(255, 255, 255, 0.95) !important;
-
-    /* 边框色（浅蓝，呼应你的渐变） */
-    --waline-border-color: rgba(0, 160, 255, 0.2) !important;
-    --waline-disable-bgcolor: rgba(245, 249, 255, 0.8) !important;
-
-    /* 主题色（完全复用你卡片的蓝/橙渐变主色） */
-    --waline-theme-color: hsl(204deg 100% 50%) !important; /* 你的蓝色 */
-    --waline-active-color: hsl(36.71deg 100% 50%) !important; /* 你的橙色 */
-
-    /* 通知色（适配主色调） */
-    --waline-info-color: hsl(204deg 100% 50%) !important;
-    --waline-success-color: #52c41a !important;
-    --waline-warning-color: hsl(36.71deg 100% 50%) !important;
-    --waline-error-color: #ff4d4f !important;
-
-    /* 字体/布局（可选优化） */
-    --waline-font-size: 14px !important;
-    --waline-border-radius: 8px !important; /* 圆角，和卡片风格统一 */
+  /* 主题色 */
+  --waline-theme-color: #3b82f6; 
+  --waline-active-color: #2563eb;
+  
+  /* 基础布局 */
+  --waline-color: #333;
+  --waline-bgcolor: #fff;
+  --waline-bgcolor-light: #f8f9fa;
+  --waline-font-size: 16px;
+  --waline-avatar-size: 3.25rem;
+  --waline-m-width: 720px;
 }
 
-/* ========== 暗黑模式下的Waline样式适配 ========== */
-[data-theme="dark"] {
-    /* 暗黑模式背景（深色半透明） */
-    --waline-bgcolor: rgba(18, 20, 23, 0.9) !important;
-    --waline-bgcolor-light: rgba(27, 30, 35, 0.8) !important;
-    --waline-hover-bgcolor: rgba(32, 35, 40, 0.95) !important;
 
-    /* 暗黑模式边框色（深灰+浅蓝） */
-    --waline-border-color: rgba(0, 160, 255, 0.3) !important;
-    --waline-disable-bgcolor: rgba(30, 30, 46, 0.8) !important;
-
-    /* 暗黑模式文字色 */
-    --waline-white: #222428 !important;
-    --waline-light-grey: #a9a9b3 !important;
-    --waline-dark-grey: #c9c9d2 !important;
-    --waline-black: #e5e5e8 !important;
+/* 亮色模式下的禁用按钮 */
+html.light .wl-btn:disabled {
+  border-color: var(--waline-border-color);
+  background: #bfbfbf;
+  color: var(--waline-disable-color);
+  cursor: not-allowed;
 }
 
-/* ========== 额外优化：Waline评论区整体风格（和卡片统一） ========== */
-#waline {
-    border-radius: 12px !important; /* 和你的卡片圆角呼应 */
-    box-shadow: 0 2px 12px rgba(0, 160, 255, 0.1) !important; /* 浅阴影，贴合卡片风格 */
-    padding: 16px !important;
-    margin: 20px auto !important;
-    backdrop-filter: blur(5px) !important; /* 和你的卡片模糊效果统一 */
+/* ==========================================================================
+   3. Waline 暗色模式 (核心 UI)
+   ========================================================================== */
+html.dark {
+  /* --- 3.1 基础色彩 --- */
+  --waline-bgcolor: #1e1e2e;          /* 整体背景 */
+  --waline-color: #ffffff;            /* 主文字 */
+  --waline-border-color: #404344;     /* 边框/按钮 */
+  
+  /* --- 3.2 核心区域 (统一深灰 #1E1F20 以实现无缝感) --- */
+  --waline-editor-bg: #1E1F20;        /* 输入框 */
+  --waline-toolbar-bg: #1E1F20;       /* 工具栏 */
+  --waline-info-bg-color: #1E1F20;    /* 信息栏 */
+  
+  /* --- 3.3 交互色 --- */
+  --waline-bgcolor-hover: #17181a;
+  --waline-bgcolor-light: #1b1c1d;
 }
 
-/* 评论输入框样式优化（可选） */
-#waline .wl-editor-container {
-    border: 1px solid var(--waline-border-color) !important;
-    border-radius: var(--waline-border-radius) !important;
-    background: var(--waline-bgcolor-light) !important;
+/* ==========================================================================
+   4. 组件精细化样式 (覆盖默认样式)
+   ========================================================================== */
+
+/* --- 4.1 输入框与工具栏 (无缝拼接) --- */
+
+
+html.dark .wl-editor {
+  background-color: var(--waline-editor-bg) !important;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none; /* 去除分割线 */
 }
 
-/* 评论按钮样式（适配你的渐变主色） */
-#waline .wl-submit {
-    background: linear-gradient(90deg, hsl(204deg 100% 50%), hsl(36.71deg 100% 50%)) !important;
-    border: none !important;
-    color: white !important;
-    border-radius: var(--waline-border-radius) !important;
+html.dark .wl-editor::placeholder {
+  color: #666e7a !important;
 }
 
-#waline .wl-submit:hover {
-    opacity: 0.9 !important;
+html.dark .wl-footer {
+  background-color: var(--waline-toolbar-bg) !important;
+  padding: 8px 12px;
+  margin-top: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
+
+html.dark .wl-panel {
+  background-color: #1E1F20 !important; /* 填补间隙 */
+  border-color: #1E1F20 !important;
+}
+
+/* --- 4.2 交互状态 (Focus & Hover) --- */
+/* 信息填写框 */
+html.dark .wl-input:focus {
+  background-color: #222324;}
+
+
+
+html.dark .wl-editor:focus {
+  background-color: #222324 !important; /* 聚焦微亮 */
+  outline: none;
+  border-color: var(--waline-theme-color) !important;
+  transition: background-color 0.3s ease;
+}
+
+html.dark .wl-panel:focus-within {
+  border-color: var(--waline-theme-color) !important;
+}
+
+/* --- 4.3 图标按钮 --- */
+html.dark .wl-action {
+  color: #a0a0a0 !important;
+}
+
+html.dark .wl-action:hover {
+  color: var(--waline-theme-color) !important;
+  background-color: transparent !important; /* 去除方框背景 */
+}
+
+/* --- 4.4 按钮样式 (禁用与管理) --- */
+html.dark .wl-btn:disabled {
+  border-color: var(--waline-border-color);
+  background: #2f3032;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+/* --- 4.5 弹窗 (Emoji/GIF) --- */
+/* 强制使用与输入框一致的 #1E1F20 */
+html.dark .wl-gif-popup,
+html.dark .wl-emoji-popup,
+html.dark .wl-tab-wrapper {
+  background-color: #1E1F20 !important; 
+  border-color: #1E1F20 !important;
+}
+
+/* ==========================================================================
+   5. 隐藏元素与特殊控件
+   ========================================================================== */
+
+/* 隐藏元数据 */
+.wl-card .wl-meta > span.wl-browser,
+.wl-card .wl-meta > span.wl-os,
+.wl-card .wl-meta > span.wl-sys,
+.wl-power { 
+  display: none !important;
+}
+
+/* 登出按钮 (悬停显示) */
+.wl-logout-btn {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.wl-header:hover .wl-logout-btn,
+.wl-user:hover .wl-logout-btn,
+.wl-login-info:hover .wl-logout-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* ==========================================================================
+   6. 布局修复 (桌面端昵称)
+   ========================================================================== */
+@media (min-width: 768px) {
+  .wl-login-info {
+    max-width: 120px !important;
+    width: auto !important;
+  }
+
+  .wl-login-info .wl-login-nick {
+    white-space: nowrap !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* ==========================================================================
+     8. [新增] 评论列表卡片化美化
+     ========================================================================== */
+
+
+/* 8.1 基础样式 + 亮色模式颜色 */
+  /* 修正：使用 .wl-card-item 类名 */
+  #waline .wl-card-item {
+    /* [亮色模式] 背景颜色：纯白 */
+    background: #ffffff !important; 
+    
+    /* 共享样式 */
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--waline-border-color);
+    border-radius: var(--waline-border-radius);
+    
+    /* --- 核心：丝滑动画配置 --- */
+    /* 使用 Material Design 贝塞尔曲线：快速响应，缓慢停止 */
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+                box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+                border-color 0.3s ease;
+    
+    /* 性能优化：启用 GPU 加速 */
+    will-change: transform, box-shadow;
+  }
+
+  /* 8.2 [暗色模式] 颜色覆盖 */
+  html.dark #waline .wl-card-item {
+    /* [暗色模式] 背景颜色 */
+    background: #1E1F20 !important; 
+    border-color: #404344 !important;
+  }
+
+  /* 8.3 鼠标悬停效果 (亮色模式) */
+  #waline .wl-card-item:hover {
+    /* 稍微加大一点上浮距离，配合丝滑曲线会很有质感 */
+    transform: translateY(-4px); 
+    
+    /* 更加柔和扩散的双层阴影 */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 8px 10px -6px rgba(0, 0, 0, 0.1);
+                
+    border-color: var(--waline-theme-color) !important;
+    z-index: 1; /* 浮起时在最上层 */
+  }
+
+  /* 8.4 暗色模式下的悬停阴影 (加深浓度，制造发光感) */
+  html.dark #waline .wl-card-item:hover {
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5); 
+  }
