@@ -1,8 +1,8 @@
 ---
-abbrlink: ''
+abbrlink: a81d
 categories:
-- - 技术教程
-cover: https://cftcr2.20010501.xyz/PicHoro/1770384176318.webp
+  - - 技术教程
+cover: 'https://cftcr2.20010501.xyz/PicHoro/1770384176318.webp'
 date: '2026-01-27T21:30:11.636019+08:00'
 tags: []
 title: 解决使能IPv6防火墙控制转发报文无法关闭

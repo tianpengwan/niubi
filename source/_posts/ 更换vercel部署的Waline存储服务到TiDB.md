@@ -1,8 +1,8 @@
 ---
-abbrlink: ''
+abbrlink: '9895'
 categories:
-- - 技术教程
-cover: https://cftcr2.20010501.xyz/PicHoro/1770383872210.webp
+  - - 技术教程
+cover: 'https://cftcr2.20010501.xyz/PicHoro/1770383872210.webp'
 date: '2026-02-06T21:00:15.361246+08:00'
 tags: []
 title: 更换vercel部署的Waline存储服务到TiDB
