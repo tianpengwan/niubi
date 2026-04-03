@@ -41,6 +41,9 @@ nav:
         - name: 管理
           link: https://hexoadmin.20010501.xyz/
           icon: https://s2.loli.net/2024/08/25/sFHO2tV5SjWPvnB.png
+        - name: 主页
+          link: https://20010501.xyz/
+          icon: https://cftcr2.20010501.xyz/PicHoro/mmexport1775041194615.webp
 
     - title: ipv6媒体服务器
       item:
