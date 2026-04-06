@@ -408,9 +408,7 @@ waline:
   login: enable
   bg: /img/lazyload9.webp
   pageview: false
-  meta: true
-  turnstile: false
-  captcha: true
+  meta: false
   imageUploader: true
   option:
 
