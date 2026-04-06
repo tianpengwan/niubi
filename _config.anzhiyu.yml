@@ -411,7 +411,7 @@ waline:
   meta: false
   imageUploader: true
   option:
-    reaction: ['👍', '❤️', '🔥', '💯', '👏', '🤣']
+    reaction: true
 
 
 # Chat Services
