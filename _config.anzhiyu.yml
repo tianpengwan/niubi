@@ -405,6 +405,7 @@ valine:
 # waline
 waline:
   serverURL: https://pl.20010501.xyz/
+  login: enable
   bg: /img/lazyload9.webp
   pageview: false
   meta: false
