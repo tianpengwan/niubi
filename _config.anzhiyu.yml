@@ -408,6 +408,7 @@ waline:
   bg: /img/lazyload9.webp
   pageview: false
   meta: false
+  turnstile: true
   imageUploader: true
   option:
 
