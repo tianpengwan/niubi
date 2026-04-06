@@ -410,8 +410,8 @@ waline:
   pageview: false
   meta: false
   imageUploader: true
-  reaction: true
-
+  option:
+    reaction: ['👍', '❤️', '🔥', '💯', '👏', '🤣']
 
 
 # Chat Services
