@@ -410,9 +410,7 @@ waline:
   pageview: false
   meta: false
   imageUploader: true
-  reaction: true
   reaction: ['👍', '❤️', '🔥', '💯', '👏', '🤣']
-  option:
 
 
 
