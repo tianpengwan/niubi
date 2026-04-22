@@ -6,14 +6,9 @@ cover: https://cftcr2.20010501.xyz/PicHoro/1776883429584(1)(1).webp
 date: '2026-04-23T01:58:29.341989+08:00'
 tags: []
 title: 用CloudflareWorker+D1数据库搭建MoonTVPlus
-updated: '2026-04-23T02:45:28.481+08:00'
+updated: '2026-04-23T02:57:42.247+08:00'
 ---
-<div align="center">
-<img src="https://cftcr2.20010501.xyz/PicHoro/S60423-02322258_mark.webp" width="24%">
-<img src="https://cftcr2.20010501.xyz/PicHoro/S60423-02323987_mark.webp" width="24%">
-<img src="https://cftcr2.20010501.xyz/PicHoro/S60423-02331112_mark.webp" width="24%">
-<img src="https://cftcr2.20010501.xyz/PicHoro/S60423-02340597_mark.webp" width="24%">
-</div>
+![S60423-02584580_mark.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-02584580_mark.webp)
 
 # 一、准备工作
 
