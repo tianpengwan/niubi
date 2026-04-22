@@ -37,6 +37,8 @@ updated: '2026-04-23T02:05:31.235+08:00'
 
 点击 创建。
 
+![S60423-01471120_mark.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01471120_mark.webp)
+
 ##### 4. 进入数据库详情页，复制两个关键信息（后面要用）：
 
 Database ID （页面里的 UUID）
@@ -51,6 +53,7 @@ Database ID （页面里的 UUID）
 
 ##### 3. 配置权限：添加D1数据库
 
+![S60423-01500673_mark.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01500673_mark.webp)
 
 ##### 4. 账户资源选择：包括 → 所有账户
 
@@ -63,6 +66,8 @@ Database ID （页面里的 UUID）
 ##### 2. 点击上方 Settings（设置） → 左侧菜单 Secrets and variables → Actions。
 
 ##### 3. 点击 New repository secret，按下面列表逐个添加：
+
+![S60423-01413609_com.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01413609_com.webp)
 
 ```
 # 必填
