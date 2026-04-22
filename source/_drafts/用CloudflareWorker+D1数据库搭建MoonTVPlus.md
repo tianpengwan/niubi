@@ -88,6 +88,8 @@ WATCH_ROOM_EXTERNAL_SERVER_AUTH=
 
 #  六、通过 GitHub Actions 部署到 Cloudflare
 
+![S60423-01420374_com.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01420374_com.webp)
+
 ##### 1. 回到你 Fork 的仓库页面，点击上方 Actions。
 
 ##### 2. 你会看到  Deploy to Cloudflare  工作流，点击它。
