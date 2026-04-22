@@ -7,6 +7,14 @@ tags: []
 title: 用CloudflareWorker+D1数据库搭建MoonTVPlus
 updated: '2026-04-23T02:05:31.235+08:00'
 ---
+<div align="center">
+<img src="https://cftcr2.20010501.xyz/PicHoro/S60423-02322258_mark.webp" width="24%">
+<img src="https://cftcr2.20010501.xyz/PicHoro/S60423-02323987_mark.webp" width="24%">
+<img src="https://cftcr2.20010501.xyz/PicHoro/S60423-02331112_mark.webp" width="24%">
+<img src="https://cftcr2.20010501.xyz/PicHoro/S60423-02340597_mark.webp" width="24%">
+</div>
+
+
 # 一、准备工作
 
 你需要准备好这些账号/信息：
