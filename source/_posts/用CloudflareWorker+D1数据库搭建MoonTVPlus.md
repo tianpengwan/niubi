@@ -6,7 +6,7 @@ cover: https://cftcr2.20010501.xyz/PicHoro/1776883429584(1)(1).webp
 date: '2026-04-23T01:58:29.341989+08:00'
 tags: []
 title: 用CloudflareWorker+D1数据库搭建MoonTVPlus
-updated: '2026-04-23T08:48:23.851+08:00'
+updated: '2026-04-23T08:56:01.645+08:00'
 ---
 ![S60423-02584580_mark.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-02584580_mark.webp)
 
@@ -40,15 +40,15 @@ updated: '2026-04-23T08:48:23.851+08:00'
 
 点击 创建。
 
-[[![S60423-01471120_mark.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01471120_mark.webp)](https://cftcr2.20010501.xyz/PicHoro/S60423-01500673_mark.webp)](https://cftcr2.20010501.xyz/PicHoro/S60423-01500673_mark.webp)
+![S60423-01500673_mark.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01500673_mark.webp)
 
 ##### 4. 进入数据库详情页，复制两个关键信息（后面要用）：
 
 Database ID （页面里的 UUID）
 
- Account ID （CF账户ID 主页可查看）
+Account ID （CF账户ID 主页可查看）
 
-#  四、创建 Cloudflare API Token
+# 四、创建 Cloudflare API Token
 
 ##### 1. 在 Cloudflare 控制台，点击右上角你的头像 → 我的资料 → API 令牌。
 
@@ -62,7 +62,7 @@ Database ID （页面里的 UUID）
 
 ##### 5. 点击 继续以显示摘要 → 创建令牌，复制生成的 Token（只显示一次，务必保存）。
 
-#  五、配置 GitHub Secrets（环境变量）
+# 五、配置 GitHub Secrets（环境变量）
 
 ##### 1. 进入你 Fork 的  你的用户名/MoonTVPlus  仓库页面。
 
@@ -88,7 +88,7 @@ WATCH_ROOM_EXTERNAL_SERVER_URL=
 WATCH_ROOM_EXTERNAL_SERVER_AUTH=
 ```
 
-#  六、通过 GitHub Actions 部署到 Cloudflare
+# 六、通过 GitHub Actions 部署到 Cloudflare
 
 ![S60423-01420374_com.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01420374_com.webp)
 
@@ -99,4 +99,3 @@ WATCH_ROOM_EXTERNAL_SERVER_AUTH=
 ##### 3. 点击右侧 Run workflow → 选择  main  分支 → 点击 Run workflow 触发部署。
 
 ##### 4. 等待部署完成（约 2-3 分钟），状态显示 ✅ 绿色对勾就是成功了。
-
