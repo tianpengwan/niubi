@@ -40,7 +40,7 @@ updated: '2026-04-23T08:56:01.645+08:00'
 
 点击 创建。
 
-![S60423-01500673_mark.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01500673_mark.webp)
+![S60423-01471120_mark.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01471120_mark.webp)
 
 ##### 4. 进入数据库详情页，复制两个关键信息（后面要用）：
 
@@ -55,8 +55,6 @@ Account ID （CF账户ID 主页可查看）
 ##### 2. 点击 创建令牌，选择 Workers模版。
 
 ##### 3. 配置权限：添加D1数据库
-
-![S60423-01500673_mark.webp](https://cftcr2.20010501.xyz/PicHoro/S60423-01500673_mark.webp)
 
 ##### 4. 账户资源选择：包括 → 所有账户
 
