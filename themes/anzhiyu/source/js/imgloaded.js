@@ -59,17 +59,17 @@
   
     const ldconfig = {
       light: {
-        smallSrc: 'https://t.alcy.cc/pc/', //浅色模式 小图链接 尽可能配置小于100k的图片
-        largeSrc: 'https://t.alcy.cc/pc/', //浅色模式 大图链接 最终显示的图片
-        mobileSmallSrc: 'https://t.alcy.cc/pc/', //手机端浅色小图链接 尽可能配置小于100k的图片
-        mobileLargeSrc: 'https://t.alcy.cc/pc/', //手机端浅色大图链接 最终显示的图片
+        smallSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.webp', //浅色模式 小图链接 尽可能配置小于100k的图片
+        largeSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.webp', //浅色模式 大图链接 最终显示的图片
+        mobileSmallSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.webp', //手机端浅色小图链接 尽可能配置小于100k的图片
+        mobileLargeSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.webp', //手机端浅色大图链接 最终显示的图片
         enableRoutes: ['/'],
         },
       dark: {
-        smallSrc: 'https://t.alcy.cc/pc/', //深色模式 小图链接 尽可能配置小于100k的图片 
-        largeSrc: 'https://t.alcy.cc/pc/', //深色模式 大图链接 最终显示的图片
-        mobileSmallSrc: 'https://t.alcy.cc/pc/', //手机端深色模式小图链接 尽可能配置小于100k的图片
-        mobileLargeSrc: 'https://t.alcy.cc/pc/', //手机端深色大图链接 最终显示的图片
+        smallSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.webp', //深色模式 小图链接 尽可能配置小于100k的图片 
+        largeSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.webp', //深色模式 大图链接 最终显示的图片
+        mobileSmallSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.webp', //手机端深色模式小图链接 尽可能配置小于100k的图片
+        mobileLargeSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.webp', //手机端深色大图链接 最终显示的图片
         enableRoutes: ['/'],
         },
       };
