@@ -1049,7 +1049,7 @@ pangu:
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: true
-  field: site # site/post
+  field: post # site/post
   placeholder:
   blur: true
   progressive: true
