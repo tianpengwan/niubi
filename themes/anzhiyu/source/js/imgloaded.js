@@ -40,17 +40,17 @@
   // ========== 在这里修改你的图片地址 ==========
   const ldconfig = {
     light: {
-      smallSrc: '/img/bg-light-s.jpg',    // 浅色 模糊小图
-      largeSrc: '/img/bg-light.jpg',      // 浅色 高清大图
-      mobileSmallSrc: '/img/bg-m-light-s.jpg', // 手机浅色小图
-      mobileLargeSrc: '/img/bg-m-light.jpg',   // 手机浅色大图
+      smallSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png',    // 浅色 模糊小图
+      largeSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png',      // 浅色 高清大图
+      mobileSmallSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png', // 手机浅色小图
+      mobileLargeSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png',   // 手机浅色大图
       enableRoutes: ['/'] // 仅首页生效
     },
     dark: {
-      smallSrc: '/img/bg-dark-s.jpg',
-      largeSrc: '/img/bg-dark.jpg',
-      mobileSmallSrc: '/img/bg-m-dark-s.jpg',
-      mobileLargeSrc: '/img/bg-m-dark.jpg',
+      smallSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png',
+      largeSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png',
+      mobileSmallSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.pngg',
+      mobileLargeSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png',
       enableRoutes: ['/']
     }
   };
