@@ -1,85 +1,130 @@
-// 首页一图流渐进加载
+// 首页一图流加载优化
+/**
+ * @description 实现medium的渐进加载背景的效果
+ */
 (function() {
-  class ProgressiveLoad {
-    constructor(smallSrc, largeSrc) {
-      this.smallSrc = smallSrc;
-      this.largeSrc = largeSrc;
-      this.initTpl();
-      this.container.addEventListener('animationend', () => {
-        this.smallStage.style.display = 'none';
-      }, {once: true});
+    class ProgressiveLoad {
+      constructor(smallSrc, largeSrc) {
+        this.smallSrc = smallSrc;
+        this.largeSrc = largeSrc;
+        this.initTpl();
+        this.container.addEventListener('animationend', () => {
+          this.smallStage.style.display = 'none'; 
+        }, {once: true});
+      }
+  
+      initTpl() {
+        this.container = document.createElement('div');
+        this.smallStage = document.createElement('div');
+        this.largeStage = document.createElement('div');
+        this.smallImg = new Image();
+        this.largeImg = new Image();
+        this.container.className = 'pl-container';
+        this.smallStage.className = 'pl-img pl-blur';
+        this.largeStage.className = 'pl-img';
+        this.container.appendChild(this.smallStage);
+        this.container.appendChild(this.largeStage);
+        this.smallImg.onload = this._onSmallLoaded.bind(this);
+        this.largeImg.onload = this._onLargeLoaded.bind(this);
+      }
+  
+      progressiveLoad() {
+        this.smallImg.src = this.smallSrc;
+        this.largeImg.src = this.largeSrc;
+      }
+  
+      _onLargeLoaded() {
+        this.largeStage.classList.add('pl-visible');
+        this.largeStage.style.backgroundImage = `url('${this.largeSrc}')`;
+      }
+  
+      _onSmallLoaded() {
+        this.smallStage.classList.add('pl-visible');
+        this.smallStage.style.backgroundImage = `url('${this.smallSrc}')`;
+      }
     }
-    initTpl() {
-      this.container = document.createElement('div');
-      this.smallStage = document.createElement('div');
-      this.largeStage = document.createElement('div');
-      this.smallImg = new Image();
-      this.largeImg = new Image();
-      this.container.className = 'pl-container';
-      this.smallStage.className = 'pl-img pl-blur';
-      this.largeStage.className = 'pl-img';
-      this.container.appendChild(this.smallStage);
-      this.container.appendChild(this.largeStage);
-      this.smallImg.onload = this._onSmallLoaded.bind(this);
-      this.largeImg.onload = this._onLargeLoaded.bind(this);
-      this.smallImg.src = this.smallSrc;
-      this.largeImg.src = this.largeSrc;
-    }
-    _onSmallLoaded() {
-      this.smallStage.style.backgroundImage = `url('${this.smallSrc}')`;
-    }
-    _onLargeLoaded() {
-      this.largeStage.style.backgroundImage = `url('${this.largeSrc}')`;
-      this.largeStage.classList.add('fade-in');
-    }
-    render(target) {
-      target.appendChild(this.container);
-    }
-  }
-
-  // ========== 在这里修改你的图片地址 ==========
-  const ldconfig = {
-    light: {
-      smallSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png',    // 浅色 模糊小图
-      largeSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png',      // 浅色 高清大图
-      mobileSmallSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png', // 手机浅色小图
-      mobileLargeSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png',   // 手机浅色大图
-      enableRoutes: ['/'] // 仅首页生效
-    },
-    dark: {
-      smallSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png',
-      largeSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png',
-      mobileSmallSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.pngg',
-      mobileLargeSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png',
-      enableRoutes: ['/']
-    }
-  };
-
-  function getConfig() {
-    const htmlClass = document.documentElement.className;
-    const isDark = htmlClass.includes('dark');
-    const isMobile = window.innerWidth < 768;
-    const route = location.pathname;
-    const cfg = isDark ? ldconfig.dark : ldconfig.light;
-    if (!cfg.enableRoutes.includes(route)) return null;
-    return isMobile ? {
-      small: cfg.mobileSmallSrc,
-      large: cfg.mobileLargeSrc
-    } : {
-      small: cfg.smallSrc,
-      large: cfg.largeSrc
+  
+    const executeLoad = (config, target) => {
+      console.log('执行渐进背景替换');
+      const isMobile = window.matchMedia('(max-width: 767px)').matches;
+      const loader = new ProgressiveLoad(
+        isMobile ? config.mobileSmallSrc : config.smallSrc,
+        isMobile ? config.mobileLargeSrc : config.largeSrc
+      );
+      if (target.children[0]) {
+        target.insertBefore(loader.container, target.children[0]);
+      }
+      loader.progressiveLoad();
     };
-  }
-
-  function init() {
-    const cfg = getConfig();
-    if (!cfg) return;
-    const bannerDom = document.getElementById('page-header');
-    if (!bannerDom) return;
-    bannerDom.style.background = 'unset';
-    const loadIns = new ProgressiveLoad(cfg.small, cfg.large);
-    loadIns.render(bannerDom);
-  }
-  window.addEventListener('load', init);
-  document.addEventListener('pjax:complete', init);
-})();
+  
+    const ldconfig = {
+      light: {
+        smallSrc: 'https://lsky.mnchen.cn/i/2023/10/24/6536faa024dfa.jpg', //浅色模式 小图链接 尽可能配置小于100k的图片 
+        largeSrc: 'https://lsky.mnchen.cn/i/2023/10/24/6536faa024dfa.jpg', //浅色模式 大图链接 最终显示的图片
+        mobileSmallSrc: 'https://lsky.mnchen.cn/i/2023/10/24/6536faa024dfa.jpg', //手机端浅色小图链接 尽可能配置小于100k的图片
+        mobileLargeSrc: 'https://lsky.mnchen.cn/i/2023/10/24/6536faa024dfa.jpg', //手机端浅色大图链接 最终显示的图片
+        enableRoutes: ['/'],
+        },
+      dark: {
+        smallSrc: 'https://lsky.mnchen.cn/i/2023/11/10/654e3e6d29b3f.png', //深色模式 小图链接 尽可能配置小于100k的图片 
+        largeSrc: 'https://lsky.mnchen.cn/i/2023/11/10/654e3e6d29b3f.png', //深色模式 大图链接 最终显示的图片
+        mobileSmallSrc: 'https://lsky.mnchen.cn/i/2023/11/10/654e3e6d29b3f.png', //手机端深色模式小图链接 尽可能配置小于100k的图片
+        mobileLargeSrc: 'https://lsky.mnchen.cn/i/2023/11/10/654e3e6d29b3f.png', //手机端深色大图链接 最终显示的图片
+        enableRoutes: ['/'],
+        },
+      };
+  
+      const getCurrentTheme = () => {
+        return document.documentElement.getAttribute('data-theme'); 
+      }
+  
+      const onThemeChange = () => {
+        const currentTheme = getCurrentTheme();
+        const config = ldconfig[currentTheme];
+        initProgressiveLoad(config);
+        document.addEventListener("DOMContentLoaded", function() {
+          initProgressiveLoad(config);
+        });
+      
+        document.addEventListener("pjax:complete", function() {
+          onPJAXComplete(config);
+        });
+      }
+  
+      let initTheme = getCurrentTheme();
+      let initConfig = ldconfig[initTheme];
+      initProgressiveLoad(initConfig);
+  
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        if (mutation.attributeName === "data-theme" && location.pathname === '/') {
+          onThemeChange();
+        }
+      });
+    });
+    
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"]  
+    });
+  
+    function initProgressiveLoad(config) {
+      const container = document.querySelector('.pl-container');
+      if (container) {
+        container.remove();
+      }
+      const target = document.getElementById('page-header');
+      if (target && target.classList.contains('full_page')) {
+        executeLoad(config, target);
+      }
+    }
+  
+    function onPJAXComplete(config) {
+      const target = document.getElementById('page-header');
+      if (target && target.classList.contains('full_page')) {
+        initProgressiveLoad(config);
+      }
+    }
+  
+  })();
+  
