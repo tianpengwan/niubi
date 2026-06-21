@@ -1261,7 +1261,7 @@ dynamicEffect:
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/imgloaded.css?1">
     - <link rel="stylesheet" href="/css/livephoto.css">
     - <link rel="stylesheet" href="/css/font.css">
     - <link rel="stylesheet" href="/css/background.css">
