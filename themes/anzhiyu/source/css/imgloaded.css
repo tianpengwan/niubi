@@ -2,12 +2,31 @@
 .pl-container {
   width: 100%;
   height: 100%;
-  z-index: -2;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
   overflow: hidden;
   will-change: transform, opacity;
-  /* 仅保留入场缩放动画，模糊效果交给小图本身 */
   animation: scale 1.5s cubic-bezier(.62,.21,.25,1) 0s 1 both;
+}
+
+/* 给父元素加定位，让 absolute 相对于 header 生效 */
+#page-header.full_page {
+  position: relative;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 关闭主题原生遮罩，避免挡住自定义背景 */
+#page-header.full_page::before {
+  background: none !important;
+}
+
+/* 让导航、标题等内容浮在背景之上 */
+#page-header.full_page > *:not(.pl-container) {
+  position: relative;
+  z-index: 1;
 }
 
 .pl-img {
@@ -40,7 +59,6 @@
 }
 
 .pl-blur {
-  /* 小图高斯模糊，实现模糊打底效果 */
   filter: blur(30px);
-  transform: scale(1.05); /* 轻微放大，抵消模糊带来的边缘透明 */
+  transform: scale(1.05);
 }
