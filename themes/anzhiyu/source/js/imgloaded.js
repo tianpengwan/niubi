@@ -8,9 +8,10 @@
       this.smallSrc = smallSrc;
       this.largeSrc = largeSrc;
       this.initTpl();
-      this.container.addEventListener('animationend', () => {
-        this.smallStage.style.display = 'none'; 
-      }, {once: true});
+      // 大图渐显过渡结束后，再隐藏小图，避免闪烁
+      this.largeStage.addEventListener('transitionend', () => {
+        this.smallStage.style.display = 'none';
+      }, { once: true });
     }
 
     initTpl() {
@@ -19,11 +20,14 @@
       this.largeStage = document.createElement('div');
       this.smallImg = new Image();
       this.largeImg = new Image();
+
       this.container.className = 'pl-container';
       this.smallStage.className = 'pl-img pl-blur';
       this.largeStage.className = 'pl-img';
+
       this.container.appendChild(this.smallStage);
       this.container.appendChild(this.largeStage);
+
       this.smallImg.onload = this._onSmallLoaded.bind(this);
       this.largeImg.onload = this._onLargeLoaded.bind(this);
     }
@@ -34,18 +38,22 @@
     }
 
     _onLargeLoaded() {
-      this.largeStage.classList.add('pl-visible');
       this.largeStage.style.backgroundImage = `url('${this.largeSrc}')`;
+      // 确保样式渲染后再加类，稳定触发过渡动画
+      requestAnimationFrame(() => {
+        this.largeStage.classList.add('pl-visible');
+      });
     }
 
     _onSmallLoaded() {
-      this.smallStage.classList.add('pl-visible');
       this.smallStage.style.backgroundImage = `url('${this.smallSrc}')`;
+      requestAnimationFrame(() => {
+        this.smallStage.classList.add('pl-visible');
+      });
     }
   }
 
   const executeLoad = (config, target) => {
-    console.log('执行渐进背景替换');
     const isMobile = window.matchMedia('(max-width: 767px)').matches;
     const loader = new ProgressiveLoad(
       isMobile ? config.mobileSmallSrc : config.smallSrc,
@@ -53,52 +61,70 @@
     );
     if (target.children[0]) {
       target.insertBefore(loader.container, target.children[0]);
+    } else {
+      target.appendChild(loader.container);
     }
     loader.progressiveLoad();
   };
 
   const ldconfig = {
     light: {
-	  smallSrc: '/img/P20251112-100225.png', //浅色模式 小图链接 尽可能配置小于100k的图片 
-	  largeSrc: '/img/P20251112-100225.png', //浅色模式 大图链接 最终显示的图片
-	  mobileSmallSrc: '/img/P20251112-100225.png', //手机端浅色小图链接 尽可能配置小于100k的图片
-	  mobileLargeSrc: '/img/P20251112-100225.png', //手机端浅色大图链接 最终显示的图片
-	  enableRoutes: ['/'],
-	  },
-	dark: {
-	  smallSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //深色模式 小图链接 尽可能配置小于100k的图片 
-	  largeSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //深色模式 大图链接 最终显示的图片
-	  mobileSmallSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //手机端深色模式小图链接 尽可能配置小于100k的图片
-	  mobileLargeSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //手机端深色大图链接 最终显示的图片
-	  enableRoutes: ['/'],
-	  },
-	};
+      smallSrc: '/img/light-small.jpg', // 浅色模式 低分辨率小图
+      largeSrc: '/img/P20251112-100225.png', // 浅色模式 高清大图
+      mobileSmallSrc: '/img/light-mobile-small.jpg',
+      mobileLargeSrc: '/img/P20251112-100225.png',
+      enableRoutes: ['/'],
+    },
+    dark: {
+      smallSrc: '/img/dark-small.jpg', // 深色模式 低分辨率小图
+      largeSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png',
+      mobileSmallSrc: '/img/dark-mobile-small.jpg',
+      mobileLargeSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png',
+      enableRoutes: ['/'],
+    },
+  };
 
-    const getCurrentTheme = () => {
-      return document.documentElement.getAttribute('data-theme'); 
+  // 获取当前主题
+  const getCurrentTheme = () => {
+    return document.documentElement.getAttribute('data-theme') || 'light';
+  }
+
+  // 判断当前路由是否启用
+  const isRouteEnabled = (config) => {
+    return config.enableRoutes.includes(location.pathname);
+  }
+
+  // 初始化渐进加载
+  function initProgressiveLoad() {
+    const currentTheme = getCurrentTheme();
+    const config = ldconfig[currentTheme];
+    if (!config || !isRouteEnabled(config)) return;
+
+    // 移除旧容器，避免重复
+    const oldContainer = document.querySelector('.pl-container');
+    if (oldContainer) oldContainer.remove();
+
+    const target = document.getElementById('page-header');
+    if (target && target.classList.contains('full_page')) {
+      executeLoad(config, target);
     }
+  }
 
-    const onThemeChange = () => {
-      const currentTheme = getCurrentTheme();
-      const config = ldconfig[currentTheme];
-      initProgressiveLoad(config);
-      document.addEventListener("DOMContentLoaded", function() {
-        initProgressiveLoad(config);
-      });
-    
-      document.addEventListener("pjax:complete", function() {
-        onPJAXComplete(config);
-      });
-    }
+  // 全局只绑定一次事件，避免重复监听
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initProgressiveLoad);
+  } else {
+    initProgressiveLoad();
+  }
 
-    let initTheme = getCurrentTheme();
-    let initConfig = ldconfig[initTheme];
-    initProgressiveLoad(initConfig);
+  // PJAX跳转后重新初始化
+  document.addEventListener('pjax:complete', initProgressiveLoad);
 
+  // 监听主题切换
   const observer = new MutationObserver(mutations => {
     mutations.forEach(mutation => {
-      if (mutation.attributeName === "data-theme" && location.pathname === '/') {
-        onThemeChange();
+      if (mutation.attributeName === "data-theme") {
+        initProgressiveLoad();
       }
     });
   });
@@ -107,23 +133,5 @@
     attributes: true,
     attributeFilter: ["data-theme"]  
   });
-
-  function initProgressiveLoad(config) {
-    const container = document.querySelector('.pl-container');
-    if (container) {
-      container.remove();
-    }
-    const target = document.getElementById('page-header');
-    if (target && target.classList.contains('full_page')) {
-      executeLoad(config, target);
-    }
-  }
-
-  function onPJAXComplete(config) {
-    const target = document.getElementById('page-header');
-    if (target && target.classList.contains('full_page')) {
-      initProgressiveLoad(config);
-    }
-  }
 
 })();
