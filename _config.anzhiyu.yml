@@ -779,15 +779,15 @@ beautify:
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size: 16px
-  code-font-size:
-  font-family:
-  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code-font-size: 14px
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "SimSun", sans-serif
+  code-font-family: Consolas, Menlo, "PingFang SC", monospace
 
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
 blog_title_font:
   font_link:
-  font-family: PingFang SC, 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font-family: "KaiTi", "STKaiti", "Microsoft YaHei", serif
 
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
