@@ -59,17 +59,17 @@
 
   const ldconfig = {
     light: {
-	  smallSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png', //浅色模式 小图链接 尽可能配置小于100k的图片 
-	  largeSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png', //浅色模式 大图链接 最终显示的图片
-	  mobileSmallSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png', //手机端浅色小图链接 尽可能配置小于100k的图片
-	  mobileLargeSrc: 'https://cftcr2.20010501.xyz/PicHoro/P20251112-100225.png', //手机端浅色大图链接 最终显示的图片
+	  smallSrc: '/img/P20251112-100225.png', //浅色模式 小图链接 尽可能配置小于100k的图片 
+	  largeSrc: '/img/P20251112-100225.png', //浅色模式 大图链接 最终显示的图片
+	  mobileSmallSrc: '/img/P20251112-100225.png', //手机端浅色小图链接 尽可能配置小于100k的图片
+	  mobileLargeSrc: '/img/P20251112-100225.png', //手机端浅色大图链接 最终显示的图片
 	  enableRoutes: ['/'],
 	  },
 	dark: {
-	  smallSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //深色模式 小图链接 尽可能配置小于100k的图片 
-	  largeSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //深色模式 大图链接 最终显示的图片
-	  mobileSmallSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //手机端深色模式小图链接 尽可能配置小于100k的图片
-	  mobileLargeSrc: 'https://cftcr2.20010501.xyz/PicHoro/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //手机端深色大图链接 最终显示的图片
+	  smallSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //深色模式 小图链接 尽可能配置小于100k的图片 
+	  largeSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //深色模式 大图链接 最终显示的图片
+	  mobileSmallSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //手机端深色模式小图链接 尽可能配置小于100k的图片
+	  mobileLargeSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png', //手机端深色大图链接 最终显示的图片
 	  enableRoutes: ['/'],
 	  },
 	};
