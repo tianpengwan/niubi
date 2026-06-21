@@ -783,11 +783,9 @@ font:
   font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif
   code-font-family: Consolas, Menlo, "PingFang SC", monospace
 
-# Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
   font-family: "KaiTi", "STKaiti", serif
-
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
   enable: true
