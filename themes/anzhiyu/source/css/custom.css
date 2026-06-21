@@ -1,0 +1,15 @@
+/* 白天网站背景 */
+#web_bg {
+  background-image: url("/img/P20251112-100225.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 夜间网站背景 */
+[data-theme="dark"] #web_bg {
+  background-image: url("/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
