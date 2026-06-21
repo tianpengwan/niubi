@@ -1261,6 +1261,7 @@ dynamicEffect:
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <style>body,*{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif !important;} code,pre{font-family:Consolas,Menlo,"PingFang SC",monospace !important;} .site-title,.subtitle{font-family:"KaiTi","STKaiti",serif !important;}</style>
     - <link rel="stylesheet" href="/css/imgloaded.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="/css/livephoto.css">
