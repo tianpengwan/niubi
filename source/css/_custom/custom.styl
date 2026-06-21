@@ -1,115 +1,155 @@
 :root {
+    /* 原主题配置保留 */
     --waline-theme-color: linear-gradient(145deg, #5b5fd4, #6c70fd);
-    --waline-info-bgcolor: #fef0f0cf;
     --waline-active-color: #a9a0e1;
     --waline-badge-color: #19a9ef;
     --waline-avatar-radius: 26%;
+    --waline-info-bgcolor: #fef0f0cf;
+
+    /* ========== 亮色模式通用变量 ========== */
+    --wl-content-bg: rgba(255, 255, 255, 0.75);
+    --wl-text-primary: #1f2937;
+    --wl-text-secondary: #4b5563;
+    --wl-border-color: #e5e7eb;
+    --wl-meta-bg: rgba(220, 38, 38, 0.12);
+    --wl-meta-text: #b91c1c;
+    --wl-badge-text: #0081cc;
+    --wl-badge-bg: rgba(25, 169, 239, 0.15);
+    --wl-input-bg: rgba(255, 255, 255, 0.8);
+    --wl-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --wl-content-shadow: 2px 5px 14px rgba(118, 151, 255, 0.18);
 }
- 
+
+/* ========== 暗色模式自动适配 ========== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --waline-info-bgcolor: rgba(254, 240, 240, 0.1);
+        --wl-content-bg: rgba(30, 41, 59, 0.75);
+        --wl-text-primary: #f1f5f9;
+        --wl-text-secondary: #cbd5e1;
+        --wl-border-color: #334155;
+        --wl-meta-bg: rgba(252, 165, 165, 0.15);
+        --wl-meta-text: #fca5a5;
+        --wl-badge-text: #7dd3fc;
+        --wl-badge-bg: rgba(25, 169, 239, 0.2);
+        --wl-input-bg: rgba(30, 41, 59, 0.8);
+        --wl-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        --wl-content-shadow: 2px 5px 14px rgba(0, 0, 0, 0.35);
+    }
+}
+
 .wl-header input {
     border-top: none;
     border-bottom: none;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+    border-left: 1px solid var(--wl-border-color);
+    border-right: 1px solid var(--wl-border-color);
+    background: var(--wl-input-bg);
+    color: var(--wl-text-primary);
 }
- 
+
 .wl-like,
 .wl-reply {
     padding: 0.4rem !important;
+    color: var(--wl-text-secondary);
 }
- 
+
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     box-shadow: none;
 }
- 
+
 .wl-card .wl-head {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
 }
- 
+
 .wl-cards .wl-user img {
     margin-top: 8px;
-    box-shadow: 1px 2px 8px 0px #9d9d9d;
+    box-shadow: var(--wl-card-shadow);
 }
- 
+
 .wl-cards .wl-user .verified-icon {
     top: calc(var(--avatar-size) * 5 / 5.8);
     left: calc(var(--avatar-size) * 4 / 5.8);
     width: 20px;
     height: 20px;
 }
- 
+
 .wl-card .wl-nick {
-    color: var(--primary-color);
+    color: var(--waline-theme-color);
+    background: var(--waline-theme-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
- 
+
 .wl-card .wl-badge {
     margin-right: 6px;
     border: none;
-    color: #0081cc;
-    background: radial-gradient(#57c1ff6e, #bde6fe00);
+    color: var(--wl-badge-text);
+    background: var(--wl-badge-bg);
 }
- 
+
 .wl-input {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid var(--wl-border-color);
+    border-right: 1px solid var(--wl-border-color);
+    background: var(--wl-input-bg);
+    color: var(--wl-text-primary);
 }
- 
+
 .wl-meta {
     line-height: 2;
     display: flex;
 }
- 
+
 .wl-meta>span {
-    background: radial-gradient(#c784846e, #ff767300);
+    background: var(--wl-meta-bg);
 }
- 
+
 .wl-cards .wl-item {
     padding: unset;
 }
- 
+
 .wl-meta span {
-    color: #a12525 !important;
+    color: var(--wl-meta-text) !important;
     border-radius: 6px !important;
     box-sizing: border-box;
     white-space: nowrap;
 }
- 
+
 .wl-emoji {
     filter: none !important;
 }
- 
-/* 核心修改：评论文字区域改为毛玻璃效果 */
+
+/* 核心：毛玻璃内容区双模式适配 */
 .wl-content {
-    /* 替换原渐变背景为半透明背景（保留原有色调的低透明度） */
-    background: rgba(77, 94, 179, 0.2);
-    /* 毛玻璃核心属性（webkit前缀兼容移动端/老浏览器） */
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-    /* 保留原有内边距、圆角等样式 */
+    background: var(--wl-content-bg);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    backdrop-filter: blur(12px) saturate(180%);
     padding: 5px 15px;
     border-radius: 10px;
     padding-top: 7px !important;
     margin-top: 6px;
     width: fit-content;
-    /* 微调阴影，适配毛玻璃效果 */
-    box-shadow: 2px 5px 14px 0px rgba(118, 151, 255, 0.3);
-    /* 可选：添加轻微边框增强毛玻璃质感 */
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--wl-content-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease, color 0.3s ease;
 }
- 
+
 .wl-content p {
-    color: white;
+    color: var(--wl-text-primary);
+    line-height: 1.6;
 }
- 
+
 .wl-content a {
     border-bottom: 1px solid;
+    color: var(--waline-badge-color);
 }
- 
+
 .wl-meta>span::before {
     content: "";
     width: 1.5em;
@@ -121,6 +161,7 @@ input[type="submit"] {
     background-size: 100%;
     background-position-y: 1px;
     margin-right: 2px;
+    opacity: 0.85;
 }
 
 .wl-meta>.wl-addr::before {
