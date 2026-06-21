@@ -316,19 +316,20 @@ if hexo-config('article_double_row') == true
 
 
 
-#content-inner #recent-posts > .recent-post-item > .recent-post-info > .content
-  transition: all 0.3s ease 0s;
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-height: 1.4;
-  color: var(--anzhiyu-secondtext);
-  margin-top: 0.5rem;
-  font-size: 14px;
-  opacity 0
-  height 0
-
+#content-inner #recent-posts>.recent-post-item>.recent-post-info>.content {
+    transition: all 0.3s ease 0s;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.4;
+    color: var(--anzhiyu-secondtext);
+    margin-top: 2px;
+    font-size: 14px;
+    opacity: 1;
+    height: 40px;
+    padding: 0px 32px;
+}
 #popup-window
   min-width: 300px;
   background: var(--anzhiyu-maskbgdeep);
