@@ -69,16 +69,16 @@
 
   const ldconfig = {
     light: {
-      smallSrc: '/img/light-small.jpg', // 浅色模式 低分辨率小图
+      smallSrc: '/img/b.jpg', // 浅色模式 低分辨率小图
       largeSrc: '/img/P20251112-100225.png', // 浅色模式 高清大图
-      mobileSmallSrc: '/img/light-mobile-small.jpg',
+      mobileSmallSrc: '/img/b.jpg',
       mobileLargeSrc: '/img/P20251112-100225.png',
       enableRoutes: ['/'],
     },
     dark: {
-      smallSrc: '/img/dark-small.jpg', // 深色模式 低分辨率小图
+      smallSrc: '/img/y.png', // 深色模式 低分辨率小图
       largeSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png',
-      mobileSmallSrc: '/img/dark-mobile-small.jpg',
+      mobileSmallSrc: '/img/y.png',
       mobileLargeSrc: '/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png',
       enableRoutes: ['/'],
     },
