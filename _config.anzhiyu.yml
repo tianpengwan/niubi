@@ -844,7 +844,9 @@ aside:
 
   card_announcement:
     enable: true
-    content: <div id="welcome-info"></div>
+    content: |
+      <p>欢迎来访！这里记录编程、生活与学习随笔</p>
+      <p>有问题可在文章评论区留言，我会及时回复</p>
   card_weixin:
     enable: false
     face: /img/wxgz.png
