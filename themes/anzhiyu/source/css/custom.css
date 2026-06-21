@@ -1,15 +1,39 @@
-/* 白天网站背景 */
+/* ========== 重置主题默认 #web_bg 变形 ========== */
 #web_bg {
-  background-image: url("/img/P20251112-100225.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  transform: none !important;
+  position: fixed !important;
+  z-index: -999 !important;
 }
 
-/* 夜间网站背景 */
+/* ========== 浅色模式背景图 ========== */
+#web_bg {
+  background-image: url("/img/P20251112-100225.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* ========== 深色模式背景图 ========== */
 [data-theme="dark"] #web_bg {
-  background-image: url("/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("/img/dji_fly_20250818_192634_0066_1755516756630_aeb.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* ========== 上层容器透明化（必加，否则会挡住背景） ========== */
+html,
+body,
+#body-wrap,
+#page-header,
+#footer,
+#sidebar {
+  background: transparent !important;
+  background-color: transparent !important;
 }
