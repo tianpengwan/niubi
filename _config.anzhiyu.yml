@@ -1262,6 +1262,7 @@ dynamicEffect:
 inject:
   head:
     - <link rel="stylesheet" href="/css/imgloaded.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="/css/livephoto.css">
     - <link rel="stylesheet" href="/css/font.css">
     - <link rel="stylesheet" href="/css/background.css">
