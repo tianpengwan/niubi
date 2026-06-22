@@ -49,3 +49,23 @@ body,
   background: transparent !important;
   background-color: transparent !important;
 }
+
+/* 每条说说卡片主体 */
+#ispeak .xk-card {
+  /* 半透明白色底色，最后一位是底色不透明度，可按需调整 */
+  background: rgba(255, 255, 255, 0.18) !important;
+  /* 毛玻璃核心：模糊后方背景 */
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  /* 细边框增强玻璃质感 */
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+/* 清除卡片内部子元素的背景，避免遮挡毛玻璃效果 */
+#ispeak .xk-card-header,
+#ispeak .xk-card-content,
+#ispeak .xk-card-footer {
+  background: transparent !important;
+}
