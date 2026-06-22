@@ -8,7 +8,7 @@ function qexo_friend_api(id, url, reCaptcha = '') {
     // 修改为粉色透明风格
     document.getElementById(id).innerHTML = `
         <div class="friend-api-container" style="
-            background: rgba(255, 240, 245, 0.85);
+            background: rgba(255, 240, 245, 0.8);
             backdrop-filter: blur(10px);
             padding: 20px;
             border-radius: 12px;
