@@ -1261,7 +1261,30 @@ dynamicEffect:
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <style>:root{--anzhiyu-fontfamily:"KaiTi","STKaiti",serif;--anzhiyu-code-fontfamily:Consolas,Menlo,monospace;--anzhiyu-title-fontfamily:"KaiTi","STKaiti",serif;} html,body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,a,button,input,textarea,select,aside,nav,footer,header,article,span,blockquote,table,th,td{font-family:"KaiTi","STKaiti",serif !important;} .site-title,.subtitle,#site-title{font-family:"KaiTi","STKaiti",serif !important;} code,pre,kbd,samp{font-family:Consolas,Menlo,monospace !important;}</style>
+    - <style>
+/* 引入汇迹正楷 CooperZhengKai（ZeoSeven CDN） */
+@import url("https://fontsapi.zeoseven.com/482/main/result.css");
+
+:root{
+  --anzhiyu-fontfamily: "CooperZhengKai", "KaiTi", "STKaiti", serif;
+  --anzhiyu-title-fontfamily: "CooperZhengKai", "KaiTi", "STKaiti", serif;
+  --anzhiyu-code-fontfamily: Consolas, Menlo, monospace;
+}
+
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,a,button,input,textarea,select,aside,nav,footer,header,article,span,blockquote,table,th,td{
+  font-family: "CooperZhengKai", "KaiTi", "STKaiti", serif !important;
+  font-weight: normal !important;
+}
+
+.site-title,.subtitle,#site-title{
+  font-family: "CooperZhengKai", "KaiTi", "STKaiti", serif !important;
+  font-weight: normal !important;
+}
+
+code,pre,kbd,samp{
+  font-family: Consolas, Menlo, monospace !important;
+}
+</style>
     - <link rel="stylesheet" href="/css/imgloaded.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="/css/livephoto.css">
