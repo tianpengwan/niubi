@@ -22,37 +22,48 @@ aside: false
   </div>
 <div id="qexoDaoDao"></div>
 
-<!-- 原有组件引入 -->
 <script src="/js/qexo-dao.min.js"></script>
 
-<!-- 新增：自定义背景透明度样式 -->
 <style>
 #qexoDaoDao {
   position: relative;
   z-index: 0;
-  /* 禁用组件自带的默认背景，避免双重叠加 */
   background: none !important;
+  overflow: hidden; /* 裁剪模糊边缘，避免出现透明白边 */
 }
 
+/* 底层：背景图 + 模糊 + 0.8透明度 */
 #qexoDaoDao::before {
   content: "";
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  /* 和你配置里的背景图地址保持一致 */
   background-image: url("https://ghtpdl.20010501.xyz/tptp/fluid.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* 背景透明度设置为 0.8 */
   opacity: 0.8;
+  /* 毛玻璃核心：模糊程度，数值越大越朦胧 */
+  filter: blur(10px);
+  /* 轻微放大背景，消除模糊带来的边缘透明 */
+  transform: scale(1.05);
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* 上层：玻璃反光层，模拟真实毛玻璃的亮感 */
+#qexoDaoDao::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* 白色叠加浓度，数值越大玻璃反光感越强 */
+  background: rgba(255, 255, 255, 0.15);
   z-index: -1;
   pointer-events: none;
 }
 </style>
 
-<!-- 原有组件初始化 -->
 <script>
   qexoDaodao?.init({ 
     el: "#qexoDaoDao",
