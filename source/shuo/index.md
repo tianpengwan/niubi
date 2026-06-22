@@ -22,7 +22,37 @@ aside: false
   </div>
 <div id="qexoDaoDao"></div>
 
+<!-- 原有组件引入 -->
 <script src="/js/qexo-dao.min.js"></script>
+
+<!-- 新增：自定义背景透明度样式 -->
+<style>
+#qexoDaoDao {
+  position: relative;
+  z-index: 0;
+  /* 禁用组件自带的默认背景，避免双重叠加 */
+  background: none !important;
+}
+
+#qexoDaoDao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* 和你配置里的背景图地址保持一致 */
+  background-image: url("https://ghtpdl.20010501.xyz/tptp/fluid.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* 背景透明度设置为 0.8 */
+  opacity: 0.8;
+  z-index: -1;
+  pointer-events: none;
+}
+</style>
+
+<!-- 原有组件初始化 -->
 <script>
   qexoDaodao?.init({ 
     el: "#qexoDaoDao",
@@ -32,12 +62,4 @@ aside: false
     useLoadingImg: false,
     baseURL: "https://hexoadmin.20010501.xyz/",
   });
-
-  // 等待组件渲染完成后修改背景透明度
-  setTimeout(() => {
-    const wrap = document.getElementById('qexoDaoDao');
-    if(wrap) {
-      const bgDom = wrap.querySelector('[style*="background-image"]');
-      if(bgDom) bgDom.style.opacity = '0.8';
-    }, 300)
 </script>
