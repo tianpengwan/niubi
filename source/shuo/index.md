@@ -32,4 +32,12 @@ aside: false
     useLoadingImg: false,
     baseURL: "https://hexoadmin.20010501.xyz/",
   });
+
+  // 等待组件渲染完成后修改背景透明度
+  setTimeout(() => {
+    const wrap = document.getElementById('qexoDaoDao');
+    if(wrap) {
+      const bgDom = wrap.querySelector('[style*="background-image"]');
+      if(bgDom) bgDom.style.opacity = '0.8';
+    }, 300)
 </script>
