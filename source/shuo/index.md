@@ -25,41 +25,47 @@ aside: false
 <script src="/js/qexo-dao.min.js"></script>
 
 <style>
+/* 根容器：建立层叠上下文，裁剪模糊边缘 */
 #qexoDaoDao {
-  position: relative;
+  position: relative !important;
+  overflow: hidden !important;
   z-index: 0;
-  background: none !important;
-  overflow: hidden; /* 裁剪模糊边缘，避免出现透明白边 */
 }
 
-/* 底层：背景图 + 模糊 + 0.8透明度 */
+/* 强制清除组件内部所有自带背景，避免叠加 */
+#qexoDaoDao,
+#qexoDaoDao * {
+  background: none !important;
+  background-image: none !important;
+}
+
+/* 自定义背景层：0.8透明度 + 毛玻璃模糊 */
 #qexoDaoDao::before {
   content: "";
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  z-index: -1;
+  /* 与你配置的背景图地址一致 */
   background-image: url("https://ghtpdl.20010501.xyz/tptp/fluid.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* 背景透明度 0.8 */
   opacity: 0.8;
-  /* 毛玻璃核心：模糊程度，数值越大越朦胧 */
+  /* 毛玻璃模糊强度，可调整 6-15px */
   filter: blur(10px);
-  /* 轻微放大背景，消除模糊带来的边缘透明 */
-  transform: scale(1.05);
-  z-index: -2;
+  /* 放大消除模糊边缘的透明缝隙 */
+  transform: scale(1.08);
   pointer-events: none;
 }
 
-/* 上层：玻璃反光层，模拟真实毛玻璃的亮感 */
+/* 可选：加一层白色反光，增强玻璃质感 */
 #qexoDaoDao::after {
   content: "";
   position: absolute;
   inset: 0;
-  /* 白色叠加浓度，数值越大玻璃反光感越强 */
-  background: rgba(255, 255, 255, 0.15);
   z-index: -1;
+  background: rgba(255, 255, 255, 0.12);
   pointer-events: none;
 }
 </style>
@@ -72,5 +78,8 @@ aside: false
     limit: 10,
     useLoadingImg: false,
     baseURL: "https://hexoadmin.20010501.xyz/",
+    // 你可以继续在这里配置 fromColor、labelColor 等原生参数
+    // fromColor: "#你的颜色值",
+    // labelColor: "#你的颜色值",
   });
 </script>
