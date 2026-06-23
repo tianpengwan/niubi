@@ -76,16 +76,19 @@ body,
   box-shadow: none !important;
 }
 
-/* 页面标题建立定位上下文 */
+/* ========== 彻底解除所有父容器的裁剪限制 ========== */
+/* 解除遮罩层、名称容器、标题本身的溢出隐藏和遮罩效果，确保衬底可自由撑开 */
+#page-header #nav .mask-name-container,
+#page-header #nav #name-container,
+#page-header #nav #page-name {
+  overflow: visible !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
 #page-header #nav #page-name {
   position: relative;
   transition: all 0.3s ease;
-}
-
-/* 解除父容器溢出隐藏，避免回到顶部衬底被裁剪，支持自适应宽度 */
-#page-header #nav .mask-name-container,
-#page-header #nav #name-container {
-  overflow: visible !important;
 }
 
 /* ========== 浅色模式：默认标题衬底 ========== */
@@ -165,29 +168,32 @@ body,
   padding: 3px 12px !important;
   line-height: 1.5 !important;
   min-width: auto !important;
+  font-weight: 700 !important; /* 统一原标题字重 */
 }
 
-/* ========== 核心：悬停切换回到顶部（仅导航固定/页面下滑时生效） ========== */
-/* 回到顶部伪元素：默认隐藏，宽度完全随文字自适应 */
+/* ========== 核心：悬停切换回到顶部（强制覆盖原生样式） ========== */
 #page-header.nav-fixed #nav #page-name::after {
-  content: "回到顶部";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 3px 12px;
-  border-radius: 8px;
-  display: flex;
+  content: "回到顶部" !important;
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important; /* 强制覆盖原生 right:0，解除宽度铺满限制 */
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: auto !important; /* 宽度完全随文字内容自适应 */
+  padding: 3px 12px !important;
+  border-radius: 8px !important;
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  white-space: nowrap; /* 禁止文字换行，宽度随内容自动撑开 */
+  white-space: nowrap !important; /* 禁止文字换行 */
+  /* 字体样式强制和原标题完全统一 */
+  font-size: inherit !important;
+  font-weight: 700 !important;
+  font-family: inherit !important;
   line-height: 1.5 !important;
-  font-weight: bold !important; /* 和原标题字重统一 */
-  font-size: inherit !important; /* 和原标题字号统一 */
-  font-family: inherit !important; /* 和原标题字体统一 */
-  opacity: 0;
-  transition: all 0.3s ease;
-  pointer-events: none;
+  opacity: 0 !important;
+  transition: all 0.3s ease !important;
+  pointer-events: none !important;
   text-shadow: none !important;
 }
 
@@ -199,18 +205,21 @@ body,
   -webkit-backdrop-filter: none !important;
 }
 
-/* 悬停时：浅色模式 显示回到顶部+同款毛玻璃衬底 */
+/* 悬停时：显示回到顶部 */
+#page-header.nav-fixed #nav #page-name:hover::after {
+  opacity: 1 !important;
+}
+
+/* 悬停时：浅色模式 回到顶部衬底+文字 */
 [data-theme="light"] #page-header.nav-fixed #nav #page-name:hover::after {
-  opacity: 1;
   background: rgba(255, 255, 255, 0.7) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   color: #2c2c2c !important;
 }
 
-/* 悬停时：深色模式 显示回到顶部+同款毛玻璃衬底 */
+/* 悬停时：深色模式 回到顶部衬底+文字 */
 [data-theme="dark"] #page-header.nav-fixed #nav #page-name:hover::after {
-  opacity: 1;
   background: rgba(0, 0, 0, 0.7) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
