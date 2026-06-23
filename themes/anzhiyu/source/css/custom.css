@@ -226,25 +226,12 @@ body,
   color: #ffffff !important;
 }
 
-/* 浅色模式：清除顶部导航底部浅色分割线 #e3e8f7 */
-html:not([data-theme="dark"]) #page-header.full_page.nav-fixed {
-  border-bottom: 0 solid var(--anzhiyu-card-border) !important;
-}
-/* 深色模式：清除顶部导航底部深色分割线 #42444a */
-html[data-theme="dark"] #page-header.full_page.nav-fixed {
-  border-bottom: 0 solid var(--anzhiyu-card-border) !important;
+/* 浅色模式：边框设为完全透明 */
+:root {
+  --anzhiyu-card-border: transparent;
 }
 
-/* 兜底：未滚动、未触发nav-fixed时也清除边框 */
-html:not([data-theme="dark"]) #page-header.full_page {
-  border-bottom: none !important;
-}
-html[data-theme="dark"] #page-header.full_page {
-  border-bottom: none !important;
-}
-
-/* 兜底：如果细线是box-shadow造成，一并移除 */
-#page-header.full_page,
-#page-header.full_page.nav-fixed {
-  box-shadow: none !important;
+/* 深色模式：边框设为完全透明 */
+html[data-theme='dark'] {
+  --anzhiyu-card-border: transparent;
 }
