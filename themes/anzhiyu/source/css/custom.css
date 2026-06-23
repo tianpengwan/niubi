@@ -77,21 +77,22 @@ body,
 }
 
 /* ========== 浅色模式：白色毛玻璃衬底 ========== */
-/* 背景改在a标签上，与原生蓝色选中块同层级，尺寸自动对齐 */
 [data-theme="light"] #nav .menus_item a,
 [data-theme="light"] #nav #blog_name a,
+[data-theme="light"] #nav #page-name,
 [data-theme="light"] #nav-right .nav-button,
 [data-theme="light"] #nav #toggle-menu {
   background: rgba(255, 255, 255, 0.5) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border-radius: 8px;
+  border-radius: 8px !important;
   transition: all 0.3s ease;
 }
 
 /* 强制文字图标为深色，避免半透背景下看不清 */
 [data-theme="light"] #nav .menus_item a,
 [data-theme="light"] #nav #blog_name a,
+[data-theme="light"] #nav #page-name,
 [data-theme="light"] #nav .site-name .title,
 [data-theme="light"] #nav-right .nav-button a,
 [data-theme="light"] #nav i,
@@ -103,25 +104,28 @@ body,
 /* 悬停加深效果 */
 [data-theme="light"] #nav .menus_item a:hover,
 [data-theme="light"] #nav-right .nav-button:hover,
-[data-theme="light"] #nav #blog_name a:hover {
+[data-theme="light"] #nav #blog_name a:hover,
+[data-theme="light"] #nav #page-name:hover {
   background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* ========== 深色模式：黑色毛玻璃衬底 ========== */
 [data-theme="dark"] #nav .menus_item a,
 [data-theme="dark"] #nav #blog_name a,
+[data-theme="dark"] #nav #page-name,
 [data-theme="dark"] #nav-right .nav-button,
 [data-theme="dark"] #nav #toggle-menu {
   background: rgba(0, 0, 0, 0.5) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border-radius: 8px;
+  border-radius: 8px !important;
   transition: all 0.3s ease;
 }
 
 /* 强制文字图标为白色 */
 [data-theme="dark"] #nav .menus_item a,
 [data-theme="dark"] #nav #blog_name a,
+[data-theme="dark"] #nav #page-name,
 [data-theme="dark"] #nav .site-name .title,
 [data-theme="dark"] #nav-right .nav-button a,
 [data-theme="dark"] #nav i,
@@ -133,7 +137,8 @@ body,
 /* 悬停加深效果 */
 [data-theme="dark"] #nav .menus_item a:hover,
 [data-theme="dark"] #nav-right .nav-button:hover,
-[data-theme="dark"] #nav #blog_name a:hover {
+[data-theme="dark"] #nav #blog_name a:hover,
+[data-theme="dark"] #nav #page-name:hover {
   background: rgba(0, 0, 0, 0.7) !important;
 }
 
@@ -144,4 +149,10 @@ body,
 #nav #blog_name > a {
   display: inline-flex;
   align-items: center;
+}
+
+/* 页面标题衬底尺寸适配，与菜单项视觉统一 */
+#nav #page-name {
+  padding: 3px 12px !important;
+  line-height: 1.5 !important;
 }
