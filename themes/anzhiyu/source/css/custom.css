@@ -162,17 +162,20 @@ body,
 }
 
 /* ========== 核心：悬停切换回到顶部（仅导航固定/页面下滑时生效） ========== */
-/* 回到顶部伪元素：默认隐藏，铺满整个标题区域 */
+/* 回到顶部伪元素：默认隐藏，宽度自适应文字，居中定位 */
 #page-header.nav-fixed #nav #page-name::after {
   content: "回到顶部";
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 12px; /* 和原标题衬底内边距完全一致，保证高度充足 */
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap; /* 禁止文字换行，宽度随内容自适应 */
+  line-height: 1.5 !important;
   opacity: 0;
   transition: all 0.3s ease;
   pointer-events: none;
