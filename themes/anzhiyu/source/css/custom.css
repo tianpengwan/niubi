@@ -76,13 +76,13 @@ body,
   box-shadow: none !important;
 }
 
-/* 页面标题建立定位上下文，承载回到顶部文字 */
+/* 页面标题建立定位上下文 */
 #page-header #nav #page-name {
   position: relative;
   transition: all 0.3s ease;
 }
 
-/* ========== 浅色模式：统一毛玻璃衬底 ========== */
+/* ========== 浅色模式：默认标题衬底 ========== */
 [data-theme="light"] #page-header #nav .menus_item a,
 [data-theme="light"] #page-header #nav #blog_name a,
 [data-theme="light"] #page-header #nav #page-name,
@@ -95,7 +95,7 @@ body,
   transition: all 0.3s ease;
 }
 
-/* 浅色模式：统一文字图标颜色 */
+/* 浅色模式：默认文字颜色 */
 [data-theme="light"] #page-header #nav .menus_item a,
 [data-theme="light"] #page-header #nav #blog_name a,
 [data-theme="light"] #page-header #nav #page-name,
@@ -107,15 +107,14 @@ body,
   text-shadow: none !important;
 }
 
-/* 浅色模式：悬停背景加深 */
+/* 浅色模式：菜单项悬停加深 */
 [data-theme="light"] #page-header #nav .menus_item a:hover,
 [data-theme="light"] #page-header #nav-right .nav-button:hover,
-[data-theme="light"] #page-header #nav #blog_name a:hover,
-[data-theme="light"] #page-header #nav #page-name:hover {
+[data-theme="light"] #page-header #nav #blog_name a:hover {
   background: rgba(255, 255, 255, 0.7) !important;
 }
 
-/* ========== 深色模式：统一毛玻璃衬底 ========== */
+/* ========== 深色模式：默认标题衬底 ========== */
 [data-theme="dark"] #page-header #nav .menus_item a,
 [data-theme="dark"] #page-header #nav #blog_name a,
 [data-theme="dark"] #page-header #nav #page-name,
@@ -128,7 +127,7 @@ body,
   transition: all 0.3s ease;
 }
 
-/* 深色模式：统一文字图标颜色 */
+/* 深色模式：默认文字颜色 */
 [data-theme="dark"] #page-header #nav .menus_item a,
 [data-theme="dark"] #page-header #nav #blog_name a,
 [data-theme="dark"] #page-header #nav #page-name,
@@ -140,16 +139,14 @@ body,
   text-shadow: none !important;
 }
 
-/* 深色模式：悬停背景加深 */
+/* 深色模式：菜单项悬停加深 */
 [data-theme="dark"] #page-header #nav .menus_item a:hover,
 [data-theme="dark"] #page-header #nav-right .nav-button:hover,
-[data-theme="dark"] #page-header #nav #blog_name a:hover,
-[data-theme="dark"] #page-header #nav #page-name:hover {
+[data-theme="dark"] #page-header #nav #blog_name a:hover {
   background: rgba(0, 0, 0, 0.7) !important;
 }
 
 /* ========== 布局对齐修正 ========== */
-/* 站点标题内边距与菜单项对齐 */
 #page-header #nav #blog_name {
   padding: 0 !important;
 }
@@ -158,30 +155,52 @@ body,
   align-items: center;
 }
 
-/* 页面标题衬底尺寸与菜单项统一，覆盖原生胶囊样式 */
 #page-header #nav #page-name {
   padding: 3px 12px !important;
   line-height: 1.5 !important;
   min-width: auto !important;
 }
 
-/* ========== 核心：悬停切换「回到顶部」 ========== */
-/* 仅导航固定（页面下滑）时生效，顶部状态不受影响 */
-#page-header.nav-fixed #nav #page-name:hover {
-  /* 悬停时隐藏原页面标题文字 */
-  color: transparent !important;
+/* ========== 核心：悬停切换回到顶部（仅导航固定/页面下滑时生效） ========== */
+/* 回到顶部伪元素：默认隐藏，铺满整个标题区域 */
+#page-header.nav-fixed #nav #page-name::after {
+  content: "回到顶部";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  text-shadow: none !important;
 }
 
-/* 回到顶部文字居中，与衬底完美贴合 */
-#page-header.nav-fixed #nav #page-name::after {
-  left: 0 !important;
-  right: 0 !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  margin: 0 !important;
-  line-height: 1.5 !important;
-  text-align: center;
-  /* 深浅主题自动适配文字颜色 */
-  color: inherit !important;
-  text-shadow: none !important;
+/* 悬停时：原标题文字+衬底完全隐藏 */
+#page-header.nav-fixed #nav #page-name:hover {
+  color: transparent !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* 悬停时：浅色模式 显示回到顶部+同款毛玻璃衬底 */
+[data-theme="light"] #page-header.nav-fixed #nav #page-name:hover::after {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  color: #2c2c2c !important;
+}
+
+/* 悬停时：深色模式 显示回到顶部+同款毛玻璃衬底 */
+[data-theme="dark"] #page-header.nav-fixed #nav #page-name:hover::after {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  color: #ffffff !important;
 }
