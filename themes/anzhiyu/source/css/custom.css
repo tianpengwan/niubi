@@ -70,27 +70,26 @@ body,
   background: transparent !important;
 }
 
-/* 导航栏本体设为完全透明，只显示菜单项衬底 */
+/* 导航栏本体完全透明，仅显示菜单项衬底 */
 #nav {
   background: transparent !important;
   box-shadow: none !important;
 }
 
 /* ========== 浅色模式：白色毛玻璃衬底 ========== */
-[data-theme="light"] #nav .menus_item,
-[data-theme="light"] #nav #blog_name,
+/* 背景改在a标签上，与原生蓝色选中块同层级，尺寸自动对齐 */
+[data-theme="light"] #nav .menus_item a,
+[data-theme="light"] #nav #blog_name a,
 [data-theme="light"] #nav-right .nav-button,
 [data-theme="light"] #nav #toggle-menu {
-  background: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border-radius: 12px;
-  padding: 6px 16px;
-  margin: 0 5px;
+  border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-/* 强制文字、图标为深色，解决同色看不见的问题 */
+/* 强制文字图标为深色，避免半透背景下看不清 */
 [data-theme="light"] #nav .menus_item a,
 [data-theme="light"] #nav #blog_name a,
 [data-theme="light"] #nav .site-name .title,
@@ -101,28 +100,26 @@ body,
   text-shadow: none !important;
 }
 
-/* 悬停时加深不透明度 */
-[data-theme="light"] #nav .menus_item:hover,
+/* 悬停加深效果 */
+[data-theme="light"] #nav .menus_item a:hover,
 [data-theme="light"] #nav-right .nav-button:hover,
-[data-theme="light"] #nav #blog_name:hover {
-  background: rgba(255, 255, 255, 0.95) !important;
+[data-theme="light"] #nav #blog_name a:hover {
+  background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* ========== 深色模式：黑色毛玻璃衬底 ========== */
-[data-theme="dark"] #nav .menus_item,
-[data-theme="dark"] #nav #blog_name,
+[data-theme="dark"] #nav .menus_item a,
+[data-theme="dark"] #nav #blog_name a,
 [data-theme="dark"] #nav-right .nav-button,
 [data-theme="dark"] #nav #toggle-menu {
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border-radius: 12px;
-  padding: 6px 16px;
-  margin: 0 5px;
+  border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-/* 强制文字、图标为白色 */
+/* 强制文字图标为白色 */
 [data-theme="dark"] #nav .menus_item a,
 [data-theme="dark"] #nav #blog_name a,
 [data-theme="dark"] #nav .site-name .title,
@@ -133,19 +130,18 @@ body,
   text-shadow: none !important;
 }
 
-/* 悬停时加深不透明度 */
-[data-theme="dark"] #nav .menus_item:hover,
+/* 悬停加深效果 */
+[data-theme="dark"] #nav .menus_item a:hover,
 [data-theme="dark"] #nav-right .nav-button:hover,
-[data-theme="dark"] #nav #blog_name:hover {
-  background: rgba(0, 0, 0, 0.95) !important;
+[data-theme="dark"] #nav #blog_name a:hover {
+  background: rgba(0, 0, 0, 0.7) !important;
 }
 
-/* 修复站点标题区域内边距错位 */
+/* 修复站点标题布局，保持和菜单项高度一致 */
 #nav #blog_name {
   padding: 0 !important;
 }
 #nav #blog_name > a {
-  padding: 6px 16px;
   display: inline-flex;
   align-items: center;
 }
