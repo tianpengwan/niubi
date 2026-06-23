@@ -71,16 +71,52 @@ body,
 }
 
 
-/* 浅色模式 - 导航栏整体白色衬底 */
-[data-theme="light"] #nav {
+/* ========== 浅色模式：菜单项白色衬底 ========== */
+[data-theme="light"] #nav .menus_item,
+[data-theme="light"] #nav #blog_name,
+[data-theme="light"] #nav .nav-button {
   background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 6px 14px;
+  margin: 0 4px;
   transition: all 0.3s ease;
 }
 
-/* 滚动后导航栏（nav.show）加深不透明度 */
-[data-theme="light"] #nav.show {
-  background: rgba(255, 255, 255, 0.95);
+/* 鼠标悬停加深效果 */
+[data-theme="light"] #nav .menus_item:hover,
+[data-theme="light"] #nav .nav-button:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* ========== 深色模式：菜单项黑色衬底 ========== */
+[data-theme="dark"] #nav .menus_item,
+[data-theme="dark"] #nav #blog_name,
+[data-theme="dark"] #nav .nav-button {
+  background: rgba(18, 18, 24, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 6px 14px;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+/* 鼠标悬停加深效果 */
+[data-theme="dark"] #nav .menus_item:hover,
+[data-theme="dark"] #nav .nav-button:hover {
+  background: rgba(30, 30, 40, 1);
+}
+
+/* 适配站点标题的内边距 */
+[data-theme="light"] #nav #blog_name,
+[data-theme="dark"] #nav #blog_name {
+  padding: 4px 14px;
+}
+
+/* 导航栏本体设为透明，只显示菜单项衬底 */
+#nav {
+  background: transparent !important;
+  box-shadow: none !important;
 }
