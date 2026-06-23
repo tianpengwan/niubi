@@ -225,3 +225,16 @@ body,
   -webkit-backdrop-filter: blur(12px) !important;
   color: #ffffff !important;
 }
+
+/* 移除导航栏底部由 --anzhiyu-card-border 生成的分割线 */
+#page-header {
+  border-bottom: none !important;
+}
+/* 滚动固定导航时额外清除 */
+#page-header.nav-fixed {
+  border-bottom: none !important;
+}
+/* 兜底：如果是伪元素分割线也一并干掉 */
+#page-header::after {
+  display: none !important;
+}
