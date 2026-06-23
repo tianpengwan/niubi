@@ -70,23 +70,19 @@ body,
   background: transparent !important;
 }
 
-/* 导航栏本体完全透明，普通+固定滚动状态均生效 */
+/* ========== 导航栏基础透明 ========== */
 #page-header #nav {
   background: transparent !important;
   box-shadow: none !important;
 }
 
-/* 页面标题建立定位上下文，为回到顶部伪元素提供基准 */
+/* 页面标题建立定位上下文，承载回到顶部文字 */
 #page-header #nav #page-name {
   position: relative;
+  transition: all 0.3s ease;
 }
 
-/* 鼠标悬停时隐藏原标题文字，仅显示“回到顶部” */
-#page-header #nav #page-name:hover {
-  color: transparent !important;
-}
-
-/* ========== 浅色模式：白色毛玻璃衬底 ========== */
+/* ========== 浅色模式：统一毛玻璃衬底 ========== */
 [data-theme="light"] #page-header #nav .menus_item a,
 [data-theme="light"] #page-header #nav #blog_name a,
 [data-theme="light"] #page-header #nav #page-name,
@@ -99,7 +95,7 @@ body,
   transition: all 0.3s ease;
 }
 
-/* 浅色模式统一文字图标为深色 */
+/* 浅色模式：统一文字图标颜色 */
 [data-theme="light"] #page-header #nav .menus_item a,
 [data-theme="light"] #page-header #nav #blog_name a,
 [data-theme="light"] #page-header #nav #page-name,
@@ -111,13 +107,7 @@ body,
   text-shadow: none !important;
 }
 
-/* 浅色模式下“回到顶部”文字保持深色可见 */
-[data-theme="light"] #page-header #nav #page-name::after {
-  color: #2c2c2c !important;
-  text-shadow: none !important;
-}
-
-/* 浅色模式悬停背景加深 */
+/* 浅色模式：悬停背景加深 */
 [data-theme="light"] #page-header #nav .menus_item a:hover,
 [data-theme="light"] #page-header #nav-right .nav-button:hover,
 [data-theme="light"] #page-header #nav #blog_name a:hover,
@@ -125,7 +115,7 @@ body,
   background: rgba(255, 255, 255, 0.7) !important;
 }
 
-/* ========== 深色模式：黑色毛玻璃衬底 ========== */
+/* ========== 深色模式：统一毛玻璃衬底 ========== */
 [data-theme="dark"] #page-header #nav .menus_item a,
 [data-theme="dark"] #page-header #nav #blog_name a,
 [data-theme="dark"] #page-header #nav #page-name,
@@ -138,7 +128,7 @@ body,
   transition: all 0.3s ease;
 }
 
-/* 深色模式统一文字图标为白色 */
+/* 深色模式：统一文字图标颜色 */
 [data-theme="dark"] #page-header #nav .menus_item a,
 [data-theme="dark"] #page-header #nav #blog_name a,
 [data-theme="dark"] #page-header #nav #page-name,
@@ -150,13 +140,7 @@ body,
   text-shadow: none !important;
 }
 
-/* 深色模式下“回到顶部”文字保持白色可见 */
-[data-theme="dark"] #page-header #nav #page-name::after {
-  color: #ffffff !important;
-  text-shadow: none !important;
-}
-
-/* 深色模式悬停背景加深 */
+/* 深色模式：悬停背景加深 */
 [data-theme="dark"] #page-header #nav .menus_item a:hover,
 [data-theme="dark"] #page-header #nav-right .nav-button:hover,
 [data-theme="dark"] #page-header #nav #blog_name a:hover,
@@ -164,8 +148,8 @@ body,
   background: rgba(0, 0, 0, 0.7) !important;
 }
 
-/* ========== 布局细节修正 ========== */
-/* 站点标题内边距对齐 */
+/* ========== 布局对齐修正 ========== */
+/* 站点标题内边距与菜单项对齐 */
 #page-header #nav #blog_name {
   padding: 0 !important;
 }
@@ -174,15 +158,22 @@ body,
   align-items: center;
 }
 
-/* 页面标题衬底尺寸与菜单项统一，覆盖原生胶囊圆角与最小宽度 */
+/* 页面标题衬底尺寸与菜单项统一，覆盖原生胶囊样式 */
 #page-header #nav #page-name {
   padding: 3px 12px !important;
   line-height: 1.5 !important;
   min-width: auto !important;
 }
 
-/* 回到顶部文字居中对齐，贴合衬底 */
-#page-header #nav #page-name::after {
+/* ========== 核心：悬停切换「回到顶部」 ========== */
+/* 仅导航固定（页面下滑）时生效，顶部状态不受影响 */
+#page-header.nav-fixed #nav #page-name:hover {
+  /* 悬停时隐藏原页面标题文字 */
+  color: transparent !important;
+}
+
+/* 回到顶部文字居中，与衬底完美贴合 */
+#page-header.nav-fixed #nav #page-name::after {
   left: 0 !important;
   right: 0 !important;
   top: 50% !important;
@@ -190,4 +181,7 @@ body,
   margin: 0 !important;
   line-height: 1.5 !important;
   text-align: center;
+  /* 深浅主题自动适配文字颜色 */
+  color: inherit !important;
+  text-shadow: none !important;
 }
