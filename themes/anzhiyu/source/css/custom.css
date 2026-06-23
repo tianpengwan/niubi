@@ -82,6 +82,12 @@ body,
   transition: all 0.3s ease;
 }
 
+/* 解除父容器溢出隐藏，避免回到顶部衬底被裁剪，支持自适应宽度 */
+#page-header #nav .mask-name-container,
+#page-header #nav #name-container {
+  overflow: visible !important;
+}
+
 /* ========== 浅色模式：默认标题衬底 ========== */
 [data-theme="light"] #page-header #nav .menus_item a,
 [data-theme="light"] #page-header #nav #blog_name a,
@@ -162,20 +168,23 @@ body,
 }
 
 /* ========== 核心：悬停切换回到顶部（仅导航固定/页面下滑时生效） ========== */
-/* 回到顶部伪元素：默认隐藏，宽度自适应文字，居中定位 */
+/* 回到顶部伪元素：默认隐藏，宽度完全随文字自适应 */
 #page-header.nav-fixed #nav #page-name::after {
   content: "回到顶部";
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 3px 12px; /* 和原标题衬底内边距完全一致，保证高度充足 */
+  padding: 3px 12px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap; /* 禁止文字换行，宽度随内容自适应 */
+  white-space: nowrap; /* 禁止文字换行，宽度随内容自动撑开 */
   line-height: 1.5 !important;
+  font-weight: bold !important; /* 和原标题字重统一 */
+  font-size: inherit !important; /* 和原标题字号统一 */
+  font-family: inherit !important; /* 和原标题字体统一 */
   opacity: 0;
   transition: all 0.3s ease;
   pointer-events: none;
