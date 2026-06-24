@@ -1,8 +1,8 @@
 ---
-abbrlink: ''
+abbrlink: f06
 categories:
-- - 技术教程
-cover: https://cftcr2.20010501.xyz/PicHoro/1774196983530(1).webp
+  - - 技术教程
+cover: 'https://cftcr2.20010501.xyz/PicHoro/1774196983530(1).webp'
 date: '2026-03-23T00:48:38.310543+08:00'
 tags: []
 title: 解决Hexo博客发布文章后更新不及时

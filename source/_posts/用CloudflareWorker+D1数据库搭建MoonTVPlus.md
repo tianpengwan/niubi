@@ -1,8 +1,8 @@
 ---
-abbrlink: ''
+abbrlink: 434e
 categories:
-- - 技术教程
-cover: https://cftcr2.20010501.xyz/PicHoro/1776883429584(1)(1).webp
+  - - 技术教程
+cover: 'https://cftcr2.20010501.xyz/PicHoro/1776883429584(1)(1).webp'
 date: '2026-04-23T01:58:29.341989+08:00'
 tags: []
 title: 用CloudflareWorker+D1数据库搭建MoonTVPlus

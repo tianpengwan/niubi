@@ -235,3 +235,89 @@ body,
 html[data-theme='dark'] {
   --anzhiyu-card-border: transparent;
 }
+
+
+:root {
+  --waline-font-color: #000000;
+  --waline-bg-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --waline-font-color: #ffffff;
+    --waline-bg-color: rgba(0, 0, 0, 0.55);
+  }
+}
+
+html[data-theme='dark'] {
+  --waline-font-color: #ffffff;
+  --waline-bg-color: rgba(0, 0, 0, 0.55);
+}
+
+html[data-theme='light'] {
+  --waline-font-color: #000000;
+  --waline-bg-color: rgba(255, 255, 255, 0.85);
+}
+
+#waline-wrap,
+.wl-wrap {
+  color: var(--waline-font-color);
+}
+
+/* 去除卡片整体背景，只在文字下方显示衬底 */
+#waline-wrap .wl-card,
+.wl-wrap .wl-card {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+#waline-wrap .wl-card-item,
+.wl-wrap .wl-card-item {
+  background-color: transparent;
+}
+
+/* 评论内容区域：背景只跟随文字 */
+#waline-wrap .wl-content,
+.wl-wrap .wl-content {
+  color: var(--waline-font-color);
+  background-color: var(--waline-bg-color);
+  display: inline-block;
+  max-width: 100%;
+  padding: 4px 8px;
+  border-radius: 4px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  box-sizing: border-box;
+}
+
+#waline-wrap .wl-comment-main,
+.wl-wrap .wl-comment-main {
+  color: var(--waline-font-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+#waline-wrap .wl-comment-main p,
+.wl-wrap .wl-comment-main p {
+  color: var(--waline-font-color);
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  margin: 0;
+}
+
+#waline-wrap .wl-nick,
+.wl-wrap .wl-nick {
+  color: var(--waline-font-color);
+}
+
+#waline-wrap .wl-time,
+.wl-wrap .wl-time {
+  color: var(--waline-font-color);
+  opacity: 0.7;
+}
