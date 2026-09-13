@@ -1261,6 +1261,7 @@ dynamicEffect:
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <script defer src="https://lljk.20010501.xyz/script.js" data-website-id="2c5558ba-2e46-42ff-b0ab-3953558e9fa3"></script>
     - |
       <style>
       @import url("https://fontsapi.zeoseven.com/482/main/result.css");
