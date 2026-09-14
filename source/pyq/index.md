@@ -31,7 +31,7 @@ aside: false
     if (typeof UserConfig === 'undefined') {
         var UserConfig = {
             // 你的 hexo-circle-of-friends 后端 API 地址（需先部署后端）
-            private_api_url: 'https://pyq.20010501.xyz/',
+            private_api_url: 'https://hexo-circle-of-friends-tau-vert.vercel.app/',
             // 每次点击“加载更多”时加载的文章数量，默认 24
             page_turning_number: 24,
             // 头像加载失败时的默认图片
