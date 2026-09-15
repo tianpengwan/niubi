@@ -25,23 +25,21 @@ aside: false
 
 
 
-<div id="friend-circle-container">与主机通讯中……</div>
-
+<div id="friend-circle-lite-root"></div>
 <script>
-    if (typeof UserConfig === 'undefined') {
-        var UserConfig = {
-            // 你的 hexo-circle-of-friends 后端 API 地址（需先部署后端）
-            private_api_url: 'https://hexo-circle-of-friends-tau-vert.vercel.app/',
-            // 每次点击“加载更多”时加载的文章数量，默认 24
-            page_turning_number: 24,
-            // 头像加载失败时的默认图片
-            error_img: 'https://ypy.20010501.xyz/fluid.png',
-        }
-    }
+  if (typeof UserConfig === "undefined") {
+    var UserConfig = {
+      // 填写你的fc Lite地址
+      private_api_url: "https://friend-circle-lite-6h5.pages.dev/",
+      // 点击加载更多时，一次最多加载几篇文章，默认20
+      page_turning_number: 24,
+      // 头像加载失败时，默认头像地址
+      error_img: "https://pic.imgdb.cn/item/6695daa4d9c307b7e953ee3d.jpg",
+    };
+  }
 </script>
-
-<!-- 样式文件：以主题命名，目前仅支持 butterfly -->
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/Rock-Candy-Tea/Friend-Circle-Frontend/hexo-theme-butterfly/default.min.css">
-
-<!-- 脚本文件：对应主题样式功能 -->
-<script src="https://fastly.jsdelivr.net/gh/Rock-Candy-Tea/Friend-Circle-Frontend/hexo-theme-butterfly/default.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://fastly.jsdelivr.net/gh/willow-god/Friend-Circle-Lite/main/fclite.min.css"
+/>
+<script src="https://fastly.jsdelivr.net/gh/willow-god/Friend-Circle-Lite/main/fclite.min.js"></script>
