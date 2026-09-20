@@ -418,3 +418,53 @@
       from: xiebro干饭饭
       image:
         - https://cftcr2.20010501.xyz/PicHoro/P20250601-192811.webp
+- class_name: 测试。
+  path_name: /cscs
+  type: 1
+  description: "洛阳城里见秋风，欲作家书意万重。"
+  cover: https://jjss.20010501.xyz/i/2026/09/20/6aaeb749c8952.jpg
+  top_background: https://jjss.20010501.xyz/i/2026/09/20/6aaeb749c8952.jpg
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
+  top_link: /imgs
+  top_btn_text: 返回
+  album_list:
+    - date: 2026/9/23 01:00:00
+      content: jjss
+      address: js
+      from: xiebro干饭饭
+      image:
+        - https://jjss.20010501.xyz/i/2026/09/20/6aaeb749c8952.jpg
+        - https://jjss.20010501.xyz/i/2026/09/20/6aaeb7433b402.jpg
+        - https://jjss.20010501.xyz/i/2026/09/20/6aaeb73ba347b.jpg
+        - https://jjss.20010501.xyz/i/2026/09/19/6aaeb11d5a53e.jpg
+        - https://jjss.20010501.xyz/i/2026/09/19/6aaeb111031b4.jpg
+        - https://jjss.20010501.xyz/i/2026/09/19/6aaeb0e66ecdb.jpg
+        - https://jjss.20010501.xyz/i/2026/09/19/6aaea6c8a886b.jpg
+- class_name: 测试2。
+  path_name: /cscs1
+  type: 1
+  description: "洛阳城里见秋风，欲作家书意万重。"
+  cover: https://fncs.20010501.xyz/i/2026/09/19/6aae833a87176.jpg
+  top_background: https://fncs.20010501.xyz/i/2026/09/19/6aae833a87176.jpg
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
+  top_link: /imgs
+  top_btn_text: 返回
+  album_list:
+    - date: 2026/9/23 01:00:00
+      content: fncs
+      address: fncs
+      from: xiebro干饭饭
+      image:
+        - https://fncs.20010501.xyz/i/2026/09/19/6aae833a87176.jpg
+        - https://fncs.20010501.xyz/i/2026/09/19/6aadf780d67ae.jpg
+        - https://fncs.20010501.xyz/i/2026/09/19/6aade1ef2ba25.jpg
+        - https://fncs.20010501.xyz/i/2026/09/19/6aade1ea55405.jpg
+        - https://fncs.20010501.xyz/i/2026/09/19/6aade1e392e56.jpg
