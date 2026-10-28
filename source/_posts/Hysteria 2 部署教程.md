@@ -8,7 +8,7 @@ tags:
 - sing-box
 - Sunshine
 title: Hysteria 2 完整部署教程：Windows 11 + 安卓 sing-box + Moonlight / Sunshine
-updated: '2026-10-28T22:09:50.843+08:00'
+updated: '2026-10-28T23:09:21.668+08:00'
 ---
 # Hysteria 2 完整部署教程：Windows 11 + 安卓 sing-box + Moonlight / Sunshine
 
@@ -36,17 +36,18 @@ Windows 11
 
 ## 二、准备条件
 
+
 | 项目                   | 本文使用的值                                |
 | ---------------------- | ------------------------------------------- |
 | 服务端操作系统         | Windows 11                                  |
-| Hysteria 2 程序目录    | `D:\hysteria`                             |
-| 可执行文件             | `D:\hysteria\hysteria.exe`                |
-| 服务端配置             | `D:\hysteria\config.yaml`                 |
-| 安卓配置               | `D:\hysteria\android-singbox.json`        |
-| 域名                   | `speedtest.20010501.xyz`                  |
+| Hysteria 2 程序目录    | `D:\hysteria`                               |
+| 可执行文件             | `D:\hysteria\hysteria.exe`                  |
+| 服务端配置             | `D:\hysteria\config.yaml`                   |
+| 安卓配置               | `D:\hysteria\android-singbox.json`          |
+| 域名                   | `speedtest.20010501.xyz`                    |
 | 公网连接               | IPv6，UDP 443                               |
 | TLS 证书               | Hysteria 内置 ACME，HTTP-01 验证使用 TCP 80 |
-| Sunshine 所在电脑 IPv4 | `192.168.2.23`（示例为本次实际使用值）    |
+| Sunshine 所在电脑 IPv4 | `192.168.2.23`（示例为本次实际使用值）      |
 
 你需要有：
 
@@ -75,8 +76,9 @@ Hysteria 是命令行程序，**双击没有安装界面是正常的**。
 
 在域名 DNS 管理后台添加：
 
-| 类型 | 主机记录      | 记录值                      |
-| ---- | ------------- | --------------------------- |
+
+| 类型 | 主机记录    | 记录值                      |
+| ---- | ----------- | --------------------------- |
 | AAAA | `speedtest` | Windows 电脑当前的公网 IPv6 |
 
 例如域名为：`speedtest.20010501.xyz`。
@@ -380,16 +382,17 @@ Enable-ScheduledTask -TaskName 'Hysteria2 Server'
 
 ## 十一、曾经遇到的错误及解决方法
 
-| 报错或现象                                  | 原因                                                          | 处理                                                                                      |
-| ------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `hysteria.exe` 无法识别                   | 文件原名是 `hysteria-windows-amd64-avx.exe`，或执行目录不对 | 在正确文件夹运行原文件名，或重命名为 `hysteria.exe`                                     |
-| 双击 EXE 没反应                             | Hysteria 是命令行程序，不是图形安装器                         | 在 PowerShell 执行 `./hysteria.exe version`（Windows 建议 ` .\hysteria.exe version`） |
-| `netip.ParsePrefix("/32"): ParseAddr("")` | 客户端生成了空的 CIDR 地址，例如 `"ip_cidr": ["/32"]`       | 删除错误规则，或填写完整有效的 `192.168.2.23/32`；本文推荐的全局路由配置不需要此规则    |
-| `authentication failed, status code: 404` | 最常见是 Hysteria 2 两端密码不一致；也可能连到了错误服务端    | 核对 `config.yaml` 的 `auth.password` 与安卓 JSON 的 `password`，修改服务端后重启   |
-| PowerShell 提示“密码不能为空”             | `Read-Host '文字'` 里的文字只是提示；直接回车会得到空字符串 | 在提示符后输入真实密码，或使用本文的一次性生成脚本                                        |
-| 服务端启动失败 / 证书错误                   | AAAA 不正确、TCP 80 不通、ACME 失败或系统账户找不到证书缓存   | 检查 DNS、入站防火墙和固定 `acme.dir`                                                   |
-| sing-box 已运行但 Moonlight 连不上          | Sunshine 未运行、IP 填错、防火墙规则或服务端认证失败          | 查看 sing-box 错误日志，核对 Sunshine 和局域网 IP                                         |
-| 本地能连，手机流量连不上                    | 手机网络缺少 IPv6 路径，或公网 IPv6/UDP 443 不通              | 测试公网连通性、DNS 与手机当前网络                                                        |
+
+| 报错或现象                                | 原因                                                        | 处理                                                                                 |
+| ----------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `hysteria.exe` 无法识别                   | 文件原名是`hysteria-windows-amd64-avx.exe`，或执行目录不对  | 在正确文件夹运行原文件名，或重命名为`hysteria.exe`                                   |
+| 双击 EXE 没反应                           | Hysteria 是命令行程序，不是图形安装器                       | 在 PowerShell 执行`./hysteria.exe version`（Windows 建议 ` .\hysteria.exe version`） |
+| `netip.ParsePrefix("/32"): ParseAddr("")` | 客户端生成了空的 CIDR 地址，例如`"ip_cidr": ["/32"]`        | 删除错误规则，或填写完整有效的`192.168.2.23/32`；本文推荐的全局路由配置不需要此规则  |
+| `authentication failed, status code: 404` | 最常见是 Hysteria 2 两端密码不一致；也可能连到了错误服务端  | 核对`config.yaml` 的 `auth.password` 与安卓 JSON 的 `password`，修改服务端后重启     |
+| PowerShell 提示“密码不能为空”           | `Read-Host '文字'` 里的文字只是提示；直接回车会得到空字符串 | 在提示符后输入真实密码，或使用本文的一次性生成脚本                                   |
+| 服务端启动失败 / 证书错误                 | AAAA 不正确、TCP 80 不通、ACME 失败或系统账户找不到证书缓存 | 检查 DNS、入站防火墙和固定`acme.dir`                                                 |
+| sing-box 已运行但 Moonlight 连不上        | Sunshine 未运行、IP 填错、防火墙规则或服务端认证失败        | 查看 sing-box 错误日志，核对 Sunshine 和局域网 IP                                    |
+| 本地能连，手机流量连不上                  | 手机网络缺少 IPv6 路径，或公网 IPv6/UDP 443 不通            | 测试公网连通性、DNS 与手机当前网络                                                   |
 
 > **本次真实踩坑：** Windows 服务端的密码曾被写成一个拼写，安卓客户端写成另一个拼写，导致 `authentication failed, status code: 404`。调整两端密码一致并重启服务端后，Moonlight 串流成功且连接稳定。**不要在公开教程中附上真实密码。**
 
