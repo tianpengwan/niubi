@@ -1,11 +1,12 @@
 ---
-abbrlink: ''
+abbrlink: dfb4
 categories:
-- - 技术教程
-cover: https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEWqSxqSnBTgG3uTOi1Esrdg2n1X_gETgACNCgAApTnUVYCGdRKF0_GUjwE.png
+  - - 技术教程
+cover: >-
+  https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEWqSxqSnBTgG3uTOi1Esrdg2n1X_gETgACNCgAApTnUVYCGdRKF0_GUjwE.png
 date: '2026-07-05T22:49:47.239609+08:00'
 tags:
-- 监控
+  - 监控
 title: 99元/年阿里云服务器搭建大华摄像头智能云回放（Frigate+ZLMediaKit极简方案）
 updated: '2026-07-05T23:13:27.288+08:00'
 ---

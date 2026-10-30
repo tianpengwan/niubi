@@ -1,14 +1,14 @@
 ---
-abbrlink: Hysteria 2 部署教程
 categories:
-- - 技术教程
+  - - 技术教程
 date: '2026-10-28T21:16:28.275118+08:00'
 tags:
-- Moonlight
-- sing-box
-- Sunshine
+  - Moonlight
+  - sing-box
+  - Sunshine
 title: Hysteria 2 完整部署教程：Windows 11 + 安卓 sing-box + Moonlight / Sunshine
 updated: '2026-10-28T23:09:21.668+08:00'
+abbrlink: '4680'
 ---
 # Hysteria 2 完整部署教程：Windows 11 + 安卓 sing-box + Moonlight / Sunshine
 
